@@ -1,6 +1,6 @@
 # Synopsis
 
-Energiemonitoring mit COTS Hardware. Ausbringung in einem Maschinenpark und längerer unbeaufsichtigter Betrieb der Datenerfassung. Datenauswertung 
+ELMO ist Energiemonitoring mit COTS Hardware. Erfassungssysteme werden in einem Maschinenpark ausgebracht. Es folgt ein längerer unbeaufsichtigter Betrieb der Datenerfassung. Eine Datenauswertung macht verschiedene Betriebsbedingungen sichtbar.
 
 **Ziele:** Reale Energieverbrauchsdaten für Forschung und Lehre an der HSRT zur Verfügung stellen. Bisher manuell erfasste Betriebsbedingungen, u.a Wartung, Auslastung, im Anwendungskontextes automatisiert erfassen können.
 
