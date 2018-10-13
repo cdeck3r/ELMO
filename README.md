@@ -18,14 +18,13 @@ ELMO ist Energiemonitoring mit COTS Hardware. Erfassungssysteme werden in einem 
 
 ## Inhalte
 
-[Wiki](https://github.com/cdeck3r/ELMO/wiki)
+[GitBook](https://cdeck3r-docs.gitbook.io/elmo/)
 
 ## Teilnehmer
 
-Dies ist Projekt im [Bachelor Wirtschaftsinformatik (WIB)](http://www.inf.reutlingen-university.de/studium/bachelor/wirtschaftsinformatik/)
-an der Hochschule Reutlingen.
+Dies ist Projekt im [Bachelor Wirtschaftsinformatik \(WIB\)](http://www.inf.reutlingen-university.de/studium/bachelor/wirtschaftsinformatik/) an der Hochschule Reutlingen.
 
-**Betreuer:** Christian Decker ([@cdeck3r](https://twitter.com/cdeck3r), [@RTWIB_Decker](https://twitter.com/rtwib_decker))
+**Betreuer:** Christian Decker \([@cdeck3r](https://twitter.com/cdeck3r), [@RTWIB\_Decker](https://twitter.com/rtwib_decker)\)
 
 **Projektteam:**
 
