@@ -18,7 +18,7 @@ ELMO ist Energiemonitoring mit COTS Hardware. Erfassungssysteme werden in einem 
 
 ## Inhalte
 
-[GitBook](https://cdeck3r-docs.gitbook.io/elmo/)
+[ELMO GitBook](https://cdeck3r-docs.gitbook.io/elmo/)
 
 ## Teilnehmer
 
