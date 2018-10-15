@@ -28,9 +28,12 @@ Dies ist Projekt im [Bachelor Wirtschaftsinformatik \(WIB\)](http://www.inf.reut
 
 **Projektteam:**
 
-* ... 
-* ...
-* ...
+* Timo Hegenberg
+* schickjan97
+* Michael Strommer 
+* Patrick Ardelean 
+* Eda Genc 
+* Mattedi93
 
 ## Kollaboration
 
