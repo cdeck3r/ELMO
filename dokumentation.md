@@ -22,27 +22,41 @@ Damit die Fritzbox Zugriff auf das Internet hat, muss diese als Repeater konfigu
 
 #### Erstellen der MySQL Datenbank
 
+Im Debian-System war bereits ein MySQL Server installiert. Mit dem Befehl
+
 ```text
 mysql -u root -p
 ```
+
+erhält man Zugriff auf die Datenbank. Hierbei wird ein Passwort abgefragt. Im nächsten Schritt wird ein neuer SQL-User erstellt.
 
 ```text
 CREATE USER 'username'@'localhost' IDENTIFIED BY 'userpw';
 ```
 
+Sobald dieser User erstellt wurde, wird die nötige Datenbank angelegt.
+
 ```text
 CREATE DATABASE elmo;
 ```
 
+Der erstellte User benötigt dann noch entsprechende Rechte auf die Datenbank. Er erhält also Rechte auf alle Tabellen \(\*\) der Datenbank \(elmo\). Damit der User auch von außerhalb Zugriff auf die Datenbank hat, wird er mit dem Hostname "%" \(Alle Hosts\) identifiziert. 
+
 ```text
 GRANT ALL PRIVILEGES ON elmo.* TO 'elmo'@'%' IDENTIFIED BY 'userpw'; 
 ```
+
+Im letzten Schritt werden die geänderten Berechtigungen angewendet.
 
 ```text
 FLUSH PRIVILEGES;
 ```
 
 #### Erstellen der Tabelle
+
+Auf der erstellten Datenbank musste eine Tabelle angelegt werden, in der die Messdaten gespeichert werden. Der AVM AHA-Dokumentation war dabei zu entnehmen, welche Werte ausgelesen werden können. Für dieses Projekt sind natürlich die Watt, Wattstunden und die Temperatur besonders wichtig.
+
+Um die Messwerte eindeutig zuordnen zu können wurde ein Messdatum eingefügt. Dieses wird per default mit dem derzeitigen Datum befüllt.
 
 ```text
 CREATE TABLE Data (
