@@ -6,6 +6,12 @@
 
 #### Ziel: Funktionierende Infrastruktur mit der Fritzbox 7490 und den Fritzdect 200 Energiesteckdosen sowie einem externen Server
 
+#### Evaluierung
+
+> //Auswahl eines geeigneten Verfahrens
+
+#### Umsetzung
+
 #### 1 Schritt: Anschließen der Fritzbox 7490 und den Fritzdect 200 Steckdosen
 
 #### Verkabelung
@@ -74,9 +80,13 @@ CREATE TABLE Data (
 
 #### Konfiguration SQL Server
 
+Der SQL-Server ist standardmäßig so konfiguriert, dass kein Zugriff von außerhalb möglich ist. Um dies zu erlauben muss eine Konfigurationsdatei bearbeitet werden. Mit dem Befehl
+
 ```text
 vim /etc/mysql/my.cnf
 ```
+
+gelangt man in die Konfigurationsdatei. In dieser Datei muss die "Bindingadress" von "localhost" auf "0.0.0.0" abgeändert werden. Damit hört der Server nichtmehr nur auf Befehle vom localhost, sondern auf alle IP-Adressen die ihm zur Verfügung stehen.
 
 ```text
 /etc/init.d/mysql restart
@@ -84,12 +94,24 @@ vim /etc/mysql/my.cnf
 
 #### Konfiguration Firewall
 
+Die Firewall des Servers ist nach der "Whitelist-Strategie" konfiguriert. Das bedeutet, dass grundstätzlich jeder Datenverkehr blockiert wird und nur benötigter Datenverkehr erlaubt wird. Deshalb muss mit 
+
 ```text
 ufw allow 3306
 ```
 
+der MySQL-Port in der Firewall freigegeben werden.
+
 #### 3 Schritt: Auslesen und Export der Messdaten
 
+#### Erstellung Script
+
+Grundsätzlich kann für das Auslesen und den Export jede Scriptsprache genutzt werden. Da wir aber im Studium bereits Kontakt zu der Scriptsprache PHP hatten, haben wir diese verwendet. 
+
+```text
+
+```
+
 ```text
 
 ```
@@ -98,7 +120,7 @@ ufw allow 3306
 
 ```
 
-```text
+![](.gitbook/assets/demo_imac.png)
 
-```
+![](.gitbook/assets/demo%20%282%29.png)
 
