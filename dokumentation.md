@@ -2,17 +2,15 @@
 
 ## Demo-System
 
-### Demo-Infrastruktur
+Ziel: Funktionierende Infrastruktur mit der Fritzbox 7490 und den Fritzdect 200 Energiesteckdosen sowie einem externen Server
 
-#### Ziel: Funktionierende Infrastruktur mit der Fritzbox 7490 und den Fritzdect 200 Energiesteckdosen sowie einem externen Server
-
-#### Evaluierung
+### Evaluierung
 
 > //Auswahl eines geeigneten Verfahrens
 
-#### Umsetzung
+### Umsetzung
 
-#### 1 Schritt: Anschließen der Fritzbox 7490 und den Fritzdect 200 Steckdosen
+### 1 Schritt: Anschließen der Fritzbox 7490 und den Fritzdect 200 Steckdosen
 
 #### Verkabelung
 
@@ -24,7 +22,7 @@ Damit die Fritzbox Zugriff auf das Internet hat, muss diese als Repeater konfigu
 
 > //Anleitung Repeater Konfig
 
-#### 2 Schritt: Konfiguration des externen Hetzner Servers
+### 2 Schritt: Konfiguration des externen Hetzner Servers
 
 #### Erstellen der MySQL Datenbank
 
@@ -102,23 +100,25 @@ ufw allow 3306
 
 der MySQL-Port in der Firewall freigegeben werden.
 
-#### 3 Schritt: Auslesen und Export der Messdaten
+### 3 Schritt: Auslesen und Export der Messdaten
 
 #### Erstellung Script
 
 Grundsätzlich kann für das Auslesen und den Export jede Scriptsprache genutzt werden. Da wir aber im Studium bereits Kontakt zu der Scriptsprache PHP hatten, haben wir diese verwendet. 
 
 ```text
-
+//MYSQL
 ```
 
 ```text
-
+//ZUWEISUNG
 ```
 
 ```text
-
+//SQL
 ```
+
+### Visualisierung
 
 ![](.gitbook/assets/demo_imac.png)
 
