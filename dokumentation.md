@@ -6,7 +6,7 @@ Ziel: Funktionierende Infrastruktur mit der Fritzbox 7490 und den Fritzdect 200 
 
 ### Evaluierung
 
-> //Auswahl eines geeigneten Verfahrens
+#### Auswahl eines geeigneten Verfahrens
 
 #### Möglichkeiten Daten auszulesen
 
@@ -30,7 +30,7 @@ Im Demo-System wurde die Fritzbox per Lankabel mit dem heimischen Router verbund
 
 Damit die Fritzbox Zugriff auf das Internet hat, muss diese als Repeater konfiguriert werden. In diesem Modus fungiert die Fritzbox nichtmehr als DSL-Router sondern als einfacher WLAN-Router.
 
-> //Anleitung Repeater Konfig
+Um die FritzBox als Repeater einzurichten, navigiert man über **"Internet"** zu **"Internetanbieter"** und wählt dort als Anbieter **"Vorhandener Zugang über LAN"**. Diese Funktion schleift das Internet über den Internetrouter einfach an die FritzBox weiter.
 
 ### 2 Schritt: Konfiguration des externen Hetzner Servers
 
@@ -54,10 +54,10 @@ Sobald dieser User erstellt wurde, wird die nötige Datenbank angelegt.
 CREATE DATABASE elmo;
 ```
 
-Der erstellte User benötigt dann noch entsprechende Rechte auf die Datenbank. Er erhält also Rechte auf alle Tabellen \(\*\) der Datenbank \(elmo\). Damit der User auch von außerhalb Zugriff auf die Datenbank hat, wird er mit dem Hostname "%" \(Alle Hosts\) identifiziert. 
+Der erstellte User benötigt dann noch entsprechende Rechte auf die Datenbank. Er erhält also Rechte auf alle Tabellen \(\*\) der Datenbank \(elmo\). Damit der User auch von außerhalb Zugriff auf die Datenbank hat, wird er mit dem Hostname "%" \(Alle Hosts\) identifiziert.
 
 ```text
-GRANT ALL PRIVILEGES ON elmo.* TO 'elmo'@'%' IDENTIFIED BY 'userpw'; 
+GRANT ALL PRIVILEGES ON elmo.* TO 'elmo'@'%' IDENTIFIED BY 'userpw';
 ```
 
 Im letzten Schritt werden die geänderten Berechtigungen angewendet.
@@ -102,7 +102,7 @@ gelangt man in die Konfigurationsdatei. In dieser Datei muss die "Bindingadress"
 
 #### Konfiguration Firewall
 
-Die Firewall des Servers ist nach der "Whitelist-Strategie" konfiguriert. Das bedeutet, dass grundstätzlich jeder Datenverkehr blockiert wird und nur benötigter Datenverkehr erlaubt wird. Deshalb muss mit 
+Die Firewall des Servers ist nach der "Whitelist-Strategie" konfiguriert. Das bedeutet, dass grundstätzlich jeder Datenverkehr blockiert wird und nur benötigter Datenverkehr erlaubt wird. Deshalb muss mit
 
 ```text
 ufw allow 3306
@@ -114,18 +114,66 @@ der MySQL-Port in der Firewall freigegeben werden.
 
 #### Erstellung Script
 
-Grundsätzlich kann für das Auslesen und den Export jede Scriptsprache genutzt werden. Da wir aber im Studium bereits Kontakt zu der Scriptsprache PHP hatten, haben wir diese verwendet. 
+Grundsätzlich kann für das Auslesen und den Export jede Scriptsprache genutzt werden. Da wir aber im Studium bereits Kontakt zu der Scriptsprache PHP hatten, haben wir diese verwendet.
+
+Die Verwendung des [AHA-Interfaces](https://avm.de/fileadmin/user_upload/Global/Service/Schnittstellen/AHA-HTTP-Interface.pdf) wurde von AVM ausführlich dokumentiert. Außerdem zeigen viele Projekte [Beispiele](https://www.heise.de/ct/ausgabe/2016-7-Schalten-mit-Fritzbox-Co-3134490.html) zur Nutzung der Schnittstelle.
+
+#### getSID.php
+
+Für die erfolgreiche Kommunikation mit der FritzBox und dem Client wird eine SessionID benötigt. In der getSID.php werden die Logins festgelegt und dann eine Verbindung zum AHA-Interface aufgebaut.
+
+#### getValues.php
+
+Durch den erfolgreichen Login in der getSID.php können nun die Werte ausgelesen werden. 
+
+**SQL**
+
+Zuerst wird eine Verbindung zum SQL Server hergestellt. 
 
 ```text
-//MYSQL
+$mysqli = new mysqli("IP-Server", "UsernameSQL", "PasswordSQL", "Database", "SQL-Port");
+if ($mysqli->connect_errno) {
+    die("Verbindung fehlgeschlagen: " . $mysqli->connect_error);
+}
 ```
 
-```text
-//ZUWEISUNG
-```
+Um die Daten in die Datenbank zu schreiben, wird der Befehl auf dem externen Datenbankserver ausgeführt.
 
 ```text
-//SQL
+  if ($stmt1 = $mysqli->prepare("insert into Data(AIN, Name, Status, Temperatur, Watt, Wattstunden, Volt) values ('".$ain."', '".$name."', '".$status."', '".$temperatur."', '".$power."', '".$energy."', '".$voltage."')")) {
+      $stmt1->execute();
+  }
+```
+
+**XML**
+
+Um die Daten der FritzBox zu erhalten, muss über die FritzBox URL ein Befehl aufgerufen werden.
+
+```text
+$xmlstring=chop(@file_get_contents($query_url."&switchcmd=getdevicelistinfos"));
+```
+
+Um diesen XML-String in PHP verwenden zu können, muss dieser in ein Objekt umgewandelt werden.
+
+```text
+$xml = @simplexml_load_string($xmlstring);
+```
+
+Anschließend können die Daten aus dem XML-String jeweils einer PHP-Variable zugewiesen werden.
+
+```text
+  $ain=(string)$attributes['identifier']; //Lese Geräte AIN
+  $name=(string)$device->name; //Lese Gerätename
+
+  $power=(integer)$device->powermeter->power; //Lese aktuelle Wattzahl
+  $energy=(integer)$device->powermeter->energy; //Lese kommulierte Wattstunden
+  $voltage=(integer)$device->powermeter->voltage;; //Lese aktuelle Voltzahl
+
+  $temperatur=(integer)$device->temperature->celsius; //Lese Temperatur
+  $offset=(integer)$device->temperature->offset; //Lese Temperatur Offset
+  $temperatur=$temperatur+$offset; //Berechne Temperatur
+
+  $status=(string)$device->switch->state; //Lese Status der Steckdose
 ```
 
 ### Visualisierung
@@ -138,19 +186,25 @@ Hierbei liest der iMac die Daten der Steckdosen mithilfe der AHA-Schnittstelle p
 
 ![](.gitbook/assets/demo_imac.png)
 
-#### 
-
 #### Infrastuktur mit RaspBerry Pi
 
 Um die Demoversion auch im realen Umfeld umsetzen zu können, benötigen wir ein Gerät, dass in der Umgebung direkt per LAN mit der Fritzbox verbunden ist. Dafür haben wir den iMac gegen einen RaspBerry Pi ausgetauscht. Dieser führt den selben Script wie der iMac aus und schreibt die Daten auf die Datenbank.
 
 ![](.gitbook/assets/demo%20%282%29.png)
 
-### 
-
 ### Installation und Konfiguration RaspBerry Pi
 
 #### Installation von Rasbian
 
+Die Installation von Rasbian gestaltet sich dank des bereits auf der SD-Karte installierten Installationsassistenten "Noobs" als sehr einfach. Beim ersten Start muss nur das gewünschte Betriebssystem ausgewählt werden und die Installation beginnt von allein. Wir haben hierbei Rasbian gewählt, da dieses Betriebssystem sich auf dem RaspBerry Pi erprobt hat und nicht mit unerwarteten Komplikationen zu rechnen ist. Rasbian basiert auf Debian und bietet eine Robuste Umgebung.
+
 #### Konfiguration von Rasbian
+
+**Firewall**
+
+
+
+**PHP 7**
+
+
 
