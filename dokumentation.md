@@ -2,11 +2,11 @@
 
 ## Demo-System
 
-Ziel: Funktionierende Infrastruktur mit der Fritzbox 7490 und den Fritzdect 200 Energiesteckdosen sowie einem externen Server
+#### Ziel: Funktionierende Infrastruktur & Datenverbindung zwischen der Fritzbox 7490 und den Fritzdect 200 Energiesteckdosen sowie einem externen Server
 
 ### Evaluierung
 
-#### Auswahl eines geeigneten Verfahrens
+#### Ziel: Eine ausgewählte Methodik zum weiteren Vorgehen
 
 #### Möglichkeiten Daten auszulesen
 
@@ -22,6 +22,8 @@ Für dieses Projekt eignet sich die AHA-Schnittstelle am meisten. Das Interface 
 
 ### 1 Schritt: Anschließen der Fritzbox 7490 und den Fritzdect 200 Steckdosen
 
+#### Ziel: Funktionierende Verbindung zwischen FritzBox 7490 und den FritzDect 200 Steckdosen
+
 #### Verkabelung
 
 Im Demo-System wurde die Fritzbox per Lankabel mit dem heimischen Router verbunden. Die Steckdosen werden dann per DECT mit der Fritzbox verbunden. Dazu musste die Fritzbox allerdings erst auf die neueste Firmwareversion aktualisiert werden, da die Kopplung ansonsten nicht funktioniert.
@@ -33,6 +35,8 @@ Damit die Fritzbox Zugriff auf das Internet hat, muss diese als Repeater konfigu
 Um die FritzBox als Repeater einzurichten, navigiert man über **"Internet"** zu **"Internetanbieter"** und wählt dort als Anbieter **"Vorhandener Zugang über LAN"**. Diese Funktion schleift das Internet über den Internetrouter einfach an die FritzBox weiter.
 
 ### 2 Schritt: Konfiguration des externen Hetzner Servers
+
+#### Ziel: Fertig konfigurierter externer Server, der die Möglichkeit bietet, die Daten der FritzBox persistent und sicher zu speichern.
 
 #### Erstellen der MySQL Datenbank
 
@@ -112,6 +116,8 @@ der MySQL-Port in der Firewall freigegeben werden.
 
 ### 3 Schritt: Auslesen und Export der Messdaten
 
+#### Ziel: Funktionierender Script der die Daten der FritzBox ausliest und in die externe Datenbank schreibt.
+
 #### Erstellung Script
 
 Grundsätzlich kann für das Auslesen und den Export jede Scriptsprache genutzt werden. Da wir aber im Studium bereits Kontakt zu der Scriptsprache PHP hatten, haben wir diese verwendet.
@@ -178,6 +184,8 @@ Anschließend können die Daten aus dem XML-String jeweils einer PHP-Variable zu
 
 ### Visualisierung
 
+#### Ziel: Darstellung der Infrastruktur
+
 #### Infrastruktur mit iMac
 
 Für einen ersten Test haben wir einen iMac verwendet. Dieser fungiert im heimischen Netzwerk als Server. Durch das auf Linux basierte Betriebssystem ist es sehr einfach verschiedene Scriptsprachen zu nutzen. Außerdem können die Daten hier mit der Linux-Shell ausgelesen werden.
@@ -193,6 +201,8 @@ Um die Demoversion auch im realen Umfeld umsetzen zu können, benötigen wir ein
 ![](.gitbook/assets/demo%20%282%29.png)
 
 ### Installation und Konfiguration RaspBerry Pi
+
+#### Ziel: Fertig konfigurierter RaspBerry Pi mit Datenverbindung zum externen Server
 
 #### Installation von Rasbian
 
