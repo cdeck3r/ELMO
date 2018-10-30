@@ -192,13 +192,15 @@ Für einen ersten Test haben wir einen iMac verwendet. Dieser fungiert im heimis
 
 Hierbei liest der iMac die Daten der Steckdosen mithilfe der AHA-Schnittstelle per WLAN aus und schreibt diese auf eine MySQL-Datenbank auf einem externen Server.
 
-![](.gitbook/assets/demo_imac.png)
+![Demoinfrastruktur mit iMac](.gitbook/assets/netzwerk_imac.png)
 
 #### Infrastuktur mit RaspBerry Pi
 
 Um die Demoversion auch im realen Umfeld umsetzen zu können, benötigen wir ein Gerät, dass in der Umgebung direkt per LAN mit der Fritzbox verbunden ist. Dafür haben wir den iMac gegen einen RaspBerry Pi ausgetauscht. Dieser führt den selben Script wie der iMac aus und schreibt die Daten auf die Datenbank.
 
-![](.gitbook/assets/demo%20%282%29.png)
+![Demoinfrastruktur mit RaspBerry Pi](.gitbook/assets/netzwerk_rasp%20%281%29.png)
+
+![](.gitbook/assets/netzwerk_rasp.vsdx)
 
 ### Installation und Konfiguration RaspBerry Pi
 
