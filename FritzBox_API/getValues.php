@@ -3,7 +3,7 @@
 include_once('SIDauslesen.php');
 
 //Verbindung zu externem Hetzner-Server
-$mysqli = new mysqli("88.99.80.161", "elmouser", "elmoprojektws18", "elmo", "3306");
+$mysqli = new mysqli("IP-Server", "User", "Password", "Database", "Port");
 if ($mysqli->connect_errno) {
     die("Verbindung fehlgeschlagen: " . $mysqli->connect_error);
 }
