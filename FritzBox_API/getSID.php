@@ -1,7 +1,7 @@
 <?php
 //Anmelde- und Hostdaten
-$username="elmo"; //Username FritzBox
-$password="elmoprojektws18"; //Passwort Fritzbox
+$username="username"; //Username FritzBox
+$password="password"; //Passwort Fritzbox
 $loginurl="http://fritz.box/login_sid.lua"; //Hostname zum AHA-Interface
 $ahaurl="http://fritz.box/webservices/homeautoswitch.lua"; //Hostname zum AHA-Interface
 
