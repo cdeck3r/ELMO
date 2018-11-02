@@ -2,7 +2,7 @@
 
 ## Demo-System
 
-#### Ziel: Funktionierende Infrastruktur & Datenverbindung zwischen der Fritzbox 7490 und den Fritzdect 200 Energiesteckdosen sowie einem externen Server
+#### Ziel: Funktionierende Demo-Infrastruktur & Datenverbindung zwischen der Fritzbox 7490 und den Fritzdect 200 Energiesteckdosen sowie einem externen Server
 
 ### Evaluierung
 
@@ -199,8 +199,6 @@ Hierbei liest der iMac die Daten der Steckdosen mithilfe der AHA-Schnittstelle p
 Um die Demoversion auch im realen Umfeld umsetzen zu können, benötigen wir ein Gerät, dass in der Umgebung direkt per LAN mit der Fritzbox verbunden ist. Dafür haben wir den iMac gegen einen RaspBerry Pi ausgetauscht. Dieser führt den selben Script wie der iMac aus und schreibt die Daten auf die Datenbank.
 
 ![Demoinfrastruktur mit RaspBerry Pi](.gitbook/assets/netzwerk_rasp%20%281%29.png)
-
-![](.gitbook/assets/netzwerk_rasp.vsdx)
 
 ### Installation und Konfiguration RaspBerry Pi
 
