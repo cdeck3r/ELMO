@@ -2,6 +2,8 @@
 
 ## FritzBox 7490
 
+### HTTPS-Zertifikat
+
 ### Passwortvergabe
 
 ### WLAN
