@@ -214,9 +214,37 @@ Die Installation von Rasbian gestaltet sich dank des bereits auf der SD-Karte in
 
 **Firewall**
 
+```text
+sudo ufw default deny incoming
+sudo ufw default deny outgoing
+```
 
+```text
+sudo ufw allow 3306
+```
+
+```text
+sudo ufw allow 443
+```
 
 **PHP 7**
 
+```text
+sudo apt-get install php 7.0
+```
 
+```text
+sudo apt-get install mysql-shell
+```
+
+```text
+sudo apt-get update 
+sudo apt-get upgrade
+```
+
+**Konfiguration Updates**
+
+```text
+sudo apt-get install cron-apt
+```
 
