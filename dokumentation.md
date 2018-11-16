@@ -210,29 +210,35 @@ Die Installation von Rasbian gestaltet sich dank des bereits auf der SD-Karte in
 
 #### Konfiguration von Rasbian
 
-**Firewall**
+#### Grundeinstellungen Rasbian
+
+* Kryptisches Rasbian-Passwort setzen \(Bild\)
+* Hostname ändern \(Elmo Pi \#1, Elmo Pi \#2, Elmo Pi \#X, ...\)
+* 
+#### Rasbian Update/Upgrade
 
 ```text
-sudo ufw default deny incoming
-sudo ufw default deny outgoing
+sudo apt-get update
+sudu apt-get upgrade
+```
+
+#### **Installation EXFAT \(Nutzung USB-Stick\)**
+
+```text
+sudo apt-get install exfat-fuse
+```
+
+\*\*\*\*
+
+**PHP 7/MySQL**
+
+```text
+sudo apt-get install php7.0
 ```
 
 ```text
-sudo ufw allow 3306
-```
-
-```text
-sudo ufw allow 443
-```
-
-**PHP 7**
-
-```text
-sudo apt-get install php 7.0
-```
-
-```text
-sudo apt-get install mysql-shell
+sudo apt-get install php7.0-mysqli
+sudo apt-get install php7.0-xml
 ```
 
 ```text
@@ -240,9 +246,49 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
+**Firewall**
+
+```text
+sudo apt-get install ufw
+sudo ufw status verbose (Status: Inative)
+sudo ufw enable
+```
+
+```text
+sudo ufw allow 3306
+sudo ufw allow 443
+sudo ufw allow 80
+```
+
+#### Cronjob
+
+```text
+sudo -s
+```
+
+```text
+cd /etc
+mkdir fritzbox
+```
+
+```text
+cp /home/pi/Desktop/ELMO/getValues.php /etc/fritzbox/getValues.php
+cp /home/pi/Desktop/ELMO/getSID.php /etc/fritzbox/getSID.php
+```
+
+```text
+crontab -e
+```
+
+Editorauswahl: 2 \(Nano Editor\)
+
+```text
+*/1 * * * * php -f /etc/fritzbox/getValues.php
+```
+
 **Konfiguration Updates**
 
 ```text
-sudo apt-get install cron-apt
+
 ```
 
