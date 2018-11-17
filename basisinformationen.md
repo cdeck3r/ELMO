@@ -1,7 +1,8 @@
 # Basisinformationen
 
-* Erfassungsintervall: 30 Sekunden
+* Erfassungsintervall: 1 Minute
 * Webstack: LAMP
-* vServer: Debian 9 / Ubuntu
-* ...
-
+* vServer: Ubuntu 18
+* RaspBerry: Version 3 B+
+* Datenabfrage FritzBox: AVM-AHA HTTP Interface + PHP
+* 

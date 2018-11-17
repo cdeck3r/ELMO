@@ -34,7 +34,7 @@ Damit die Fritzbox Zugriff auf das Internet hat, muss diese als Repeater konfigu
 
 Um die FritzBox als Repeater einzurichten, navigiert man über **"Internet"** zu **"Internetanbieter"** und wählt dort als Anbieter **"Vorhandener Zugang über LAN"**. Diese Funktion schleift das Internet über den Internetrouter einfach an die FritzBox weiter.
 
-### 2 Schritt: Konfiguration des externen Hetzner Servers
+### 2 Schritt: Konfiguration des externen Servers
 
 #### Ziel: Fertig konfigurierter externer Server, der die Möglichkeit bietet, die Daten der FritzBox persistent und sicher zu speichern.
 
