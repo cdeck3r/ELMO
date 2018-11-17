@@ -2,7 +2,7 @@
 
 ## Demo-System
 
-#### Ziel: Funktionierende Demo-Infrastruktur & Datenverbindung zwischen der Fritzbox 7490 und den Fritzdect 200 Energiesteckdosen sowie einem externen Server
+#### Ziel: Funktionierende Infrastruktur & Datenverbindung zwischen der Fritzbox 7490 und den Fritzdect 200 Energiesteckdosen sowie einem externen Server
 
 ### Evaluierung
 
