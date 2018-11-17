@@ -1,11 +1,10 @@
 # Table of contents
 
 * [Synopsis](README.md)
-* [Dokumentation-Demo](dokumentation.md)
+* [Dokumentation Infrastruktur](dokumentation.md)
 * [Sicherheitskonzept](sicherheitskonzept.md)
-* [Dokumentation Produktiv: Infrastruktur](dokumentation-produktiv-infrastruktur.md)
-* [Dokumentation Produktiv: FrontEnd](dokumentation-produktiv-frontend.md)
-* [Dokumentation Produktiv: BackEnd](dokumentation-produktiv-backend.md)
+* [Dokumentation FrontEnd](dokumentation-produktiv-frontend.md)
+* [Dokumentation BackEnd](dokumentation-produktiv-backend.md)
 * [Basisinformationen](basisinformationen.md)
 * [Wordpress Installation](wordpress-installation.md)
 
