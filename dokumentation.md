@@ -214,7 +214,13 @@ Die Installation von Rasbian gestaltet sich dank des bereits auf der SD-Karte in
 
 * Kryptisches Rasbian-Passwort setzen \(Bild\)
 * Hostname ändern \(Elmo Pi \#1, Elmo Pi \#2, Elmo Pi \#X, ...\)
-* 
+
+```text
+sudo raspi-config
+```
+
+* Boot-Options -&gt; Desktop/CLI - &gt; Dektop GUI
+
 #### Rasbian Update/Upgrade
 
 ```text
@@ -258,6 +264,7 @@ sudo ufw enable
 sudo ufw allow 3306
 sudo ufw allow 443
 sudo ufw allow 80
+sudo ufw allow 22
 ```
 
 #### Cronjob
@@ -277,7 +284,7 @@ cp /home/pi/Desktop/ELMO/getSID.php /etc/fritzbox/getSID.php
 ```
 
 ```text
-crontab -e
+sudo crontab -e
 ```
 
 Editorauswahl: 2 \(Nano Editor\)
@@ -286,9 +293,15 @@ Editorauswahl: 2 \(Nano Editor\)
 */1 * * * * php -f /etc/fritzbox/getValues.php
 ```
 
-**Konfiguration Updates**
+#### SSH
 
 ```text
-
+sudo raspi-config
 ```
+
+Rasberry Pi Software Configuration Tool
+
+5 Interfacing Options
+
+SSH Enable
 
