@@ -8,8 +8,6 @@ Alle Passwörter wurden mit einem kryptisch Generiert und in einem Passwordsafe 
 
 ## FritzBox 7490
 
-### HTTPS-Zertifikat
-
 ### WLAN
 
 Das WLAN der FritzBoxen wurde für die produktive Umgebung deaktiviert. Dies verhindert Störungen im bestehenden WLAN Netz und löst eine Sicherheitslücke. Die Verbindung zwischen RaspBerry Pi und FritzBox erfolgt über LAN.
@@ -30,9 +28,13 @@ Zur Absicherung des SSH wurde der Standardport abgeändert.
 
 ## Verbindung RaspBerry Pi zur FritzBox
 
+### Login
+
+Der Login auf die FritzBox und das AHA-Interface funktioniert nur mit im Script hinterlegten Logins. 
+
 ### Verschlüsselung
 
-### Login
+Da der Datentransfer über ein LAN-Kabel stattfindet und das WLAN deaktiviert ist, wird eine Verschlüsselung nicht benötigt.
 
 ## Externer vServer
 
