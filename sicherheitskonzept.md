@@ -47,4 +47,8 @@ Als Firewall wird auf dem vServer \(Ubuntu\) UFW genutzt. Diese enthält Freigab
 ## Verbindung RaspBerry Pi zum vServer
 
 ### Verschlüsselung
+Zertifikat?
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTIxMDY3NzcyN119
+-->
