@@ -44,7 +44,7 @@ Als Firewall wird auf dem vServer \(Ubuntu\) UFW genutzt. Diese enthält Freigab
 
 ### Dienste
 #### Letsencrypt
-Auf die Domain soll nur ein HTTPS-Zugriff erlaubt sein. 
+Auf die Domain soll nur ein HTTPS-Zugriff erlaubt sein. Daher wurde die Seite per Letsencrypt verschlüsselt.
 
 ## Verbindung RaspBerry Pi zum vServer
 
@@ -52,5 +52,5 @@ Auf die Domain soll nur ein HTTPS-Zugriff erlaubt sein.
 Zertifikat?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTAzNTY5ODIsMTIxMDY3NzcyN119
+eyJoaXN0b3J5IjpbMTAyMzgyODA2NywxMjEwNjc3NzI3XX0=
 -->
