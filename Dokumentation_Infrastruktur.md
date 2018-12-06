@@ -34,23 +34,23 @@ Für dieses Projekt eignet sich die AHA-Schnittstelle am meisten. Das Interface 
 
 ## Verbindung FritzBox und FritzDect
 
-#### Ziel: Funktionierende Infrastruktur & Datenverbindung zwischen der Fritzbox 7490 und den Fritzdect 200 Energiesteckdosen
+### Ziel: Funktionierende Infrastruktur & Datenverbindung zwischen der Fritzbox 7490 und den Fritzdect 200 Energiesteckdosen
 
-#### Verkabelung
+### Verkabelung
 
 Im Demo-System wurde die Fritzbox per Lankabel mit dem heimischen Router verbunden. Die Steckdosen werden dann per DECT mit der Fritzbox verbunden. Dazu musste die Fritzbox allerdings erst auf die neueste Firmwareversion aktualisiert werden, da die Kopplung ansonsten nicht funktioniert.
 
-#### Konfiguration Fritzbox
+### Konfiguration Fritzbox
 
 Damit die Fritzbox Zugriff auf das Internet hat, muss diese als Repeater konfiguriert werden. In diesem Modus fungiert die Fritzbox nichtmehr als DSL-Router sondern als einfacher WLAN-Router.
 
 Um die FritzBox als Repeater einzurichten, navigiert man über **"Internet"** zu **"Internetanbieter"** und wählt dort als Anbieter **"Vorhandener Zugang über LAN"**. Diese Funktion schleift das Internet über den Internetrouter einfach an die FritzBox weiter.
 
-## 2 Schritt: Konfiguration des externen Servers
+## Verbindung zu externem Server
 
-#### Ziel: Fertig konfigurierter externer Server, der die Möglichkeit bietet, die Daten der FritzBox persistent und sicher zu speichern.
+### Ziel: Fertig konfigurierter externer Server, der die Möglichkeit bietet, die Daten der FritzBox persistent und sicher zu speichern.
 
-#### Erstellen der MySQL Datenbank
+### Erstellen der MySQL Datenbank
 
 Im Debian-System war bereits ein MySQL Server installiert. Mit dem Befehl
 
@@ -82,7 +82,7 @@ Im letzten Schritt werden die geänderten Berechtigungen angewendet.
 FLUSH PRIVILEGES;
 ```
 
-#### Erstellen der Tabelle
+### Erstellen der SQL-Tabelle
 
 Auf der erstellten Datenbank musste eine Tabelle angelegt werden, in der die Messdaten gespeichert werden. Der AVM AHA-Dokumentation war dabei zu entnehmen, welche Werte ausgelesen werden können. Für dieses Projekt sind natürlich die Watt, Wattstunden und die Temperatur besonders wichtig.
 
@@ -102,7 +102,7 @@ CREATE TABLE Data (
 );
 ```
 
-#### Konfiguration SQL Server
+### Konfiguration SQL Server
 
 Der SQL-Server ist standardmäßig so konfiguriert, dass kein Zugriff von außerhalb möglich ist. Um dies zu erlauben muss eine Konfigurationsdatei bearbeitet werden. Mit dem Befehl
 
@@ -116,7 +116,7 @@ gelangt man in die Konfigurationsdatei. In dieser Datei muss die "Bindingadress"
 /etc/init.d/mysql restart
 ```
 
-#### Konfiguration Firewall
+### Konfiguration Firewall
 
 Die Firewall des Servers ist nach der "Whitelist-Strategie" konfiguriert. Das bedeutet, dass grundstätzlich jeder Datenverkehr blockiert wird und nur benötigter Datenverkehr erlaubt wird. Deshalb muss mit
 
@@ -126,7 +126,7 @@ ufw allow 3306
 
 der MySQL-Port in der Firewall freigegeben werden.
 
-### 3 Schritt: Auslesen und Export der Messdaten
+## Export der FritzDect Daten i
 
 #### Ziel: Funktionierender Script der die Daten der FritzBox ausliest und in die externe Datenbank schreibt.
 
@@ -318,5 +318,5 @@ Rasberry Pi Software Configuration Tool
 SSH Enable
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjExMzI2MzIxXX0=
+eyJoaXN0b3J5IjpbNjUyMzIzMDk2XX0=
 -->
