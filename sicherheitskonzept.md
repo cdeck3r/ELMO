@@ -43,6 +43,8 @@ Da der Datentransfer über ein LAN-Kabel stattfindet und das WLAN deaktiviert is
 Als Firewall wird auf dem vServer \(Ubuntu\) UFW genutzt. Diese enthält Freigaben für Apache \(443, 80\), SSH und MySQL.
 
 ### Dienste
+#### Letsencrypt
+Auf die Domain soll nur ein HTTPS-Zugriff erlaubt sein. 
 
 ## Verbindung RaspBerry Pi zum vServer
 
@@ -50,5 +52,5 @@ Als Firewall wird auf dem vServer \(Ubuntu\) UFW genutzt. Diese enthält Freigab
 Zertifikat?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMDY3NzcyN119
+eyJoaXN0b3J5IjpbLTExOTAzNTY5ODIsMTIxMDY3NzcyN119
 -->
