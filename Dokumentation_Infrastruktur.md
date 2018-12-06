@@ -17,11 +17,8 @@ Um die Demoversion auch im realen Umfeld umsetzen zu können, benötigen wir ein
 
 ![Demoinfrastruktur mit RaspBerry Pi](.gitbook/assets/netzwerk_rasp%20%281%29.png)
 
-## Verbindung FritzBox und FritzDect
 
-#### Ziel: Funktionierende Infrastruktur & Datenverbindung zwischen der Fritzbox 7490 und den Fritzdect 200 Energiesteckdosen sowie einem externen Server
-
-### Evaluierung
+## Evaluierung geeignete Datenerfassung
 
 #### Ziel: Eine ausgewählte Methodik zum weiteren Vorgehen
 
@@ -35,11 +32,9 @@ Um die Demoversion auch im realen Umfeld umsetzen zu können, benötigen wir ein
 
 Für dieses Projekt eignet sich die AHA-Schnittstelle am meisten. Das Interface ist resistent gegen Firmwareupdates, ermöglicht automatisches auslesen der Daten und stellt die Daten in einer flexiblen Form dar. Dadurch ist es uns möglich unterschiedliche Cloud-Lösungen in Betracht zu ziehen.
 
-### Umsetzung
+## Verbindung FritzBox und FritzDect
 
-### 1 Schritt: Anschließen der Fritzbox 7490 und den Fritzdect 200 Steckdosen
-
-#### Ziel: Funktionierende Verbindung zwischen FritzBox 7490 und den FritzDect 200 Steckdosen
+#### Ziel: Funktionierende Infrastruktur & Datenverbindung zwischen der Fritzbox 7490 und den Fritzdect 200 Energiesteckdosen
 
 #### Verkabelung
 
@@ -323,5 +318,5 @@ Rasberry Pi Software Configuration Tool
 SSH Enable
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNTM5Mjg4M119
+eyJoaXN0b3J5IjpbNjExMzI2MzIxXX0=
 -->
