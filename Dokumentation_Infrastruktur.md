@@ -3,17 +3,9 @@
 
 ### Ziel: Darstellung der Infrastruktur
 
-#### Infrastruktur mit iMac
-
-Für einen ersten Test haben wir einen iMac verwendet. Dieser fungiert im heimischen Netzwerk als Server. Durch das auf Linux basierte Betriebssystem ist es sehr einfach verschiedene Scriptsprachen zu nutzen. Außerdem können die Daten hier mit der Linux-Shell ausgelesen werden.
-
-Hierbei liest der iMac die Daten der Steckdosen mithilfe der AHA-Schnittstelle per WLAN aus und schreibt diese auf eine MySQL-Datenbank auf einem externen Server.
-
-![Demoinfrastruktur mit iMac](.gitbook/assets/netzwerk_imac.png)
-
 ### Infrastuktur mit RaspBerry Pi
 
-Um die Demoversion auch im realen Umfeld umsetzen zu können, benötigen wir ein Gerät, dass in der Umgebung direkt per LAN mit der Fritzbox verbunden ist. Dafür haben wir den iMac gegen einen RaspBerry Pi ausgetauscht. Dieser führt den selben Script wie der iMac aus und schreibt die Daten auf die Datenbank.
+Um die Daten auch im realen Umfeld exportieren zu können, benötigen wir ein Gerät, dass in der Umgebung direkt per LAN mit der Fritzbox verbunden ist. Dafür wird ein RaspBerry Pi genutzt. Dieser soll die Daten der FritzBox auslesen und auf eine externe Datenbank schreiben.
 
 ![Demoinfrastruktur mit RaspBerry Pi](.gitbook/assets/netzwerk_rasp%20%281%29.png)
 
@@ -194,24 +186,6 @@ Anschließend können die Daten aus dem XML-String jeweils einer PHP-Variable zu
   $status=(string)$device->switch->state; //Lese Status der Steckdose
 ```
 
-### Visualisierung
-
-#### Ziel: Darstellung der Infrastruktur
-
-#### Infrastruktur mit iMac
-
-Für einen ersten Test haben wir einen iMac verwendet. Dieser fungiert im heimischen Netzwerk als Server. Durch das auf Linux basierte Betriebssystem ist es sehr einfach verschiedene Scriptsprachen zu nutzen. Außerdem können die Daten hier mit der Linux-Shell ausgelesen werden.
-
-Hierbei liest der iMac die Daten der Steckdosen mithilfe der AHA-Schnittstelle per WLAN aus und schreibt diese auf eine MySQL-Datenbank auf einem externen Server.
-
-![Demoinfrastruktur mit iMac](.gitbook/assets/netzwerk_imac.png)
-
-#### Infrastuktur mit RaspBerry Pi
-
-Um die Demoversion auch im realen Umfeld umsetzen zu können, benötigen wir ein Gerät, dass in der Umgebung direkt per LAN mit der Fritzbox verbunden ist. Dafür haben wir den iMac gegen einen RaspBerry Pi ausgetauscht. Dieser führt den selben Script wie der iMac aus und schreibt die Daten auf die Datenbank.
-
-![Demoinfrastruktur mit RaspBerry Pi](.gitbook/assets/netzwerk_rasp%20%281%29.png)
-
 ### Installation und Konfiguration RaspBerry Pi
 
 #### Ziel: Fertig konfigurierter RaspBerry Pi mit Datenverbindung zum externen Server
@@ -318,5 +292,5 @@ Rasberry Pi Software Configuration Tool
 SSH Enable
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMjU1MTk1N119
+eyJoaXN0b3J5IjpbMjA1Nzc5MjYxM119
 -->
