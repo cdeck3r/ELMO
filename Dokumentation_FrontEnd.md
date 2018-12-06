@@ -15,9 +15,14 @@
 ### PHP
 ### SQL
 ### JavaScript
+## Wartungsintervalle
+### HTML
+### PHP
+### SQL
+### JavaScript
 ## Login
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MTg3MDA2MV19
+eyJoaXN0b3J5IjpbLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV19
 -->
