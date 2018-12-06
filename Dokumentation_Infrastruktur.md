@@ -118,6 +118,21 @@ ufw allow 3306
 
 der MySQL-Port in der Firewall freigegeben werden.
 
+### Letsencrypt
+```text
+sudo apt-get install -y software-properties-common
+
+sudo add-apt-repository ppa:certbot/certbot
+
+sudo apt install python-certbot-apache
+
+sudo apache2ctl configtest
+
+sudo systemctl reload apache2
+
+sudo certbot --apache -d example.com -d www.example.com
+```
+
 ## Export der FritzDect Daten in externe MySQL Datenbank
 
 ### Ziel: Funktionierender Script der die Daten der FritzBox ausliest und in die externe Datenbank schreibt.
@@ -292,5 +307,5 @@ Rasberry Pi Software Configuration Tool
 SSH Enable
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1Nzc5MjYxM119
+eyJoaXN0b3J5IjpbMTgwMzcxMjUxOSwyMDU3NzkyNjEzXX0=
 -->
