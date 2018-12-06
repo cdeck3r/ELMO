@@ -201,15 +201,15 @@ Anschließend können die Daten aus dem XML-String jeweils einer PHP-Variable zu
   $status=(string)$device->switch->state; //Lese Status der Steckdose
 ```
 
-### Installation und Konfiguration RaspBerry Pi
+## Installation und Konfiguration RaspBerry Pi
 
-#### Ziel: Fertig konfigurierter RaspBerry Pi mit Datenverbindung zum externen Server
+### Ziel: Fertig konfigurierter RaspBerry Pi mit Datenverbindung zum externen Server
 
-#### Installation von Rasbian
+### Installation von Rasbian
 
 Die Installation von Rasbian gestaltet sich dank des bereits auf der SD-Karte installierten Installationsassistenten "Noobs" als sehr einfach. Beim ersten Start muss nur das gewünschte Betriebssystem ausgewählt werden und die Installation beginnt von allein. Wir haben hierbei Rasbian gewählt, da dieses Betriebssystem sich auf dem RaspBerry Pi erprobt hat und nicht mit unerwarteten Komplikationen zu rechnen ist. Rasbian basiert auf Debian und bietet eine Robuste Umgebung.
 
-#### Konfiguration von Rasbian
+### Konfiguration von Rasbian
 
 #### Grundeinstellungen Rasbian
 
@@ -307,5 +307,5 @@ Rasberry Pi Software Configuration Tool
 SSH Enable
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMzcxMjUxOSwyMDU3NzkyNjEzXX0=
+eyJoaXN0b3J5IjpbLTE2MDg2MTE2OTUsMjA1Nzc5MjYxM119
 -->
