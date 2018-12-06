@@ -126,11 +126,11 @@ ufw allow 3306
 
 der MySQL-Port in der Firewall freigegeben werden.
 
-## Export der FritzDect Daten i
+## Export der FritzDect Daten in externe MySQL Datenbank
 
-#### Ziel: Funktionierender Script der die Daten der FritzBox ausliest und in die externe Datenbank schreibt.
+### Ziel: Funktionierender Script der die Daten der FritzBox ausliest und in die externe Datenbank schreibt.
 
-#### Erstellung Script
+### Erstellung Script
 
 Grundsätzlich kann für das Auslesen und den Export jede Scriptsprache genutzt werden. Da wir aber im Studium bereits Kontakt zu der Scriptsprache PHP hatten, haben wir diese verwendet.
 
@@ -318,5 +318,5 @@ Rasberry Pi Software Configuration Tool
 SSH Enable
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUyMzIzMDk2XX0=
+eyJoaXN0b3J5IjpbMTcwMjU1MTk1N119
 -->
