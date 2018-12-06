@@ -8,13 +8,16 @@
 ### HTML
 ### PHP
 ### JavaScript
-## Ansprechpartn
+## Ansprechpartner
+## Verantwortliche Personen
 ## Adminbereich
 ## Charts
 ### PHP
 ### SQL
 ### JavaScript
-
+## Login
+### Sessions
+### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNDk3NzQ5N119
+eyJoaXN0b3J5IjpbMTg4MTg3MDA2MV19
 -->
