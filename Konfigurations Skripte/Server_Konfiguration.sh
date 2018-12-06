@@ -1,7 +1,12 @@
 #!/bin/bash
 # In der MySQL Konfiguration muss die Binding-Adresse auf 0.0.0.0 abgeändert werden
+# Ein LAMP-Stack war auf diesem Server schon installiert, der Script enthält daher keine Installation für PHP, Apache
+
+#Firewall
 sudo apt install ufw
 sudo ufw allow 3306
+
+#MySQL-Konfig
 mysql -u root -p
 CREATE DATABASE Elmo;
 USE Elmo;
@@ -19,3 +24,11 @@ GRANT ALL PRIVILEGES ON Elmo.* TO 'userid'@'%' IDENTIFIED BY 'userpw';
 FLUSH PRIVILEGES;
 exit;
 sudo /etc/init.d/mysql restart
+
+#Letsencrypt
+sudo apt-get install -y software-properties-common
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt install python-certbot-apache
+sudo apache2ctl configtest
+sudo systemctl reload apache2
+sudo certbot --apache -d example.com -d www.example.com
