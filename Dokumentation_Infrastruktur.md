@@ -1,4 +1,21 @@
 # Dokumentation Infrastruktur
+## Visualisierung
+
+### Ziel: Darstellung der Infrastruktur
+
+#### Infrastruktur mit iMac
+
+Für einen ersten Test haben wir einen iMac verwendet. Dieser fungiert im heimischen Netzwerk als Server. Durch das auf Linux basierte Betriebssystem ist es sehr einfach verschiedene Scriptsprachen zu nutzen. Außerdem können die Daten hier mit der Linux-Shell ausgelesen werden.
+
+Hierbei liest der iMac die Daten der Steckdosen mithilfe der AHA-Schnittstelle per WLAN aus und schreibt diese auf eine MySQL-Datenbank auf einem externen Server.
+
+![Demoinfrastruktur mit iMac](.gitbook/assets/netzwerk_imac.png)
+
+### Infrastuktur mit RaspBerry Pi
+
+Um die Demoversion auch im realen Umfeld umsetzen zu können, benötigen wir ein Gerät, dass in der Umgebung direkt per LAN mit der Fritzbox verbunden ist. Dafür haben wir den iMac gegen einen RaspBerry Pi ausgetauscht. Dieser führt den selben Script wie der iMac aus und schreibt die Daten auf die Datenbank.
+
+![Demoinfrastruktur mit RaspBerry Pi](.gitbook/assets/netzwerk_rasp%20%281%29.png)
 
 ## Verbindung FritzBox und FritzDect
 
@@ -34,7 +51,7 @@ Damit die Fritzbox Zugriff auf das Internet hat, muss diese als Repeater konfigu
 
 Um die FritzBox als Repeater einzurichten, navigiert man über **"Internet"** zu **"Internetanbieter"** und wählt dort als Anbieter **"Vorhandener Zugang über LAN"**. Diese Funktion schleift das Internet über den Internetrouter einfach an die FritzBox weiter.
 
-### 2 Schritt: Konfiguration des externen Servers
+## 2 Schritt: Konfiguration des externen Servers
 
 #### Ziel: Fertig konfigurierter externer Server, der die Möglichkeit bietet, die Daten der FritzBox persistent und sicher zu speichern.
 
@@ -306,5 +323,5 @@ Rasberry Pi Software Configuration Tool
 SSH Enable
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NDg5NDUxM119
+eyJoaXN0b3J5IjpbMTMzNTM5Mjg4M119
 -->
