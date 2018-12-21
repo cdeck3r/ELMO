@@ -18,12 +18,6 @@ Das WLAN der FritzBoxen wurde für die produktive Umgebung deaktiviert. Dies ver
 
 Als Firewall wird auf dem RaspBerry Pi \(Rasbian\) UFW genutzt. Da die RaspBerrys nur Daten versenden, enthält die Firewall lediglich eine Freigabe für den gewählten SSH-Port.
 
-### SSH
-
-Zur Absicherung des SSH wurde der Standardport abgeändert. 
-
-//Zertifikat??
-
 ### Dienste
 
 ## Verbindung RaspBerry Pi zur FritzBox
@@ -52,5 +46,5 @@ Auf die Domain soll nur ein HTTPS-Zugriff erlaubt sein. Daher wurde die Seite pe
 Zertifikat?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMzgyODA2N119
+eyJoaXN0b3J5IjpbLTExNTA0NDE1MTMsMTAyMzgyODA2N119
 -->
