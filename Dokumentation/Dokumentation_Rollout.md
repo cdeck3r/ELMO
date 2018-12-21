@@ -3,7 +3,11 @@
 ## Ziel:
 ## Räume:
 ### Raum 1
+### Raum 2
+### Raum 3
+## Installation der Hardware
+## Konfiguration der FritzBoxen
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njk0NDA5NjIsOTIyOTkzNDM4XX0=
+eyJoaXN0b3J5IjpbLTk0MzczMjE1OCw5MjI5OTM0MzhdfQ==
 -->
