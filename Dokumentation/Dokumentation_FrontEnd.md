@@ -4,12 +4,12 @@
 ### 1.1.2. CSS
 ### 1.1.3. HTML
 ## 1.2. Benutzerbereich
-### Grundriss | Raumpläne
-### HTML
-### PHP
-### JavaScript
-## Ansprechpartner
-## Verantwortliche Personen
+## Grundriss | Raumpläne
+#### 1.2.1.  HTML
+#### 1.2.2. PHP
+#### 1.2.3. JavaScript
+## 1.3. Ansprechpartner
+### Verantwortliche Personen
 ## Adminbereich
 ## Charts
 ### PHP
@@ -24,6 +24,6 @@
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODE4NDgzMjEsLTE2OTk1MDk2ODQsMT
+eyJoaXN0b3J5IjpbLTE3NzA0NDI0OTcsLTE2OTk1MDk2ODQsMT
 g4MTg3MDA2MV19
 -->
