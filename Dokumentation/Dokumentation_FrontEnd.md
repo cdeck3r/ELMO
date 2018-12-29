@@ -182,7 +182,8 @@ Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung �
     }  
    
 #### Verbleibender Speicherplatz
-Um den Speicherplatz des Servers auslesen zu können wird die PHP-Fu
+Um den Speicherplatz des Servers auslesen zu können wird die PHP-Funktion "disk_free_space" und "disk_total_space" verwendet. 
+
     function getSymbolByQuantity($bytes) {  
       $symbols = array('B', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB');  
       $exp = floor(log($bytes)/log(1024));  
@@ -190,6 +191,9 @@ Um den Speicherplatz des Servers auslesen zu können wird die PHP-Fu
       return sprintf('%.2f '.$symbol[$exp], ($bytes/pow(1024, floor($exp))));  
     }  
      $hdGnu = disk_free_space("/"); $hdUnu = disk_total_space("/");
+
+##### Verwendung in HTML
+Um die Da
 
 #### Liniendiagramm (Area) - Aktueller Stromverbrauch AJAX
 
@@ -441,7 +445,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4Mzg1MzIsMTQ5MjQ0MzE0NCwzMDMyOT
-M5ODcsLTE3NzA0NDI0OTcsLTE2OTk1MDk2ODQsMTg4MTg3MDA2
-MV19
+eyJoaXN0b3J5IjpbNjM3OTEyNDQzLDE0OTI0NDMxNDQsMzAzMj
+kzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4NzAw
+NjFdfQ==
 -->
