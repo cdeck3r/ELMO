@@ -8,13 +8,30 @@
 #### 1.2.1.  HTML
 #### 1.2.2. PHP
 
+> Die SQL Befehle werden in diesem Abschnitt nicht näher erläutert. Eine ausführliche Erklärung folgt im nächsten Abschnitt "SQL"
+
+#### Session
+Im ersten Schritt wird überprüft, ob die Session gesetzt wurde. Ist dies nicht der Fall, wird auf die Loginseite weitergeleitet.
+
     <?php  
-    if(isset($_GET['logout'])) {  
     session_start();  
-    session_destroy();  
+    if(!isset($_SESSION['userid'])) {  
+     header('Location: pages-lockscreen.php');  
     }  
-      require("config.php");  
-      $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
+    ?>  
+
+#### Datenbankverbindung
+War die Session gesetzt, werden nun die Daten per PHP aus der SQL-Datenbank gelesen und in Arrays gespeichert.
+      
+    <?php  
+      
+    require("config.php");  
+
+> Die Datei "config.php" enthält die Logins zum MySQL Server. Damit diese nicht auf jeder Seite neu eingegeben werden müssen, wurde dieser Login in einer eigenen Datei realisiert.
+
+Nun wird eine neue Verbindung zum MySQL Server hergestellt.
+
+    $connect = new mysqli($Host, $User, $Pass, $DB, $Port);
       
       //Map-Funktion  
       $query1 = "SELECT DISTINCT NAME AS Name FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)";  
@@ -36,6 +53,7 @@
     $tempD = substr($tempD, 0, -11);  
     ?>
 
+##
 #### 1.2.3. JavaScript
 
     function parseFunction() {  
@@ -499,7 +517,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMTYyMDU2NCwxMjg0MDkwOTE0LDE0OT
-I0NDMxNDQsMzAzMjkzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5
-Njg0LDE4ODE4NzAwNjFdfQ==
+eyJoaXN0b3J5IjpbMTg5MDU2MTgzLDE2MTE2MjA1NjQsMTI4ND
+A5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5Mzk4NywtMTc3MDQ0MjQ5
+NywtMTY5OTUwOTY4NCwxODgxODcwMDYxXX0=
 -->
