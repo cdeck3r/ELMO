@@ -65,11 +65,13 @@ Es werden per SQL alle einzelnen Maschinen ausgewählt, die im Intervall (Jetzt 
     SELECT DISTINCT NAME AS Name FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)
  
  ##### Tagesdurchschnitsstemperatur
- Die SQL-Daten werden in Tagen gruppiert. Nach dieser Gruppierung werden die Daten sortiert, und nur ein Eintrag zurück gegeben. Durch die SQL-Funktion "AVG" (Du
-AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 1
+ Die SQL-Daten werden in Tagen gruppiert. Nach dieser Gruppierung werden die Daten sortiert, und nur ein Eintrag zurück gegeben. Durch die SQL-Funktion "AVG" (Durchschnitt) enthält man so die Durchschnitsstemperatur des zuletzt aufgezeichneten Tages.
+ 
+
+    AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 1
 
 #### 1.2.3. JavaScript
-
+Das in PHP erstellte Array "json_array" wird dem JavaScript Array "arrayObjects1" zugewiesen. Anschließend wird das JS-Array durchlaufen und für jeden Eintrag die F
     function parseFunction() {  
        var arrayObjects1 = <?php echo $json_array; ?>;  
       for(i = 0; i < arrayObjects1.length; ++i) {  
@@ -531,8 +533,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTM4MTIwMywxNjUyODExMzk2LDE2MT
-E2MjA1NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5Mzk4
-NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcwMDYxXX
-0=
+eyJoaXN0b3J5IjpbLTE3ODAzMTc4MTAsMTY1MjgxMTM5NiwxNj
+ExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0MzE0NCwzMDMyOTM5
+ODcsLTE3NzA0NDI0OTcsLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV
+19
 -->
