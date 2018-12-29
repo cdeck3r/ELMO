@@ -32,7 +32,8 @@ War die Session gesetzt, werden nun die Daten per PHP aus der SQL-Datenbank gele
 Nun wird eine neue Verbindung zum MySQL Server hergestellt.
 
     $connect = new mysqli($Host, $User, $Pass, $DB, $Port);
-      
+Im Anschluss werden alle Maschinen ausgelesen, welche in den letzten 10 Minuten mindestens einen Messpunkt mit mehr als 5 Watt hatten. Diese werden in das Array "result_array" gespeichert.
+
       //Map-Funktion  
       $query1 = "SELECT DISTINCT NAME AS Name FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)";  
       $result1 = mysqli_query($connect, $query1);  
@@ -40,7 +41,7 @@ Nun wird eine neue Verbindung zum MySQL Server hergestellt.
       while($array1 = mysqli_fetch_assoc($result1)) {  
       $result_array1[] = $array1["Name"];  
       }  
-      
+
       $json_array = json_encode($result_array1);  
       
      //Temperatur-Funktion$temp_query = "SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 1";  
@@ -520,7 +521,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyOD
-QwOTA5MTQsMTQ5MjQ0MzE0NCwzMDMyOTM5ODcsLTE3NzA0NDI0
-OTcsLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV19
+eyJoaXN0b3J5IjpbMTMyNzM3OTU0NywxNjUyODExMzk2LDE2MT
+E2MjA1NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5Mzk4
+NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcwMDYxXX
+0=
 -->
