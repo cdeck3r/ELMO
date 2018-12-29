@@ -98,6 +98,7 @@ Da die Daten aber nicht nur einen Wert enthalten und genau den Vorgaben des ents
     }  
     $DonuteChart_data = substr($DonuteChart_data, 0, -2);  
 
+#### Säulendiagramm - Summe Wattstunden nach Maschinen
 Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung ändert sich aber je nach Anforderungen des JS-Frameworks.
       
     //Säulendiagramm  
@@ -109,7 +110,8 @@ Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung �
     }  
     $sDataL = substr($sDataL, 0, -2);  
     $sDataD = substr($sDataD, 0, -2);  
-      
+
+#### Liniendiagramm - Temperaturverlauf der letzten 20 Tage
     //Temperatur  
     $temp_query = "SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 20";  
     $temp_result = mysqli_query($connect, $temp_query);  
@@ -120,7 +122,7 @@ Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung �
     $tempL = substr($tempL, 0, -2);  
     $tempD = substr($tempD, 0, -2);  
       
-      
+####   
     //AreaChart  
     $AreaChart_query = "  
     SELECT temp.Jahr As Jahr, temp.Monat As Monat, SUM(temp.maxi) As Wattstunden  
@@ -200,6 +202,6 @@ Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung �
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg4NTgyMjUyLC0xNzcwNDQyNDk3LC0xNj
-k5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
+eyJoaXN0b3J5IjpbMTU5OTc0NTQ5MiwtMTc3MDQ0MjQ5NywtMT
+Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
 -->
