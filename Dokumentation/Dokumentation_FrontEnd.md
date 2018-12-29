@@ -191,7 +191,10 @@ Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung �
      $hdGnu = disk_free_space("/"); $hdUnu = disk_total_space("/");
 
 #### Liniendiagramm (Area) - Aktueller Stromverbrauch AJAX
-Um die aktuellen Stromverbrauch Daten ohne ein neuladen der Seite zur Verfügung stellen zu können, wurde der nötige PHP-Code in eine eigene Datei geschrieben, die dann in einem definierten Intervall in JavaScript aufgerufen werden kann.
+
+> Um die aktuellen Stromverbrauch Daten ohne ein neuladen der Seite zur Verfügung stellen zu können, wurde der nötige PHP-Code in eine eigene Datei geschrieben, die dann in einem definierten Intervall in JavaScript aufgerufen werden kann.
+
+Gleich wie in der Hauptdatei des Dashboards wird zuerst eine Verbindung zur Datenbank aufgebaut.
 
     <?php  
       
@@ -221,6 +224,6 @@ Um die aktuellen Stromverbrauch Daten ohne ein neuladen der Seite zur Verfügung
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MDg4MjU2OSwtMTc3MDQ0MjQ5NywtMT
+eyJoaXN0b3J5IjpbLTYxNTg4NzI5MywtMTc3MDQ0MjQ5NywtMT
 Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
 -->
