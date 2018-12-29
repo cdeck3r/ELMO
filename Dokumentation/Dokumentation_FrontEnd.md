@@ -14,7 +14,7 @@
 ## Charts
 ### PHP
 
-> Die SQL Befehle werden in diesem Abschnitt nicht näher erläutert. Eine ausführliche e
+> Die SQL Befehle werden in diesem Abschnitt nicht näher erläutert. Eine ausführliche Erklärung folgt im nächsten Abschnitt "SQL"
 
 Im ersten Schritt wird überprüft, ob die Session gesetzt wurde. Ist dies nicht der Fall, wird auf die Loginseite weitergeleitet.
 
@@ -180,6 +180,6 @@ Die zweite Box soll die Anzahl der aktiven Maschinen darstellen. Dies wird in di
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzk2Njg5NjAsLTE3NzA0NDI0OTcsLT
-E2OTk1MDk2ODQsMTg4MTg3MDA2MV19
+eyJoaXN0b3J5IjpbLTE5OTM1NDUzMCwtMTc3MDQ0MjQ5NywtMT
+Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
 -->
