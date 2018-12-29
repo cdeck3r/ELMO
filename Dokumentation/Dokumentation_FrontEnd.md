@@ -58,13 +58,14 @@ Die dritte Box enthält die Maschine, die bisher am meisten Wattstunden benötig
     $Box3_result = mysqli_query($connect, $Box3_query);  
     $Box3_row = mysqli_fetch_array($Box3_result);  
       
-Die vierte Box enthält 
+Die vierte Box enthält die Maschine, die bisher am wenigsten Wattstunden verbraucht hat. Das Ergebnis wird in die Variable "Box4_row" geschrieben.
+
     //Box4  
     $Box4_query = "SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden ASC Limit 1";  
     $Box4_result = mysqli_query($connect, $Box4_query);  
     $Box4_row = mysqli_fetch_array($Box4_result);  
       
-      
+Nun folgt die Abfrage der Daten für die Charts. Das erste Chart ist dabei ein Donutechart, welches den gruppierten Stromverbrauch in Wattstunden der drei Räum
     //DonuteChart  
     $DonuteChart_query = "  
     SELECT SUM(Wattstunden) as Wattstunden, MAX(Raum.Name) As Name  
@@ -183,6 +184,6 @@ Die vierte Box enthält
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM0MTc0Mjk0LC0xNzcwNDQyNDk3LC0xNj
-k5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
+eyJoaXN0b3J5IjpbMTg5MTEwNDM3NywtMTc3MDQ0MjQ5NywtMT
+Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
 -->
