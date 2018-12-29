@@ -182,6 +182,7 @@ Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung �
     }  
    
 #### Verbleibender Speicherplatz
+Um den Speicherplatz des Servers auslesen zu können wird die PHP-Fu
     function getSymbolByQuantity($bytes) {  
       $symbols = array('B', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB');  
       $exp = floor(log($bytes)/log(1024));  
@@ -204,13 +205,16 @@ Gleich wie in der Hauptdatei des Dashboards wird zuerst eine Verbindung zur Date
       $RealTime_Query = "SELECT SUM(Watt)/1000 As Watt, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag, HOUR(Messdatum) As Stunde, MINUTE(Messdatum) As Minute FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), HOUR(Messdatum), MINUTE(Messdatum) ORDER BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC, HOUR(Messdatum) DESC, MINUTE(Messdatum) DESC LIMIT 20";  
       $RealTime_result = mysqli_query($connect, $RealTime_Query);  
       $data = array();  
-Anschließend wird das Datum forma
+Anschließend wird das Datum formatiert und die Daten in die Variable "data" geschrieben.
+
       while($row = $RealTime_result->fetch_assoc()) {  
       //$data[] = $row;  
       $date = '';  
       $date = $row['Jahr']."-".$row['Monat']."-".$row['Tag']."-".$row['Stunde']."-".$row['Minute'];  
       $data [] = array('Watt' => $row['Watt'], 'Minute' => $date);  
       }  
+Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Ausgabe wird dann später in Javascript verarbeitet.
+
       echo json_encode($data);  
     ?>
 
@@ -437,7 +441,7 @@ Anschließend wird das Datum forma
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgzMjg2NDg3LDE0OTI0NDMxNDQsMzAzMj
-kzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4NzAw
-NjFdfQ==
+eyJoaXN0b3J5IjpbMTM4Mzg1MzIsMTQ5MjQ0MzE0NCwzMDMyOT
+M5ODcsLTE3NzA0NDI0OTcsLTE2OTk1MDk2ODQsMTg4MTg3MDA2
+MV19
 -->
