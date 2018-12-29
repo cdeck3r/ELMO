@@ -204,6 +204,7 @@ Gleich wie in der Hauptdatei des Dashboards wird zuerst eine Verbindung zur Date
       $RealTime_Query = "SELECT SUM(Watt)/1000 As Watt, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag, HOUR(Messdatum) As Stunde, MINUTE(Messdatum) As Minute FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), HOUR(Messdatum), MINUTE(Messdatum) ORDER BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC, HOUR(Messdatum) DESC, MINUTE(Messdatum) DESC LIMIT 20";  
       $RealTime_result = mysqli_query($connect, $RealTime_Query);  
       $data = array();  
+Anschließend wird das Datum forma
       while($row = $RealTime_result->fetch_assoc()) {  
       //$data[] = $row;  
       $date = '';  
@@ -436,6 +437,7 @@ Gleich wie in der Hauptdatei des Dashboards wird zuerst eine Verbindung zur Date
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MjQ0MzE0NCwzMDMyOTM5ODcsLTE3Nz
-A0NDI0OTcsLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV19
+eyJoaXN0b3J5IjpbNTgzMjg2NDg3LDE0OTI0NDMxNDQsMzAzMj
+kzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4NzAw
+NjFdfQ==
 -->
