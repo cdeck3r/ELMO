@@ -71,7 +71,8 @@ Es werden per SQL alle einzelnen Maschinen ausgewählt, die im Intervall (Jetzt 
     AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 1
 
 #### 1.2.3. JavaScript
-Das in PHP erstellte Array "json_array" wird dem JavaScript Array "arrayObjects1" zugewiesen. Anschließend wird das JS-Array durchlaufen und für jeden Eintrag die F
+Das in PHP erstellte Array "json_array" wird dem JavaScript Array "arrayObjects1" zugewiesen. Anschließend wird das JS-Array durchlaufen und für jeden Eintrag die Funktion "colorFunction(value)" aufgerufen.
+
     function parseFunction() {  
        var arrayObjects1 = <?php echo $json_array; ?>;  
       for(i = 0; i < arrayObjects1.length; ++i) {  
@@ -81,7 +82,7 @@ Das in PHP erstellte Array "json_array" wird dem JavaScript Array "arrayObjects1
       
     }  
       
-      
+Durch den Aufruf der Funktion wird eine Verbindung zu den statisch eingetragenen DIV-IDs hergestellt. Da das aufgerufene Element einer besetzten Maschine entspricht, wird der Hintergrund und der Rahmen      
     function colorFunction(value) {  
       
         var id = "c" + value;  
@@ -533,8 +534,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODAzMTc4MTAsMTY1MjgxMTM5NiwxNj
-ExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0MzE0NCwzMDMyOTM5
-ODcsLTE3NzA0NDI0OTcsLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV
-19
+eyJoaXN0b3J5IjpbMTI0MzUyMTM0MiwxNjUyODExMzk2LDE2MT
+E2MjA1NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5Mzk4
+NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcwMDYxXX
+0=
 -->
