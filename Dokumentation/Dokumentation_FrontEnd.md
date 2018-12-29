@@ -46,7 +46,7 @@ Um die gespeicherten Maschinen in JavaScript verarbeiten zu können, werden dies
 
       $json_array = json_encode($result_array1);  
 ##### Temperatur auslesen
-
+Die Tagesdurchschnittstemperatur wird ausgelesen und in die Variable "tempD" gesch
      //Temperatur-Funktion$temp_query = "SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 1";  
     $temp_result = mysqli_query($connect, $temp_query);  
     while($temp_row = mysqli_fetch_array($temp_result)) {  
@@ -524,8 +524,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NDQzNTU0LDE2NTI4MTEzOTYsMTYxMT
-YyMDU2NCwxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMzAzMjkzOTg3
-LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4NzAwNjFdfQ
-==
+eyJoaXN0b3J5IjpbLTUzODc0OTA5MywxNjUyODExMzk2LDE2MT
+E2MjA1NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5Mzk4
+NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcwMDYxXX
+0=
 -->
