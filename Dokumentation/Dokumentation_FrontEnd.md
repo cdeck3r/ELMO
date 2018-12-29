@@ -14,6 +14,8 @@
 ## Charts
 ### PHP
 
+> Die SQL Befehle werden in diesem Abschnitt nicht näher erläutert. Eine ausführliche e
+
 Im ersten Schritt wird überprüft, ob die Session gesetzt wurde. Ist dies nicht der Fall, wird auf die Loginseite weitergeleitet.
 
     <?php  
@@ -35,14 +37,15 @@ Nun wird eine neue Verbindung zum MySQL Server hergestellt.
 
     $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
 
-Im ersten Befehl wird die Summe der Wattstunden ausgelesen und in die PHP-Variable "Box1_query" geschrieben.
+Im ersten Befehl wird die Summe der Wattstunden ausgelesen und in die PHP-Variable "Box1_row" geschrieben.
 
     //Box1  
     $Box1_query = "SELECT SUM(temp.Wattstunden) As Wattstunden FROM (SELECT MAX(Wattstunden) As Wattstunden FROM Data GROUP BY AIN) As temp";  
     $Box1_result = mysqli_query($connect, $Box1_query);  
     $Box1_row = mysqli_fetch_array($Box1_result);  
       
-Die zweite Box soll die Anzahl der aktiven Maschinen darstelle
+Die zweite Box soll die Anzahl der aktiven Maschinen darstellen. Dies wird in die Variable "Box2_row" geschrieben.
+
     //Box2  
     $Box2_query = "SELECT COUNT(DISTINCT AIN) As Anzahl FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)";  
     $Box2_result = mysqli_query($connect, $Box2_query);  
@@ -177,6 +180,6 @@ Die zweite Box soll die Anzahl der aktiven Maschinen darstelle
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjYxNzQ4NDcsLTE3NzA0NDI0OTcsLT
+eyJoaXN0b3J5IjpbLTExMzk2Njg5NjAsLTE3NzA0NDI0OTcsLT
 E2OTk1MDk2ODQsMTg4MTg3MDA2MV19
 -->
