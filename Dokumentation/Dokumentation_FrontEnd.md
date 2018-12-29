@@ -82,7 +82,8 @@ Das in PHP erstellte Array "json_array" wird dem JavaScript Array "arrayObjects1
       
     }  
       
-Durch den Aufruf der Funktion wird eine Verbindung zu den statisch eingetragenen DIV-IDs hergestellt. Da das aufgerufene Element einer besetzten Maschine entspricht, wird der Hintergrund und der Rahmen      
+Durch den Aufruf der Funktion wird eine Verbindung zu den statisch eingetragenen DIV-IDs hergestellt. Da das aufgerufene Element einer besetzten Maschine entspricht, wird der Hintergrund und der Rahmen auf eine rote Farbkombination gesetzt. Standardmäßig sind die DIVs Grün (Verfügbar)
+      
     function colorFunction(value) {  
       
         var id = "c" + value;  
@@ -534,7 +535,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MzUyMTM0MiwxNjUyODExMzk2LDE2MT
+eyJoaXN0b3J5IjpbMTA4NDU5ODMzNywxNjUyODExMzk2LDE2MT
 E2MjA1NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5Mzk4
 NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcwMDYxXX
 0=
