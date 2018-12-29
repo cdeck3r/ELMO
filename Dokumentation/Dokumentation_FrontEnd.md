@@ -29,10 +29,13 @@ War die Session gesetzt, werden nun die Daten per PHP aus der SQL-Datenbank gele
       
     require("config.php");  
 
-> Die Datei "config.php" enthält die Logins zur 
+> Die Datei "config.php" enthält die Logins zum MySQL Server. Damit diese nicht auf jeder Seite neu eingegeben werden müssen, wurde dieser Login in einer eigenen Datei realisiert.
+
+Nun wird eine neue Verbindung zum MySQL Server hergestellt.
 
     $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
-      
+
+
     //Box1  
     $Box1_query = "SELECT SUM(temp.Wattstunden) As Wattstunden FROM (SELECT MAX(Wattstunden) As Wattstunden FROM Data GROUP BY AIN) As temp";  
     $Box1_result = mysqli_query($connect, $Box1_query);  
@@ -172,6 +175,6 @@ War die Session gesetzt, werden nun die Daten per PHP aus der SQL-Datenbank gele
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5ODgzMjA5OCwtMTc3MDQ0MjQ5NywtMT
-Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
+eyJoaXN0b3J5IjpbOTc0MzcyNTA2LC0xNzcwNDQyNDk3LC0xNj
+k5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
 -->
