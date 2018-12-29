@@ -60,9 +60,11 @@ Die Tagesdurchschnittstemperatur wird ausgelesen und in die Variable "tempD" ges
 
 #### SQL
 ##### Verfügbarkeit der Maschinen
-Es werden per SQL alle einzelnen Masch
+Es werden per SQL alle einzelnen Maschinen ausgewählt, die im Intervall (Jetzt - 10 Minuten) bis Jetzt mindestens einen Messpunkt hatten der mehr als 5000 Milliwatt (5 Watt) an den SQL Server gesendet haben. 
+
     SELECT DISTINCT NAME AS Name FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)
-    
+ 
+ ##### Tagesdurc
 AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 1
 
 #### 1.2.3. JavaScript
@@ -528,8 +530,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTQwNDg4NTIsMTY1MjgxMTM5NiwxNj
-ExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0MzE0NCwzMDMyOTM5
-ODcsLTE3NzA0NDI0OTcsLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV
-19
+eyJoaXN0b3J5IjpbMjUwNjEyNDM5LDE2NTI4MTEzOTYsMTYxMT
+YyMDU2NCwxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMzAzMjkzOTg3
+LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4NzAwNjFdfQ
+==
 -->
