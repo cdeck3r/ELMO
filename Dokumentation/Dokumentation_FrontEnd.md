@@ -51,11 +51,14 @@ Die zweite Box soll die Anzahl der aktiven Maschinen darstellen. Dies wird in di
     $Box2_result = mysqli_query($connect, $Box2_query);  
     $Box2_row = mysqli_fetch_array($Box2_result);  
       
+Die dritte Box enthält die Maschine, die bisher am meisten Wattstunden benötigt hat. Das Ergebnis wird in die Variable "Box3_row" geschrieben.
+
     //Box3  
     $Box3_query = "SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden DESC Limit 1";  
     $Box3_result = mysqli_query($connect, $Box3_query);  
     $Box3_row = mysqli_fetch_array($Box3_result);  
       
+Die vierte Box enthält 
     //Box4  
     $Box4_query = "SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden ASC Limit 1";  
     $Box4_result = mysqli_query($connect, $Box4_query);  
@@ -180,6 +183,6 @@ Die zweite Box soll die Anzahl der aktiven Maschinen darstellen. Dies wird in di
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTM1NDUzMCwtMTc3MDQ0MjQ5NywtMT
-Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
+eyJoaXN0b3J5IjpbMjM0MTc0Mjk0LC0xNzcwNDQyNDk3LC0xNj
+k5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
 -->
