@@ -173,8 +173,7 @@ Das gleiche vorgehen wird nun bei allen Charts durchgefÃ¼hrt. Die Formatierung Ã
       array_push($test_array, array("datum" => $Datum2, "wattstunden" => $AreaChart_row2["Wattstunden"]));  
       
     }  
-      
-    //$test_array = array_reverse($test_array);  
+       
     $countArrayLength2 = count($test_array)-1;  
     for($i=0;$i<$countArrayLength2;$i++){  
       $wert = $test_array[$i]['wattstunden'] - $test_array[$i+1]['wattstunden'];  
@@ -449,7 +448,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4Nzg3NTQ1NywxNDkyNDQzMTQ0LDMwMz
-I5Mzk4NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcw
-MDYxXX0=
+eyJoaXN0b3J5IjpbMTY0NzI2MzIwLDE0OTI0NDMxNDQsMzAzMj
+kzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4NzAw
+NjFdfQ==
 -->
