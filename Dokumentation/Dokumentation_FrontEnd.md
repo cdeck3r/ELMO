@@ -218,7 +218,11 @@ Gleich wie in der Hauptdatei des Dashboards wird zuerst eine Verbindung zur Date
 SELECT SUM(temp.Wattstunden) As Wattstunden FROM (SELECT MAX(Wattstunden) As Wattstunden FROM Data GROUP BY AIN) As temp
 
 
-SELECT SUM(temp.Wattstunden) As Wattstunden FROM (SELECT MAX(Wattstunden) As Wattstunden FROM Data GROUP BY AIN) As temp
+SELECT COUNT(DISTINCT AIN) As Anzahl FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)
+
+SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden DESC Limit 1
+
+
 
 
 ### JavaScript
@@ -382,6 +386,6 @@ SELECT SUM(temp.Wattstunden) As Wattstunden FROM (SELECT MAX(Wattstunden) As Wat
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2OTQzNDA0MywzMDMyOTM5ODcsLTE3Nz
-A0NDI0OTcsLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV19
+eyJoaXN0b3J5IjpbNzA2MzQwMzIxLDMwMzI5Mzk4NywtMTc3MD
+Q0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcwMDYxXX0=
 -->
