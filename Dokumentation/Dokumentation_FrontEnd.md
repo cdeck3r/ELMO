@@ -49,13 +49,16 @@ Im ersten Befehl wird die Summe der Wattstunden ausgelesen und in die PHP-Variab
       
 Die zweite Box soll die Anzahl der aktiven Maschinen darstellen. Dies wird in die Variable "Box2_row" geschrieben.
 
-#### Box2 -
+#### Box2 - Anzahl aktive Maschinen
+
     //Box2  
     $Box2_query = "SELECT COUNT(DISTINCT AIN) As Anzahl FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)";  
     $Box2_result = mysqli_query($connect, $Box2_query);  
     $Box2_row = mysqli_fetch_array($Box2_result);  
       
 Die dritte Box enthält die Maschine, die bisher am meisten Wattstunden benötigt hat. Das Ergebnis wird in die Variable "Box3_row" geschrieben.
+
+#### Box3 - Maschine mit höchstem Stromverbrauch
 
     //Box3  
     $Box3_query = "SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden DESC Limit 1";  
@@ -64,11 +67,15 @@ Die dritte Box enthält die Maschine, die bisher am meisten Wattstunden benötig
       
 Die vierte Box enthält die Maschine, die bisher am wenigsten Wattstunden verbraucht hat. Das Ergebnis wird in die Variable "Box4_row" geschrieben.
 
+#### Box4 - Maschine mit niedrigstem Stromverbrauch
+
     //Box4  
     $Box4_query = "SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden ASC Limit 1";  
     $Box4_result = mysqli_query($connect, $Box4_query);  
     $Box4_row = mysqli_fetch_array($Box4_result);  
       
+ #### Donuechart - Summe Wattstunden gruppiert nach Raum
+ 
 Nun folgt die Abfrage der Daten für die Charts. Das erste Chart ist dabei ein Donutechart, welches den gruppierten Stromverbrauch in Wattstunden der drei Räume enthält. Gleich wie bei den Boxen gibt es eine Query, welches per "mysql_query" in eine Result-Variable geschrieben wird.
 
     //DonuteChart  
@@ -193,6 +200,6 @@ Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung �
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNDE1NjI0OSwtMTc3MDQ0MjQ5NywtMT
-Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
+eyJoaXN0b3J5IjpbNTg4NTgyMjUyLC0xNzcwNDQyNDk3LC0xNj
+k5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
 -->
