@@ -191,7 +191,24 @@ Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung �
      $hdGnu = disk_free_space("/"); $hdUnu = disk_total_space("/");
 
 #### Liniendiagramm (Area) - Aktueller Stromverbrauch AJAX
-Um die aktuellen Stromverbrauch Daten ohne ei
+Um die aktuellen Stromverbrauch Daten ohne ein neuladen der Seite zur Verfügung stellen zu können, wurde der nötige PHP-Code in eine eigene Datei geschrieben, die dann in einem definierten Intervall in JavaScript aufgerufen werden kann.
+
+    <?php  
+      
+    require("config.php");  
+    $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
+      
+      $RealTime_Query = "SELECT SUM(Watt)/1000 As Watt, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag, HOUR(Messdatum) As Stunde, MINUTE(Messdatum) As Minute FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), HOUR(Messdatum), MINUTE(Messdatum) ORDER BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC, HOUR(Messdatum) DESC, MINUTE(Messdatum) DESC LIMIT 20";  
+      $RealTime_result = mysqli_query($connect, $RealTime_Query);  
+      $data = array();  
+      while($row = $RealTime_result->fetch_assoc()) {  
+      //$data[] = $row;  
+      $date = '';  
+      $date = $row['Jahr']."-".$row['Monat']."-".$row['Tag']."-".$row['Stunde']."-".$row['Minute'];  
+      $data [] = array('Watt' => $row['Watt'], 'Minute' => $date);  
+      }  
+      echo json_encode($data);  
+    ?>
 
 ### SQL
 ### JavaScript
@@ -204,6 +221,6 @@ Um die aktuellen Stromverbrauch Daten ohne ei
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNTc1MTcwLC0xNzcwNDQyNDk3LC0xNj
-k5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
+eyJoaXN0b3J5IjpbMjA1MDg4MjU2OSwtMTc3MDQ0MjQ5NywtMT
+Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
 -->
