@@ -193,7 +193,7 @@ Um den Speicherplatz des Servers auslesen zu können wird die PHP-Funktion "disk
      $hdGnu = disk_free_space("/"); $hdUnu = disk_total_space("/");
 
 ##### Verwendung in HTML
-Um die Da
+Um die Daten der zwei Funktionen (Rückgabe in Byte) sinnvoll darstellen zu können wird im HTML-Code dann die Funktion "getSymbolByQuantity($bytes)" aufgerufen. Die Funktion gibt dann
 
 #### Liniendiagramm (Area) - Aktueller Stromverbrauch AJAX
 
@@ -445,7 +445,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM3OTEyNDQzLDE0OTI0NDMxNDQsMzAzMj
-kzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4NzAw
-NjFdfQ==
+eyJoaXN0b3J5IjpbMTczOTQ0MzIyNSwxNDkyNDQzMTQ0LDMwMz
+I5Mzk4NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcw
+MDYxXX0=
 -->
