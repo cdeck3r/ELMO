@@ -235,11 +235,13 @@ INNER JOIN Raum on Raume.Raum = Raum.ID
 GROUP BY Raum  
 Order By Wattstunden DESC
 
-#### 
+#### Säulendiagramm
 SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden ASC
 
+#### Liniediagramm - Temperatur
 SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 20
 
+#### Liniediagramm - Monatsverbrauch
 SELECT temp.Jahr As Jahr, temp.Monat As Monat, SUM(temp.maxi) As Wattstunden  
 FROM (  
 SELECT YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, MAX(Wattstunden) As maxi FROM Data GROUP BY YEAR(Messdatum),    MONTH(Messdatum), AIN  
@@ -248,6 +250,7 @@ GROUP BY temp.Jahr, temp.Monat
 ORDER BY temp.Jahr, temp.Monat DESC  
 LIMIT 13
 
+#### Liniediagramm - Tagesverbrauch
 SELECT temp.Jahr As Jahr, temp.Monat As Monat, temp.Tag As Tag, SUM(temp.maxi) As Wattstunden  
 FROM (  
 SELECT YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag, MAX(Wattstunden) As maxi FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), AIN  
@@ -256,6 +259,7 @@ GROUP BY temp.Jahr, temp.Monat, temp.Tag
 ORDER BY temp.Jahr, temp.Monat, temp.Tag DESC  
 LIMIT 8
 
+#### Liniendiagramm - Momentaner Verbrauch
 SELECT SUM(Watt)/1000 As Watt, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag, HOUR(Messdatum) As Stunde, MINUTE(Messdatum) As Minute FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), HOUR(Messdatum), MINUTE(Messdatum) ORDER BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC, HOUR(Messdatum) DESC, MINUTE(Messdatum) DESC LIMIT 20
 
 ### JavaScript
@@ -419,6 +423,6 @@ SELECT SUM(Watt)/1000 As Watt, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Mona
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NjU0NjA1MiwzMDMyOTM5ODcsLTE3Nz
+eyJoaXN0b3J5IjpbMTg2MDY2OTA5MCwzMDMyOTM5ODcsLTE3Nz
 A0NDI0OTcsLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV19
 -->
