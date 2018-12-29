@@ -35,12 +35,14 @@ Nun wird eine neue Verbindung zum MySQL Server hergestellt.
 
     $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
 
+Im ersten Befehl wird die Summe der Wattstunden ausgelesen und in die PHP-Variable "Box1_query" geschrieben.
 
     //Box1  
     $Box1_query = "SELECT SUM(temp.Wattstunden) As Wattstunden FROM (SELECT MAX(Wattstunden) As Wattstunden FROM Data GROUP BY AIN) As temp";  
     $Box1_result = mysqli_query($connect, $Box1_query);  
     $Box1_row = mysqli_fetch_array($Box1_result);  
       
+Die zweite Box soll die Anzahl der aktiven Maschinen darstelle
     //Box2  
     $Box2_query = "SELECT COUNT(DISTINCT AIN) As Anzahl FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)";  
     $Box2_result = mysqli_query($connect, $Box2_query);  
@@ -175,6 +177,6 @@ Nun wird eine neue Verbindung zum MySQL Server hergestellt.
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc0MzcyNTA2LC0xNzcwNDQyNDk3LC0xNj
-k5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
+eyJoaXN0b3J5IjpbLTE3NjYxNzQ4NDcsLTE3NzA0NDI0OTcsLT
+E2OTk1MDk2ODQsMTg4MTg3MDA2MV19
 -->
