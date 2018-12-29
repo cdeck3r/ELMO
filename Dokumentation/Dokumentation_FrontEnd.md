@@ -215,6 +215,157 @@ Gleich wie in der Hauptdatei des Dashboards wird zuerst eine Verbindung zur Date
 
 ### SQL
 ### JavaScript
+
+    <script>  
+      Morris.Donut({  
+            element: 'morris-donut-chart',  
+      data:[<?php echo $DonuteChart_data; ?>],  
+      resize: false,  
+      colors:['#7160ee', '#2f3d4a', '#fc4b6c', '#009efb', '#1e88e5'],  
+      labelColor: '#dcf8ff',  
+      gridLineColor: '#263238',  
+      lineColors: '#263238'  
+      });  
+    </script>  
+    <script>  
+      Morris.Area({  
+            element: 'extra-area-chart',  
+      data: [<?php echo $AreaChart_data; ?>],  
+      lineColors: ['#009efb'],  
+      xkey: 'period',  
+      ykeys: ['value'],  
+      labels: ['Wattstunden'],  
+      pointSize: 0,  
+      lineWidth: 1,  
+      resize:true,  
+      fillOpacity: 0.8,  
+      behaveLikeLine: true,  
+      gridLineColor: '#e0e0e0',  
+      hideHover: 'auto'  
+      
+      });  
+    </script>  
+    <script>  
+      Morris.Area({  
+            element: 'extra-area-chart2',  
+      data: [<?php echo $AreaChart_data2; ?>],  
+      lineColors: ['#009efb'],  
+      xkey: 'period',  
+      ykeys: ['value'],  
+      labels: ['Wattstunden'],  
+      pointSize: 0,  
+      lineWidth: 1,  
+      resize:true,  
+      fillOpacity: 0.8,  
+      behaveLikeLine: true,  
+      gridLineColor: '#e0e0e0',  
+      hideHover: 'auto'  
+      
+      });  
+    </script>  
+    <script>  
+      new Chart(document.getElementById("bar2"), {  
+            type: 'bar',  
+      data: {  
+                labels: [<?php echo $sDataL;?>],  
+      datasets: [  
+                    {  
+                        label: "Watt",  
+      backgroundColor: 'rgba(62, 149, 205, 0.5)',  
+      borderColor: 'rgba(76, 185, 255, 1)',  
+      borderWidth: 1,  
+      data: [<?php echo $sDataD;?>]  
+                    }  
+                ]  
+            },  
+      options: {  
+                legend: { display: false }  
+            }  
+        });  
+    </script>  
+    <script>  
+      new Chart(document.getElementById("temperatur"), {  
+            type: 'line',  
+      data: {  
+                labels: [<?php echo $tempL;?>],  
+      datasets: [  
+                    {  
+                        label: "Temperatur",  
+      backgroundColor: 'rgba(252, 75, 108, 0.4)',  
+      borderColor: 'rgba(255, 113, 139, 1)',  
+      borderWidth: 1,  
+      data: [<?php echo $tempD;?>]  
+      
+      
+      
+                    }  
+                ]  
+            },  
+      options: {  
+      
+                legend: { display: false }  
+            }  
+      
+      
+      
+      
+        });  
+    </script>  
+    <script>  
+      var getLatestData = function(){  
+            window.chartColors = {  
+                red: 'rgb(255, 99, 132)',  
+      orange: 'rgb(255, 159, 64)',  
+      yellow: 'rgb(255, 205, 86)',  
+      green: 'rgb(75, 192, 192)',  
+      blue: 'rgb(54, 162, 235)',  
+      purple: 'rgb(153, 102, 255)',  
+      grey: 'rgb(201, 203, 207)'  
+      };  
+      var ctx = document.getElementById('real-time-chart');  
+      $.ajax({  
+                type: 'GET',  
+      dataType: 'json',  
+      url: 'https://elmo.cloud/main/flotData.php',  
+      success: function(response){  
+                    if(response){  
+                        var labels = [];  
+      var data = [];  
+      
+      $.each(response, function(index, value){  
+                            labels.push(value.Minute);  
+      data.push(value.Watt);  
+      });  
+      var chart = new Chart(ctx, {  
+                            type: 'line',  
+      data: {  
+                                labels: labels,  
+      datasets: [{  
+                                    label: 'Watt',  
+      backgroundColor: 'rgba(116, 96, 268, 0.4)',  
+      borderColor: 'rgba(148, 131, 255, 1)',  
+      borderWidth: 1,  
+      data: data  
+                                }]  
+                            }  
+                        });  
+      }  
+                },  
+      error: function(xhr, ajaxOptions, thrownError){  
+                    vtx.style.display = 'none'  
+      },  
+      });  
+      }  
+      
+        $(window).on('load',function () {  
+            getLatestData();  
+      });  
+      setInterval( function() {  
+            getLatestData();  
+      }, 30000);  
+      
+    </script>
+
 ## Wartungsintervalle
 ### HTML
 ### PHP
@@ -224,6 +375,6 @@ Gleich wie in der Hauptdatei des Dashboards wird zuerst eine Verbindung zur Date
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNTg4NzI5MywtMTc3MDQ0MjQ5NywtMT
-Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
+eyJoaXN0b3J5IjpbMzAzMjkzOTg3LC0xNzcwNDQyNDk3LC0xNj
+k5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
 -->
