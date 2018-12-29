@@ -190,7 +190,8 @@ Das gleiche vorgehen wird nun bei allen Charts durchgef√ºhrt. Die Formatierung √
     }  
      $hdGnu = disk_free_space("/"); $hdUnu = disk_total_space("/");
 
-
+#### Liniendiagramm (Area) - Aktueller Stromverbrauch AJAX
+Um die aktuellen Stromverbrauch Daten ohne ei
 
 ### SQL
 ### JavaScript
@@ -203,6 +204,6 @@ Das gleiche vorgehen wird nun bei allen Charts durchgef√ºhrt. Die Formatierung √
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzQ5NDI5NDIsLTE3NzA0NDI0OTcsLT
-E2OTk1MDk2ODQsMTg4MTg3MDA2MV19
+eyJoaXN0b3J5IjpbMTczNTc1MTcwLC0xNzcwNDQyNDk3LC0xNj
+k5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
 -->
