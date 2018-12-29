@@ -16,6 +16,7 @@
 
 > Die SQL Befehle werden in diesem Abschnitt nicht näher erläutert. Eine ausführliche Erklärung folgt im nächsten Abschnitt "SQL"
 
+#### Session
 Im ersten Schritt wird überprüft, ob die Session gesetzt wurde. Ist dies nicht der Fall, wird auf die Loginseite weitergeleitet.
 
     <?php  
@@ -25,6 +26,7 @@ Im ersten Schritt wird überprüft, ob die Session gesetzt wurde. Ist dies nicht
     }  
     ?>  
 
+#### Datenbankverbindung
 War die Session gesetzt, werden nun die Daten per PHP aus der SQL-Datenbank gelesen und in Arrays gespeichert.
       
     <?php  
@@ -37,6 +39,7 @@ Nun wird eine neue Verbindung zum MySQL Server hergestellt.
 
     $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
 
+#### Box1 - Summe Wattstunden
 Im ersten Befehl wird die Summe der Wattstunden ausgelesen und in die PHP-Variable "Box1_row" geschrieben.
 
     //Box1  
@@ -46,6 +49,7 @@ Im ersten Befehl wird die Summe der Wattstunden ausgelesen und in die PHP-Variab
       
 Die zweite Box soll die Anzahl der aktiven Maschinen darstellen. Dies wird in die Variable "Box2_row" geschrieben.
 
+#### Box2 -
     //Box2  
     $Box2_query = "SELECT COUNT(DISTINCT AIN) As Anzahl FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)";  
     $Box2_result = mysqli_query($connect, $Box2_query);  
@@ -87,7 +91,7 @@ Da die Daten aber nicht nur einen Wert enthalten und genau den Vorgaben des ents
     }  
     $DonuteChart_data = substr($DonuteChart_data, 0, -2);  
 
-Das gleiche vorgehen w
+Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung ändert sich aber je nach Anforderungen des JS-Frameworks.
       
     //Säulendiagramm  
     $Säulendiagramm_query = "SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden ASC";  
@@ -189,6 +193,6 @@ Das gleiche vorgehen w
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODM2NDAyMTIsLTE3NzA0NDI0OTcsLT
-E2OTk1MDk2ODQsMTg4MTg3MDA2MV19
+eyJoaXN0b3J5IjpbMTYwNDE1NjI0OSwtMTc3MDQ0MjQ5NywtMT
+Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
 -->
