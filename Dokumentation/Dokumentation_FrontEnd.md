@@ -45,7 +45,7 @@ Im Anschluss werden alle Maschinen ausgelesen, welche in den letzten 10 Minuten 
 Um die gespeicherten Maschinen in JavaScript verarbeiten zu können, werden diese mit json_encode formatiert.
 
       $json_array = json_encode($result_array1);  
-##### Temperatur auslesen
+##### Tagesdurchschnitsstemperatur
 Die Tagesdurchschnittstemperatur wird ausgelesen und in die Variable "tempD" geschrieben. 
 
      //Temperatur-Funktion$temp_query = "SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 1";  
@@ -64,7 +64,8 @@ Es werden per SQL alle einzelnen Maschinen ausgewählt, die im Intervall (Jetzt 
 
     SELECT DISTINCT NAME AS Name FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)
  
- ##### Tagesdurc
+ ##### Tagesdurchschnitsstemperatur
+ Die SQL-Daten werden in Tagen gruppiert. Nach dieser Gruppierung werden die Daten sortiert, und nur ein Eintrag zurück gegeben. Durch die SQL-Funktion "AVG" (Du
 AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 1
 
 #### 1.2.3. JavaScript
@@ -530,8 +531,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUwNjEyNDM5LDE2NTI4MTEzOTYsMTYxMT
-YyMDU2NCwxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMzAzMjkzOTg3
-LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4NzAwNjFdfQ
-==
+eyJoaXN0b3J5IjpbLTE4NTM4MTIwMywxNjUyODExMzk2LDE2MT
+E2MjA1NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5Mzk4
+NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcwMDYxXX
+0=
 -->
