@@ -38,6 +38,25 @@
 
 #### 1.2.3. JavaScript
 
+    function parseFunction() {  
+       var arrayObjects1 = <?php echo $json_array; ?>;  
+      for(i = 0; i < arrayObjects1.length; ++i) {  
+      
+            colorFunction(arrayObjects1[i]);  
+      }  
+      
+    }  
+      
+      
+    function colorFunction(value) {  
+      
+        var id = "c" + value;  
+      document.getElementById(id).style.backgroundColor = "#ffa6a6";  
+      document.getElementById(id).style.borderColor = "#ff4d4f";  
+      document.getElementById(id).getElementsByClassName("map-body")[0].innerHTML += '<h5>Belegt!</h5>';  
+    }  
+    </script>
+
 ## 1.3. Ansprechpartner
 ### Verantwortliche Personen
 ## Adminbereich
@@ -480,7 +499,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTczNzA0MjYwLDEyODQwOTA5MTQsMTQ5Mj
-Q0MzE0NCwzMDMyOTM5ODcsLTE3NzA0NDI0OTcsLTE2OTk1MDk2
-ODQsMTg4MTg3MDA2MV19
+eyJoaXN0b3J5IjpbMTYxMTYyMDU2NCwxMjg0MDkwOTE0LDE0OT
+I0NDMxNDQsMzAzMjkzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5
+Njg0LDE4ODE4NzAwNjFdfQ==
 -->
