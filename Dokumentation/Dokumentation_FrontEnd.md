@@ -78,6 +78,9 @@ Nun folgt die Abfrage der Daten für die Charts. Das erste Chart ist dabei ein D
     Order By Wattstunden DESC  
     ";  
     $DonuteChart_result = mysqli_query($connect, $DonuteChart_query);  
+  
+Da die Daten aber nicht nur einen Wert enthalten und genau den Vorgaben des entsprechenden JavaScript Chartframeworks entsprechen müssen, werden diese per While-Schleife formatiert in die Variable "DonuteChart_data" geschrieben.
+
     $DonuteChart_data = '';  
     while($DonuteChart_row = mysqli_fetch_array($DonuteChart_result)) {  
       $DonuteChart_data .= "{ label: \"".utf8_encode($DonuteChart_row["Name"])."\", value: ".$DonuteChart_row["Wattstunden"]."}, ";  
@@ -185,6 +188,6 @@ Nun folgt die Abfrage der Daten für die Charts. Das erste Chart ist dabei ein D
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNzUzNzQ1NCwtMTc3MDQ0MjQ5NywtMT
-Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
+eyJoaXN0b3J5IjpbLTEwOTgzNTc5MzUsLTE3NzA0NDI0OTcsLT
+E2OTk1MDk2ODQsMTg4MTg3MDA2MV19
 -->
