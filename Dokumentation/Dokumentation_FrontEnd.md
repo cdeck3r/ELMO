@@ -7,7 +7,37 @@
 ## Grundriss | Raumpläne
 #### 1.2.1.  HTML
 #### 1.2.2. PHP
+
+    <?php  
+    if(isset($_GET['logout'])) {  
+    session_start();  
+    session_destroy();  
+    }  
+      require("config.php");  
+      $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
+      
+      //Map-Funktion  
+      $query1 = "SELECT DISTINCT NAME AS Name FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)";  
+      $result1 = mysqli_query($connect, $query1);  
+      $result_array = Array();  
+      while($array1 = mysqli_fetch_assoc($result1)) {  
+      $result_array1[] = $array1["Name"];  
+      }  
+      
+      $json_array = json_encode($result_array1);  
+      
+     //Temperatur-Funktion$temp_query = "SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 1";  
+    $temp_result = mysqli_query($connect, $temp_query);  
+    while($temp_row = mysqli_fetch_array($temp_result)) {  
+      $tempL .= "\"".$temp_row["Jahr"]."-".$temp_row["Monat"]."-".$temp_row["Tag"]."\", ";  
+      $tempD .= $temp_row["Temperatur"].", ";  
+    }  
+    $tempL = substr($tempL, 0, -2);  
+    $tempD = substr($tempD, 0, -11);  
+    ?>
+
 #### 1.2.3. JavaScript
+
 ## 1.3. Ansprechpartner
 ### Verantwortliche Personen
 ## Adminbereich
@@ -450,7 +480,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMz
-I5Mzk4NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcw
-MDYxXX0=
+eyJoaXN0b3J5IjpbOTczNzA0MjYwLDEyODQwOTA5MTQsMTQ5Mj
+Q0MzE0NCwzMDMyOTM5ODcsLTE3NzA0NDI0OTcsLTE2OTk1MDk2
+ODQsMTg4MTg3MDA2MV19
 -->
