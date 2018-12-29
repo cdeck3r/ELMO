@@ -215,52 +215,62 @@ Gleich wie in der Hauptdatei des Dashboards wird zuerst eine Verbindung zur Date
 
 ### SQL
 #### Box1
-SELECT SUM(temp.Wattstunden) As Wattstunden FROM (SELECT MAX(Wattstunden) As Wattstunden FROM Data GROUP BY AIN) As temp
+
+    SELECT SUM(temp.Wattstunden) As Wattstunden FROM (SELECT MAX(Wattstunden) As Wattstunden FROM Data GROUP BY AIN) As temp
 
 #### Box2
-SELECT COUNT(DISTINCT AIN) As Anzahl FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)
+
+    SELECT COUNT(DISTINCT AIN) As Anzahl FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)
 
 #### Box3
-SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden DESC Limit 1
+
+    SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden DESC Limit 1
 
 #### Box4
-SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden ASC Limit 1
+
+    SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden ASC Limit 1
 
 #### Donutechart
-SELECT SUM(Wattstunden) as Wattstunden, MAX(Raum.Name) As Name  
-FROM (  
-SELECT MAX(Wattstunden) As Wattstunden, MAX(Raum) As Raum FROM Data d INNER JOIN Maschinen m ON d.Name = m.divID GROUP BY AIN  
-) As Raume  
-INNER JOIN Raum on Raume.Raum = Raum.ID  
-GROUP BY Raum  
-Order By Wattstunden DESC
+
+    SELECT SUM(Wattstunden) as Wattstunden, MAX(Raum.Name) As Name  
+    FROM (  
+    SELECT MAX(Wattstunden) As Wattstunden, MAX(Raum) As Raum FROM Data d INNER JOIN Maschinen m ON d.Name = m.divID GROUP BY AIN  
+    ) As Raume  
+    INNER JOIN Raum on Raume.Raum = Raum.ID  
+    GROUP BY Raum  
+    Order By Wattstunden DESC
 
 #### Säulendiagramm
-SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden ASC
+
+    SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden ASC
 
 #### Liniediagramm - Temperatur
-SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 20
+
+    SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 20
 
 #### Liniediagramm - Monatsverbrauch
-SELECT temp.Jahr As Jahr, temp.Monat As Monat, SUM(temp.maxi) As Wattstunden  
-FROM (  
-SELECT YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, MAX(Wattstunden) As maxi FROM Data GROUP BY YEAR(Messdatum),    MONTH(Messdatum), AIN  
-) As temp  
-GROUP BY temp.Jahr, temp.Monat  
-ORDER BY temp.Jahr, temp.Monat DESC  
-LIMIT 13
+
+    SELECT temp.Jahr As Jahr, temp.Monat As Monat, SUM(temp.maxi) As Wattstunden  
+    FROM (  
+    SELECT YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, MAX(Wattstunden) As maxi FROM Data GROUP BY YEAR(Messdatum),    MONTH(Messdatum), AIN  
+    ) As temp  
+    GROUP BY temp.Jahr, temp.Monat  
+    ORDER BY temp.Jahr, temp.Monat DESC  
+    LIMIT 13
 
 #### Liniediagramm - Tagesverbrauch
-SELECT temp.Jahr As Jahr, temp.Monat As Monat, temp.Tag As Tag, SUM(temp.maxi) As Wattstunden  
-FROM (  
-SELECT YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag, MAX(Wattstunden) As maxi FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), AIN  
-) As temp  
-GROUP BY temp.Jahr, temp.Monat, temp.Tag  
-ORDER BY temp.Jahr, temp.Monat, temp.Tag DESC  
-LIMIT 8
+
+    SELECT temp.Jahr As Jahr, temp.Monat As Monat, temp.Tag As Tag, SUM(temp.maxi) As Wattstunden  
+    FROM (  
+    SELECT YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag, MAX(Wattstunden) As maxi FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), AIN  
+    ) As temp  
+    GROUP BY temp.Jahr, temp.Monat, temp.Tag  
+    ORDER BY temp.Jahr, temp.Monat, temp.Tag DESC  
+    LIMIT 8
 
 #### Liniendiagramm - Momentaner Verbrauch
-SELECT SUM(Watt)/1000 As Watt, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag, HOUR(Messdatum) As Stunde, MINUTE(Messdatum) As Minute FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), HOUR(Messdatum), MINUTE(Messdatum) ORDER BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC, HOUR(Messdatum) DESC, MINUTE(Messdatum) DESC LIMIT 20
+
+    SELECT SUM(Watt)/1000 As Watt, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag, HOUR(Messdatum) As Stunde, MINUTE(Messdatum) As Minute FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), HOUR(Messdatum), MINUTE(Messdatum) ORDER BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC, HOUR(Messdatum) DESC, MINUTE(Messdatum) DESC LIMIT 20
 
 ### JavaScript
 
@@ -422,7 +432,10 @@ SELECT SUM(Watt)/1000 As Watt, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Mona
 ## Login
 ### Sessions
 ### PHP
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MDY2OTA5MCwzMDMyOTM5ODcsLTE3Nz
+eyJoaXN0b3J5IjpbMTQ5MjQ0MzE0NCwzMDMyOTM5ODcsLTE3Nz
 A0NDI0OTcsLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV19
 -->
