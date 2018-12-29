@@ -23,11 +23,14 @@ Im ersten Schritt wird überprüft, ob die Session gesetzt wurde. Ist dies nicht
     }  
     ?>  
 
-
+War die Session gesetzt, werden nun die Daten per PHP aus der SQL-Datenbank gelesen und in Arrays gespeichert.
       
     <?php  
       
     require("config.php");  
+
+> Die Datei "config.php" enthält die Logins zur 
+
     $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
       
     //Box1  
@@ -169,6 +172,6 @@ Im ersten Schritt wird überprüft, ob die Session gesetzt wurde. Ist dies nicht
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzE1MTA1LC0xNzcwNDQyNDk3LC0xNj
-k5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
+eyJoaXN0b3J5IjpbLTY5ODgzMjA5OCwtMTc3MDQ0MjQ5NywtMT
+Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
 -->
