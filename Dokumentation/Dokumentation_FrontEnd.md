@@ -47,27 +47,30 @@ Im ersten Befehl wird die Summe der Wattstunden ausgelesen und in die PHP-Variab
     $Box1_result = mysqli_query($connect, $Box1_query);  
     $Box1_row = mysqli_fetch_array($Box1_result);  
       
-Die zweite Box soll die Anzahl der aktiven Maschinen darstellen. Dies wird in die Variable "Box2_row" geschrieben.
+
 
 #### Box2 - Anzahl aktive Maschinen
+Die zweite Box soll die Anzahl der aktiven Maschinen darstellen. Dies wird in die Variable "Box2_row" geschrieben.
 
     //Box2  
     $Box2_query = "SELECT COUNT(DISTINCT AIN) As Anzahl FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)";  
     $Box2_result = mysqli_query($connect, $Box2_query);  
     $Box2_row = mysqli_fetch_array($Box2_result);  
       
-Die dritte Box enthält die Maschine, die bisher am meisten Wattstunden benötigt hat. Das Ergebnis wird in die Variable "Box3_row" geschrieben.
+
 
 #### Box3 - Maschine mit höchstem Stromverbrauch
+Die dritte Box enthält die Maschine, die bisher am meisten Wattstunden benötigt hat. Das Ergebnis wird in die Variable "Box3_row" geschrieben.
 
     //Box3  
     $Box3_query = "SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden DESC Limit 1";  
     $Box3_result = mysqli_query($connect, $Box3_query);  
     $Box3_row = mysqli_fetch_array($Box3_result);  
       
-Die vierte Box enthält die Maschine, die bisher am wenigsten Wattstunden verbraucht hat. Das Ergebnis wird in die Variable "Box4_row" geschrieben.
+
 
 #### Box4 - Maschine mit niedrigstem Stromverbrauch
+Die vierte Box enthält die Maschine, die bisher am wenigsten Wattstunden verbraucht hat. Das Ergebnis wird in die Variable "Box4_row" geschrieben.
 
     //Box4  
     $Box4_query = "SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden ASC Limit 1";  
@@ -213,8 +216,7 @@ Gleich wie in der Hauptdatei des Dashboards wird zuerst eine Verbindung zur Date
       $data = array();  
 Anschließend wird das Datum formatiert und die Daten in die Variable "data" geschrieben.
 
-      while($row = $RealTime_result->fetch_assoc()) {  
-      //$data[] = $row;  
+      while($row = $RealTime_result->fetch_assoc()) {   
       $date = '';  
       $date = $row['Jahr']."-".$row['Monat']."-".$row['Tag']."-".$row['Stunde']."-".$row['Minute'];  
       $data [] = array('Watt' => $row['Watt'], 'Minute' => $date);  
@@ -448,7 +450,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NzI2MzIwLDE0OTI0NDMxNDQsMzAzMj
-kzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4NzAw
-NjFdfQ==
+eyJoaXN0b3J5IjpbMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMz
+I5Mzk4NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcw
+MDYxXX0=
 -->
