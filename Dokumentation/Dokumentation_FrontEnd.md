@@ -53,7 +53,10 @@ Nun wird eine neue Verbindung zum MySQL Server hergestellt.
     $tempD = substr($tempD, 0, -11);  
     ?>
 
-##
+#### SQL
+
+    SELECT DISTINCT NAME AS Name FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)"
+
 #### 1.2.3. JavaScript
 
     function parseFunction() {  
@@ -517,7 +520,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MDU2MTgzLDE2MTE2MjA1NjQsMTI4ND
-A5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5Mzk4NywtMTc3MDQ0MjQ5
-NywtMTY5OTUwOTY4NCwxODgxODcwMDYxXX0=
+eyJoaXN0b3J5IjpbMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyOD
+QwOTA5MTQsMTQ5MjQ0MzE0NCwzMDMyOTM5ODcsLTE3NzA0NDI0
+OTcsLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV19
 -->
