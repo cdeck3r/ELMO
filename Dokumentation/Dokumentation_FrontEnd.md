@@ -122,7 +122,7 @@ Das gleiche vorgehen wird nun bei allen Charts durchgef√ºhrt. Die Formatierung √
     $tempL = substr($tempL, 0, -2);  
     $tempD = substr($tempD, 0, -2);  
       
-####   
+#### Liniendiagramm (Area) - Stromverbrauch der letzten 12 Monate  
     //AreaChart  
     $AreaChart_query = "  
     SELECT temp.Jahr As Jahr, temp.Monat As Monat, SUM(temp.maxi) As Wattstunden  
@@ -155,7 +155,7 @@ Das gleiche vorgehen wird nun bei allen Charts durchgef√ºhrt. Die Formatierung √
     $AreaChart_data .= "{period: '".$test_array1[0]['datum']."', value: ".$test_array1[0]['wattstunden']."}, ";  
     }  
       
-      
+#### Liniendiagramm - Stromv
     //AreaChart  
     $AreaChart_query2 = "  
     SELECT temp.Jahr As Jahr, temp.Monat As Monat, temp.Tag As Tag, SUM(temp.maxi) As Wattstunden  
@@ -202,6 +202,6 @@ Das gleiche vorgehen wird nun bei allen Charts durchgef√ºhrt. Die Formatierung √
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5OTc0NTQ5MiwtMTc3MDQ0MjQ5NywtMT
-Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
+eyJoaXN0b3J5IjpbLTE1MDc3OTUxNTgsLTE3NzA0NDI0OTcsLT
+E2OTk1MDk2ODQsMTg4MTg3MDA2MV19
 -->
