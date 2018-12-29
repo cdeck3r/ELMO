@@ -200,6 +200,7 @@ Das gleiche vorgehen wird nun bei allen Charts durchgef√ºhrt. Die Formatierung √
     $sDataD = substr($sDataD, 0, -2);  
 
 #### Liniendiagramm - Temperaturverlauf der letzten 20 Tage
+Das Liniendiagramm soll den Temperatur
     //Temperatur  
     $temp_query = "SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 20";  
     $temp_result = mysqli_query($connect, $temp_query);  
@@ -535,8 +536,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NDU5ODMzNywxNjUyODExMzk2LDE2MT
-E2MjA1NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5Mzk4
-NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcwMDYxXX
-0=
+eyJoaXN0b3J5IjpbLTE4MDE4MDY5MTIsMTY1MjgxMTM5NiwxNj
+ExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0MzE0NCwzMDMyOTM5
+ODcsLTE3NzA0NDI0OTcsLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV
+19
 -->
