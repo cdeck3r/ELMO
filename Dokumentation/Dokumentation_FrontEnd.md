@@ -155,7 +155,7 @@ Das gleiche vorgehen wird nun bei allen Charts durchgef√ºhrt. Die Formatierung √
     $AreaChart_data .= "{period: '".$test_array1[0]['datum']."', value: ".$test_array1[0]['wattstunden']."}, ";  
     }  
       
-#### Liniendiagramm - Stromv
+#### Liniendiagramm - Stromverbrauch der letzten 7 Tage
     //AreaChart  
     $AreaChart_query2 = "  
     SELECT temp.Jahr As Jahr, temp.Monat As Monat, temp.Tag As Tag, SUM(temp.maxi) As Wattstunden  
@@ -180,7 +180,8 @@ Das gleiche vorgehen wird nun bei allen Charts durchgef√ºhrt. Die Formatierung √
       $wert = $test_array[$i]['wattstunden'] - $test_array[$i+1]['wattstunden'];  
       $AreaChart_data2 .= "{period: '".$test_array[$i]['datum']."', value: ".$wert."}, ";  
     }  
-      
+   
+#### Verbleibender Speicherplatz
     function getSymbolByQuantity($bytes) {  
       $symbols = array('B', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB');  
       $exp = floor(log($bytes)/log(1024));  
@@ -202,6 +203,6 @@ Das gleiche vorgehen wird nun bei allen Charts durchgef√ºhrt. Die Formatierung √
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDc3OTUxNTgsLTE3NzA0NDI0OTcsLT
+eyJoaXN0b3J5IjpbLTE0NzQ5NDI5NDIsLTE3NzA0NDI0OTcsLT
 E2OTk1MDk2ODQsMTg4MTg3MDA2MV19
 -->
