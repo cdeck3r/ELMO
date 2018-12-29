@@ -14,7 +14,7 @@
 ## Charts
 ### PHP
 
-> Blockquote
+Im ersten Schritt wird überprüft, ob die Session gesetzt wurde. Ist dies nicht der Fall, wird auf die Loginseite weitergeleitet.
 
     <?php  
     session_start();  
@@ -22,6 +22,8 @@
      header('Location: pages-lockscreen.php');  
     }  
     ?>  
+
+
       
     <?php  
       
@@ -167,6 +169,6 @@
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI5ODkwNzQ4LC0xNzcwNDQyNDk3LC0xNj
+eyJoaXN0b3J5IjpbLTE3NzE1MTA1LC0xNzcwNDQyNDk3LC0xNj
 k5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
 -->
