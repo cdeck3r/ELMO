@@ -79,14 +79,15 @@ Nun folgt die Abfrage der Daten für die Charts. Das erste Chart ist dabei ein D
     ";  
     $DonuteChart_result = mysqli_query($connect, $DonuteChart_query);  
   
-Da die Daten aber nicht nur einen Wert enthalten und genau den Vorgaben des entsprechenden JavaScript Chartframeworks entsprechen müssen, werden diese per While-Schleife formatiert in die Variable "DonuteChart_data" geschrieben.
+Da die Daten aber nicht nur einen Wert enthalten und genau den Vorgaben des entsprechenden JavaScript Chartframeworks entsprechen müssen, werden diese per While-Schleife formatiert in die Variable "DonuteChart_data" geschrieben. Diese Formatierung wird mit der PHP-Funktion "substr" vollendet, in dem beim letzten Eintrag die letzte zwei Zeichen entfernt werden.
 
     $DonuteChart_data = '';  
     while($DonuteChart_row = mysqli_fetch_array($DonuteChart_result)) {  
       $DonuteChart_data .= "{ label: \"".utf8_encode($DonuteChart_row["Name"])."\", value: ".$DonuteChart_row["Wattstunden"]."}, ";  
     }  
     $DonuteChart_data = substr($DonuteChart_data, 0, -2);  
-      
+
+Das gleiche vorgehen w
       
     //Säulendiagramm  
     $Säulendiagramm_query = "SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden ASC";  
@@ -188,6 +189,6 @@ Da die Daten aber nicht nur einen Wert enthalten und genau den Vorgaben des ents
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTgzNTc5MzUsLTE3NzA0NDI0OTcsLT
+eyJoaXN0b3J5IjpbLTE5ODM2NDAyMTIsLTE3NzA0NDI0OTcsLT
 E2OTk1MDk2ODQsMTg4MTg3MDA2MV19
 -->
