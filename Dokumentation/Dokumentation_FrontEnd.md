@@ -398,11 +398,12 @@ Der SQL-Befehl für die Summe der Wattstunden ist relativ einfach aufgebaut. In 
     SELECT SUM(temp.Wattstunden) As Wattstunden FROM (SELECT MAX(Wattstunden) As Wattstunden FROM Data GROUP BY AIN) As temp
 
 #### Box2
-In diesem Befehl werden per Where Abfrage alle Maschinen ausgelesen, die im Interval Jetzt - 10 Minuten bis Jetzt mindestens einen Messpunkt mit mehr als 5000 Milliwatt hatten. Per Dist
+In diesem Befehl werden per Where Abfrage alle Maschinen ausgelesen, die im Interval Jetzt - 10 Minuten bis Jetzt mindestens einen Messpunkt mit mehr als 5000 Milliwatt hatten. Per Count(Distinct AIN) wird jede Maschine nur einfach gezählt.
+
     SELECT COUNT(DISTINCT AIN) As Anzahl FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)
 
 #### Box3
-
+Die Daten der "Data" Tabelle werden nach AIN gruppiert und DESC sortiert. Dadurch erhält 
     SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden DESC Limit 1
 
 #### Box4
@@ -836,11 +837,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTk3MDM1NzcsMTY4MDg0NzIwNSwxND
-YyMjI4MjQyLDMwMjY2ODIxMCwtOTc2MDQ5MzE0LDExMDQ4NzM5
-ODAsMTEyMzA0OTI4OSwtMTQzMDgxMzAwMSwtMTI1MDEzNjExNC
-wtODg5NTAzMjY3LC05Mzg1OTkwMjQsLTYzMDc2MzczNywzNjEz
-OTMzMDksNjEzOTA5ODg4LC0xOTcyMzQzNDc1LDE2NTI4MTEzOT
-YsMTYxMTYyMDU2NCwxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMzAz
-MjkzOTg3XX0=
+eyJoaXN0b3J5IjpbMTI3NTE0ODQ1NywxNjgwODQ3MjA1LDE0Nj
+IyMjgyNDIsMzAyNjY4MjEwLC05NzYwNDkzMTQsMTEwNDg3Mzk4
+MCwxMTIzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMjUwMTM2MTE0LC
+04ODk1MDMyNjcsLTkzODU5OTAyNCwtNjMwNzYzNzM3LDM2MTM5
+MzMwOSw2MTM5MDk4ODgsLTE5NzIzNDM0NzUsMTY1MjgxMTM5Ni
+wxNjExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0MzE0NCwzMDMy
+OTM5ODddfQ==
 -->
