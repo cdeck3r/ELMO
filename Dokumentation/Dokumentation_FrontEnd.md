@@ -785,12 +785,15 @@ Darstellung
 
     SELECT id, passwort FROM User
 
-1234 dfldöf hghgg hghg
+ hghgg hghg### SQL2
+
+    SELECT id, passwort FROM User
+
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjczOTExMTQwLDExMDI5NDY2MDEsLTg4OT
+eyJoaXN0b3J5IjpbLTg2NjUyMTY1MCw2NzM5MTExNDAsLTg4OT
 UwMzI2NywtOTM4NTk5MDI0LC02MzA3NjM3MzcsMzYxMzkzMzA5
 LDYxMzkwOTg4OCwtMTk3MjM0MzQ3NSwxNjUyODExMzk2LDE2MT
 E2MjA1NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5Mzk4
