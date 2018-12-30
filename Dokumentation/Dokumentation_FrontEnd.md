@@ -143,6 +143,8 @@ Durch den Aufruf der Funktion wird eine Verbindung zu den statisch eingetragenen
     </script>
 
 ## 1.4. Ansprechpartner
+![Ansprechpartner Vorschau](Bilder/Funktionenbilder/ansprechpartner.jpg)
+
 ### Verantwortliche Personen
 ## Adminbereich
 ## Charts
@@ -794,10 +796,10 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMzA0OTI4OSwtMTQzMDgxMzAwMSwtMT
-I1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1OTkwMjQsLTYzMDc2
-MzczNywzNjEzOTMzMDksNjEzOTA5ODg4LC0xOTcyMzQzNDc1LD
-E2NTI4MTEzOTYsMTYxMTYyMDU2NCwxMjg0MDkwOTE0LDE0OTI0
-NDMxNDQsMzAzMjkzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Nj
-g0LDE4ODE4NzAwNjFdfQ==
+eyJoaXN0b3J5IjpbMTg2MDA4MDE0MCwxMTIzMDQ5Mjg5LC0xND
+MwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5
+OTAyNCwtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLT
+E5NzIzNDM0NzUsMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQw
+OTA5MTQsMTQ5MjQ0MzE0NCwzMDMyOTM5ODcsLTE3NzA0NDI0OT
+csLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV19
 -->
