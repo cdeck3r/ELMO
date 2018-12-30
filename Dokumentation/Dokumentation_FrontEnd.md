@@ -227,13 +227,14 @@ Das Diagramm soll den Stromverbrauch der letzten 12 Monate darstellen.
     $AreaChart_result = mysqli_query($connect, $AreaChart_query);  
     $AreaChart_data = '';  
     $test_array1 = array();  
-Anders als bei den bisherigen Abfragen werden die Stromverbrauchsdaten aber nicht in eine Variable, sondern in ein Array geschrieben. D
+Anders als bei den bisherigen Abfragen werden die Stromverbrauchsdaten aber nicht in eine Variable, sondern in ein Array geschrieben. Dadurch ist es danach einfach möglich, die Daten zu verändern.
+
     while($AreaChart_row = mysqli_fetch_array($AreaChart_result)) {  
       $Datum = $AreaChart_row["Jahr"]."-".$AreaChart_row["Monat"];  
       array_push($test_array1, array("datum" => $Datum, "wattstunden" => $AreaChart_row["Wattstunden"]));  
       
     }  
-      
+Dieses vorgehen war hierbei nötig, da die Daten mit dem SQL-Befehl nur in kommutierter 
     if(count($test_array1)>1) {  
     $countArrayLength = count($test_array1)-1;  
       
@@ -540,8 +541,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MTU0OTE2OCwxNjUyODExMzk2LDE2MT
-E2MjA1NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5Mzk4
-NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcwMDYxXX
-0=
+eyJoaXN0b3J5IjpbLTc0MDU3MzE4LDE2NTI4MTEzOTYsMTYxMT
+YyMDU2NCwxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMzAzMjkzOTg3
+LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4NzAwNjFdfQ
+==
 -->
