@@ -362,7 +362,8 @@ Um die Daten der zwei Funktionen (Rückgabe in Byte) sinnvoll darstellen zu kön
     <div class="btn btn-rounded btn-danger"><?php echo getSymbolByQuantity($hdGnu). " von " .getSymbolByQuantity($hdUnu). " belegt";?>
 
 #### Liniendiagramm (Area) - Aktueller Stromverbrauch AJAX
-![Live](Bilder/Funktionenbilder/liveticker.jpg)
+![Liveticker](Bilder/Funktionenbilder/liveticker.jpg)
+
 > Um die aktuellen Stromverbrauch Daten ohne ein neuladen der Seite zur Verfügung stellen zu können, wurde der nötige PHP-Code in eine eigene Datei geschrieben, die dann in einem definierten Intervall in JavaScript aufgerufen werden kann.
 
 Gleich wie in der Hauptdatei des Dashboards wird zuerst eine Verbindung zur Datenbank aufgebaut.
@@ -599,6 +600,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
     </script>
 
 ## CSV-Export
+![Csv Export](Bilder/Funktionenbilder/csv.jpg)
+
 ### HTML
 ### PHP
 
@@ -645,6 +648,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
     SELECT * FROM Data d INNER JOIN Maschinen m ON d.Name = m.divID WHERE Messdatum BETWEEN (STR_TO_DATE('$von','%Y-%m-%d')) AND (STR_TO_DATE('$bis','%Y-%m-%d'))"))  
 
 ## Reinigungsintervalle
+![Cleantabelle](Bilder/Funktionenbilder/clean.jpg)
+
 ### HTML
 ### PHP
 
@@ -736,6 +741,7 @@ Darstellung vergangene Reinigungen
 
 ### JavaScript
 ## Alle Maschinen
+![Alle Maschinen](Bilder/Funktionenbilder/alle.jpg)
 ### HTML
 ### PHP
 
@@ -808,10 +814,10 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMjIxNzU0NSwxMTIzMDQ5Mjg5LC0xND
-MwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5
-OTAyNCwtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLT
-E5NzIzNDM0NzUsMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQw
-OTA5MTQsMTQ5MjQ0MzE0NCwzMDMyOTM5ODcsLTE3NzA0NDI0OT
-csLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV19
+eyJoaXN0b3J5IjpbLTE2MjY4OTQyMjAsMTEyMzA0OTI4OSwtMT
+QzMDgxMzAwMSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1
+OTkwMjQsLTYzMDc2MzczNywzNjEzOTMzMDksNjEzOTA5ODg4LC
+0xOTcyMzQzNDc1LDE2NTI4MTEzOTYsMTYxMTYyMDU2NCwxMjg0
+MDkwOTE0LDE0OTI0NDMxNDQsMzAzMjkzOTg3LC0xNzcwNDQyND
+k3LC0xNjk5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
 -->
