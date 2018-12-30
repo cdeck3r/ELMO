@@ -48,6 +48,8 @@ Schriftart und Figur Elmo wird nur für non kommerzielle Zwecke genutzt*
 
 ### 1.2.2. CSS
 ### 1.2.3. HTML
+### 1.2.4 Responsive Design
+
 ## 1.3. Benutzerbereich
 ## Grundriss | Raumpläne
 ![Map Vorschau](Bilder/Funktionenbilder/map.jpg)
@@ -832,11 +834,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MjIyODI0MiwzMDI2NjgyMTAsLTk3Nj
-A0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0MzA4MTMw
-MDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5MDI0LC
-02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMTk3MjM0
-MzQ3NSwxNjUyODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5MDkxNC
-wxNDkyNDQzMTQ0LDMwMzI5Mzk4NywtMTc3MDQ0MjQ5NywtMTY5
-OTUwOTY4NF19
+eyJoaXN0b3J5IjpbLTU0NDA2MTUwNCwxNDYyMjI4MjQyLDMwMj
+Y2ODIxMCwtOTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4
+OSwtMTQzMDgxMzAwMSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC
+05Mzg1OTkwMjQsLTYzMDc2MzczNywzNjEzOTMzMDksNjEzOTA5
+ODg4LC0xOTcyMzQzNDc1LDE2NTI4MTEzOTYsMTYxMTYyMDU2NC
+wxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMzAzMjkzOTg3LC0xNzcw
+NDQyNDk3XX0=
 -->
