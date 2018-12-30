@@ -535,12 +535,34 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
       
     </script>
 
-## Wartungsintervalle
+## Reinigungsintervalle
 ### HTML
 ### PHP
 ### SQL
 ### JavaScript
+## Alle Maschinen
+### HTML
+### PHP
+
+    <?php  
+    session_start();  
+    if(!isset($_SESSION['userid'])) {  
+     header('Location: pages-lockscreen.php');  
+    }  
+      
+    require("config.php");  
+    $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
+      
+    $table_query1 = "  
+    SELECT m.Maschinenname, m.divID, m.raum, m.LastClean, r.Name As Raumname FROM Maschinen m INNER JOIN Raum r on m.raum = r.ID;  
+    ";  
+    $table_result1 = mysqli_query($connect, $table_query1);  
+      
+    ?>
+
+### SQL
 ## Login
+### HTML
 ### PHP
 
     <?php  
@@ -573,8 +595,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM3ODAwMzM5LDYxMzkwOTg4OCwtMTk3Mj
-M0MzQ3NSwxNjUyODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5MDkx
-NCwxNDkyNDQzMTQ0LDMwMzI5Mzk4NywtMTc3MDQ0MjQ5NywtMT
-Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
+eyJoaXN0b3J5IjpbLTEwMzg3OTQ4MzMsNjEzOTA5ODg4LC0xOT
+cyMzQzNDc1LDE2NTI4MTEzOTYsMTYxMTYyMDU2NCwxMjg0MDkw
+OTE0LDE0OTI0NDMxNDQsMzAzMjkzOTg3LC0xNzcwNDQyNDk3LC
+0xNjk5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
 -->
