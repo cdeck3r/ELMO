@@ -470,13 +470,18 @@ Gleich wie Box3 nur mit Sortierung ASC
 
     SELECT SUM(Watt)/1000 As Watt, YEAR(Messdatum) As Jahr,
     MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag,
-    HOUR(Messdatum) As Stunde, MINUTE(Messdatum) As Minute FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), HOUR(Messdatum), MINUTE(Messdatum) ORDER BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC, HOUR(Messdatum) DESC, MINUTE(Messdatum) DESC LIMIT 20
+    HOUR(Messdatum) As Stunde, MINUTE(Messdatum) As Minute
+    FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum),
+    DAY(Messdatum), HOUR(Messdatum), MINUTE(Messdatum)
+    ORDER BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC,
+    DAY(Messdatum) DESC, HOUR(Messdatum) DESC,
+    MINUTE(Messdatum) DESC LIMIT 20
 
 ### JavaScript
 
     <script>  
       Morris.Donut({  
-            element: 'morris-donut-chart',  
+      element: 'morris-donut-chart',  
       data:[<?php echo $DonuteChart_data; ?>],  
       resize: false,  
       colors:['#7160ee', '#2f3d4a', '#fc4b6c', '#009efb', '#1e88e5'],  
@@ -487,7 +492,7 @@ Gleich wie Box3 nur mit Sortierung ASC
     </script>  
     <script>  
       Morris.Area({  
-            element: 'extra-area-chart',  
+      element: 'extra-area-chart',  
       data: [<?php echo $AreaChart_data; ?>],  
       lineColors: ['#009efb'],  
       xkey: 'period',  
@@ -505,7 +510,7 @@ Gleich wie Box3 nur mit Sortierung ASC
     </script>  
     <script>  
       Morris.Area({  
-            element: 'extra-area-chart2',  
+      element: 'extra-area-chart2',  
       data: [<?php echo $AreaChart_data2; ?>],  
       lineColors: ['#009efb'],  
       xkey: 'period',  
@@ -523,12 +528,12 @@ Gleich wie Box3 nur mit Sortierung ASC
     </script>  
     <script>  
       new Chart(document.getElementById("bar2"), {  
-            type: 'bar',  
+      type: 'bar',  
       data: {  
-                labels: [<?php echo $sDataL;?>],  
+      labels: [<?php echo $sDataL;?>],  
       datasets: [  
-                    {  
-                        label: "Watt",  
+      {  
+      label: "Watt",  
       backgroundColor: 'rgba(62, 149, 205, 0.5)',  
       borderColor: 'rgba(76, 185, 255, 1)',  
       borderWidth: 1,  
@@ -857,11 +862,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMjg3NTI4LDMyOTcxOTI4LDE1MTg0NT
-UzODUsMTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMCwt
-OTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4OSwtMTQzMD
-gxMzAwMSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1OTkw
-MjQsLTYzMDc2MzczNywzNjEzOTMzMDksNjEzOTA5ODg4LC0xOT
-cyMzQzNDc1LDE2NTI4MTEzOTYsMTYxMTYyMDU2NCwxMjg0MDkw
-OTE0XX0=
+eyJoaXN0b3J5IjpbMjA2ODMyOTIxNCwzMjk3MTkyOCwxNTE4ND
+U1Mzg1LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAs
+LTk3NjA0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0Mz
+A4MTMwMDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5
+MDI0LC02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMT
+k3MjM0MzQ3NSwxNjUyODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5
+MDkxNF19
 -->
