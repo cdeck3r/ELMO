@@ -200,7 +200,8 @@ Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung �
     $sDataD = substr($sDataD, 0, -2);  
 
 #### Liniendiagramm - Temperaturverlauf der letzten 20 Tage
-Das Liniendiagramm soll den Temperaturverlauf der letzten 20 Tage darstellen. Wie bei den anderen Diagrammen wird das Query ausgeführt und die entsprechenden Daten entsprechend der benötigten Formatierung in die Variablen "tempL" (Label) und "tempD" (Data) 
+Das Liniendiagramm soll den Temperaturverlauf der letzten 20 Tage darstellen. Wie bei den anderen Diagrammen wird das Query ausgeführt und die entsprechenden Daten entsprechend der benötigten Formatierung in die Variablen "tempL" (Label) und "tempD" (Data) geschrieben.
+
     //Temperatur  
     $temp_query = "SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 20";  
     $temp_result = mysqli_query($connect, $temp_query);  
@@ -212,6 +213,8 @@ Das Liniendiagramm soll den Temperaturverlauf der letzten 20 Tage darstellen. Wi
     $tempD = substr($tempD, 0, -2);  
       
 #### Liniendiagramm (Area) - Stromverbrauch der letzten 12 Monate  
+Das Diagramm soll den Stromverbrauch der letzten 12 Monate darstellen.
+
     //AreaChart  
     $AreaChart_query = "  
     SELECT temp.Jahr As Jahr, temp.Monat As Monat, SUM(temp.maxi) As Wattstunden  
@@ -224,6 +227,7 @@ Das Liniendiagramm soll den Temperaturverlauf der letzten 20 Tage darstellen. Wi
     $AreaChart_result = mysqli_query($connect, $AreaChart_query);  
     $AreaChart_data = '';  
     $test_array1 = array();  
+Anders als bei den bisherigen Abfragen werden die Stromverbrauchsdaten aber nicht in eine Variable, sondern in ein Array geschrieben. D
     while($AreaChart_row = mysqli_fetch_array($AreaChart_result)) {  
       $Datum = $AreaChart_row["Jahr"]."-".$AreaChart_row["Monat"];  
       array_push($test_array1, array("datum" => $Datum, "wattstunden" => $AreaChart_row["Wattstunden"]));  
@@ -536,8 +540,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODc5NTQ2MjAsMTY1MjgxMTM5NiwxNj
-ExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0MzE0NCwzMDMyOTM5
-ODcsLTE3NzA0NDI0OTcsLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV
-19
+eyJoaXN0b3J5IjpbMTY0MTU0OTE2OCwxNjUyODExMzk2LDE2MT
+E2MjA1NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5Mzk4
+NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcwMDYxXX
+0=
 -->
