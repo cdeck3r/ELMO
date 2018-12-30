@@ -3,25 +3,26 @@
 # 1. Dokumentation FrontEnd
 ## 1.1 Struktur
 
-    Showcase
-                                               ├── 
-                                                  │   └── Main
-                                                  │       └── Css
-                                                  │            └── All Css files
-                                                  │       └── Js
-                                                  │            └── All Js files
-                                                  │       └── scss
-                                                  │            └── All scss files
-    					      │       └── dark
-                                                  │            └── All dark files
-                                                  │       └── All PHP Pages
-                                                  │
-                                                  │   └── Assets/
-                                                  │       └── Plugins
-                                                  │            └── All Required plugins files
-                                                  │       └── Images
-                                                  │             └── All Theme Images
-                                                  └── 
+
+                   Showcase
+                      ├── 
+                      │   └── Main
+                      │       └── Css
+                      │            └── All Css files
+                      │       └── Js
+                      │            └── All Js files
+                      │       └── scss
+                      │            └── All scss files
+	                  │       └── dark
+                      │            └── All dark files
+                      │       └── All PHP Pages
+                      │
+                      │   └── Assets/
+                      │       └── Plugins
+                      │            └── All Required plugins files
+                      │       └── Images
+                      │             └── All Theme Images
+                      └── 
 
 ## 1.2 Framework
 ### 1.2.1. Logo
@@ -787,9 +788,9 @@ Darstellung
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjA5NDY0NDcsLTkzODU5OTAyNCwtNj
-MwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLTE5NzIzNDM0
-NzUsMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQwOTA5MTQsMT
-Q5MjQ0MzE0NCwzMDMyOTM5ODcsLTE3NzA0NDI0OTcsLTE2OTk1
-MDk2ODQsMTg4MTg3MDA2MV19
+eyJoaXN0b3J5IjpbLTg4OTUwMzI2NywtOTM4NTk5MDI0LC02Mz
+A3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMTk3MjM0MzQ3
+NSwxNjUyODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5MDkxNCwxND
+kyNDQzMTQ0LDMwMzI5Mzk4NywtMTc3MDQ0MjQ5NywtMTY5OTUw
+OTY4NCwxODgxODcwMDYxXX0=
 -->
