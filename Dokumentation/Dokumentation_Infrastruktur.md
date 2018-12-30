@@ -1,4 +1,4 @@
-
+![Titelbild ELMO Infrastruktur](Bilder/ELMO_Infrastruktur.png)
 
 # Dokumentation Infrastruktur
 ## Visualisierung
@@ -309,6 +309,6 @@ Rasberry Pi Software Configuration Tool
 SSH Enable
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzODUwOTk1MywtMTQyMDAwNDY0Myw2OD
+eyJoaXN0b3J5IjpbLTE1MDIyMDg1MywtMTQyMDAwNDY0Myw2OD
 U2MTQ2NjksLTE2MDg2MTE2OTUsMjA1Nzc5MjYxM119
 -->
