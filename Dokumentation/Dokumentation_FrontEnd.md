@@ -541,15 +541,39 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 ### SQL
 ### JavaScript
 ## Login
-### Sessions
 ### PHP
+
+    <?php  
+    session_start();  
+    require("config.php");  
+    $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
+      
+      
+    if(isset($_GET['login'])) {  
+      $passwort = $_POST['password'];  
+      $login_query= "SELECT id, passwort FROM User";  
+      $login_result = mysqli_query($connect, $login_query);  
+      $login_row = mysqli_fetch_array($login_result);  
+      
+      //Überprüfung des Passworts  
+      if (password_verify($passwort, $login_row['passwort'])) {  
+      $_SESSION['userid'] = $login_row['id'];  
+      header('Location: admindashboard.php');  
+      } else {  
+      $errorMessage = "<script type='text/javascript'>  
+      alert('Anmeldung fehlgeschlagen!');  
+     </script>";  
+      }  
+      }  
+    ?>
+
 ### SQL
 
-
+    SELECT id, passwort FROM User
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM0MzYxNzY1LDYxMzkwOTg4OCwtMTk3Mj
+eyJoaXN0b3J5IjpbMjM3ODAwMzM5LDYxMzkwOTg4OCwtMTk3Mj
 M0MzQ3NSwxNjUyODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5MDkx
 NCwxNDkyNDQzMTQ0LDMwMzI5Mzk4NywtMTc3MDQ0MjQ5NywtMT
 Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
