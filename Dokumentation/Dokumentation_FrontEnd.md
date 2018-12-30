@@ -395,7 +395,9 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 #### Box1
 Der SQL-Befehl für die Summe der Wattstunden ist relativ einfach aufgebaut. In einer Unterabfrage wird von jeder Maschine die maximale Wattstundenzahl ausgelesen. Diese max-Werte werden dann Summiert und zurückgegeben.
 
-    SELECT SUM(temp.Wattstunden) As Wattstunden FROM (SELECT MAX(Wattstunden) As Wattstunden FROM Data GROUP BY AIN) As temp
+    SELECT SUM(temp.Wattstunden) As Wattstunden 
+    FROM (SELECT MAX(Wattstunden) As Wattstunden 
+    FROM Data GROUP BY AIN) As temp
 
 #### Box2
 In diesem Befehl werden per Where Abfrage alle Maschinen ausgelesen, die im Interval Jetzt - 10 Minuten bis Jetzt mindestens einen Messpunkt mit mehr als 5000 Milliwatt hatten. Per Count(Distinct AIN) wird jede Maschine nur einfach gezählt.
@@ -839,11 +841,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI5NzE5MjgsMTUxODQ1NTM4NSwxNjgwOD
-Q3MjA1LDE0NjIyMjgyNDIsMzAyNjY4MjEwLC05NzYwNDkzMTQs
-MTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMj
-UwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5OTAyNCwtNjMwNzYz
-NzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLTE5NzIzNDM0NzUsMT
-Y1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0
-MzE0NF19
+eyJoaXN0b3J5IjpbMjA0NDE2MzYwOCwzMjk3MTkyOCwxNTE4ND
+U1Mzg1LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAs
+LTk3NjA0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0Mz
+A4MTMwMDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5
+MDI0LC02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMT
+k3MjM0MzQ3NSwxNjUyODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5
+MDkxNF19
 -->
