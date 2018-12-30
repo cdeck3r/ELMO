@@ -93,6 +93,8 @@ Um die gespeicherten Maschinen in JavaScript verarbeiten zu können, werden dies
 
       $json_array = json_encode($result_array1);  
 ##### Tagesdurchschnitsstemperatur
+![Temperatur Vorschau](Bilder/Funktionenbilder/temperatur.jpg)
+
 Die Tagesdurchschnittstemperatur wird ausgelesen und in die Variable "tempD" geschrieben. 
 
      //Temperatur-Funktion$temp_query = "SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 1";  
@@ -792,7 +794,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MjAyMDU4NCwtMTQzMDgxMzAwMSwtMT
+eyJoaXN0b3J5IjpbMTEyMzA0OTI4OSwtMTQzMDgxMzAwMSwtMT
 I1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1OTkwMjQsLTYzMDc2
 MzczNywzNjEzOTMzMDksNjEzOTA5ODg4LC0xOTcyMzQzNDc1LD
 E2NTI4MTEzOTYsMTYxMTYyMDU2NCwxMjg0MDkwOTE0LDE0OTI0
