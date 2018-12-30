@@ -1,7 +1,7 @@
 ![Titelbild ELMO FrontEnd](Bilder/ELMO_FrontEnd.png)
 
-# 1. Dokumentation FrontEnd
-## 1.1 Struktur
+# Dokumentation FrontEnd
+## Struktur
 
 
                    Showcase
@@ -24,8 +24,8 @@
                       │             └── All Theme Images
                       └── 
 
-## 1.2 Framework
-### 1.2.1. Logo
+## Framework
+### Logo
 #### Logo-Idee
 Das Logo ist eine Kombination aus *"Modernem Logodesign*" und dem Projektkürzel/Figur *"Elmo".*
 
@@ -46,17 +46,17 @@ Bison
 https://www.behance.net/gallery/63195715/Bison-Font-Family-(Free-download)
 Schriftart und Figur Elmo wird nur für non kommerzielle Zwecke genutzt*
 
-### 1.2.2. CSS
-### 1.2.3. HTML
-### 1.2.4 Responsive Design
+### CSS
+### HTML
+### Responsive Design
 ![ELMO Responsive](Bilder/Elmo_responsive.jpg)
 
-## 1.3. Benutzerbereich
+## Benutzerbereich
 ## Grundriss | Raumpläne
 ![Map Vorschau](Bilder/Funktionenbilder/map.jpg)
 
-#### 1.3.1.  HTML
-#### 1.3.2. PHP
+#### HTML
+#### PHP
 
 > Die SQL Befehle werden in diesem Abschnitt nicht näher erläutert. Eine ausführliche Erklärung folgt im nächsten Abschnitt "SQL"
 
@@ -122,7 +122,7 @@ Es werden per SQL alle einzelnen Maschinen ausgewählt, die im Intervall (Jetzt 
 
     AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 1
 
-#### 1.3.3. JavaScript
+#### JavaScript
 Das in PHP erstellte Array "json_array" wird dem JavaScript Array "arrayObjects1" zugewiesen. Anschließend wird das JS-Array durchlaufen und für jeden Eintrag die Funktion "colorFunction(value)" aufgerufen.
 
     function parseFunction() {  
@@ -145,7 +145,7 @@ Durch den Aufruf der Funktion wird eine Verbindung zu den statisch eingetragenen
     }  
     </script>
 
-## 1.4. Ansprechpartner
+## Ansprechpartner
 ![Ansprechpartner Vorschau](Bilder/Funktionenbilder/ansprechpartner.jpg)
 
 ### Verantwortliche Personen
@@ -839,11 +839,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxODQ1NTM4NSwxNjgwODQ3MjA1LDE0Nj
-IyMjgyNDIsMzAyNjY4MjEwLC05NzYwNDkzMTQsMTEwNDg3Mzk4
-MCwxMTIzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMjUwMTM2MTE0LC
-04ODk1MDMyNjcsLTkzODU5OTAyNCwtNjMwNzYzNzM3LDM2MTM5
-MzMwOSw2MTM5MDk4ODgsLTE5NzIzNDM0NzUsMTY1MjgxMTM5Ni
-wxNjExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0MzE0NCwzMDMy
-OTM5ODddfQ==
+eyJoaXN0b3J5IjpbMzI5NzE5MjgsMTUxODQ1NTM4NSwxNjgwOD
+Q3MjA1LDE0NjIyMjgyNDIsMzAyNjY4MjEwLC05NzYwNDkzMTQs
+MTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMj
+UwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5OTAyNCwtNjMwNzYz
+NzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLTE5NzIzNDM0NzUsMT
+Y1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0
+MzE0NF19
 -->
