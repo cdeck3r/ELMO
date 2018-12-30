@@ -403,10 +403,12 @@ In diesem Befehl werden per Where Abfrage alle Maschinen ausgelesen, die im Inte
     SELECT COUNT(DISTINCT AIN) As Anzahl FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)
 
 #### Box3
-Die Daten der "Data" Tabelle werden nach AIN gruppiert und DESC sortiert. Dadurch erhält 
+Die Daten der "Data" Tabelle werden nach AIN gruppiert und DESC sortiert. Dadurch erhält man durch den Zusatz "Limit 1" die Maschine, mit den meisten Wattstunden.
+
     SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden DESC Limit 1
 
 #### Box4
+Gleich wie Box3 nur mit Sortierung ASC
 
     SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden ASC Limit 1
 
@@ -837,7 +839,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NTE0ODQ1NywxNjgwODQ3MjA1LDE0Nj
+eyJoaXN0b3J5IjpbMTUxODQ1NTM4NSwxNjgwODQ3MjA1LDE0Nj
 IyMjgyNDIsMzAyNjY4MjEwLC05NzYwNDkzMTQsMTEwNDg3Mzk4
 MCwxMTIzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMjUwMTM2MTE0LC
 04ODk1MDMyNjcsLTkzODU5OTAyNCwtNjMwNzYzNzM3LDM2MTM5
