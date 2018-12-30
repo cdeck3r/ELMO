@@ -396,29 +396,33 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 Der SQL-Befehl für die Summe der Wattstunden ist relativ einfach aufgebaut. In einer Unterabfrage wird von jeder Maschine die maximale Wattstundenzahl ausgelesen. Diese max-Werte werden dann Summiert und zurückgegeben.
 
     SELECT SUM(temp.Wattstunden) As Wattstunden 
-    FROM (SELECT MAX(Wattstunden) As Wattstunden 
-    FROM Data GROUP BY AIN) As temp
+	FROM (SELECT MAX(Wattstunden) As Wattstunden 
+	     FROM Data GROUP BY AIN) As temp
 
 #### Box2
 In diesem Befehl werden per Where Abfrage alle Maschinen ausgelesen, die im Interval Jetzt - 10 Minuten bis Jetzt mindestens einen Messpunkt mit mehr als 5000 Milliwatt hatten. Per Count(Distinct AIN) wird jede Maschine nur einfach gezählt.
 
-    SELECT COUNT(DISTINCT AIN) As Anzahl FROM Data WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)
+    SELECT COUNT(DISTINCT AIN) As Anzahl FROM Data
+    WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)
 
 #### Box3
 Die Daten der "Data" Tabelle werden nach AIN gruppiert und DESC sortiert. Dadurch erhält man durch den Zusatz "Limit 1" die Maschine, mit den meisten Wattstunden.
 
-    SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden DESC Limit 1
+    SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name
+    FROM Data GROUP BY AIN ORDER BY Wattstunden DESC Limit 1
 
 #### Box4
 Gleich wie Box3 nur mit Sortierung ASC
 
-    SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden ASC Limit 1
+    SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name
+    FROM Data GROUP BY AIN ORDER BY Wattstunden ASC Limit 1
 
 #### Donutechart
 
     SELECT SUM(Wattstunden) as Wattstunden, MAX(Raum.Name) As Name  
     FROM (  
-    SELECT MAX(Wattstunden) As Wattstunden, MAX(Raum) As Raum FROM Data d INNER JOIN Maschinen m ON d.Name = m.divID GROUP BY AIN  
+    SELECT MAX(Wattstunden) As Wattstunden, MAX(Raum) As Raum
+     FROM Data d INNER JOIN Maschinen m ON d.Name = m.divID GROUP BY AIN  
     ) As Raume  
     INNER JOIN Raum on Raume.Raum = Raum.ID  
     GROUP BY Raum  
@@ -841,7 +845,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NDE2MzYwOCwzMjk3MTkyOCwxNTE4ND
+eyJoaXN0b3J5IjpbLTk1Nzk0MzE4OCwzMjk3MTkyOCwxNTE4ND
 U1Mzg1LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAs
 LTk3NjA0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0Mz
 A4MTMwMDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5
