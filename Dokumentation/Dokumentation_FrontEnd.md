@@ -174,6 +174,8 @@ War die Session gesetzt, werden nun die Daten per PHP aus der SQL-Datenbank gele
 Nun wird eine neue Verbindung zum MySQL Server hergestellt.
 
     $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
+#### Chart-Boxes
+![Boxes Vorschau](Bilder/Funktionenbilder/boxesjpg)
 
 #### Box1 - Summe Wattstunden
 Im ersten Befehl wird die Summe der Wattstunden ausgelesen und in die PHP-Variable "Box1_row" geschrieben.
@@ -214,6 +216,7 @@ Die vierte Box enthält die Maschine, die bisher am wenigsten Wattstunden verbra
     $Box4_row = mysqli_fetch_array($Box4_result);  
       
  #### Donuechart - Summe Wattstunden gruppiert nach Raum
+ ![Donut Charts Vorschau](Bilder/Funktionenbilder/donut.jpg)
  
 Nun folgt die Abfrage der Daten für die Charts. Das erste Chart ist dabei ein Donutechart, welches den gruppierten Stromverbrauch in Wattstunden der drei Räume enthält. Gleich wie bei den Boxen gibt es eine Query, welches per "mysql_query" in eine Result-Variable geschrieben wird.
 
@@ -796,7 +799,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MDA4MDE0MCwxMTIzMDQ5Mjg5LC0xND
+eyJoaXN0b3J5IjpbMTY5NjA0NzI2MSwxMTIzMDQ5Mjg5LC0xND
 MwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5
 OTAyNCwtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLT
 E5NzIzNDM0NzUsMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQw
