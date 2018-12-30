@@ -742,6 +742,7 @@ Darstellung vergangene Reinigungen
 ### JavaScript
 ## Alle Maschinen
 ![Alle Maschinen](Bilder/Funktionenbilder/alle.jpg)
+
 ### HTML
 ### PHP
 
@@ -778,6 +779,8 @@ Darstellung
     SELECT m.Maschinenname, m.divID, m.raum, m.LastClean, r.Name As Raumname FROM Maschinen m INNER JOIN Raum r on m.raum = r.ID
 
 ## Login
+![Login](Bilder/Funktionenbilder/login.jpg)
+
 ### HTML
 ### PHP
 
@@ -814,10 +817,10 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjY4OTQyMjAsMTEyMzA0OTI4OSwtMT
-QzMDgxMzAwMSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1
-OTkwMjQsLTYzMDc2MzczNywzNjEzOTMzMDksNjEzOTA5ODg4LC
-0xOTcyMzQzNDc1LDE2NTI4MTEzOTYsMTYxMTYyMDU2NCwxMjg0
-MDkwOTE0LDE0OTI0NDMxNDQsMzAzMjkzOTg3LC0xNzcwNDQyND
-k3LC0xNjk5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
+eyJoaXN0b3J5IjpbMTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xND
+MwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5
+OTAyNCwtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLT
+E5NzIzNDM0NzUsMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQw
+OTA5MTQsMTQ5MjQ0MzE0NCwzMDMyOTM5ODcsLTE3NzA0NDI0OT
+csLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV19
 -->
