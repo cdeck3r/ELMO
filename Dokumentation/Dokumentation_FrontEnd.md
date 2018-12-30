@@ -5,7 +5,10 @@
 Das Logo ist eine Kombination aus *"Modernem Logodesign*" und dem Projektkürzel/Figur *"Elmo".*
 
 #### Logo-Umsetzung
-Das Logo wurde in Adobe Photoshop CS3 umgesetzt. Es beseteht 
+Das Logo wurde in Adobe Photoshop CS3 umgesetzt. Es besteht aus vier Ebenen.
+1. Kreishintergrund des Motivs ELMO
+2. Pfad gezeichnete Figur ELMO
+3. Typo ELMO (Bold / Font: Bisons)
 ### 1.1.2. CSS
 ### 1.1.3. HTML
 ## 1.2. Benutzerbereich
@@ -748,9 +751,9 @@ Darstellung
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI5Mjk1MjYsLTYzMDc2MzczNywzNjEzOT
-MzMDksNjEzOTA5ODg4LC0xOTcyMzQzNDc1LDE2NTI4MTEzOTYs
-MTYxMTYyMDU2NCwxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMzAzMj
-kzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4NzAw
-NjFdfQ==
+eyJoaXN0b3J5IjpbLTE3NzI5MjcyNzksLTYzMDc2MzczNywzNj
+EzOTMzMDksNjEzOTA5ODg4LC0xOTcyMzQzNDc1LDE2NTI4MTEz
+OTYsMTYxMTYyMDU2NCwxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMz
+AzMjkzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4
+NzAwNjFdfQ==
 -->
