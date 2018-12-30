@@ -585,6 +585,90 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 ### HTML
 ### PHP
 
+    <?php  
+    //Login-Session  
+    session_start();  
+    if(!isset($_SESSION['userid'])) {  
+     header('Location: pages-lockscreen.php');  
+    }  
+      
+    //Verbindung  
+    require("config.php");  
+    $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
+      
+    //Last-Clean & Reinigung  
+    if(isset($_GET['ID'])) {  
+      $ID = $_GET['ID'];  
+      $Stunden = $_GET['stunden'];  
+      if ($stmt1 = $connect->prepare("UPDATE Maschinen SET LastClean = now() WHERE divID = ".$ID."")) {  
+      $stmt1->execute();  
+      }  
+      if ($stmt2 = $connect->prepare("insert into Reinigungen(MaschinenID, AnzahlBetriebsstunden) values ('".$ID."', '".$Stunden."')")) {  
+      $stmt2->execute();  
+      }  
+    }  
+      
+    $table_query1 = "  
+    SELECT MAX(Maschinenname) As Name, COUNT(AIN)/60 As AnzahlStunden, MAX(ID) As ID, MAX(LastClean) As LastClean  
+    FROM (  
+     SELECT MAX(Maschinen.Maschinenname) As Maschinenname, AIN, MAX(Maschinen.divID) As ID, MAX(LastClean) As LastClean  
+     FROM Data   INNER JOIN Maschinen ON Maschinen.divID = Data.Name  
+     GROUP BY AIN, YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), HOUR(Messdatum),            MINUTE(Messdatum)  
+     HAVING MIN(Watt) > 5000 AND MIN(Messdatum) > LastClean) As Daten  
+    GROUP BY AIN  
+    ORDER BY AnzahlStunden DESC  
+    ";  
+    $table_result1 = mysqli_query($connect, $table_query1);  
+      
+      
+    //Reinigungstabelle  
+    $table_query2 = "  
+    SELECT Maschinenname, ReinigungDatum, AnzahlBetriebsstunden, m.divID  
+    FROM Reinigungen r INNER JOIN Maschinen m ON r.MaschinenID = m.divID  
+    ORDER BY MaschinenID  
+    ";  
+    $table_result2 = mysqli_query($connect, $table_query2);  
+      
+    ?>
+
+Darstellung genutzte Maschinen
+
+    <?php  
+    while($table_row1 = mysqli_fetch_array($table_result1)) {  
+      echo "<tr>";  
+      echo "<td>".$table_row1["ID"]."</td>";  
+      echo "<td>".utf8_encode($table_row1["Name"])."</td>";  
+      echo "<td>".$table_row1["AnzahlStunden"]." Stunden</td>";  
+      echo "<td>10 Stunden</td>";  
+      echo "<td>".$table_row1["LastClean"]."</td>";  
+      if($table_row1["AnzahlStunden"]<10) {  
+      echo "<td id=\"m1\" action=\"#\" method=\"post\">  
+     <button class=\"btn waves-effect waves-light btn-sm btn-secondary\" type=\"submit\">Nicht verfügbar</button>  
+     </td>";  
+      }  
+      else {  
+      echo "<td id=\"m2\" action=\"#\" method=\"post\">  
+     <button class=\"btn waves-effect waves-light btn-sm btn-danger\" type=\"submit\" onclick=\"window.location.href='cleantable.php?ID=".$table_row1["ID"]."&stunden=".$table_row1["AnzahlStunden"]."'\">Reinigung bestätigen</button>  
+     </td>";  
+      }  
+      echo "</tr>";  
+    }  
+    ?>
+
+Darstellung vergangene Reinigungen
+
+    <?php  
+    while($table_row2 = mysqli_fetch_array($table_result2)) {  
+      echo "<tr>";  
+      echo "<td>".$table_row2["divID"]."</td>";  
+      echo "<td>".utf8_encode($table_row2["Maschinenname"])."</td>";  
+      echo "<td>".$table_row2["AnzahlBetriebsstunden"]." Stunden</td>";  
+      echo "<td>10 Stunden</td>";  
+      echo "<td>".$table_row2["ReinigungDatum"]."</td>";  
+      echo "</tr>";  
+    }  
+    ?>
+
 ### SQL
 
 ### JavaScript
@@ -659,8 +743,8 @@ Darstellung
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDA3NjAyMDgsMzYxMzkzMzA5LDYxMz
-kwOTg4OCwtMTk3MjM0MzQ3NSwxNjUyODExMzk2LDE2MTE2MjA1
-NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5Mzk4NywtMT
-c3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcwMDYxXX0=
+eyJoaXN0b3J5IjpbLTYzMDc2MzczNywzNjEzOTMzMDksNjEzOT
+A5ODg4LC0xOTcyMzQzNDc1LDE2NTI4MTEzOTYsMTYxMTYyMDU2
+NCwxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMzAzMjkzOTg3LC0xNz
+cwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
 -->
