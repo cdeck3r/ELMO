@@ -540,17 +540,26 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 ### PHP
 
     <?php  
-    $exp_table = "Data"; // Table to export  
-    $mysqli = new mysqli($host, $user, $pass, $db_name, $Port);  
-    $mysqli->set_charset("utf8");  
-    if (!$mysqli)  
+    session_start();  
+    if(!isset($_SESSION['userid'])) {  
+     header('Location: pages-lockscreen.php');  
+    }  
+      
+    if(isset($_POST['von'])) {  
+    $von = $_POST['von'];  
+    $bis = $_POST['bis'];  
+      
+    require("config.php");  
+    $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
+    $connect->set_charset("utf8");  
+    if (!$connect)  
       die("ERROR: Could not connect. " . mysqli_connect_error());  
     // Create and open new csv file  
-    $csv = $exp_table . "-" . date('d-m-Y-his') . '.csv';  
+    $csv = "csv/Data_Von_".$von."_Bis_".$bis."_Generiert_" .date('d-m-Y-his') . '.csv';  
     $file = fopen($csv, 'w');  
     // Get the table  
-    if (!$mysqli_result = mysqli_query($mysqli, "SELECT * FROM {$exp_table}"))  
-     printf("Error: %s\n", $mysqli->error);  
+    if (!$mysqli_result = mysqli_query($connect, "SELECT * FROM Data d INNER JOIN Maschinen m ON d.Name = m.divID WHERE Messdatum BETWEEN (STR_TO_DATE('$von','%Y-%m-%d')) AND (STR_TO_DATE('$bis','%Y-%m-%d'))"))  
+     printf("Error: %s\n", $connect->error);  
       // Get column names   
      while ($column = mysqli_fetch_field($mysqli_result)) {  
       $column_names[] = $column->name;  
@@ -565,7 +574,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
       die('Can\'t write rows in csv file');  
       }  
     fclose($file);  
-    echo "<p><a href=\"$csv\">Download</a></p>\n"; ?>
+    }  
+    ?>
 
 ### SQL
 ## Reinigungsintervalle
@@ -645,8 +655,8 @@ Darstellung
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYxMzkzMzA5LDYxMzkwOTg4OCwtMTk3Mj
-M0MzQ3NSwxNjUyODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5MDkx
-NCwxNDkyNDQzMTQ0LDMwMzI5Mzk4NywtMTc3MDQ0MjQ5NywtMT
-Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
+eyJoaXN0b3J5IjpbLTU1NjQwODAyMSwzNjEzOTMzMDksNjEzOT
+A5ODg4LC0xOTcyMzQzNDc1LDE2NTI4MTEzOTYsMTYxMTYyMDU2
+NCwxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMzAzMjkzOTg3LC0xNz
+cwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
 -->
