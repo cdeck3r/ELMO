@@ -49,6 +49,7 @@ Schriftart und Figur Elmo wird nur für non kommerzielle Zwecke genutzt*
 ### 1.2.2. CSS
 ### 1.2.3. HTML
 ### 1.2.4 Responsive Design
+![ELMO Responsive](Bilder/Elmo_responsive.jpg)
 
 ## 1.3. Benutzerbereich
 ## Grundriss | Raumpläne
@@ -834,7 +835,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NDA2MTUwNCwxNDYyMjI4MjQyLDMwMj
+eyJoaXN0b3J5IjpbMTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMj
 Y2ODIxMCwtOTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4
 OSwtMTQzMDgxMzAwMSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC
 05Mzg1OTkwMjQsLTYzMDc2MzczNywzNjEzOTMzMDksNjEzOTA5
