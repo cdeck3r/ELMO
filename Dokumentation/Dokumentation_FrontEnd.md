@@ -255,6 +255,8 @@ Dieses vorgehen war hierbei nötig, da die Daten mit dem SQL-Befehl nur in kumul
     }  
       
 #### Liniendiagramm - Stromverbrauch der letzten 7 Tage
+Das Liniendiagramm soll den Stromverbrauch der letzten 7 Tage dargestellt werden. Diese Funktionalität läuft gleich wie der Monatsverbrauch der letzten 12 Monate, nur Gruppiert für Tage und mit einem Limit von 8 Tagen.
+
     //AreaChart  
     $AreaChart_query2 = "  
     SELECT temp.Jahr As Jahr, temp.Monat As Monat, temp.Tag As Tag, SUM(temp.maxi) As Wattstunden  
@@ -546,8 +548,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU1NTE0NDEsLTE5NzIzNDM0NzUsMTY1Mj
-gxMTM5NiwxNjExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0MzE0
-NCwzMDMyOTM5ODcsLTE3NzA0NDI0OTcsLTE2OTk1MDk2ODQsMT
-g4MTg3MDA2MV19
+eyJoaXN0b3J5IjpbNjEzOTA5ODg4LC0xOTcyMzQzNDc1LDE2NT
+I4MTEzOTYsMTYxMTYyMDU2NCwxMjg0MDkwOTE0LDE0OTI0NDMx
+NDQsMzAzMjkzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LD
+E4ODE4NzAwNjFdfQ==
 -->
