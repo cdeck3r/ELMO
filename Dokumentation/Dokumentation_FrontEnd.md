@@ -1,3 +1,5 @@
+![Titelbild ELMO FrontEnd](Bilder/ELMO_FrontEnd.png)
+
 # 1. Dokumentation FrontEnd
 ## 1.1 Framework
 ### 1.1.1. Logo
@@ -15,6 +17,7 @@ Das Logo wurde in Adobe Photoshop CS3 umgesetzt. Es besteht aus vier Ebenen.
 ![ELMO Logodesign](Bilder/Elmo-logo.jpg)
 
 Light/Dark Edtion
+
 *Credit: 
 Bison
 https://www.behance.net/gallery/63195715/Bison-Font-Family-(Free-download)
@@ -762,9 +765,9 @@ Darstellung
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTAxMTgwNjYsLTYzMDc2MzczNywzNj
-EzOTMzMDksNjEzOTA5ODg4LC0xOTcyMzQzNDc1LDE2NTI4MTEz
-OTYsMTYxMTYyMDU2NCwxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMz
-AzMjkzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4
-NzAwNjFdfQ==
+eyJoaXN0b3J5IjpbMTkyODczNDc2NiwtNjMwNzYzNzM3LDM2MT
+M5MzMwOSw2MTM5MDk4ODgsLTE5NzIzNDM0NzUsMTY1MjgxMTM5
+NiwxNjExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0MzE0NCwzMD
+MyOTM5ODcsLTE3NzA0NDI0OTcsLTE2OTk1MDk2ODQsMTg4MTg3
+MDA2MV19
 -->
