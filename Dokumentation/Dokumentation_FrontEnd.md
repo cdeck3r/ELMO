@@ -1,7 +1,7 @@
 # 1. Dokumentation FrontEnd
 ## 1.1 Framework
 ### 1.1.1. Logo
-Das Logo ist eine Kombination aus demDas Logo wurde in Adobe Photoshop CS3 angefertigt. 
+Das Logo ist eine Kombination aus "Modern Logodesign" und dem Projektk "Das Logo wurde in Adobe Photoshop CS3 angefertigt. 
 ### 1.1.2. CSS
 ### 1.1.3. HTML
 ## 1.2. Benutzerbereich
@@ -744,7 +744,7 @@ Darstellung
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTMyMDAyODYsLTYzMDc2MzczNywzNj
+eyJoaXN0b3J5IjpbLTExNzExNzgzMDEsLTYzMDc2MzczNywzNj
 EzOTMzMDksNjEzOTA5ODg4LC0xOTcyMzQzNDc1LDE2NTI4MTEz
 OTYsMTYxMTYyMDU2NCwxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMz
 AzMjkzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4
