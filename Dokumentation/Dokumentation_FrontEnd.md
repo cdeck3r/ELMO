@@ -445,8 +445,9 @@ Gleich wie Box3 nur mit Sortierung ASC
 
     SELECT temp.Jahr As Jahr, temp.Monat As Monat, SUM(temp.maxi) As Wattstunden  
     FROM (  
-    SELECT YEAR(Messdatum) As Jahr,MONTH(Messdatum) As Monat,
-    MAX(Wattstunden) As maxi FROM Data GROUP BY YEAR(Messdatum),    MONTH(Messdatum), AIN  
+    SELECT YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat,
+    MAX(Wattstunden) As maxi FROM Data GROUP BY
+    YEAR(Messdatum),MONTH(Messdatum), AIN  
     ) As temp  
     GROUP BY temp.Jahr, temp.Monat  
     ORDER BY temp.Jahr, temp.Monat DESC  
@@ -456,7 +457,10 @@ Gleich wie Box3 nur mit Sortierung ASC
 
     SELECT temp.Jahr As Jahr, temp.Monat As Monat, temp.Tag As Tag, SUM(temp.maxi) As Wattstunden  
     FROM (  
-    SELECT YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag, MAX(Wattstunden) As maxi FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), AIN  
+    SELECT YEAR(Messdatum) As Jahr, MONTH(Messdatum) As
+    Monat, DAY(Messdatum) As Tag, MAX(Wattstunden) As maxi
+    FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum),
+    DAY(Messdatum), AIN  
     ) As temp  
     GROUP BY temp.Jahr, temp.Monat, temp.Tag  
     ORDER BY temp.Jahr, temp.Monat, temp.Tag DESC  
@@ -464,7 +468,9 @@ Gleich wie Box3 nur mit Sortierung ASC
 
 #### Liniendiagramm - Momentaner Verbrauch
 
-    SELECT SUM(Watt)/1000 As Watt, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag, HOUR(Messdatum) As Stunde, MINUTE(Messdatum) As Minute FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), HOUR(Messdatum), MINUTE(Messdatum) ORDER BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC, HOUR(Messdatum) DESC, MINUTE(Messdatum) DESC LIMIT 20
+    SELECT SUM(Watt)/1000 As Watt, YEAR(Messdatum) As Jahr,
+    MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag,
+    HOUR(Messdatum) As Stunde, MINUTE(Messdatum) As Minute FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), HOUR(Messdatum), MINUTE(Messdatum) ORDER BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC, HOUR(Messdatum) DESC, MINUTE(Messdatum) DESC LIMIT 20
 
 ### JavaScript
 
@@ -851,11 +857,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjIwNzA5MzgsMzI5NzE5MjgsMTUxOD
-Q1NTM4NSwxNjgwODQ3MjA1LDE0NjIyMjgyNDIsMzAyNjY4MjEw
-LC05NzYwNDkzMTQsMTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xND
-MwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5
-OTAyNCwtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLT
-E5NzIzNDM0NzUsMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQw
-OTA5MTRdfQ==
+eyJoaXN0b3J5IjpbMTIwMjg3NTI4LDMyOTcxOTI4LDE1MTg0NT
+UzODUsMTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMCwt
+OTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4OSwtMTQzMD
+gxMzAwMSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1OTkw
+MjQsLTYzMDc2MzczNywzNjEzOTMzMDksNjEzOTA5ODg4LC0xOT
+cyMzQzNDc1LDE2NTI4MTEzOTYsMTYxMTYyMDU2NCwxMjg0MDkw
+OTE0XX0=
 -->
