@@ -8,12 +8,15 @@ Das Logo ist eine Kombination aus *"Modernem Logodesign*" und dem Projektkürzel
 Das Logo wurde in Adobe Photoshop CS3 umgesetzt. Es besteht aus vier Ebenen.
 1. Kreishintergrund des Motivs ELMO
 2. Pfad gezeichnete Figur ELMO
-3. Typo ELMO (Bold / Font: Bisons)
-4. Typo Cloud (Light / Font: Bisons)
+3. Typo ELMO (Bold / Font: Bison)
+4. Typo Cloud (Light / Font: Bison)
 
 #### Logo Final 
 ![ELMO Logodesign](Bilder/Elmo-logo.jpg)
 Light/Dark Edtion
+*Credit: 
+Bison
+https://www.behance.net/gallery/63195715/Bison-Font-Family-(Free-download)
 
 ### 1.1.2. CSS
 ### 1.1.3. HTML
@@ -757,9 +760,9 @@ Darstellung
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzA3MTE1MzEsLTYzMDc2MzczNywzNj
-EzOTMzMDksNjEzOTA5ODg4LC0xOTcyMzQzNDc1LDE2NTI4MTEz
-OTYsMTYxMTYyMDU2NCwxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMz
-AzMjkzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4
-NzAwNjFdfQ==
+eyJoaXN0b3J5IjpbMTIyMzA5MTUyMywtNjMwNzYzNzM3LDM2MT
+M5MzMwOSw2MTM5MDk4ODgsLTE5NzIzNDM0NzUsMTY1MjgxMTM5
+NiwxNjExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0MzE0NCwzMD
+MyOTM5ODcsLTE3NzA0NDI0OTcsLTE2OTk1MDk2ODQsMTg4MTg3
+MDA2MV19
 -->
