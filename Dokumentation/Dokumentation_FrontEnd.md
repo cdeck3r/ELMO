@@ -238,7 +238,8 @@ Dieses vorgehen war hierbei nötig, da die Daten mit dem SQL-Befehl nur in kumul
 
 > Kumuliert: Die Steckdosen liefern für den Monat x die kumulierten Wattstunden des Monats x-1
 
- Um diese Kumulation zu entfernen, wird für jedes Element es Arraysommutierter 
+ Um diese Kumulation zu entfernen, wird für jedes Element es Arraysommutierter der Vorherige Monat dem jetzigen Monat abgezogen.
+ 
     if(count($test_array1)>1) {  
     $countArrayLength = count($test_array1)-1;  
       
@@ -545,8 +546,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzIzNDM0NzUsNTM0MzQwMTE0LDE2NT
-I4MTEzOTYsMTYxMTYyMDU2NCwxMjg0MDkwOTE0LDE0OTI0NDMx
-NDQsMzAzMjkzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LD
-E4ODE4NzAwNjFdfQ==
+eyJoaXN0b3J5IjpbODU1NTE0NDEsLTE5NzIzNDM0NzUsMTY1Mj
+gxMTM5NiwxNjExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0MzE0
+NCwzMDMyOTM5ODcsLTE3NzA0NDI0OTcsLTE2OTk1MDk2ODQsMT
+g4MTg3MDA2MV19
 -->
