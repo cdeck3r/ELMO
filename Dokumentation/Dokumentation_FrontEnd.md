@@ -241,6 +241,8 @@ Da die Daten aber nicht nur einen Wert enthalten und genau den Vorgaben des ents
     $DonuteChart_data = substr($DonuteChart_data, 0, -2);  
 
 #### Säulendiagramm - Summe Wattstunden nach Maschinen
+![Bar Vorschau](Bilder/Funktionenbilder/bar_maschinen.jpg)
+
 Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung ändert sich aber je nach Anforderungen des JS-Frameworks.
       
     //Säulendiagramm  
@@ -254,6 +256,7 @@ Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung �
     $sDataD = substr($sDataD, 0, -2);  
 
 #### Liniendiagramm - Temperaturverlauf der letzten 20 Tage
+
 Das Liniendiagramm soll den Temperaturverlauf der letzten 20 Tage darstellen. Wie bei den anderen Diagrammen wird das Query ausgeführt und die entsprechenden Daten entsprechend der benötigten Formatierung in die Variablen "tempL" (Label) und "tempD" (Data) geschrieben.
 
     //Temperatur  
@@ -799,7 +802,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NjA0NzI2MSwxMTIzMDQ5Mjg5LC0xND
+eyJoaXN0b3J5IjpbMTU1OTEyMzMyMywxMTIzMDQ5Mjg5LC0xND
 MwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5
 OTAyNCwtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLT
 E5NzIzNDM0NzUsMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQw
