@@ -580,22 +580,22 @@ Gleich wie Box3 nur mit Sortierung ASC
       };  
       var ctx = document.getElementById('real-time-chart');  
       $.ajax({  
-                type: 'GET',  
+      type: 'GET',  
       dataType: 'json',  
       url: 'https://elmo.cloud/main/flotData.php',  
       success: function(response){  
-                    if(response){  
-                        var labels = [];  
-      var data = [];  
+	      if(response) {  
+	          var labels = [];  
+		      var data = [];  
       
-      $.each(response, function(index, value){  
-                            labels.push(value.Minute);  
-      data.push(value.Watt);  
-      });  
-      var chart = new Chart(ctx, {  
-                            type: 'line',  
-      data: {  
-                                labels: labels,  
+		      $.each(response, function(index, value){  
+	              labels.push(value.Minute);  
+			      data.push(value.Watt);  
+		      });  
+		      var chart = new Chart(ctx, {  
+	              type: 'line',  
+			      data: {  
+	                  labels: labels,  
       datasets: [{  
                                     label: 'Watt',  
       backgroundColor: 'rgba(116, 96, 268, 0.4)',  
@@ -855,11 +855,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTA4OTM4MjQsMzI5NzE5MjgsMTUxOD
-Q1NTM4NSwxNjgwODQ3MjA1LDE0NjIyMjgyNDIsMzAyNjY4MjEw
-LC05NzYwNDkzMTQsMTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xND
-MwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5
-OTAyNCwtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLT
-E5NzIzNDM0NzUsMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQw
-OTA5MTRdfQ==
+eyJoaXN0b3J5IjpbMjA1MjE3MjA0MCwzMjk3MTkyOCwxNTE4ND
+U1Mzg1LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAs
+LTk3NjA0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0Mz
+A4MTMwMDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5
+MDI0LC02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMT
+k3MjM0MzQ3NSwxNjUyODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5
+MDkxNF19
 -->
