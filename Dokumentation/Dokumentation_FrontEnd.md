@@ -256,6 +256,7 @@ Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung �
     $sDataD = substr($sDataD, 0, -2);  
 
 #### Liniendiagramm - Temperaturverlauf der letzten 20 Tage
+![Temperatur Chart Vorschau](Bilder/Funktionenbilder/temperatur_chart.jpg)
 
 Das Liniendiagramm soll den Temperaturverlauf der letzten 20 Tage darstellen. Wie bei den anderen Diagrammen wird das Query ausgeführt und die entsprechenden Daten entsprechend der benötigten Formatierung in die Variablen "tempL" (Label) und "tempD" (Data) geschrieben.
 
@@ -270,6 +271,7 @@ Das Liniendiagramm soll den Temperaturverlauf der letzten 20 Tage darstellen. Wi
     $tempD = substr($tempD, 0, -2);  
       
 #### Liniendiagramm (Area) - Stromverbrauch der letzten 12 Monate  
+
 Das Diagramm soll den Stromverbrauch der letzten 12 Monate darstellen.
 
     //AreaChart  
@@ -312,6 +314,8 @@ Dieses vorgehen war hierbei nötig, da die Daten mit dem SQL-Befehl nur in kumul
     }  
       
 #### Liniendiagramm - Stromverbrauch der letzten 7 Tage
+![Linien Chart 7 Tage](Bilder/Funktionenbilder/linie7.jpg)
+
 Das Liniendiagramm soll den Stromverbrauch der letzten 7 Tage dargestellt werden. Diese Funktionalität läuft gleich wie der Monatsverbrauch der letzten 12 Monate, nur Gruppiert für Tage und mit einem Limit von 8 Tagen.
 
     //AreaChart  
@@ -339,6 +343,8 @@ Das Liniendiagramm soll den Stromverbrauch der letzten 7 Tage dargestellt werden
     }  
    
 #### Verbleibender Speicherplatz
+![Speicheranzeige](Bilder/Funktionenbilder/speicher.jpg)
+
 ##### PHP-Datenabfrage
 Um den Speicherplatz des Servers auslesen zu können wird die PHP-Funktion "disk_free_space" und "disk_total_space" verwendet. 
 
@@ -356,7 +362,7 @@ Um die Daten der zwei Funktionen (Rückgabe in Byte) sinnvoll darstellen zu kön
     <div class="btn btn-rounded btn-danger"><?php echo getSymbolByQuantity($hdGnu). " von " .getSymbolByQuantity($hdUnu). " belegt";?>
 
 #### Liniendiagramm (Area) - Aktueller Stromverbrauch AJAX
-
+![Live](Bilder/Funktionenbilder/liveticker.jpg)
 > Um die aktuellen Stromverbrauch Daten ohne ein neuladen der Seite zur Verfügung stellen zu können, wurde der nötige PHP-Code in eine eigene Datei geschrieben, die dann in einem definierten Intervall in JavaScript aufgerufen werden kann.
 
 Gleich wie in der Hauptdatei des Dashboards wird zuerst eine Verbindung zur Datenbank aufgebaut.
@@ -802,7 +808,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1OTEyMzMyMywxMTIzMDQ5Mjg5LC0xND
+eyJoaXN0b3J5IjpbMTIyMjIxNzU0NSwxMTIzMDQ5Mjg5LC0xND
 MwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5
 OTAyNCwtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLT
 E5NzIzNDM0NzUsMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQw
