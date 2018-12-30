@@ -543,13 +543,14 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 ## Login
 ### Sessions
 ### PHP
+### SQL
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEzOTA5ODg4LC0xOTcyMzQzNDc1LDE2NT
-I4MTEzOTYsMTYxMTYyMDU2NCwxMjg0MDkwOTE0LDE0OTI0NDMx
-NDQsMzAzMjkzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LD
-E4ODE4NzAwNjFdfQ==
+eyJoaXN0b3J5IjpbNjM0MzYxNzY1LDYxMzkwOTg4OCwtMTk3Mj
+M0MzQ3NSwxNjUyODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5MDkx
+NCwxNDkyNDQzMTQ0LDMwMzI5Mzk4NywtMTc3MDQ0MjQ5NywtMT
+Y5OTUwOTY4NCwxODgxODcwMDYxXX0=
 -->
