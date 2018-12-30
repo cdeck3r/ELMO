@@ -1,3 +1,5 @@
+![Titelbild ELMO Sicherheitskonzept](Bilder/ELMO_Sicherheitskonzept.png)
+
 # Sicherheitskonzept
 
 ## Allgemein
@@ -46,5 +48,6 @@ Auf die Domain soll nur ein HTTPS-Zugriff erlaubt sein. Daher wurde die Seite pe
 Zertifikat?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTA0NDE1MTMsMTAyMzgyODA2N119
+eyJoaXN0b3J5IjpbLTEyMjM2NDU3MzEsLTExNTA0NDE1MTMsMT
+AyMzgyODA2N119
 -->
