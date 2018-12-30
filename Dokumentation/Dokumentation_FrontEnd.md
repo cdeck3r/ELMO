@@ -814,20 +814,27 @@ Darstellung
 
 ## Credits
 
- - Bootstrap
- - Datatables
- - 
- - 
+-   [Bootstrap](http://getbootstrap.com/)
+- 
+-   [Jquery](https://jquery.com/)
+-   [Font-Awesome](http://fortawesome.github.io/Font-Awesome/)
+-   [Sweet-Alert](http://tristanedwards.me/sweetalert)
+-   [Multi-select](http://loudev.com/)
+-   [Datatables](https://www.datatables.net)
+-   [Morris](http://morrisjs.github.io/morris.js/)
+-   [Chartjs](http://chartjs.org/)
+-   [Themify-icons](https://themify.me/themify-icons)
+-   [Bootstrap tables](https://github.com/wenzhixin/bootstrap-table-examples)
 
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ2MzM5Mjk5LC05NzYwNDkzMTQsMTEwND
-g3Mzk4MCwxMTIzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMjUwMTM2
-MTE0LC04ODk1MDMyNjcsLTkzODU5OTAyNCwtNjMwNzYzNzM3LD
-M2MTM5MzMwOSw2MTM5MDk4ODgsLTE5NzIzNDM0NzUsMTY1Mjgx
-MTM5NiwxNjExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0MzE0NC
-wzMDMyOTM5ODcsLTE3NzA0NDI0OTcsLTE2OTk1MDk2ODQsMTg4
-MTg3MDA2MV19
+eyJoaXN0b3J5IjpbLTIwNDY3MTkyMzcsLTk3NjA0OTMxNCwxMT
+A0ODczOTgwLDExMjMwNDkyODksLTE0MzA4MTMwMDEsLTEyNTAx
+MzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5MDI0LC02MzA3NjM3Mz
+csMzYxMzkzMzA5LDYxMzkwOTg4OCwtMTk3MjM0MzQ3NSwxNjUy
+ODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5MDkxNCwxNDkyNDQzMT
+Q0LDMwMzI5Mzk4NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwx
+ODgxODcwMDYxXX0=
 -->
