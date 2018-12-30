@@ -17,6 +17,7 @@ Light/Dark Edtion
 *Credit: 
 Bison
 https://www.behance.net/gallery/63195715/Bison-Font-Family-(Free-download)
+Schriftart und Figur Elmo wird nur für non kommerzielle Zwecke genutzt*
 
 ### 1.1.2. CSS
 ### 1.1.3. HTML
@@ -760,7 +761,7 @@ Darstellung
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMzA5MTUyMywtNjMwNzYzNzM3LDM2MT
+eyJoaXN0b3J5IjpbLTEzMTM0NTMxMiwtNjMwNzYzNzM3LDM2MT
 M5MzMwOSw2MTM5MDk4ODgsLTE5NzIzNDM0NzUsMTY1MjgxMTM5
 NiwxNjExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0MzE0NCwzMD
 MyOTM5ODcsLTE3NzA0NDI0OTcsLTE2OTk1MDk2ODQsMTg4MTg3
