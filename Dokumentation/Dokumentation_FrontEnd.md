@@ -393,7 +393,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 ### SQL
 #### Box1
-Der SQL-Befehl für die Summe der Wattstunden ist relativ einfach aufgebaut. In einer Unterabfrage 
+Der SQL-Befehl für die Summe der Wattstunden ist relativ einfach aufgebaut. In einer Unterabfrage wird von jeder Maschine die maximale Wattstundenzahl ausgelesen. Diese max-Werte werden dann Summiert und zurückgegeben.
+
     SELECT SUM(temp.Wattstunden) As Wattstunden FROM (SELECT MAX(Wattstunden) As Wattstunden FROM Data GROUP BY AIN) As temp
 
 #### Box2
@@ -835,11 +836,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMxNjg2NjA5LDE2ODA4NDcyMDUsMTQ2Mj
-IyODI0MiwzMDI2NjgyMTAsLTk3NjA0OTMxNCwxMTA0ODczOTgw
-LDExMjMwNDkyODksLTE0MzA4MTMwMDEsLTEyNTAxMzYxMTQsLT
-g4OTUwMzI2NywtOTM4NTk5MDI0LC02MzA3NjM3MzcsMzYxMzkz
-MzA5LDYxMzkwOTg4OCwtMTk3MjM0MzQ3NSwxNjUyODExMzk2LD
-E2MTE2MjA1NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5
-Mzk4N119
+eyJoaXN0b3J5IjpbLTk4MDIxODE1MywxNjgwODQ3MjA1LDE0Nj
+IyMjgyNDIsMzAyNjY4MjEwLC05NzYwNDkzMTQsMTEwNDg3Mzk4
+MCwxMTIzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMjUwMTM2MTE0LC
+04ODk1MDMyNjcsLTkzODU5OTAyNCwtNjMwNzYzNzM3LDM2MTM5
+MzMwOSw2MTM5MDk4ODgsLTE5NzIzNDM0NzUsMTY1MjgxMTM5Ni
+wxNjExNjIwNTY0LDEyODQwOTA5MTQsMTQ5MjQ0MzE0NCwzMDMy
+OTM5ODddfQ==
 -->
