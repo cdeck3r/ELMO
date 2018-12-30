@@ -175,7 +175,7 @@ Nun wird eine neue Verbindung zum MySQL Server hergestellt.
 
     $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
 #### Chart-Boxes
-![Boxes Vorschau](Bilder/Funktionenbilder/boxesjpg)
+![Boxes Vorschau](Bilder/Funktionenbilder/boxes.jpg)
 
 #### Box1 - Summe Wattstunden
 Im ersten Befehl wird die Summe der Wattstunden ausgelesen und in die PHP-Variable "Box1_row" geschrieben.
@@ -817,10 +817,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xND
-MwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5
-OTAyNCwtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLT
-E5NzIzNDM0NzUsMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQw
-OTA5MTQsMTQ5MjQ0MzE0NCwzMDMyOTM5ODcsLTE3NzA0NDI0OT
-csLTE2OTk1MDk2ODQsMTg4MTg3MDA2MV19
+eyJoaXN0b3J5IjpbLTk3NjA0OTMxNCwxMTA0ODczOTgwLDExMj
+MwNDkyODksLTE0MzA4MTMwMDEsLTEyNTAxMzYxMTQsLTg4OTUw
+MzI2NywtOTM4NTk5MDI0LC02MzA3NjM3MzcsMzYxMzkzMzA5LD
+YxMzkwOTg4OCwtMTk3MjM0MzQ3NSwxNjUyODExMzk2LDE2MTE2
+MjA1NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5Mzk4Ny
+wtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcwMDYxXX0=
+
 -->
