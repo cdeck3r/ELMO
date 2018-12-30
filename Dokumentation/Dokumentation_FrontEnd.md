@@ -1,7 +1,7 @@
 # 1. Dokumentation FrontEnd
 ## 1.1 Framework
 ### 1.1.1. Logo
-Identifikation und Wiedererkennung Das Logo wurde in Adobe Photoshop CS3 angefertigt. 
+Das Logo ist eine Kombination aus demDas Logo wurde in Adobe Photoshop CS3 angefertigt. 
 ### 1.1.2. CSS
 ### 1.1.3. HTML
 ## 1.2. Benutzerbereich
@@ -744,9 +744,9 @@ Darstellung
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcyMTIwMTcwLC02MzA3NjM3MzcsMzYxMz
-kzMzA5LDYxMzkwOTg4OCwtMTk3MjM0MzQ3NSwxNjUyODExMzk2
-LDE2MTE2MjA1NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMz
-I5Mzk4NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcw
-MDYxXX0=
+eyJoaXN0b3J5IjpbLTE3NTMyMDAyODYsLTYzMDc2MzczNywzNj
+EzOTMzMDksNjEzOTA5ODg4LC0xOTcyMzQzNDc1LDE2NTI4MTEz
+OTYsMTYxMTYyMDU2NCwxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMz
+AzMjkzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4
+NzAwNjFdfQ==
 -->
