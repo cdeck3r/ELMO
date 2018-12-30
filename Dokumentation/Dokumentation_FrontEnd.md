@@ -559,29 +559,24 @@ Gleich wie Box3 nur mit Sortierung ASC
 		        borderWidth: 1,  
 		        data: [<?php echo $tempD;?>]  
       
-                    }  
-                ]  
-            },  
+             }  
+          ]  
+        },  
       options: {  
-      
-                legend: { display: false }  
-            }  
-      
-      
-      
-      
-        });  
+         legend: { display: false }  
+       }  
+    });  
     </script>  
     <script>  
       var getLatestData = function(){  
             window.chartColors = {  
-                red: 'rgb(255, 99, 132)',  
-      orange: 'rgb(255, 159, 64)',  
-      yellow: 'rgb(255, 205, 86)',  
-      green: 'rgb(75, 192, 192)',  
-      blue: 'rgb(54, 162, 235)',  
-      purple: 'rgb(153, 102, 255)',  
-      grey: 'rgb(201, 203, 207)'  
+		      red: 'rgb(255, 99, 132)',  
+			  orange: 'rgb(255, 159, 64)',  
+		      yellow: 'rgb(255, 205, 86)',  
+		      green: 'rgb(75, 192, 192)',  
+		      blue: 'rgb(54, 162, 235)',  
+		      purple: 'rgb(153, 102, 255)',  
+		      grey: 'rgb(201, 203, 207)'  
       };  
       var ctx = document.getElementById('real-time-chart');  
       $.ajax({  
@@ -860,11 +855,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNzk2MjYwOCwzMjk3MTkyOCwxNTE4ND
-U1Mzg1LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAs
-LTk3NjA0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0Mz
-A4MTMwMDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5
-MDI0LC02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMT
-k3MjM0MzQ3NSwxNjUyODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5
-MDkxNF19
+eyJoaXN0b3J5IjpbLTIwNTA4OTM4MjQsMzI5NzE5MjgsMTUxOD
+Q1NTM4NSwxNjgwODQ3MjA1LDE0NjIyMjgyNDIsMzAyNjY4MjEw
+LC05NzYwNDkzMTQsMTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xND
+MwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5
+OTAyNCwtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLT
+E5NzIzNDM0NzUsMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQw
+OTA5MTRdfQ==
 -->
