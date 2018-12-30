@@ -578,6 +578,9 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
     ?>
 
 ### SQL
+
+    SELECT * FROM Data d INNER JOIN Maschinen m ON d.Name = m.divID WHERE Messdatum BETWEEN (STR_TO_DATE('$von','%Y-%m-%d')) AND (STR_TO_DATE('$bis','%Y-%m-%d'))"))  
+
 ## Reinigungsintervalle
 ### HTML
 ### PHP
@@ -654,9 +657,10 @@ Darstellung
     SELECT id, passwort FROM User
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NjQwODAyMSwzNjEzOTMzMDksNjEzOT
-A5ODg4LC0xOTcyMzQzNDc1LDE2NTI4MTEzOTYsMTYxMTYyMDU2
-NCwxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMzAzMjkzOTg3LC0xNz
-cwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
+eyJoaXN0b3J5IjpbLTE5MDA3NjAyMDgsMzYxMzkzMzA5LDYxMz
+kwOTg4OCwtMTk3MjM0MzQ3NSwxNjUyODExMzk2LDE2MTE2MjA1
+NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5Mzk4NywtMT
+c3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcwMDYxXX0=
 -->
