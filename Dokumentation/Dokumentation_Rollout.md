@@ -30,7 +30,9 @@ Zusätzlich wurden X Router mit je einem dazugehörigen Raspberry Pi in den Räu
 Insgesamt wurden also X Steckdosen, X Router und X Raspberry Pi bis zum Ende des Projektes in den 3 Räumen angeschlossileRlltn
 # ooten.
 
-Eine Erweiterung der Hardware ist jederzeit möglich, da das komplette System skalierbar ist.
+Eine Erweiterung der Hardware ist jederzeit möglich, da das komplette System skalierbar ist.## Ziel:
+## R
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MDg2MjgwMF19
+eyJoaXN0b3J5IjpbLTg4MjEyMDYxOCwxMDUwODYyODAwXX0=
 -->
