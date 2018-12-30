@@ -596,17 +596,17 @@ Gleich wie Box3 nur mit Sortierung ASC
 	              type: 'line',  
 			      data: {  
 	                  labels: labels,  
-      datasets: [{  
-                                    label: 'Watt',  
-      backgroundColor: 'rgba(116, 96, 268, 0.4)',  
-      borderColor: 'rgba(148, 131, 255, 1)',  
-      borderWidth: 1,  
-      data: data  
-                                }]  
-                            }  
-                        });  
-      }  
-                },  
+				      datasets: [{  
+	                      label: 'Watt',  
+					      backgroundColor: 'rgba(116, 96, 268, 0.4)',  
+					      borderColor: 'rgba(148, 131, 255, 1)',  
+					      borderWidth: 1,  
+					      data: data  
+                      }]  
+                   }  
+               });  
+		    }  
+             },  
       error: function(xhr, ajaxOptions, thrownError){  
                     vtx.style.display = 'none'  
       },  
@@ -855,11 +855,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MjE3MjA0MCwzMjk3MTkyOCwxNTE4ND
-U1Mzg1LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAs
-LTk3NjA0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0Mz
-A4MTMwMDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5
-MDI0LC02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMT
-k3MjM0MzQ3NSwxNjUyODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5
-MDkxNF19
+eyJoaXN0b3J5IjpbLTEzMTYxNzY1MjQsMzI5NzE5MjgsMTUxOD
+Q1NTM4NSwxNjgwODQ3MjA1LDE0NjIyMjgyNDIsMzAyNjY4MjEw
+LC05NzYwNDkzMTQsMTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xND
+MwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5
+OTAyNCwtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLT
+E5NzIzNDM0NzUsMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQw
+OTA5MTRdfQ==
 -->
