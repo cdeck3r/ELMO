@@ -422,7 +422,8 @@ Gleich wie Box3 nur mit Sortierung ASC
     SELECT SUM(Wattstunden) as Wattstunden, MAX(Raum.Name) As Name  
     FROM (  
     SELECT MAX(Wattstunden) As Wattstunden, MAX(Raum) As Raum
-     FROM Data d INNER JOIN Maschinen m ON d.Name = m.divID GROUP BY AIN  
+     FROM Data d INNER JOIN Maschinen m 
+     ON d.Name = m.divID GROUP BY AIN  
     ) As Raume  
     INNER JOIN Raum on Raume.Raum = Raum.ID  
     GROUP BY Raum  
@@ -430,17 +431,22 @@ Gleich wie Box3 nur mit Sortierung ASC
 
 #### Säulendiagramm
 
-    SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden ASC
+    SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name
+    FROM Data GROUP BY AIN ORDER BY Wattstunden ASC
 
 #### Liniediagramm - Temperatur
 
-    SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 20
+    SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr,
+    MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag
+    FROM Data GROUP BY YEAR(Messdatum) DESC,
+    MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 20
 
 #### Liniediagramm - Monatsverbrauch
 
     SELECT temp.Jahr As Jahr, temp.Monat As Monat, SUM(temp.maxi) As Wattstunden  
     FROM (  
-    SELECT YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, MAX(Wattstunden) As maxi FROM Data GROUP BY YEAR(Messdatum),    MONTH(Messdatum), AIN  
+    SELECT YEAR(Messdatum) As Jahr,MONTH(Messdatum) As Monat,
+    MAX(Wattstunden) As maxi FROM Data GROUP BY YEAR(Messdatum),    MONTH(Messdatum), AIN  
     ) As temp  
     GROUP BY temp.Jahr, temp.Monat  
     ORDER BY temp.Jahr, temp.Monat DESC  
@@ -845,11 +851,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1Nzk0MzE4OCwzMjk3MTkyOCwxNTE4ND
-U1Mzg1LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAs
-LTk3NjA0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0Mz
-A4MTMwMDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5
-MDI0LC02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMT
-k3MjM0MzQ3NSwxNjUyODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5
-MDkxNF19
+eyJoaXN0b3J5IjpbLTE1NjIwNzA5MzgsMzI5NzE5MjgsMTUxOD
+Q1NTM4NSwxNjgwODQ3MjA1LDE0NjIyMjgyNDIsMzAyNjY4MjEw
+LC05NzYwNDkzMTQsMTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xND
+MwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5
+OTAyNCwtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLT
+E5NzIzNDM0NzUsMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQw
+OTA5MTRdfQ==
 -->
