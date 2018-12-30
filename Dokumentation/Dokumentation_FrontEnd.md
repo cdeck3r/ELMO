@@ -535,10 +535,17 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
       
     </script>
 
+## CSV-Export
+### HTML
+### PHP
+
+### SQL
 ## Reinigungsintervalle
 ### HTML
 ### PHP
+
 ### SQL
+
 ### JavaScript
 ## Alle Maschinen
 ### HTML
@@ -559,8 +566,23 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
     $table_result1 = mysqli_query($connect, $table_query1);  
       
     ?>
+Darstellung
+
+    <?php  
+    while($table_row1 = mysqli_fetch_array($table_result1)) {  
+      echo "<tr>";  
+      echo "<td>".$table_row1["divID"]."</td>";  
+      echo "<td>".utf8_encode($table_row1["Maschinenname"])."</td>";  
+      echo "<td>".$table_row1["Raumname"]."</td>";  
+      echo "<td>".$table_row1["LastClean"]."</td>";  
+      echo "</tr>";  
+    }  
+    ?>
 
 ### SQL
+
+    SELECT m.Maschinenname, m.divID, m.raum, m.LastClean, r.Name As Raumname FROM Maschinen m INNER JOIN Raum r on m.raum = r.ID
+
 ## Login
 ### HTML
 ### PHP
@@ -595,7 +617,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzg3OTQ4MzMsNjEzOTA5ODg4LC0xOT
+eyJoaXN0b3J5IjpbLTE1NjgxNDA2NjMsNjEzOTA5ODg4LC0xOT
 cyMzQzNDc1LDE2NTI4MTEzOTYsMTYxMTYyMDU2NCwxMjg0MDkw
 OTE0LDE0OTI0NDMxNDQsMzAzMjkzOTg3LC0xNzcwNDQyNDk3LC
 0xNjk5NTA5Njg0LDE4ODE4NzAwNjFdfQ==
