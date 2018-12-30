@@ -1,9 +1,28 @@
 ![Titelbild ELMO FrontEnd](Bilder/ELMO_FrontEnd.png)
 
 # 1. Dokumentation FrontEnd
-##1.1  
-## 1.1 Framework
-### 1.1.1. Logo
+## 1.1 Struktur
+Showcase
+                                              ├── 
+                                              │   └── Main
+                                              │       └── Css
+                                              │            └── All Css files
+                                              │       └── Js
+                                              │            └── All Js files
+                                              │       └── scss
+                                              │            └── All scss files
+					      │       └── dark
+                                              │            └── All dark files
+                                              │       └── All PHP Pages
+                                              │
+                                              │   └── Assets/
+                                              │       └── Plugins
+                                              │            └── All Required plugins files
+                                              │       └── Images
+                                              │             └── All Theme Images
+                                              └── 
+## 1.2 Framework
+### 1.2.1. Logo
 #### Logo-Idee
 Das Logo ist eine Kombination aus *"Modernem Logodesign*" und dem Projektkürzel/Figur *"Elmo".*
 
@@ -24,12 +43,12 @@ Bison
 https://www.behance.net/gallery/63195715/Bison-Font-Family-(Free-download)
 Schriftart und Figur Elmo wird nur für non kommerzielle Zwecke genutzt*
 
-### 1.1.2. CSS
-### 1.1.3. HTML
-## 1.2. Benutzerbereich
+### 1.2.2. CSS
+### 1.2.3. HTML
+## 1.3. Benutzerbereich
 ## Grundriss | Raumpläne
-#### 1.2.1.  HTML
-#### 1.2.2. PHP
+#### 1.3.1.  HTML
+#### 1.3.2. PHP
 
 > Die SQL Befehle werden in diesem Abschnitt nicht näher erläutert. Eine ausführliche Erklärung folgt im nächsten Abschnitt "SQL"
 
@@ -93,7 +112,7 @@ Es werden per SQL alle einzelnen Maschinen ausgewählt, die im Intervall (Jetzt 
 
     AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag FROM Data GROUP BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 1
 
-#### 1.2.3. JavaScript
+#### 1.3.3. JavaScript
 Das in PHP erstellte Array "json_array" wird dem JavaScript Array "arrayObjects1" zugewiesen. Anschließend wird das JS-Array durchlaufen und für jeden Eintrag die Funktion "colorFunction(value)" aufgerufen.
 
     function parseFunction() {  
@@ -116,7 +135,7 @@ Durch den Aufruf der Funktion wird eine Verbindung zu den statisch eingetragenen
     }  
     </script>
 
-## 1.3. Ansprechpartner
+## 1.4. Ansprechpartner
 ### Verantwortliche Personen
 ## Adminbereich
 ## Charts
@@ -766,9 +785,9 @@ Darstellung
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4ODc2OTAyNCwtOTM4NTk5MDI0LC02Mz
-A3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMTk3MjM0MzQ3
-NSwxNjUyODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5MDkxNCwxND
-kyNDQzMTQ0LDMwMzI5Mzk4NywtMTc3MDQ0MjQ5NywtMTY5OTUw
-OTY4NCwxODgxODcwMDYxXX0=
+eyJoaXN0b3J5IjpbLTE2NzQ4NjUxNzMsLTkzODU5OTAyNCwtNj
+MwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLTE5NzIzNDM0
+NzUsMTY1MjgxMTM5NiwxNjExNjIwNTY0LDEyODQwOTA5MTQsMT
+Q5MjQ0MzE0NCwzMDMyOTM5ODcsLTE3NzA0NDI0OTcsLTE2OTk1
+MDk2ODQsMTg4MTg3MDA2MV19
 -->
