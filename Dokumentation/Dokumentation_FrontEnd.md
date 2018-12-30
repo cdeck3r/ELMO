@@ -234,7 +234,11 @@ Anders als bei den bisherigen Abfragen werden die Stromverbrauchsdaten aber nich
       array_push($test_array1, array("datum" => $Datum, "wattstunden" => $AreaChart_row["Wattstunden"]));  
       
     }  
-Dieses vorgehen war hierbei nötig, da die Daten mit dem SQL-Befehl nur in kommutierter 
+Dieses vorgehen war hierbei nötig, da die Daten mit dem SQL-Befehl nur in kumulierter Form vorliegen.
+
+> Kumuliert: Die Steckdosen liefern für den Monat x die kumulierten Wattstunden des Monats x-1
+
+ Um diese Kumulation zu entfernen, wird für jedes Element es Arrays 
     if(count($test_array1)>1) {  
     $countArrayLength = count($test_array1)-1;  
       
@@ -541,7 +545,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MDU3MzE4LDE2NTI4MTEzOTYsMTYxMT
+eyJoaXN0b3J5IjpbNTM0MzQwMTE0LDE2NTI4MTEzOTYsMTYxMT
 YyMDU2NCwxMjg0MDkwOTE0LDE0OTI0NDMxNDQsMzAzMjkzOTg3
 LC0xNzcwNDQyNDk3LC0xNjk5NTA5Njg0LDE4ODE4NzAwNjFdfQ
 ==
