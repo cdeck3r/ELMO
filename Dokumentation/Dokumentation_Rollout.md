@@ -1,3 +1,4 @@
+![Titelbild ELMO Rollout](Bilder/ELMO_RollOut.png)
 
 # Rollout
 ## Ziel:
@@ -9,5 +10,6 @@
 ## Konfiguration der FritzBoxen
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MzczMjE1OCw5MjI5OTM0MzhdfQ==
+eyJoaXN0b3J5IjpbLTg4OTIyODgzNCwtOTQzNzMyMTU4LDkyMj
+k5MzQzOF19
 -->
