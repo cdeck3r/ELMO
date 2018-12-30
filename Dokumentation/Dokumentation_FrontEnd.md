@@ -50,6 +50,8 @@ Schriftart und Figur Elmo wird nur für non kommerzielle Zwecke genutzt*
 ### 1.2.3. HTML
 ## 1.3. Benutzerbereich
 ## Grundriss | Raumpläne
+![Map Vorschau](Bilder/Funktionenbilder/map.jpg)
+
 #### 1.3.1.  HTML
 #### 1.3.2. PHP
 
@@ -790,10 +792,10 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzA4MTMwMDEsLTEyNTAxMzYxMTQsLT
-g4OTUwMzI2NywtOTM4NTk5MDI0LC02MzA3NjM3MzcsMzYxMzkz
-MzA5LDYxMzkwOTg4OCwtMTk3MjM0MzQ3NSwxNjUyODExMzk2LD
-E2MTE2MjA1NjQsMTI4NDA5MDkxNCwxNDkyNDQzMTQ0LDMwMzI5
-Mzk4NywtMTc3MDQ0MjQ5NywtMTY5OTUwOTY4NCwxODgxODcwMD
-YxXX0=
+eyJoaXN0b3J5IjpbMTQ3MjAyMDU4NCwtMTQzMDgxMzAwMSwtMT
+I1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1OTkwMjQsLTYzMDc2
+MzczNywzNjEzOTMzMDksNjEzOTA5ODg4LC0xOTcyMzQzNDc1LD
+E2NTI4MTEzOTYsMTYxMTYyMDU2NCwxMjg0MDkwOTE0LDE0OTI0
+NDMxNDQsMzAzMjkzOTg3LC0xNzcwNDQyNDk3LC0xNjk5NTA5Nj
+g0LDE4ODE4NzAwNjFdfQ==
 -->
