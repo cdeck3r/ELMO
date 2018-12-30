@@ -532,19 +532,19 @@ Gleich wie Box3 nur mit Sortierung ASC
       data: {  
       labels: [<?php echo $sDataL;?>],  
       datasets: [  
-      {  
-      label: "Watt",  
-      backgroundColor: 'rgba(62, 149, 205, 0.5)',  
-      borderColor: 'rgba(76, 185, 255, 1)',  
-      borderWidth: 1,  
-      data: [<?php echo $sDataD;?>]  
-                    }  
-                ]  
-            },  
+	      {  
+		      label: "Watt",  
+		      backgroundColor: 'rgba(62, 149, 205, 0.5)',  
+		      borderColor: 'rgba(76, 185, 255, 1)',  
+		      borderWidth: 1,  
+		      data: [<?php echo $sDataD;?>]  
+           }  
+         ]  
+       },  
       options: {  
-                legend: { display: false }  
-            }  
-        });  
+         legend: { display: false }  
+      }  
+    });  
     </script>  
     <script>  
       new Chart(document.getElementById("temperatur"), {  
@@ -862,11 +862,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2ODMyOTIxNCwzMjk3MTkyOCwxNTE4ND
-U1Mzg1LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAs
-LTk3NjA0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0Mz
-A4MTMwMDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5
-MDI0LC02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMT
-k3MjM0MzQ3NSwxNjUyODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5
-MDkxNF19
+eyJoaXN0b3J5IjpbNjk5ODEwNzQ4LDMyOTcxOTI4LDE1MTg0NT
+UzODUsMTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMCwt
+OTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4OSwtMTQzMD
+gxMzAwMSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1OTkw
+MjQsLTYzMDc2MzczNywzNjEzOTMzMDksNjEzOTA5ODg4LC0xOT
+cyMzQzNDc1LDE2NTI4MTEzOTYsMTYxMTYyMDU2NCwxMjg0MDkw
+OTE0XX0=
 -->
