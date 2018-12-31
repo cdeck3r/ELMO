@@ -852,12 +852,12 @@ Darstellung
 - [SlimScroll](https://github.com/rochal/jQuery-slimScroll)
 - [Waves](http://fian.my.id/Waves/)
 - [Sidebar Menu](https://github.com/huang-x-h/sidebar-menu)
-
+- [Sticky Kit](http://leafo.net/sticky-kit/)
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMTAxMTU1OSwxNjM1MDY1NTQ2LDMyOT
+eyJoaXN0b3J5IjpbMTgwNDgzOTQ5MCwxNjM1MDY1NTQ2LDMyOT
 cxOTI4LDE1MTg0NTUzODUsMTY4MDg0NzIwNSwxNDYyMjI4MjQy
 LDMwMjY2ODIxMCwtOTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEyMz
 A0OTI4OSwtMTQzMDgxMzAwMSwtMTI1MDEzNjExNCwtODg5NTAz
