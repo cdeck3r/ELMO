@@ -840,7 +840,7 @@ Darstellung
 -   [Bootstrap](http://getbootstrap.com/)
 -   [Jquery](https://jquery.com/)
 -   [Font-Awesome](http://fortawesome.github.io/Font-Awesome/)
--   [Sweet-Alert](http://tristanedwards.me/sweetalert)
+-   [Sweet-Alert](https://sweetalert.js.org/)
 -   [Multi-select](http://loudev.com/)
 -   [Datatables](https://www.datatables.net)
 -   [Morris](http://morrisjs.github.io/morris.js/)
@@ -857,11 +857,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNDgzOTQ5MCwxNjM1MDY1NTQ2LDMyOT
-cxOTI4LDE1MTg0NTUzODUsMTY4MDg0NzIwNSwxNDYyMjI4MjQy
-LDMwMjY2ODIxMCwtOTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEyMz
-A0OTI4OSwtMTQzMDgxMzAwMSwtMTI1MDEzNjExNCwtODg5NTAz
-MjY3LC05Mzg1OTkwMjQsLTYzMDc2MzczNywzNjEzOTMzMDksNj
-EzOTA5ODg4LC0xOTcyMzQzNDc1LDE2NTI4MTEzOTYsMTYxMTYy
-MDU2NF19
+eyJoaXN0b3J5IjpbMTU4NDcwNjUxNywxODA0ODM5NDkwLDE2Mz
+UwNjU1NDYsMzI5NzE5MjgsMTUxODQ1NTM4NSwxNjgwODQ3MjA1
+LDE0NjIyMjgyNDIsMzAyNjY4MjEwLC05NzYwNDkzMTQsMTEwND
+g3Mzk4MCwxMTIzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMjUwMTM2
+MTE0LC04ODk1MDMyNjcsLTkzODU5OTAyNCwtNjMwNzYzNzM3LD
+M2MTM5MzMwOSw2MTM5MDk4ODgsLTE5NzIzNDM0NzUsMTY1Mjgx
+MTM5Nl19
 -->
