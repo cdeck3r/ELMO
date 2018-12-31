@@ -850,14 +850,14 @@ Darstellung
 -   [Material Pro](https://wrappixel.com/demos/admin-templates/material-pro/landingpage/index.html)
 - [CSV-Export](https://github.com/luka-balantic/Export-CSV-from-database-with-PHP-mysqli/blob/master/exportCSV.php)
 - [SlimScroll](https://github.com/rochal/jQuery-slimScroll)
-- [Waves]()
-
+- [Waves](http://fian.my.id/Waves/)
+- [Sidebar Menu](https://github.com/huang-x-h/sidebar-menu)
 
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NTc2NTQ1NSwxNjM1MDY1NTQ2LDMyOT
+eyJoaXN0b3J5IjpbMTkyMTAxMTU1OSwxNjM1MDY1NTQ2LDMyOT
 cxOTI4LDE1MTg0NTUzODUsMTY4MDg0NzIwNSwxNDYyMjI4MjQy
 LDMwMjY2ODIxMCwtOTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEyMz
 A0OTI4OSwtMTQzMDgxMzAwMSwtMTI1MDEzNjExNCwtODg5NTAz
