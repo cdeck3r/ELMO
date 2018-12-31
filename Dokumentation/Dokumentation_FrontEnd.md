@@ -849,17 +849,19 @@ Darstellung
 -   [Bootstrap tables](https://github.com/wenzhixin/bootstrap-table-examples)
 -   [Material Pro](https://wrappixel.com/demos/admin-templates/material-pro/landingpage/index.html)
 - [CSV-Export](https://github.com/luka-balantic/Export-CSV-from-database-with-PHP-mysqli/blob/master/exportCSV.php)
+- [SlimScroll](https://github.com/rochal/jQuery-slimScroll)
+- [Waves]()
 
 
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4ND
-U1Mzg1LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAs
-LTk3NjA0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0Mz
-A4MTMwMDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5
-MDI0LC02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMT
-k3MjM0MzQ3NSwxNjUyODExMzk2LDE2MTE2MjA1NjQsMTI4NDA5
-MDkxNF19
+eyJoaXN0b3J5IjpbLTI4NTc2NTQ1NSwxNjM1MDY1NTQ2LDMyOT
+cxOTI4LDE1MTg0NTUzODUsMTY4MDg0NzIwNSwxNDYyMjI4MjQy
+LDMwMjY2ODIxMCwtOTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEyMz
+A0OTI4OSwtMTQzMDgxMzAwMSwtMTI1MDEzNjExNCwtODg5NTAz
+MjY3LC05Mzg1OTkwMjQsLTYzMDc2MzczNywzNjEzOTMzMDksNj
+EzOTA5ODg4LC0xOTcyMzQzNDc1LDE2NTI4MTEzOTYsMTYxMTYy
+MDU2NF19
 -->
