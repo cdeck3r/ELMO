@@ -764,7 +764,21 @@ Darstellung vergangene Reinigungen
     ?>
 
 ### SQL
-
+#### Genutzte Maschinen
+    SELECT MAX(Maschinenname) As Name, COUNT(AIN)/60 As AnzahlStunden, MAX(ID) As ID, MAX(LastClean) As LastClean  
+    FROM (  
+     SELECT MAX(Maschinen.Maschinenname) As Maschinenname, AIN, MAX(Maschinen.divID) As ID, MAX(LastClean) As LastClean  
+     FROM Data   INNER JOIN Maschinen ON Maschinen.divID = Data.Name  
+     GROUP BY AIN, YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), HOUR(Messdatum),            MINUTE(Messdatum)  
+     HAVING MIN(Watt) > 5000 AND MIN(Messdatum) > LastClean) As Daten  
+    GROUP BY AIN  
+    ORDER BY AnzahlStunden DESC 
+    
+#### Vergangene Reinigungen
+    SELECT Maschinenname, ReinigungDatum, AnzahlBetriebsstunden, m.divID  
+    FROM Reinigungen r INNER JOIN Maschinen m ON r.MaschinenID = m.divID  
+    ORDER BY MaschinenID 
+    
 ### JavaScript
 ## Alle Maschinen
 ![Alle Maschinen](Bilder/Funktionenbilder/alle.jpg)
@@ -860,11 +874,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzgzOTg3NjAsMTU4NDcwNjUxNywxOD
-A0ODM5NDkwLDE2MzUwNjU1NDYsMzI5NzE5MjgsMTUxODQ1NTM4
-NSwxNjgwODQ3MjA1LDE0NjIyMjgyNDIsMzAyNjY4MjEwLC05Nz
-YwNDkzMTQsMTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xNDMwODEz
-MDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5OTAyNC
-wtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLTE5NzIz
-NDM0NzVdfQ==
+eyJoaXN0b3J5IjpbLTE3MTM5NTU4NywxNTg0NzA2NTE3LDE4MD
+Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
+LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAsLTk3Nj
+A0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0MzA4MTMw
+MDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5MDI0LC
+02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMTk3MjM0
+MzQ3NV19
 -->
