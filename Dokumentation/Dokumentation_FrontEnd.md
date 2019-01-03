@@ -292,10 +292,21 @@ Da die Daten aber nicht nur einen Wert enthalten und genau den Vorgaben des ents
     GROUP BY Raum  
     Order By Wattstunden DESC
 ##### JavaScript
+    <script>  
+      Morris.Donut({  
+      element: 'morris-donut-chart',  
+      data:[<?php echo $DonuteChart_data; ?>],  
+      resize: false,  
+      colors:['#7160ee', '#2f3d4a', '#fc4b6c', '#009efb', '#1e88e5'],  
+      labelColor: '#dcf8ff',  
+      gridLineColor: '#263238',  
+      lineColors: '#263238'  
+      });  
+    </script>
 ---
 #### S채ulendiagramm - Summe Wattstunden nach Maschinen
 ![Bar Vorschau](Bilder/Funktionenbilder/bar_maschinen.jpg)
-
+##### PHP
 Das gleiche vorgehen wird nun bei allen Charts durchgef체hrt. Die Formatierung 채ndert sich aber je nach Anforderungen des JS-Frameworks.
       
     //S채ulendiagramm  
@@ -307,6 +318,8 @@ Das gleiche vorgehen wird nun bei allen Charts durchgef체hrt. Die Formatierung �
     }  
     $sDataL = substr($sDataL, 0, -2);  
     $sDataD = substr($sDataD, 0, -2);  
+##### SQL
+##### JavaScript
 
 #### Liniendiagramm - Temperaturverlauf der letzten 20 Tage
 ![Temperatur Chart Vorschau](Bilder/Funktionenbilder/temperatur_chart.jpg)
@@ -444,17 +457,6 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 ### SQL
 
 
-#### Donutechart
-
-    SELECT SUM(Wattstunden) as Wattstunden, MAX(Raum.Name) As Name  
-    FROM (  
-    SELECT MAX(Wattstunden) As Wattstunden, MAX(Raum) As Raum
-     FROM Data d INNER JOIN Maschinen m 
-     ON d.Name = m.divID GROUP BY AIN  
-    ) As Raume  
-    INNER JOIN Raum on Raume.Raum = Raum.ID  
-    GROUP BY Raum  
-    Order By Wattstunden DESC
 
 #### S채ulendiagramm
 
@@ -506,17 +508,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 ### JavaScript
 
-    <script>  
-      Morris.Donut({  
-      element: 'morris-donut-chart',  
-      data:[<?php echo $DonuteChart_data; ?>],  
-      resize: false,  
-      colors:['#7160ee', '#2f3d4a', '#fc4b6c', '#009efb', '#1e88e5'],  
-      labelColor: '#dcf8ff',  
-      gridLineColor: '#263238',  
-      lineColors: '#263238'  
-      });  
-    </script>  
+  
     <script>  
       Morris.Area({  
       element: 'extra-area-chart',  
@@ -884,11 +876,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcxMDQ0MTM4LDE1ODQ3MDY1MTcsMTgwND
-gzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUs
-MTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMCwtOTc2MD
-Q5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4OSwtMTQzMDgxMzAw
-MSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1OTkwMjQsLT
-YzMDc2MzczNywzNjEzOTMzMDksNjEzOTA5ODg4LC0xOTcyMzQz
-NDc1XX0=
+eyJoaXN0b3J5IjpbLTM3NDAxNjY1NywxNTg0NzA2NTE3LDE4MD
+Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
+LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAsLTk3Nj
+A0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0MzA4MTMw
+MDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5MDI0LC
+02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMTk3MjM0
+MzQ3NV19
 -->
