@@ -319,7 +319,30 @@ Das gleiche vorgehen wird nun bei allen Charts durchgef√ºhrt. Die Formatierung √
     $sDataL = substr($sDataL, 0, -2);  
     $sDataD = substr($sDataD, 0, -2);  
 ##### SQL
+    SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name
+    FROM Data GROUP BY AIN ORDER BY Wattstunden ASC
 ##### JavaScript
+    <script>  
+    new Chart(document.getElementById("bar2"), {  
+      type: 'bar',  
+      data: {  
+      labels: [<?php echo $sDataL;?>],  
+      datasets: [  
+	      {  
+		      label: "Watt",  
+		      backgroundColor: 'rgba(62, 149, 205, 0.5)',  
+		      borderColor: 'rgba(76, 185, 255, 1)',  
+		      borderWidth: 1,  
+		      data: [<?php echo $sDataD;?>]  
+           }  
+         ]  
+       },  
+      options: {  
+         legend: { display: false }  
+      }  
+    });  
+    </script> 
+    ---
 
 #### Liniendiagramm - Temperaturverlauf der letzten 20 Tage
 ![Temperatur Chart Vorschau](Bilder/Funktionenbilder/temperatur_chart.jpg)
@@ -588,15 +611,6 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
     </script>  
     <script>  
       var getLatestData = function(){  
-            window.chartColors = {  
-		      red: 'rgb(255, 99, 132)',  
-			  orange: 'rgb(255, 159, 64)',  
-		      yellow: 'rgb(255, 205, 86)',  
-		      green: 'rgb(75, 192, 192)',  
-		      blue: 'rgb(54, 162, 235)',  
-		      purple: 'rgb(153, 102, 255)',  
-		      grey: 'rgb(201, 203, 207)'  
-      };  
       var ctx = document.getElementById('real-time-chart');  
       $.ajax({  
       type: 'GET',  
@@ -876,7 +890,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NDAxNjY1NywxNTg0NzA2NTE3LDE4MD
+eyJoaXN0b3J5IjpbMTM4MjI4NDUzMywxNTg0NzA2NTE3LDE4MD
 Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
 LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAsLTk3Nj
 A0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0MzA4MTMw
