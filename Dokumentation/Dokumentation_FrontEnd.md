@@ -177,18 +177,26 @@ War die Session gesetzt, werden nun die Daten per PHP aus der SQL-Datenbank gele
 Nun wird eine neue Verbindung zum MySQL Server hergestellt.
 
     $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
-#### Chart-Boxes
+### Chart-Boxes
 ![Boxes Vorschau](Bilder/Funktionenbilder/boxes.jpg)
 
 #### Box1 - Summe Wattstunden
+##### PHP
 Im ersten Befehl wird die Summe der Wattstunden ausgelesen und in die PHP-Variable "Box1_row" geschrieben.
 
     //Box1  
     $Box1_query = "SELECT SUM(temp.Wattstunden) As Wattstunden FROM (SELECT MAX(Wattstunden) As Wattstunden FROM Data GROUP BY AIN) As temp";  
     $Box1_result = mysqli_query($connect, $Box1_query);  
     $Box1_row = mysqli_fetch_array($Box1_result);  
-      
+ 
+##### SQL
+Der SQL-Befehl für die Summe der Wattstunden ist relativ einfach aufgebaut. In einer Unterabfrage wird von jeder Maschine die maximale Wattstundenzahl ausgelesen. Diese max-Werte werden dann Summiert und zurückgegeben.
 
+    SELECT SUM(temp.Wattstunden) As Wattstunden 
+	FROM (SELECT MAX(Wattstunden) As Wattstunden 
+	     FROM Data GROUP BY AIN) As temp
+
+##### Einbindung
 
 #### Box2 - Anzahl aktive Maschinen
 Die zweite Box soll die Anzahl der aktiven Maschinen darstellen. Dies wird in die Variable "Box2_row" geschrieben.
@@ -857,11 +865,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc1NjM2OTk2LDE1ODQ3MDY1MTcsMTgwND
-gzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUs
-MTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMCwtOTc2MD
-Q5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4OSwtMTQzMDgxMzAw
-MSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1OTkwMjQsLT
-YzMDc2MzczNywzNjEzOTMzMDksNjEzOTA5ODg4LC0xOTcyMzQz
-NDc1XX0=
+eyJoaXN0b3J5IjpbMjAzODI2OTU2MSwxNTg0NzA2NTE3LDE4MD
+Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
+LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAsLTk3Nj
+A0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0MzA4MTMw
+MDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5MDI0LC
+02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMTk3MjM0
+MzQ3NV19
 -->
