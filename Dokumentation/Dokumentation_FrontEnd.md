@@ -258,7 +258,7 @@ Gleich wie Box3 nur mit Sortierung ASC
 #### Donuechart - Summe Wattstunden gruppiert nach Raum
  ![Donut Charts Vorschau](Bilder/Funktionenbilder/donut.jpg)
  
- ###
+##### PHP
 Nun folgt die Abfrage der Daten für die Charts. Das erste Chart ist dabei ein Donutechart, welches den gruppierten Stromverbrauch in Wattstunden der drei Räume enthält. Gleich wie bei den Boxen gibt es eine Query, welches per "mysql_query" in eine Result-Variable geschrieben wird.
 
     //DonuteChart  
@@ -281,6 +281,18 @@ Da die Daten aber nicht nur einen Wert enthalten und genau den Vorgaben des ents
     }  
     $DonuteChart_data = substr($DonuteChart_data, 0, -2);  
 
+##### SQL
+    SELECT SUM(Wattstunden) as Wattstunden, MAX(Raum.Name) As Name  
+    FROM (  
+    SELECT MAX(Wattstunden) As Wattstunden, MAX(Raum) As Raum
+     FROM Data d INNER JOIN Maschinen m 
+     ON d.Name = m.divID GROUP BY AIN  
+    ) As Raume  
+    INNER JOIN Raum on Raume.Raum = Raum.ID  
+    GROUP BY Raum  
+    Order By Wattstunden DESC
+##### JavaScript
+---
 #### Säulendiagramm - Summe Wattstunden nach Maschinen
 ![Bar Vorschau](Bilder/Funktionenbilder/bar_maschinen.jpg)
 
@@ -431,15 +443,6 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 ### SQL
 
-
-
-
-
-#### Box4
-Gleich wie Box3 nur mit Sortierung ASC
-
-    SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name
-    FROM Data GROUP BY AIN ORDER BY Wattstunden ASC Limit 1
 
 #### Donutechart
 
@@ -881,11 +884,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjA1OTA2MTMsMTU4NDcwNjUxNywxOD
-A0ODM5NDkwLDE2MzUwNjU1NDYsMzI5NzE5MjgsMTUxODQ1NTM4
-NSwxNjgwODQ3MjA1LDE0NjIyMjgyNDIsMzAyNjY4MjEwLC05Nz
-YwNDkzMTQsMTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xNDMwODEz
-MDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5OTAyNC
-wtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLTE5NzIz
-NDM0NzVdfQ==
+eyJoaXN0b3J5IjpbNTcxMDQ0MTM4LDE1ODQ3MDY1MTcsMTgwND
+gzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUs
+MTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMCwtOTc2MD
+Q5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4OSwtMTQzMDgxMzAw
+MSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1OTkwMjQsLT
+YzMDc2MzczNywzNjEzOTMzMDksNjEzOTA5ODg4LC0xOTcyMzQz
+NDc1XX0=
 -->
