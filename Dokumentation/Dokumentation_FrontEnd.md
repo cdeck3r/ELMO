@@ -217,16 +217,19 @@ In diesem Befehl werden per Where Abfrage alle Maschinen ausgelesen, die im Inte
    
 ##### Einbindung
 
-
+    <span class="text-white font-weight-bold"><?php echo $Box2_row["Anzahl"]; ?></span><span class="text-white font-weight-light"> von 50</span>
+---
 #### Box3 - Maschine mit höchstem Stromverbrauch
+##### PHP
 Die dritte Box enthält die Maschine, die bisher am meisten Wattstunden benötigt hat. Das Ergebnis wird in die Variable "Box3_row" geschrieben.
 
     //Box3  
     $Box3_query = "SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden DESC Limit 1";  
     $Box3_result = mysqli_query($connect, $Box3_query);  
     $Box3_row = mysqli_fetch_array($Box3_result);  
-      
-
+    
+##### SQL
+##### Einbindung
 
 #### Box4 - Maschine mit niedrigstem Stromverbrauch
 Die vierte Box enthält die Maschine, die bisher am wenigsten Wattstunden verbraucht hat. Das Ergebnis wird in die Variable "Box4_row" geschrieben.
@@ -870,11 +873,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTY3NjE5MCwxNTg0NzA2NTE3LDE4MD
-Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
-LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAsLTk3Nj
-A0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0MzA4MTMw
-MDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5MDI0LC
-02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMTk3MjM0
-MzQ3NV19
+eyJoaXN0b3J5IjpbLTE5NDc0OTY2NTAsMTU4NDcwNjUxNywxOD
+A0ODM5NDkwLDE2MzUwNjU1NDYsMzI5NzE5MjgsMTUxODQ1NTM4
+NSwxNjgwODQ3MjA1LDE0NjIyMjgyNDIsMzAyNjY4MjEwLC05Nz
+YwNDkzMTQsMTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xNDMwODEz
+MDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5OTAyNC
+wtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLTE5NzIz
+NDM0NzVdfQ==
 -->
