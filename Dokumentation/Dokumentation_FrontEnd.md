@@ -342,11 +342,11 @@ Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung �
       }  
     });  
     </script> 
-    ---
+   ---
 
 #### Liniendiagramm - Temperaturverlauf der letzten 20 Tage
 ![Temperatur Chart Vorschau](Bilder/Funktionenbilder/temperatur_chart.jpg)
-
+##### PHP
 Das Liniendiagramm soll den Temperaturverlauf der letzten 20 Tage darstellen. Wie bei den anderen Diagrammen wird das Query ausgeführt und die entsprechenden Daten entsprechend der benötigten Formatierung in die Variablen "tempL" (Label) und "tempD" (Data) geschrieben.
 
     //Temperatur  
@@ -359,6 +359,14 @@ Das Liniendiagramm soll den Temperaturverlauf der letzten 20 Tage darstellen. Wi
     $tempL = substr($tempL, 0, -2);  
     $tempD = substr($tempD, 0, -2);  
       
+##### SQL
+    SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr,
+    MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag
+    FROM Data GROUP BY YEAR(Messdatum) DESC,
+    MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 20
+##### JavaScript
+
+---
 #### Liniendiagramm (Area) - Stromverbrauch der letzten 12 Monate  
 
 Das Diagramm soll den Stromverbrauch der letzten 12 Monate darstellen.
@@ -480,11 +488,6 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 ### SQL
 
 
-
-#### Säulendiagramm
-
-    SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name
-    FROM Data GROUP BY AIN ORDER BY Wattstunden ASC
 
 #### Liniediagramm - Temperatur
 
@@ -890,7 +893,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MjI4NDUzMywxNTg0NzA2NTE3LDE4MD
+eyJoaXN0b3J5IjpbMTQxMTc1NDI3NywxNTg0NzA2NTE3LDE4MD
 Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
 LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAsLTk3Nj
 A0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0MzA4MTMw
