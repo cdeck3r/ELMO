@@ -57,9 +57,6 @@ Schriftart und Figur Elmo wird nur für non kommerzielle Zwecke genutzt*
 
 #### HTML
 #### PHP
-
-> Die SQL Befehle werden in diesem Abschnitt nicht näher erläutert. Eine ausführliche Erklärung folgt im nächsten Abschnitt "SQL"
-
 #### Session
 Im ersten Schritt wird überprüft, ob die Session gesetzt wurde. Ist dies nicht der Fall, wird auf die Loginseite weitergeleitet.
 
@@ -865,11 +862,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzk3MTIzNTksLTY1OTA2NjgyOCwtMT
-cxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwNDgzOTQ5MCwxNjM1MDY1
-NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUsMTY4MDg0NzIwNSwxND
-YyMjI4MjQyLDMwMjY2ODIxMCwtOTc2MDQ5MzE0LDExMDQ4NzM5
-ODAsMTEyMzA0OTI4OSwtMTQzMDgxMzAwMSwtMTI1MDEzNjExNC
-wtODg5NTAzMjY3LC05Mzg1OTkwMjQsLTYzMDc2MzczNywzNjEz
-OTMzMDldfQ==
+eyJoaXN0b3J5IjpbLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTksLT
+Y1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwNDgz
+OTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUsMT
+Y4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMCwtOTc2MDQ5
+MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4OSwtMTQzMDgxMzAwMS
+wtMTI1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1OTkwMjQsLTYz
+MDc2MzczN119
 -->
