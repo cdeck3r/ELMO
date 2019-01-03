@@ -678,17 +678,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 ### HTML
 ### PHP
-
-    <?php  
-    //Login-Session  
-    session_start();  
-    if(!isset($_SESSION['userid'])) {  
-     header('Location: pages-lockscreen.php');  
-    }  
-      
-    //Verbindung  
-    require("config.php");  
-    $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
+#### Datenabfrage 
       
     //Last-Clean & Reinigung  
     if(isset($_GET['ID'])) {  
@@ -725,7 +715,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
       
     ?>
 
-Darstellung genutzte Maschinen
+#### Darstellung genutzte Maschinen
 
     <?php  
     while($table_row1 = mysqli_fetch_array($table_result1)) {  
@@ -749,7 +739,7 @@ Darstellung genutzte Maschinen
     }  
     ?>
 
-Darstellung vergangene Reinigungen
+#### Darstellung vergangene Reinigungen
 
     <?php  
     while($table_row2 = mysqli_fetch_array($table_result2)) {  
@@ -874,11 +864,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTM5NTU4NywxNTg0NzA2NTE3LDE4MD
-Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
-LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAsLTk3Nj
-A0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0MzA4MTMw
-MDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5MDI0LC
-02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMTk3MjM0
-MzQ3NV19
+eyJoaXN0b3J5IjpbLTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1OD
+Q3MDY1MTcsMTgwNDgzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4
+LDE1MTg0NTUzODUsMTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMj
+Y2ODIxMCwtOTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4
+OSwtMTQzMDgxMzAwMSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC
+05Mzg1OTkwMjQsLTYzMDc2MzczNywzNjEzOTMzMDksNjEzOTA5
+ODg4XX0=
 -->
