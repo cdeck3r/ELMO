@@ -366,6 +366,28 @@ Das Liniendiagramm soll den Temperaturverlauf der letzten 20 Tage darstellen. Wi
     MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 20
 ##### JavaScript
 
+     <script>  
+          new Chart(document.getElementById("temperatur"), {  
+          type: 'line',  
+          data: {  
+    	      labels: [<?php echo $tempL;?>],  
+    	      datasets: [  
+                {  
+    	            label: "Temperatur",  
+    			    backgroundColor: 'rgba(252, 75, 108, 0.4)',  
+    		        borderColor: 'rgba(255, 113, 139, 1)',  
+    		        borderWidth: 1,  
+    		        data: [<?php echo $tempD;?>]  
+          
+                 }  
+              ]  
+            },  
+          options: {  
+             legend: { display: false }  
+           }  
+        });  
+        </script>
+
 ---
 #### Liniendiagramm (Area) - Stromverbrauch der letzten 12 Monate  
 
@@ -854,11 +876,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc4MzE4OTYwLDE1ODQ3MDY1MTcsMTgwND
-gzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUs
-MTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMCwtOTc2MD
-Q5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4OSwtMTQzMDgxMzAw
-MSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1OTkwMjQsLT
-YzMDc2MzczNywzNjEzOTMzMDksNjEzOTA5ODg4LC0xOTcyMzQz
-NDc1XX0=
+eyJoaXN0b3J5IjpbMjAxMjAxMDM5NywxNTg0NzA2NTE3LDE4MD
+Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
+LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAsLTk3Nj
+A0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0MzA4MTMw
+MDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5MDI0LC
+02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMTk3MjM0
+MzQ3NV19
 -->
