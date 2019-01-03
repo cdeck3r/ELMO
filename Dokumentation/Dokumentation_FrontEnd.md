@@ -390,7 +390,7 @@ Das Liniendiagramm soll den Temperaturverlauf der letzten 20 Tage darstellen. Wi
 
 ---
 #### Liniendiagramm (Area) - Stromverbrauch der letzten 12 Monate  
-
+##### PHP
 Das Diagramm soll den Stromverbrauch der letzten 12 Monate darstellen.
 
     //AreaChart  
@@ -416,7 +416,7 @@ Dieses vorgehen war hierbei nötig, da die Daten mit dem SQL-Befehl nur in kumul
 
 > Kumuliert: Die Steckdosen liefern für den Monat x die kumulierten Wattstunden des Monats x-1
 
- Um diese Kumulation zu entfernen, wird für jedes Element es Arraysommutierter der Vorherige Monat dem jetzigen Monat abgezogen.
+ Um diese Kumulation zu entfernen, wird für jedes Element des Arrays der Vorherige Monat dem jetzigen Monat abgezogen.
  
     if(count($test_array1)>1) {  
     $countArrayLength = count($test_array1)-1;  
@@ -431,7 +431,9 @@ Dieses vorgehen war hierbei nötig, da die Daten mit dem SQL-Befehl nur in kumul
     $countArrayLength = count($test_array1);  
     $AreaChart_data .= "{period: '".$test_array1[0]['datum']."', value: ".$test_array1[0]['wattstunden']."}, ";  
     }  
-      
+##### SQL
+##### JavaScript
+---      
 #### Liniendiagramm - Stromverbrauch der letzten 7 Tage
 ![Linien Chart 7 Tage](Bilder/Funktionenbilder/linie7.jpg)
 
@@ -876,7 +878,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMjAxMDM5NywxNTg0NzA2NTE3LDE4MD
+eyJoaXN0b3J5IjpbLTMwMjE1MjQxNywxNTg0NzA2NTE3LDE4MD
 Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
 LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAsLTk3Nj
 A0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0MzA4MTMw
