@@ -503,7 +503,24 @@ Das Liniendiagramm soll den Stromverbrauch der letzten 7 Tage dargestellt werden
     ORDER BY temp.Jahr, temp.Monat, temp.Tag DESC  
     LIMIT 8
 ##### JavaScript
-
+    <script>  
+      Morris.Area({  
+      element: 'extra-area-chart2',  
+      data: [<?php echo $AreaChart_data2; ?>],  
+      lineColors: ['#009efb'],  
+      xkey: 'period',  
+      ykeys: ['value'],  
+      labels: ['Wattstunden'],  
+      pointSize: 0,  
+      lineWidth: 1,  
+      resize:true,  
+      fillOpacity: 0.8,  
+      behaveLikeLine: true,  
+      gridLineColor: '#e0e0e0',  
+      hideHover: 'auto'  
+      
+      });  
+    </script> 
 ----
 #### Verbleibender Speicherplatz
 ![Speicheranzeige](Bilder/Funktionenbilder/speicher.jpg)
@@ -527,6 +544,7 @@ Um die Daten der zwei Funktionen (Rückgabe in Byte) sinnvoll darstellen zu kön
 #### Liniendiagramm (Area) - Aktueller Stromverbrauch AJAX
 ![Liveticker](Bilder/Funktionenbilder/liveticker.jpg)
 
+##### PHP
 > Um die aktuellen Stromverbrauch Daten ohne ein neuladen der Seite zur Verfügung stellen zu können, wurde der nötige PHP-Code in eine eigene Datei geschrieben, die dann in einem definierten Intervall in JavaScript aufgerufen werden kann.
 
 Gleich wie in der Hauptdatei des Dashboards wird zuerst eine Verbindung zur Datenbank aufgebaut.
@@ -550,6 +568,9 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
       echo json_encode($data);  
     ?>
+
+##### SQL
+##### JavaScript 
 
 ### SQL
 
@@ -605,51 +626,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
  
   
      
-    <script>  
-      var getLatestData = function(){  
-      var ctx = document.getElementById('real-time-chart');  
-      $.ajax({  
-      type: 'GET',  
-      dataType: 'json',  
-      url: 'https://elmo.cloud/main/flotData.php',  
-      success: function(response){  
-	      if(response) {  
-	          var labels = [];  
-		      var data = [];  
-      
-		      $.each(response, function(index, value){  
-	              labels.push(value.Minute);  
-			      data.push(value.Watt);  
-		      });  
-		      var chart = new Chart(ctx, {  
-	              type: 'line',  
-			      data: {  
-	                  labels: labels,  
-				      datasets: [{  
-	                      label: 'Watt',  
-					      backgroundColor: 'rgba(116, 96, 268, 0.4)',  
-					      borderColor: 'rgba(148, 131, 255, 1)',  
-					      borderWidth: 1,  
-					      data: data  
-                      }]  
-                   }  
-               });  
-		   }  
-      },  
-      error: function(xhr, ajaxOptions, thrownError){  
-	      vtx.style.display = 'none'  
-      },  
-	  });  
-	  }  
-      
-      $(window).on('load',function () {  
-	      getLatestData();  
-      });  
-      setInterval( function() {  
-	      getLatestData();  
-      }, 30000);  
-      
-    </script>
+
 
 ## CSV-Export
 ![Csv Export](Bilder/Funktionenbilder/csv.jpg)
@@ -886,7 +863,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNjIyMzk3OSwxNTg0NzA2NTE3LDE4MD
+eyJoaXN0b3J5IjpbLTk2MzUzNjQ1MywxNTg0NzA2NTE3LDE4MD
 Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
 LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAsLTk3Nj
 A0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0MzA4MTMw
