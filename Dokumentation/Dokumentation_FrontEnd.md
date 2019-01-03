@@ -570,46 +570,6 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
     ?>
 
 ##### SQL
-##### JavaScript 
-
-### SQL
-
-
-
-#### Liniediagramm - Temperatur
-
-    SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr,
-    MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag
-    FROM Data GROUP BY YEAR(Messdatum) DESC,
-    MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 20
-
-#### Liniediagramm - Monatsverbrauch
-
-    SELECT temp.Jahr As Jahr, temp.Monat As Monat, SUM(temp.maxi) As Wattstunden  
-    FROM (  
-    SELECT YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat,
-    MAX(Wattstunden) As maxi FROM Data GROUP BY
-    YEAR(Messdatum),MONTH(Messdatum), AIN  
-    ) As temp  
-    GROUP BY temp.Jahr, temp.Monat  
-    ORDER BY temp.Jahr, temp.Monat DESC  
-    LIMIT 13
-
-#### Liniediagramm - Tagesverbrauch
-
-    SELECT temp.Jahr As Jahr, temp.Monat As Monat, temp.Tag As Tag, SUM(temp.maxi) As Wattstunden  
-    FROM (  
-    SELECT YEAR(Messdatum) As Jahr, MONTH(Messdatum) As
-    Monat, DAY(Messdatum) As Tag, MAX(Wattstunden) As maxi
-    FROM Data GROUP BY YEAR(Messdatum), MONTH(Messdatum),
-    DAY(Messdatum), AIN  
-    ) As temp  
-    GROUP BY temp.Jahr, temp.Monat, temp.Tag  
-    ORDER BY temp.Jahr, temp.Monat, temp.Tag DESC  
-    LIMIT 8
-
-#### Liniendiagramm - Momentaner Verbrauch
-
     SELECT SUM(Watt)/1000 As Watt, YEAR(Messdatum) As Jahr,
     MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag,
     HOUR(Messdatum) As Stunde, MINUTE(Messdatum) As Minute
@@ -618,15 +578,52 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
     ORDER BY YEAR(Messdatum) DESC, MONTH(Messdatum) DESC,
     DAY(Messdatum) DESC, HOUR(Messdatum) DESC,
     MINUTE(Messdatum) DESC LIMIT 20
-
-### JavaScript
-
-  
+##### JavaScript 
+    <script>  
+      var getLatestData = function(){  
+      var ctx = document.getElementById('real-time-chart');  
+      $.ajax({  
+      type: 'GET',  
+      dataType: 'json',  
+      url: 'https://elmo.cloud/main/flotData.php',  
+      success: function(response){  
+	      if(response) {  
+	          var labels = [];  
+		      var data = [];  
       
- 
-  
-     
-
+		      $.each(response, function(index, value){  
+	              labels.push(value.Minute);  
+			      data.push(value.Watt);  
+		      });  
+		      var chart = new Chart(ctx, {  
+	              type: 'line',  
+			      data: {  
+	                  labels: labels,  
+				      datasets: [{  
+	                      label: 'Watt',  
+					      backgroundColor: 'rgba(116, 96, 268, 0.4)',  
+					      borderColor: 'rgba(148, 131, 255, 1)',  
+					      borderWidth: 1,  
+					      data: data  
+                      }]  
+                   }  
+               });  
+		   }  
+      },  
+      error: function(xhr, ajaxOptions, thrownError){  
+	      vtx.style.display = 'none'  
+      },  
+	  });  
+	  }  
+      
+      $(window).on('load',function () {  
+	      getLatestData();  
+      });  
+      setInterval( function() {  
+	      getLatestData();  
+      }, 30000);  
+      
+    </script>
 
 ## CSV-Export
 ![Csv Export](Bilder/Funktionenbilder/csv.jpg)
@@ -863,11 +860,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MzUzNjQ1MywxNTg0NzA2NTE3LDE4MD
-Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
-LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAsLTk3Nj
-A0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0MzA4MTMw
-MDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5MDI0LC
-02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMTk3MjM0
-MzQ3NV19
+eyJoaXN0b3J5IjpbLTE2NzgzOTg3NjAsMTU4NDcwNjUxNywxOD
+A0ODM5NDkwLDE2MzUwNjU1NDYsMzI5NzE5MjgsMTUxODQ1NTM4
+NSwxNjgwODQ3MjA1LDE0NjIyMjgyNDIsMzAyNjY4MjEwLC05Nz
+YwNDkzMTQsMTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xNDMwODEz
+MDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkzODU5OTAyNC
+wtNjMwNzYzNzM3LDM2MTM5MzMwOSw2MTM5MDk4ODgsLTE5NzIz
+NDM0NzVdfQ==
 -->
