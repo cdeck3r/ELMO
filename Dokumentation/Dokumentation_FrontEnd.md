@@ -229,16 +229,24 @@ Die dritte Box enthält die Maschine, die bisher am meisten Wattstunden benötig
     $Box3_row = mysqli_fetch_array($Box3_result);  
     
 ##### SQL
+Die Daten der "Data" Tabelle werden nach AIN gruppiert und DESC sortiert. Dadurch erhält man durch den Zusatz "Limit 1" die Maschine, mit den meisten Wattstunden.
+
+    SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name
+    FROM Data GROUP BY AIN ORDER BY Wattstunden DESC Limit 1
 ##### Einbindung
 
+    <span class="text-white font-weight-light">Maschine </span><span class="text-white font-weight-bold"><?php echo utf8_encode($Box3_row["Name"]); ?></span>
+---
 #### Box4 - Maschine mit niedrigstem Stromverbrauch
+##### PHP
 Die vierte Box enthält die Maschine, die bisher am wenigsten Wattstunden verbraucht hat. Das Ergebnis wird in die Variable "Box4_row" geschrieben.
 
     //Box4  
     $Box4_query = "SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name FROM Data GROUP BY AIN ORDER BY Wattstunden ASC Limit 1";  
     $Box4_result = mysqli_query($connect, $Box4_query);  
     $Box4_row = mysqli_fetch_array($Box4_result);  
-      
+##### SQL
+#####      
  #### Donuechart - Summe Wattstunden gruppiert nach Raum
  ![Donut Charts Vorschau](Bilder/Funktionenbilder/donut.jpg)
  
@@ -415,11 +423,6 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 ### SQL
 
 
-#### Box2
-In diesem Befehl werden per Where Abfrage alle Maschinen ausgelesen, die im Interval Jetzt - 10 Minuten bis Jetzt mindestens einen Messpunkt mit mehr als 5000 Milliwatt hatten. Per Count(Distinct AIN) wird jede Maschine nur einfach gezählt.
-
-    SELECT COUNT(DISTINCT AIN) As Anzahl FROM Data
-    WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)
 
 #### Box3
 Die Daten der "Data" Tabelle werden nach AIN gruppiert und DESC sortiert. Dadurch erhält man durch den Zusatz "Limit 1" die Maschine, mit den meisten Wattstunden.
@@ -873,7 +876,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDc0OTY2NTAsMTU4NDcwNjUxNywxOD
+eyJoaXN0b3J5IjpbLTE0NTExMDkyNzgsMTU4NDcwNjUxNywxOD
 A0ODM5NDkwLDE2MzUwNjU1NDYsMzI5NzE5MjgsMTUxODQ1NTM4
 NSwxNjgwODQ3MjA1LDE0NjIyMjgyNDIsMzAyNjY4MjEwLC05Nz
 YwNDkzMTQsMTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xNDMwODEz
