@@ -151,7 +151,7 @@ Durch den Aufruf der Funktion wird eine Verbindung zu den statisch eingetragenen
 ### Verantwortliche Personen
 ## Adminbereich
 ## Charts
-### PHP
+### Grundfunktionen
 
 > Die SQL Befehle werden in diesem Abschnitt nicht näher erläutert. Eine ausführliche Erklärung folgt im nächsten Abschnitt "SQL"
 
@@ -857,11 +857,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NDcwNjUxNywxODA0ODM5NDkwLDE2Mz
-UwNjU1NDYsMzI5NzE5MjgsMTUxODQ1NTM4NSwxNjgwODQ3MjA1
-LDE0NjIyMjgyNDIsMzAyNjY4MjEwLC05NzYwNDkzMTQsMTEwND
-g3Mzk4MCwxMTIzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMjUwMTM2
-MTE0LC04ODk1MDMyNjcsLTkzODU5OTAyNCwtNjMwNzYzNzM3LD
-M2MTM5MzMwOSw2MTM5MDk4ODgsLTE5NzIzNDM0NzUsMTY1Mjgx
-MTM5Nl19
+eyJoaXN0b3J5IjpbNTc1NjM2OTk2LDE1ODQ3MDY1MTcsMTgwND
+gzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUs
+MTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMCwtOTc2MD
+Q5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4OSwtMTQzMDgxMzAw
+MSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1OTkwMjQsLT
+YzMDc2MzczNywzNjEzOTMzMDksNjEzOTA5ODg4LC0xOTcyMzQz
+NDc1XX0=
 -->
