@@ -246,10 +246,19 @@ Die vierte Box enthält die Maschine, die bisher am wenigsten Wattstunden verbra
     $Box4_result = mysqli_query($connect, $Box4_query);  
     $Box4_row = mysqli_fetch_array($Box4_result);  
 ##### SQL
-#####      
- #### Donuechart - Summe Wattstunden gruppiert nach Raum
+Gleich wie Box3 nur mit Sortierung ASC
+
+    SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name
+    FROM Data GROUP BY AIN ORDER BY Wattstunden ASC Limit 1
+##### Einbindung
+
+    <span class="text-white font-weight-light">Maschine </span><span class="text-white font-weight-bold"><?php echo utf8_encode($Box4_row["Name"]); ?></span>
+
+---      
+#### Donuechart - Summe Wattstunden gruppiert nach Raum
  ![Donut Charts Vorschau](Bilder/Funktionenbilder/donut.jpg)
  
+ ###
 Nun folgt die Abfrage der Daten für die Charts. Das erste Chart ist dabei ein Donutechart, welches den gruppierten Stromverbrauch in Wattstunden der drei Räume enthält. Gleich wie bei den Boxen gibt es eine Query, welches per "mysql_query" in eine Result-Variable geschrieben wird.
 
     //DonuteChart  
@@ -424,11 +433,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 
 
 
-#### Box3
-Die Daten der "Data" Tabelle werden nach AIN gruppiert und DESC sortiert. Dadurch erhält man durch den Zusatz "Limit 1" die Maschine, mit den meisten Wattstunden.
 
-    SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name
-    FROM Data GROUP BY AIN ORDER BY Wattstunden DESC Limit 1
 
 #### Box4
 Gleich wie Box3 nur mit Sortierung ASC
@@ -876,7 +881,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTExMDkyNzgsMTU4NDcwNjUxNywxOD
+eyJoaXN0b3J5IjpbLTE1NjA1OTA2MTMsMTU4NDcwNjUxNywxOD
 A0ODM5NDkwLDE2MzUwNjU1NDYsMzI5NzE5MjgsMTUxODQ1NTM4
 NSwxNjgwODQ3MjA1LDE0NjIyMjgyNDIsMzAyNjY4MjEwLC05Nz
 YwNDkzMTQsMTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xNDMwODEz
