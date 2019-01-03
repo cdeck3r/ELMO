@@ -210,6 +210,12 @@ Die zweite Box soll die Anzahl der aktiven Maschinen darstellen. Dies wird in di
     $Box2_row = mysqli_fetch_array($Box2_result);  
       
 ##### SQL
+In diesem Befehl werden per Where Abfrage alle Maschinen ausgelesen, die im Interval Jetzt - 10 Minuten bis Jetzt mindestens einen Messpunkt mit mehr als 5000 Milliwatt hatten. Per Count(Distinct AIN) wird jede Maschine nur einfach gezählt.
+
+    SELECT COUNT(DISTINCT AIN) As Anzahl FROM Data
+    WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)
+   
+##### Einbindung
 
 
 #### Box3 - Maschine mit höchstem Stromverbrauch
@@ -404,12 +410,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
     ?>
 
 ### SQL
-#### Box1
-Der SQL-Befehl für die Summe der Wattstunden ist relativ einfach aufgebaut. In einer Unterabfrage wird von jeder Maschine die maximale Wattstundenzahl ausgelesen. Diese max-Werte werden dann Summiert und zurückgegeben.
 
-    SELECT SUM(temp.Wattstunden) As Wattstunden 
-	FROM (SELECT MAX(Wattstunden) As Wattstunden 
-	     FROM Data GROUP BY AIN) As temp
 
 #### Box2
 In diesem Befehl werden per Where Abfrage alle Maschinen ausgelesen, die im Interval Jetzt - 10 Minuten bis Jetzt mindestens einen Messpunkt mit mehr als 5000 Milliwatt hatten. Per Count(Distinct AIN) wird jede Maschine nur einfach gezählt.
@@ -869,11 +870,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEyMDI1MDcwLDE1ODQ3MDY1MTcsMTgwND
-gzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUs
-MTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMCwtOTc2MD
-Q5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4OSwtMTQzMDgxMzAw
-MSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1OTkwMjQsLT
-YzMDc2MzczNywzNjEzOTMzMDksNjEzOTA5ODg4LC0xOTcyMzQz
-NDc1XX0=
+eyJoaXN0b3J5IjpbLTExOTY3NjE5MCwxNTg0NzA2NTE3LDE4MD
+Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
+LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAsLTk3Nj
+A0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0MzA4MTMw
+MDEsLTEyNTAxMzYxMTQsLTg4OTUwMzI2NywtOTM4NTk5MDI0LC
+02MzA3NjM3MzcsMzYxMzkzMzA5LDYxMzkwOTg4OCwtMTk3MjM0
+MzQ3NV19
 -->
