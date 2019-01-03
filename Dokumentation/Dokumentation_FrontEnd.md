@@ -432,11 +432,40 @@ Dieses vorgehen war hierbei nötig, da die Daten mit dem SQL-Befehl nur in kumul
     $AreaChart_data .= "{period: '".$test_array1[0]['datum']."', value: ".$test_array1[0]['wattstunden']."}, ";  
     }  
 ##### SQL
+    SELECT temp.Jahr As Jahr, temp.Monat As Monat, SUM(temp.maxi) As Wattstunden  
+    FROM (  
+    SELECT YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat,
+    MAX(Wattstunden) As maxi FROM Data GROUP BY
+    YEAR(Messdatum),MONTH(Messdatum), AIN  
+    ) As temp  
+    GROUP BY temp.Jahr, temp.Monat  
+    ORDER BY temp.Jahr, temp.Monat DESC  
+    LIMIT 13
 ##### JavaScript
+
+    <script>  
+          Morris.Area({  
+          element: 'extra-area-chart',  
+          data: [<?php echo $AreaChart_data; ?>],  
+          lineColors: ['#009efb'],  
+          xkey: 'period',  
+          ykeys: ['value'],  
+          labels: ['Wattstunden'],  
+          pointSize: 0,  
+          lineWidth: 1,  
+          resize:true,  
+          fillOpacity: 0.8,  
+          behaveLikeLine: true,  
+          gridLineColor: '#e0e0e0',  
+          hideHover: 'auto'  
+          
+          });  
+        </script>
+
 ---      
 #### Liniendiagramm - Stromverbrauch der letzten 7 Tage
 ![Linien Chart 7 Tage](Bilder/Funktionenbilder/linie7.jpg)
-
+###
 Das Liniendiagramm soll den Stromverbrauch der letzten 7 Tage dargestellt werden. Diese Funktionalität läuft gleich wie der Monatsverbrauch der letzten 12 Monate, nur Gruppiert für Tage und mit einem Limit von 8 Tagen.
 
     //AreaChart  
@@ -559,24 +588,7 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
 ### JavaScript
 
   
-    <script>  
-      Morris.Area({  
-      element: 'extra-area-chart',  
-      data: [<?php echo $AreaChart_data; ?>],  
-      lineColors: ['#009efb'],  
-      xkey: 'period',  
-      ykeys: ['value'],  
-      labels: ['Wattstunden'],  
-      pointSize: 0,  
-      lineWidth: 1,  
-      resize:true,  
-      fillOpacity: 0.8,  
-      behaveLikeLine: true,  
-      gridLineColor: '#e0e0e0',  
-      hideHover: 'auto'  
       
-      });  
-    </script>  
     <script>  
       Morris.Area({  
       element: 'extra-area-chart2',  
@@ -878,7 +890,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMjE1MjQxNywxNTg0NzA2NTE3LDE4MD
+eyJoaXN0b3J5IjpbMTg5NzMzNjU1MywxNTg0NzA2NTE3LDE4MD
 Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
 LDE2ODA4NDcyMDUsMTQ2MjIyODI0MiwzMDI2NjgyMTAsLTk3Nj
 A0OTMxNCwxMTA0ODczOTgwLDExMjMwNDkyODksLTE0MzA4MTMw
