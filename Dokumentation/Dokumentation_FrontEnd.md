@@ -418,19 +418,20 @@ Dieses vorgehen war hierbei nötig, da die Daten mit dem SQL-Befehl nur in kumul
 
  Um diese Kumulation zu entfernen, wird für jedes Element des Arrays der Vorherige Monat dem jetzigen Monat abgezogen.
  
-    if(count($test_array1)>1) {  
-    $countArrayLength = count($test_array1)-1;  
+
+    $countArrayLength = count($test_array1);  
       
     for($i=0;$i<$countArrayLength;$i++){  
+      if($test_array1[$i+1]['wattstunden'] != null) {  
       $wert = $test_array1[$i]['wattstunden'] - $test_array1[$i+1]['wattstunden'];  
+      }  
+      else {  
+      $wert = $test_array1[$i]['wattstunden'];  
+      }  
       $AreaChart_data .= "{period: '".$test_array1[$i]['datum']."', value: ".$wert."}, ";  
+    }
     }  
-    }  
-      
-    else {  
-    $countArrayLength = count($test_array1);  
-    $AreaChart_data .= "{period: '".$test_array1[0]['datum']."', value: ".$test_array1[0]['wattstunden']."}, ";  
-    }  
+
 ##### SQL
     SELECT temp.Jahr As Jahr, temp.Monat As Monat, SUM(temp.maxi) As Wattstunden  
     FROM (  
@@ -864,11 +865,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1OD
-Q3MDY1MTcsMTgwNDgzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4
-LDE1MTg0NTUzODUsMTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMj
-Y2ODIxMCwtOTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4
-OSwtMTQzMDgxMzAwMSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC
-05Mzg1OTkwMjQsLTYzMDc2MzczNywzNjEzOTMzMDksNjEzOTA5
-ODg4XX0=
+eyJoaXN0b3J5IjpbLTE0Mzk3MTIzNTksLTY1OTA2NjgyOCwtMT
+cxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwNDgzOTQ5MCwxNjM1MDY1
+NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUsMTY4MDg0NzIwNSwxND
+YyMjI4MjQyLDMwMjY2ODIxMCwtOTc2MDQ5MzE0LDExMDQ4NzM5
+ODAsMTEyMzA0OTI4OSwtMTQzMDgxMzAwMSwtMTI1MDEzNjExNC
+wtODg5NTAzMjY3LC05Mzg1OTkwMjQsLTYzMDc2MzczNywzNjEz
+OTMzMDldfQ==
 -->
