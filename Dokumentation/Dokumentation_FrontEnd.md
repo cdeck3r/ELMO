@@ -304,7 +304,7 @@ Da die Daten aber nicht nur einen Wert enthalten und genau den Vorgaben des ents
     $DonuteChart_data = substr($DonuteChart_data, 0, -2);  
 
 ##### SQL
-In der Unterabfrage
+In der Unterabfrage werden die letzten Werte der Maschinen mit der Max-Funktion abgefragt. Die Hauptabfrage
 
     SELECT SUM(Wattstunden) as Wattstunden, MAX(Raum.Name) As Name  
     FROM (  
@@ -889,11 +889,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzE0MTc4NjQsMTA2OTIxMDM1MiwtMT
-YyODc3MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEz
-OTU1ODcsMTU4NDcwNjUxNywxODA0ODM5NDkwLDE2MzUwNjU1ND
-YsMzI5NzE5MjgsMTUxODQ1NTM4NSwxNjgwODQ3MjA1LDE0NjIy
-MjgyNDIsMzAyNjY4MjEwLC05NzYwNDkzMTQsMTEwNDg3Mzk4MC
-wxMTIzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMjUwMTM2MTE0LC04
-ODk1MDMyNjddfQ==
+eyJoaXN0b3J5IjpbMTU5NjkyMzkzNiwxMDY5MjEwMzUyLC0xNj
+I4NzczMjg3LC0xNDM5NzEyMzU5LC02NTkwNjY4MjgsLTE3MTM5
+NTU4NywxNTg0NzA2NTE3LDE4MDQ4Mzk0OTAsMTYzNTA2NTU0Ni
+wzMjk3MTkyOCwxNTE4NDU1Mzg1LDE2ODA4NDcyMDUsMTQ2MjIy
+ODI0MiwzMDI2NjgyMTAsLTk3NjA0OTMxNCwxMTA0ODczOTgwLD
+ExMjMwNDkyODksLTE0MzA4MTMwMDEsLTEyNTAxMzYxMTQsLTg4
+OTUwMzI2N119
 -->
