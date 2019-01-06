@@ -146,6 +146,24 @@ Durch den Aufruf der Funktion wird eine Verbindung zu den statisch eingetragenen
 ![Ansprechpartner Vorschau](Bilder/Funktionenbilder/ansprechpartner.jpg)
 ### HTML
 ### PHP
+Gleich wie in den anderen Files w
+    <?php  
+    require("config.php");  
+    $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
+    $query1 = "SELECT DISTINCT NAME AS Name FROM Data WHERE NAME = '60' AND Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)";  
+    $result1 = mysqli_query($connect, $query1);  
+    $row1 = mysqli_fetch_array($result1);  
+    ?>
+eaf
+
+    <?php  
+    if (!is_null($row1)){  
+    echo "<div class=\"row text-center justify-content-md-center m-t-10\"><div><h5 class=\"btn btn-success\"><span class=\"btn-label\"><i class=\"fa fa-check\"></i></span>Verfügbar</h5></div>";  
+    }  
+    else {  
+    echo "<div class=\"btn btn-outline-secondary waves-effect waves-light m-t-10\"><span class=\"btn-label\"><i class=\"fa fa-times\"></i></span>Nicht Verfügbar</div>";  
+    }  
+    ?>
 
 ### Verantwortliche Personen
 ## Adminbereich
@@ -864,11 +882,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTU1OTczNDIsLTE2Mjg3NzMyODcsLT
-E0Mzk3MTIzNTksLTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3
-MDY1MTcsMTgwNDgzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LD
-E1MTg0NTUzODUsMTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMjY2
-ODIxMCwtOTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4OS
-wtMTQzMDgxMzAwMSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC05
-Mzg1OTkwMjRdfQ==
+eyJoaXN0b3J5IjpbLTg3MTI3NjUyNiwtMTYyODc3MzI4NywtMT
+QzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEzOTU1ODcsMTU4NDcw
+NjUxNywxODA0ODM5NDkwLDE2MzUwNjU1NDYsMzI5NzE5MjgsMT
+UxODQ1NTM4NSwxNjgwODQ3MjA1LDE0NjIyMjgyNDIsMzAyNjY4
+MjEwLC05NzYwNDkzMTQsMTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC
+0xNDMwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkz
+ODU5OTAyNF19
 -->
