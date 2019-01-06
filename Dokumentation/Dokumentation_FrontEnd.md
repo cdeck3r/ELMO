@@ -146,7 +146,8 @@ Durch den Aufruf der Funktion wird eine Verbindung zu den statisch eingetragenen
 ![Ansprechpartner Vorschau](Bilder/Funktionenbilder/ansprechpartner.jpg)
 ### HTML
 ### PHP
-Gleich wie in den anderen Files w
+Gleich wie in den anderen Files wird zuerst eine Datenbankverbindung aufgebaut. Anschließen wird abgefragt, ob die Lampe der Ansprechperson in den letzten 10 Minuten Aktiv war. Das Ergebnis wird in die Variable "row1" geschrieben.
+
     <?php  
     require("config.php");  
     $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
@@ -154,7 +155,7 @@ Gleich wie in den anderen Files w
     $result1 = mysqli_query($connect, $query1);  
     $row1 = mysqli_fetch_array($result1);  
     ?>
-eaf
+Bei der Darstellung gibt es zwei Optionen. "Nicht Verfügbar" oder "Verfügbar". Entschieden wird dies mit einer IF-Abfrage auf "is_null($row1)".
 
     <?php  
     if (!is_null($row1)){  
@@ -882,7 +883,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MTI3NjUyNiwtMTYyODc3MzI4NywtMT
+eyJoaXN0b3J5IjpbMTA2OTIxMDM1MiwtMTYyODc3MzI4NywtMT
 QzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEzOTU1ODcsMTU4NDcw
 NjUxNywxODA0ODM5NDkwLDE2MzUwNjU1NDYsMzI5NzE5MjgsMT
 UxODQ1NTM4NSwxNjgwODQ3MjA1LDE0NjIyMjgyNDIsMzAyNjY4
