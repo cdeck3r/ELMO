@@ -345,7 +345,7 @@ Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung �
     $sDataL = substr($sDataL, 0, -2);  
     $sDataD = substr($sDataD, 0, -2);  
 ##### SQL
-Die SQL-Abfrage hierfür ist sehr einfach, die Messdaten werden auf die AIN gruppiert und davon die Maximalen Werte zurückgegeben.
+Die Messdaten werden auf die AIN gruppiert und davon die Maximalen Werte zurückgegeben.
 
     SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name
     FROM Data GROUP BY AIN ORDER BY Wattstunden ASC
@@ -893,11 +893,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mjg1MjM1NjMsMTA2OTIxMDM1MiwtMT
-YyODc3MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEz
-OTU1ODcsMTU4NDcwNjUxNywxODA0ODM5NDkwLDE2MzUwNjU1ND
-YsMzI5NzE5MjgsMTUxODQ1NTM4NSwxNjgwODQ3MjA1LDE0NjIy
-MjgyNDIsMzAyNjY4MjEwLC05NzYwNDkzMTQsMTEwNDg3Mzk4MC
-wxMTIzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMjUwMTM2MTE0LC04
-ODk1MDMyNjddfQ==
+eyJoaXN0b3J5IjpbMjAyMzgwNjA4NCwxMDY5MjEwMzUyLC0xNj
+I4NzczMjg3LC0xNDM5NzEyMzU5LC02NTkwNjY4MjgsLTE3MTM5
+NTU4NywxNTg0NzA2NTE3LDE4MDQ4Mzk0OTAsMTYzNTA2NTU0Ni
+wzMjk3MTkyOCwxNTE4NDU1Mzg1LDE2ODA4NDcyMDUsMTQ2MjIy
+ODI0MiwzMDI2NjgyMTAsLTk3NjA0OTMxNCwxMTA0ODczOTgwLD
+ExMjMwNDkyODksLTE0MzA4MTMwMDEsLTEyNTAxMzYxMTQsLTg4
+OTUwMzI2N119
 -->
