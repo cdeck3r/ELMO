@@ -316,7 +316,8 @@ In der Unterabfrage werden die letzten Werte der Maschinen mit der Max-Funktion 
     GROUP BY Raum  
     Order By Wattstunden DESC
 ##### JavaScript
-Die Grundstruktur des JavaScript-Codes kann von den Beispielen übernommen werden. Per php-echo w
+Die Grundstruktur des JavaScript-Codes kann von den Beispielen übernommen werden. Per php-echo wird der vor-formatierte String an JavaScript übergeben. Außerdem werden Optionen zum Aussehen des Charts getroffen.
+
     <script>  
       Morris.Donut({  
       element: 'morris-donut-chart',  
@@ -344,6 +345,8 @@ Das gleiche vorgehen wird nun bei allen Charts durchgeführt. Die Formatierung �
     $sDataL = substr($sDataL, 0, -2);  
     $sDataD = substr($sDataD, 0, -2);  
 ##### SQL
+Die SQL-Abfrage hierfür ist sehr einfach, die Messdaten werden auf die AIN gruppiert und davon die Maximalen Werte zurückgegeben.
+
     SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name
     FROM Data GROUP BY AIN ORDER BY Wattstunden ASC
 ##### JavaScript
@@ -890,11 +893,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgxNTUyOTIsMTA2OTIxMDM1MiwtMTYyOD
-c3MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEzOTU1
-ODcsMTU4NDcwNjUxNywxODA0ODM5NDkwLDE2MzUwNjU1NDYsMz
-I5NzE5MjgsMTUxODQ1NTM4NSwxNjgwODQ3MjA1LDE0NjIyMjgy
-NDIsMzAyNjY4MjEwLC05NzYwNDkzMTQsMTEwNDg3Mzk4MCwxMT
-IzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1
-MDMyNjddfQ==
+eyJoaXN0b3J5IjpbLTE5Mjg1MjM1NjMsMTA2OTIxMDM1MiwtMT
+YyODc3MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEz
+OTU1ODcsMTU4NDcwNjUxNywxODA0ODM5NDkwLDE2MzUwNjU1ND
+YsMzI5NzE5MjgsMTUxODQ1NTM4NSwxNjgwODQ3MjA1LDE0NjIy
+MjgyNDIsMzAyNjY4MjEwLC05NzYwNDkzMTQsMTEwNDg3Mzk4MC
+wxMTIzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMjUwMTM2MTE0LC04
+ODk1MDMyNjddfQ==
 -->
