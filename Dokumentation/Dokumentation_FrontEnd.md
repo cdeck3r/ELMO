@@ -388,7 +388,8 @@ Das Liniendiagramm soll den Temperaturverlauf der letzten 20 Tage darstellen. Wi
     $tempD = substr($tempD, 0, -2);  
       
 ##### SQL
-Die Daten werden auf einzelne Tage gruppiert. Von diesen Daten wird dann die durchschnittliche Temperatur und das entsprechende Datum de
+Die Daten werden auf einzelne Tage gruppiert. Von diesen Daten wird dann die durchschnittliche Temperatur und das entsprechende Datum des Tages zurückgegeben.
+
     SELECT AVG(Temperatur)/10 As Temperatur, YEAR(Messdatum) As Jahr,
     MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag
     FROM Data GROUP BY YEAR(Messdatum) DESC,
@@ -894,7 +895,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MDI0MTk0MCwxMDY5MjEwMzUyLC0xNj
+eyJoaXN0b3J5IjpbMTEzNjY4NzkyMSwxMDY5MjEwMzUyLC0xNj
 I4NzczMjg3LC0xNDM5NzEyMzU5LC02NTkwNjY4MjgsLTE3MTM5
 NTU4NywxNTg0NzA2NTE3LDE4MDQ4Mzk0OTAsMTYzNTA2NTU0Ni
 wzMjk3MTkyOCwxNTE4NDU1Mzg1LDE2ODA4NDcyMDUsMTQ2MjIy
