@@ -144,6 +144,8 @@ Durch den Aufruf der Funktion wird eine Verbindung zu den statisch eingetragenen
 
 ## Ansprechpartner
 ![Ansprechpartner Vorschau](Bilder/Funktionenbilder/ansprechpartner.jpg)
+### HTML
+### PHP
 
 ### Verantwortliche Personen
 ## Adminbereich
@@ -862,11 +864,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTksLT
-Y1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwNDgz
-OTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUsMT
-Y4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMCwtOTc2MDQ5
-MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4OSwtMTQzMDgxMzAwMS
-wtMTI1MDEzNjExNCwtODg5NTAzMjY3LC05Mzg1OTkwMjQsLTYz
-MDc2MzczN119
+eyJoaXN0b3J5IjpbLTEyOTU1OTczNDIsLTE2Mjg3NzMyODcsLT
+E0Mzk3MTIzNTksLTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3
+MDY1MTcsMTgwNDgzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LD
+E1MTg0NTUzODUsMTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMjY2
+ODIxMCwtOTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4OS
+wtMTQzMDgxMzAwMSwtMTI1MDEzNjExNCwtODg5NTAzMjY3LC05
+Mzg1OTkwMjRdfQ==
 -->
