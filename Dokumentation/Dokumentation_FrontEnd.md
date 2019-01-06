@@ -525,6 +525,8 @@ Das Liniendiagramm soll den Stromverbrauch der letzten 7 Tage dargestellt werden
       $AreaChart_data2 .= "{period: '".$test_array[$i]['datum']."', value: ".$wert."}, ";  
     }  
 ##### SQL
+Gleich wie bei dem Monatsverbrauch nur mit Gruppierung auf Tage und nicht auf Monate.
+
     SELECT temp.Jahr As Jahr, temp.Monat As Monat, temp.Tag As Tag, SUM(temp.maxi) As Wattstunden  
     FROM (  
     SELECT YEAR(Messdatum) As Jahr, MONTH(Messdatum) As
@@ -897,11 +899,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMDgzODkzMywxMTM2Njg3OTIxLDEwNj
-kyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTksLTY1OTA2
-NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwNDgzOTQ5MC
-wxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUsMTY4MDg0
-NzIwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMCwtOTc2MDQ5MzE0LD
-ExMDQ4NzM5ODAsMTEyMzA0OTI4OSwtMTQzMDgxMzAwMSwtMTI1
-MDEzNjExNF19
+eyJoaXN0b3J5IjpbLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMT
+M2Njg3OTIxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3
+MTIzNTksLTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MT
+csMTgwNDgzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0
+NTUzODUsMTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMC
+wtOTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEyMzA0OTI4OSwtMTQz
+MDgxMzAwMV19
 -->
