@@ -304,7 +304,7 @@ Da die Daten aber nicht nur einen Wert enthalten und genau den Vorgaben des ents
     $DonuteChart_data = substr($DonuteChart_data, 0, -2);  
 
 ##### SQL
-In der Unterabfrage werden die letzten Werte der Maschinen mit der Max-Funktion abgefragt. Die Hauptabfrage
+In der Unterabfrage werden die letzten Werte der Maschinen mit der Max-Funktion abgefragt. Die Hauptabfrage gruppiert die letzten Werte dann nach dem Raum und gibt die Summe zurück.
 
     SELECT SUM(Wattstunden) as Wattstunden, MAX(Raum.Name) As Name  
     FROM (  
@@ -316,6 +316,7 @@ In der Unterabfrage werden die letzten Werte der Maschinen mit der Max-Funktion 
     GROUP BY Raum  
     Order By Wattstunden DESC
 ##### JavaScript
+Die Grundstruktur des JavaScript-Codes kann von den Beispielen übernommen werden. Per php-echo w
     <script>  
       Morris.Donut({  
       element: 'morris-donut-chart',  
@@ -889,11 +890,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NjkyMzkzNiwxMDY5MjEwMzUyLC0xNj
-I4NzczMjg3LC0xNDM5NzEyMzU5LC02NTkwNjY4MjgsLTE3MTM5
-NTU4NywxNTg0NzA2NTE3LDE4MDQ4Mzk0OTAsMTYzNTA2NTU0Ni
-wzMjk3MTkyOCwxNTE4NDU1Mzg1LDE2ODA4NDcyMDUsMTQ2MjIy
-ODI0MiwzMDI2NjgyMTAsLTk3NjA0OTMxNCwxMTA0ODczOTgwLD
-ExMjMwNDkyODksLTE0MzA4MTMwMDEsLTEyNTAxMzYxMTQsLTg4
-OTUwMzI2N119
+eyJoaXN0b3J5IjpbOTgxNTUyOTIsMTA2OTIxMDM1MiwtMTYyOD
+c3MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEzOTU1
+ODcsMTU4NDcwNjUxNywxODA0ODM5NDkwLDE2MzUwNjU1NDYsMz
+I5NzE5MjgsMTUxODQ1NTM4NSwxNjgwODQ3MjA1LDE0NjIyMjgy
+NDIsMzAyNjY4MjEwLC05NzYwNDkzMTQsMTEwNDg3Mzk4MCwxMT
+IzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1
+MDMyNjddfQ==
 -->
