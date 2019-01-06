@@ -463,6 +463,7 @@ Dieses vorgehen war hierbei nötig, da die Daten mit dem SQL-Befehl nur in kumul
     }  
 
 ##### SQL
+In der Unterabfrage werden die Messdaten auf Monat und AIN gruppiert und der letzte Wert jeder AIN zurückgegeben. In der Hauptabfrage werden diese Daten wieder auf die Monate gruppiert und ein summierter Wert sowie das Datum zurückgegeben. Eine einfache Abfrage wie bei der Temperatur ist
     SELECT temp.Jahr As Jahr, temp.Monat As Monat, SUM(temp.maxi) As Wattstunden  
     FROM (  
     SELECT YEAR(Messdatum) As Jahr, MONTH(Messdatum) As Monat,
@@ -895,11 +896,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNjY4NzkyMSwxMDY5MjEwMzUyLC0xNj
-I4NzczMjg3LC0xNDM5NzEyMzU5LC02NTkwNjY4MjgsLTE3MTM5
-NTU4NywxNTg0NzA2NTE3LDE4MDQ4Mzk0OTAsMTYzNTA2NTU0Ni
-wzMjk3MTkyOCwxNTE4NDU1Mzg1LDE2ODA4NDcyMDUsMTQ2MjIy
-ODI0MiwzMDI2NjgyMTAsLTk3NjA0OTMxNCwxMTA0ODczOTgwLD
-ExMjMwNDkyODksLTE0MzA4MTMwMDEsLTEyNTAxMzYxMTQsLTg4
-OTUwMzI2N119
+eyJoaXN0b3J5IjpbNzQ2MDAyNjk2LDExMzY2ODc5MjEsMTA2OT
+IxMDM1MiwtMTYyODc3MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2
+ODI4LC0xNzEzOTU1ODcsMTU4NDcwNjUxNywxODA0ODM5NDkwLD
+E2MzUwNjU1NDYsMzI5NzE5MjgsMTUxODQ1NTM4NSwxNjgwODQ3
+MjA1LDE0NjIyMjgyNDIsMzAyNjY4MjEwLC05NzYwNDkzMTQsMT
+EwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMjUw
+MTM2MTE0XX0=
 -->
