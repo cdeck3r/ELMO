@@ -215,6 +215,7 @@ Der SQL-Befehl für die Summe der Wattstunden ist relativ einfach aufgebaut. In 
 	     FROM Data GROUP BY AIN) As temp
 
 ##### Einbindung
+Zur Einbindung wird die Variable an der entsprechenden Stelle im HTML-Code per echo ausgegeben.
 
     <span class="text-white font-weight-bold"><?php echo $Box1_row["Wattstunden"]; ?></span><span class="text-white font-weight-light"> Wattstunden</span>
 ---
@@ -234,6 +235,7 @@ In diesem Befehl werden per Where Abfrage alle Maschinen ausgelesen, die im Inte
     WHERE Watt>5000 AND Messdatum > DATE_SUB(NOW(), INTERVAL 10 MINUTE)
    
 ##### Einbindung
+Zur Einbindung wird die Variable an der entsprechenden Stelle im HTML-Code per echo ausgegeben.
 
     <span class="text-white font-weight-bold"><?php echo $Box2_row["Anzahl"]; ?></span><span class="text-white font-weight-light"> von 50</span>
 ---
@@ -252,6 +254,7 @@ Die Daten der "Data" Tabelle werden nach AIN gruppiert und DESC sortiert. Dadurc
     SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name
     FROM Data GROUP BY AIN ORDER BY Wattstunden DESC Limit 1
 ##### Einbindung
+Zur Einbindung wird die Variable an der entsprechenden Stelle im HTML-Code per echo ausgegeben.
 
     <span class="text-white font-weight-light">Maschine </span><span class="text-white font-weight-bold"><?php echo utf8_encode($Box3_row["Name"]); ?></span>
 ---
@@ -269,6 +272,7 @@ Gleich wie Box3 nur mit Sortierung ASC
     SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name
     FROM Data GROUP BY AIN ORDER BY Wattstunden ASC Limit 1
 ##### Einbindung
+Zur Einbindung wird die Variable an der entsprechenden Stelle im HTML-Code per echo ausgegeben.
 
     <span class="text-white font-weight-light">Maschine </span><span class="text-white font-weight-bold"><?php echo utf8_encode($Box4_row["Name"]); ?></span>
 
@@ -300,6 +304,8 @@ Da die Daten aber nicht nur einen Wert enthalten und genau den Vorgaben des ents
     $DonuteChart_data = substr($DonuteChart_data, 0, -2);  
 
 ##### SQL
+In der Unterabfrage
+
     SELECT SUM(Wattstunden) as Wattstunden, MAX(Raum.Name) As Name  
     FROM (  
     SELECT MAX(Wattstunden) As Wattstunden, MAX(Raum) As Raum
@@ -883,11 +889,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2OTIxMDM1MiwtMTYyODc3MzI4NywtMT
-QzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEzOTU1ODcsMTU4NDcw
-NjUxNywxODA0ODM5NDkwLDE2MzUwNjU1NDYsMzI5NzE5MjgsMT
-UxODQ1NTM4NSwxNjgwODQ3MjA1LDE0NjIyMjgyNDIsMzAyNjY4
-MjEwLC05NzYwNDkzMTQsMTEwNDg3Mzk4MCwxMTIzMDQ5Mjg5LC
-0xNDMwODEzMDAxLC0xMjUwMTM2MTE0LC04ODk1MDMyNjcsLTkz
-ODU5OTAyNF19
+eyJoaXN0b3J5IjpbLTEyNzE0MTc4NjQsMTA2OTIxMDM1MiwtMT
+YyODc3MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEz
+OTU1ODcsMTU4NDcwNjUxNywxODA0ODM5NDkwLDE2MzUwNjU1ND
+YsMzI5NzE5MjgsMTUxODQ1NTM4NSwxNjgwODQ3MjA1LDE0NjIy
+MjgyNDIsMzAyNjY4MjEwLC05NzYwNDkzMTQsMTEwNDg3Mzk4MC
+wxMTIzMDQ5Mjg5LC0xNDMwODEzMDAxLC0xMjUwMTM2MTE0LC04
+ODk1MDMyNjddfQ==
 -->
