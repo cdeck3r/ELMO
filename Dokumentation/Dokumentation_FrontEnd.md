@@ -713,6 +713,7 @@ Es wird eine Datenbankverbindung geöffnet. Anschließend wird ein SQL Befehl au
     ?>
 
 ### SQL
+SELECT-Befehl auf die drei Tabellen "Data", "Maschinen" und "Raum"
 
     SELECT * FROM Data d INNER JOIN Maschinen m ON d.Name = m.divID WHERE Messdatum BETWEEN (STR_TO_DATE('$von','%Y-%m-%d')) AND (STR_TO_DATE('$bis','%Y-%m-%d'))"))  
 
@@ -907,11 +908,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLT
-EzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OTIxLDEwNjky
-MTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTksLTY1OTA2Nj
-gyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwNDgzOTQ5MCwx
-NjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUsMTY4MDg0Nz
-IwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMCwtOTc2MDQ5MzE0LDEx
-MDQ4NzM5ODBdfQ==
+eyJoaXN0b3J5IjpbLTExOTcxNzA5MTgsLTE2NjA2MTQxNDgsLT
+IxMjYwMzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2
+Njg3OTIxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MT
+IzNTksLTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcs
+MTgwNDgzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NT
+UzODUsMTY4MDg0NzIwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMCwt
+OTc2MDQ5MzE0XX0=
 -->
