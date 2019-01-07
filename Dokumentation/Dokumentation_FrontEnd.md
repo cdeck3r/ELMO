@@ -668,7 +668,8 @@ Der Befehl gruppiert und ordnet die Messdaten nach Minuten. Anschließend wird e
 ### HTML
 ### PHP
 Script von: [CSV-Export](https://github.com/luka-balantic/Export-CSV-from-database-with-PHP-mysqli/blob/master/exportCSV.php)
-Es wird eine Datenbankverbindung geöffnet. Anschließend wird ein SQL Befehl ausgeführt, welcher alle Daten in dem gewünschten Zeitraum ausliest. Diese Daten werden in
+Es wird eine Datenbankverbindung geöffnet. Anschließend wird ein SQL Befehl ausgeführt, welcher alle Daten in dem gewünschten Zeitraum ausliest. Diese Daten werden in eine CSV-Datei geschrieben und in dem Ordner "csv" abgelegt. Anschließend wird dem Nutzer ein Downloadlink angeboten.
+
     <?php  
     session_start();  
     if(!isset($_SESSION['userid'])) {  
@@ -902,7 +903,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTAzNTI1ODAsLTEzNjUwODA4NzUsMT
+eyJoaXN0b3J5IjpbLTIxMjYwMzE5NjksLTEzNjUwODA4NzUsMT
 MxMDgzODkzMywxMTM2Njg3OTIxLDEwNjkyMTAzNTIsLTE2Mjg3
 NzMyODcsLTE0Mzk3MTIzNTksLTY1OTA2NjgyOCwtMTcxMzk1NT
 g3LDE1ODQ3MDY1MTcsMTgwNDgzOTQ5MCwxNjM1MDY1NTQ2LDMy
