@@ -668,6 +668,7 @@ Der Befehl gruppiert und ordnet die Messdaten nach Minuten. Anschließend wird e
 ### HTML
 ### PHP
 Script von: [CSV-Export](https://github.com/luka-balantic/Export-CSV-from-database-with-PHP-mysqli/blob/master/exportCSV.php)
+Es wird eine Datenbankverbindung geöffnet. Anschließend wird ein SQL Befehl ausgeführt, welcher alle Daten in dem gewünschten Zeitraum ausliest. Diese Daten werden in
     <?php  
     session_start();  
     if(!isset($_SESSION['userid'])) {  
@@ -901,11 +902,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NjY4MTQyNCwtMTM2NTA4MDg3NSwxMz
-EwODM4OTMzLDExMzY2ODc5MjEsMTA2OTIxMDM1MiwtMTYyODc3
-MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEzOTU1OD
-csMTU4NDcwNjUxNywxODA0ODM5NDkwLDE2MzUwNjU1NDYsMzI5
-NzE5MjgsMTUxODQ1NTM4NSwxNjgwODQ3MjA1LDE0NjIyMjgyND
-IsMzAyNjY4MjEwLC05NzYwNDkzMTQsMTEwNDg3Mzk4MCwxMTIz
-MDQ5Mjg5XX0=
+eyJoaXN0b3J5IjpbLTE3MTAzNTI1ODAsLTEzNjUwODA4NzUsMT
+MxMDgzODkzMywxMTM2Njg3OTIxLDEwNjkyMTAzNTIsLTE2Mjg3
+NzMyODcsLTE0Mzk3MTIzNTksLTY1OTA2NjgyOCwtMTcxMzk1NT
+g3LDE1ODQ3MDY1MTcsMTgwNDgzOTQ5MCwxNjM1MDY1NTQ2LDMy
+OTcxOTI4LDE1MTg0NTUzODUsMTY4MDg0NzIwNSwxNDYyMjI4Mj
+QyLDMwMjY2ODIxMCwtOTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEy
+MzA0OTI4OV19
 -->
