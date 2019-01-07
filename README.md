@@ -1,5 +1,5 @@
 # Synopsis
-![ELMO Main](Dokumentation/Bilder/Elmo_desc.jpg)
+![ELMO Main](Dokumentation/Bilder/Elmo_desc_Docu.jpg)
 
 ELMO ist Energiemonitoring mit COTS Hardware. Erfassungssysteme werden in einem Maschinenpark ausgebracht. Es folgt ein längerer unbeaufsichtigter Betrieb der Datenerfassung. Eine Datenauswertung macht verschiedene Betriebsbedingungen sichtbar.
 
@@ -40,6 +40,6 @@ Dies ist Projekt im [Bachelor Wirtschaftsinformatik \(WIB\)](http://www.inf.reut
 * Github, Trello, ...
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTAzODUwMSwtOTg4NjkxNzcsLTE4Nj
-k2ODI1MV19
+eyJoaXN0b3J5IjpbLTEwMDYxMDk3NSwtMTgxMDM4NTAxLC05OD
+g2OTE3NywtMTg2OTY4MjUxXX0=
 -->
