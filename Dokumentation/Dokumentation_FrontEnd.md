@@ -582,10 +582,14 @@ Um die Daten der zwei Funktionen (Rückgabe in Byte) sinnvoll darstellen zu kön
 ##### PHP
 > Um die aktuellen Stromverbrauch Daten ohne ein neuladen der Seite zur Verfügung stellen zu können, wurde der nötige PHP-Code in eine eigene Datei geschrieben, die dann in einem definierten Intervall in JavaScript aufgerufen werden kann.
 
-Gleich wie in der Hauptdatei des Dashboards wird zuerst eine Verbindung zur Datenbank aufgebaut.
+Gleich wie in der Hauptdatei des Dashboards wird zuerst eine Verbindung zur Datenbank aufgebaut. Des Weiteren wird geprüft, ob eine Session gesetzt wurde, damit unbefugte die Daten nicht einsehen können.
 
     <?php  
-      
+       //Login-Session  
+    session_start();  
+    if(!isset($_SESSION['userid'])) {  
+     header('Location: pages-lockscreen.php');  
+    } 
     require("config.php");  
     $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
       
@@ -903,11 +907,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjYwMzE5NjksLTEzNjUwODA4NzUsMT
-MxMDgzODkzMywxMTM2Njg3OTIxLDEwNjkyMTAzNTIsLTE2Mjg3
-NzMyODcsLTE0Mzk3MTIzNTksLTY1OTA2NjgyOCwtMTcxMzk1NT
-g3LDE1ODQ3MDY1MTcsMTgwNDgzOTQ5MCwxNjM1MDY1NTQ2LDMy
-OTcxOTI4LDE1MTg0NTUzODUsMTY4MDg0NzIwNSwxNDYyMjI4Mj
-QyLDMwMjY2ODIxMCwtOTc2MDQ5MzE0LDExMDQ4NzM5ODAsMTEy
-MzA0OTI4OV19
+eyJoaXN0b3J5IjpbLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLT
+EzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OTIxLDEwNjky
+MTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTksLTY1OTA2Nj
+gyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwNDgzOTQ5MCwx
+NjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUsMTY4MDg0Nz
+IwNSwxNDYyMjI4MjQyLDMwMjY2ODIxMCwtOTc2MDQ5MzE0LDEx
+MDQ4NzM5ODBdfQ==
 -->
