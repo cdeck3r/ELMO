@@ -1,4 +1,4 @@
-![Titelbild ELMO Rollout](Bilder/ELMO_RollOut.png)
+![Titelbild ELMO Rollout](Bilder/ELMO_RollOut_Docu.png)
 
 # Rollout
 Das Hardware Rollout umfasst den Aufbau und Anschluss der FRITZ!Dect Steckdosen, FRITZ!Box Router und Raspberry Pi in den 3 vorhandenen Textil-Werkräumen.
@@ -34,5 +34,5 @@ Eine Erweiterung der Hardware ist jederzeit möglich, da das komplette System sk
 ## R
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MjEyMDYxOCwxMDUwODYyODAwXX0=
+eyJoaXN0b3J5IjpbLTE4MDk2OTc5NzgsMTA1MDg2MjgwMF19
 -->
