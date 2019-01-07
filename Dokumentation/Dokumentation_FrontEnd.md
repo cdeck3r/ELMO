@@ -715,7 +715,10 @@ Es wird eine Datenbankverbindung geöffnet. Anschließend wird ein SQL Befehl au
 ### SQL
 SELECT-Befehl auf die drei Tabellen "Data", "Maschinen" und "Raum"
 
-    SELECT * FROM Data d INNER JOIN Maschinen m ON d.Name = m.divID WHERE Messdatum BETWEEN (STR_TO_DATE('$von','%Y-%m-%d')) AND (STR_TO_DATE('$bis','%Y-%m-%d'))"))  
+    SELECT * FROM Data d INNER JOIN Maschinen m 
+    ON d.Name = m.divID WHERE Messdatum BETWEEN
+     (STR_TO_DATE('$von','%Y-%m-%d')) AND
+      (STR_TO_DATE('$bis','%Y-%m-%d'))"))  
 
 ## Reinigungsintervalle
 ![Cleantabelle](Bilder/Funktionenbilder/clean.jpg)
@@ -908,7 +911,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTcxNzA5MTgsLTE2NjA2MTQxNDgsLT
+eyJoaXN0b3J5IjpbLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLT
 IxMjYwMzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2
 Njg3OTIxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MT
 IzNTksLTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcs
