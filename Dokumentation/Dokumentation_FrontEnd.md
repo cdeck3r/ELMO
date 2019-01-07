@@ -1,4 +1,4 @@
-![Titelbild ELMO FrontEnd](Bilder/ELMO_FrontEnd.png)
+![Titelbild ELMO FrontEnd](Bilder/ELMO_FrontEnd_Docu.png)
 
 # Dokumentation FrontEnd
 ## Struktur
@@ -37,7 +37,7 @@ Das Logo wurde in Adobe Photoshop CS3 umgesetzt. Es besteht aus vier Ebenen.
 4. Typo Cloud (Light / Font: Bison)
 
 #### Logo Final 
-![ELMO Logodesign](Bilder/Elmo-logo.jpg)
+![ELMO Logodesign](Bilder/Elmo-logo_Docu.jpg)
 
 Light/Dark Edtion
 
@@ -49,7 +49,7 @@ Schriftart und Figur Elmo wird nur für non kommerzielle Zwecke genutzt*
 ### CSS
 ### HTML
 ### Responsive Design
-![ELMO Responsive](Bilder/Elmo_responsive.jpg)
+![ELMO Responsive](Bilder/Elmo_responsive_Docu.jpg)
 
 ## Benutzerbereich
 ## Grundriss | Raumpläne
@@ -912,11 +912,11 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum"
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NTU4MTUwMCwtMTc4MjE1NDYyMiwtMT
-Y2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4MDg3NSwxMzEw
-ODM4OTMzLDExMzY2ODc5MjEsMTA2OTIxMDM1MiwtMTYyODc3Mz
-I4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEzOTU1ODcs
-MTU4NDcwNjUxNywxODA0ODM5NDkwLDE2MzUwNjU1NDYsMzI5Nz
-E5MjgsMTUxODQ1NTM4NSwxNjgwODQ3MjA1LDE0NjIyMjgyNDIs
-MzAyNjY4MjEwXX0=
+eyJoaXN0b3J5IjpbLTE4NDAxODM1MzQsLTk1NTU4MTUwMCwtMT
+c4MjE1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2
+NTA4MDg3NSwxMzEwODM4OTMzLDExMzY2ODc5MjEsMTA2OTIxMD
+M1MiwtMTYyODc3MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4
+LC0xNzEzOTU1ODcsMTU4NDcwNjUxNywxODA0ODM5NDkwLDE2Mz
+UwNjU1NDYsMzI5NzE5MjgsMTUxODQ1NTM4NSwxNjgwODQ3MjA1
+LDE0NjIyMjgyNDJdfQ==
 -->
