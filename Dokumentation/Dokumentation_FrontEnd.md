@@ -667,7 +667,7 @@ Der Befehl gruppiert und ordnet die Messdaten nach Minuten. Anschließend wird e
 
 ### HTML
 ### PHP
-
+Script von: [CSV-Export](https://github.com/luka-balantic/Export-CSV-from-database-with-PHP-mysqli/blob/master/exportCSV.php)
     <?php  
     session_start();  
     if(!isset($_SESSION['userid'])) {  
@@ -901,7 +901,7 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3ODY0NjU0OSwtMTM2NTA4MDg3NSwxMz
+eyJoaXN0b3J5IjpbLTQ2NjY4MTQyNCwtMTM2NTA4MDg3NSwxMz
 EwODM4OTMzLDExMzY2ODc5MjEsMTA2OTIxMDM1MiwtMTYyODc3
 MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEzOTU1OD
 csMTU4NDcwNjUxNywxODA0ODM5NDkwLDE2MzUwNjU1NDYsMzI5
