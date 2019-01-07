@@ -605,7 +605,8 @@ Zum Schluss werden die Daten per echo im json_encode Format ausgegeben. Diese Au
     ?>
 
 ##### SQL
-Der Befehl gruppiert und ordnet die Messdaten nach Minuten. Anschließend wird eine Summe zurückgegeben, die de
+Der Befehl gruppiert und ordnet die Messdaten nach Minuten. Anschließend wird eine Summe zurückgegeben, die dem aktuellen verbrauch (in dieser Minute) entspricht.
+
     SELECT SUM(Watt)/1000 As Watt, YEAR(Messdatum) As Jahr,
     MONTH(Messdatum) As Monat, DAY(Messdatum) As Tag,
     HOUR(Messdatum) As Stunde, MINUTE(Messdatum) As Minute
@@ -900,11 +901,11 @@ Darstellung
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNzYzNjYzLC0xMzY1MDgwODc1LDEzMT
-A4Mzg5MzMsMTEzNjY4NzkyMSwxMDY5MjEwMzUyLC0xNjI4Nzcz
-Mjg3LC0xNDM5NzEyMzU5LC02NTkwNjY4MjgsLTE3MTM5NTU4Ny
-wxNTg0NzA2NTE3LDE4MDQ4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3
-MTkyOCwxNTE4NDU1Mzg1LDE2ODA4NDcyMDUsMTQ2MjIyODI0Mi
-wzMDI2NjgyMTAsLTk3NjA0OTMxNCwxMTA0ODczOTgwLDExMjMw
-NDkyODldfQ==
+eyJoaXN0b3J5IjpbMjA3ODY0NjU0OSwtMTM2NTA4MDg3NSwxMz
+EwODM4OTMzLDExMzY2ODc5MjEsMTA2OTIxMDM1MiwtMTYyODc3
+MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEzOTU1OD
+csMTU4NDcwNjUxNywxODA0ODM5NDkwLDE2MzUwNjU1NDYsMzI5
+NzE5MjgsMTUxODQ1NTM4NSwxNjgwODQ3MjA1LDE0NjIyMjgyND
+IsMzAyNjY4MjEwLC05NzYwNDkzMTQsMTEwNDg3Mzk4MCwxMTIz
+MDQ5Mjg5XX0=
 -->
