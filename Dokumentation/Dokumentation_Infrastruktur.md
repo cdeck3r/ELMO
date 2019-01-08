@@ -339,7 +339,7 @@ sudo apt-get install php7.0-mysqli
 sudo apt-get install php7.0-xml
 ```
 
-    enter code here
+    sudo apt-get install php7.0-mbstring
 
 ```text
 sudo apt-get update 
@@ -400,7 +400,7 @@ Rasberry Pi Software Configuration Tool
 SSH Enable
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MjE5NjMxMSwyNjI1NTUzOTQsLTI2MD
+eyJoaXN0b3J5IjpbMjExNTM2NDk5MiwyNjI1NTUzOTQsLTI2MD
 YzOTgyLC01NzgzMjc5MjEsLTE1MDIyMDg1MywtMTQyMDAwNDY0
 Myw2ODU2MTQ2NjksLTE2MDg2MTE2OTUsMjA1Nzc5MjYxM119
 -->
