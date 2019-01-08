@@ -1,7 +1,7 @@
 <!-- ############################################################## -->
 <!-- ############################################################## -->
 <!--
-Template Name: ELMO Cloud - Adminbereich
+Template Name: ELMO Cloud - Ansprechpartner
 Author: Patrick Ardelean, Timo Hegenberg, Justus Mattedi
 Email: elmo.project18@gmail.com
 File: php
