@@ -331,10 +331,6 @@ sudo apt-get install exfat-fuse
 
 ```text
 sudo apt-get install php7.0
-
-
-
-
 ```
 
     sudo apt-get install php7.0-mbstring
@@ -398,7 +394,8 @@ Rasberry Pi Software Configuration Tool
 SSH Enable
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NTkzMTk5MSwyNjI1NTUzOTQsLTI2MD
-YzOTgyLC01NzgzMjc5MjEsLTE1MDIyMDg1MywtMTQyMDAwNDY0
-Myw2ODU2MTQ2NjksLTE2MDg2MTE2OTUsMjA1Nzc5MjYxM119
+eyJoaXN0b3J5IjpbLTE5NzU0MDQzODUsMjYyNTU1Mzk0LC0yNj
+A2Mzk4MiwtNTc4MzI3OTIxLC0xNTAyMjA4NTMsLTE0MjAwMDQ2
+NDMsNjg1NjE0NjY5LC0xNjA4NjExNjk1LDIwNTc3OTI2MTNdfQ
+==
 -->
