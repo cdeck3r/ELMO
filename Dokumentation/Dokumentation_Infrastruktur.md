@@ -329,9 +329,19 @@ sudo apt-get install exfat-fuse
 
 **PHP 7/MySQL**
 
-    sudo apt-get install php7.0
+```text
+sudo apt-get install php7.0
+```
 
-    enter code here
+```text
+sudo apt-get install php7.0-mysqli
+sudo apt-get install php7.0-xml
+sudo apt-get install php7.0-mbstring
+```
+```text
+sudo apt-get update 
+sudo apt-get upgrade
+```
 
 **Firewall**
 
@@ -387,7 +397,7 @@ Rasberry Pi Software Configuration Tool
 SSH Enable
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxODYyNjQ3LDI2MjU1NTM5NCwtMjYwNj
+eyJoaXN0b3J5IjpbNTEzMDYzMjU0LDI2MjU1NTM5NCwtMjYwNj
 M5ODIsLTU3ODMyNzkyMSwtMTUwMjIwODUzLC0xNDIwMDA0NjQz
 LDY4NTYxNDY2OSwtMTYwODYxMTY5NSwyMDU3NzkyNjEzXX0=
 -->
