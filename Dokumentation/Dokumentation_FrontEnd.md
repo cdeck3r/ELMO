@@ -734,7 +734,8 @@ SELECT-Befehl auf die drei Tabellen "Data", "Maschinen" und "Raum"
 ### HTML
 ### PHP
 #### Datenabfrage 
-Falls der Button "Reinigen" gedrückt wird, wird die Seite neu aufgerufen und die ID der Maschine in der URL gesetzt. Diese ID wird anschließen mit "$_GET['ID']" ausgelesen und die entsprechende Reinigung in die Da
+Falls der Button "Reinigen" gedrückt wird, wird die Seite neu aufgerufen und die ID der Maschine in der URL gesetzt. Diese ID wird anschließen mit "$_GET['ID']" ausgelesen und die entsprechende Reinigung in die Datenbank in die Tabelle "Reinigungen" geschrieben. Außerdem wird in der Tabelle Maschinen das Attribute "lastClean" auf den derzeitigen Zeitpunkt gesetzt.
+
     //Last-Clean & Reinigung  
     if(isset($_GET['ID'])) {  
       $ID = $_GET['ID'];  
@@ -746,7 +747,8 @@ Falls der Button "Reinigen" gedrückt wird, wird die Seite neu aufgerufen und di
       $stmt2->execute();  
       }  
     }  
-      
+ 
+Informationen über seit der letzten Reinigung vergangenen Arbeitszeit werden in die Variable "table_result1" geschrieben     
     $table_query1 = "  
     SELECT MAX(Maschinenname) As Name, COUNT(AIN)/60 As AnzahlStunden, MAX(ID) As ID, MAX(LastClean) As LastClean  
     FROM (  
@@ -920,11 +922,11 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum"
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0Mzc2MjIwMiwxNTc1NTM0ODEwLC05NT
-U1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYw
-MzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OT
-IxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTks
-LTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwND
-gzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUs
-MTY4MDg0NzIwNV19
+eyJoaXN0b3J5IjpbLTE2OTY2NzU1NDgsMTU3NTUzNDgxMCwtOT
+U1NTgxNTAwLC0xNzgyMTU0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2
+MDMxOTY5LC0xMzY1MDgwODc1LDEzMTA4Mzg5MzMsMTEzNjY4Nz
+kyMSwxMDY5MjEwMzUyLC0xNjI4NzczMjg3LC0xNDM5NzEyMzU5
+LC02NTkwNjY4MjgsLTE3MTM5NTU4NywxNTg0NzA2NTE3LDE4MD
+Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
+LDE2ODA4NDcyMDVdfQ==
 -->
