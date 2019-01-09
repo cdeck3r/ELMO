@@ -107,9 +107,11 @@ Darstellungsoptimierung von IE8/IE9 bei HTML 5 Elemente
     <![endif]-->
 
 ##### Body
-Die Body Klasse wird mit:
+Die Body Klasse wird mit ... definiert:
 
- - Fix-Header 
+ - Fix-Header (Fixiert die Headerleiste - no-scroll)
+ - Fix-Sidebar (Fixiert die linke navigation - no-scroll)
+ - card-no-border (Klasse card hat kein rand)
 
 <body class="fix-header fix-sidebar card-no-border" onload="parseFunction()">
 
@@ -992,7 +994,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxODgzOTMyNCwtMjA5MTM4MzczNCwxMz
+eyJoaXN0b3J5IjpbMTUxMTAwMzMxNCwtMjA5MTM4MzczNCwxMz
 g3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0xMTc2ODI5
 MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMTU0NjIyLC
 0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgwODc1LDEz
