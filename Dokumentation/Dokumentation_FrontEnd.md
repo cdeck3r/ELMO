@@ -47,8 +47,11 @@ https://www.behance.net/gallery/63195715/Bison-Font-Family-(Free-download)
 Schriftart und Figur Elmo wird nur für non kommerzielle Zwecke genutzt*
 
 ### CSS
-Bei der style.css handelt es sich um ein erweitetes Bootstrap Stylesheet.
-https://getbootstrap.com/docs/3.4/css/. Das ganze wurde ebenfalls in css
+Bei der style.css handelt es sich um ein erweitetes Bootstrap Stylesheet von [Material PRO](https://wrappixel.com/)
+https://getbootstrap.com/docs/3.4/css/.
+ Das ganze wurde ebenfalls in scss umgesetzt um Veränderungen zu vereinfachen.
+
+
 ### HTML
 ### Responsive Design
 ![Responisve](Bilder/responsive-elmo.jpg)
@@ -920,11 +923,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MzEyMDY0LDE0MDQ2OTM5ODYsMzQ0Mz
-YxNTc0LC0xMTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAw
-LC0xNzgyMTU0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC
-0xMzY1MDgwODc1LDEzMTA4Mzg5MzMsMTEzNjY4NzkyMSwxMDY5
-MjEwMzUyLC0xNjI4NzczMjg3LC0xNDM5NzEyMzU5LC02NTkwNj
-Y4MjgsLTE3MTM5NTU4NywxNTg0NzA2NTE3LDE4MDQ4Mzk0OTAs
-MTYzNTA2NTU0Nl19
+eyJoaXN0b3J5IjpbLTM1MTI4NjUxNiwxNDA0NjkzOTg2LDM0ND
+M2MTU3NCwtMTE3NjgyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUw
+MCwtMTc4MjE1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OS
+wtMTM2NTA4MDg3NSwxMzEwODM4OTMzLDExMzY2ODc5MjEsMTA2
+OTIxMDM1MiwtMTYyODc3MzI4NywtMTQzOTcxMjM1OSwtNjU5MD
+Y2ODI4LC0xNzEzOTU1ODcsMTU4NDcwNjUxNywxODA0ODM5NDkw
+LDE2MzUwNjU1NDZdfQ==
 -->
