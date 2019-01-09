@@ -80,13 +80,27 @@ Wir sagen hier dem Browser das er Responsive mit der Bildschirmbreite sein soll
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-HTML Standards wie Beschreibung, Autor, Favicon
+HTML Standards wie Beschreibung, Autor, Favicon sowie Titel.
 
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
     <title>ELMO CLOUD | Raum 01-031N</title>
+Definieren der CSS
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--This page css - Morris CSS -->
+    <link href="../assets/plugins/morrisjs/morris.css" rel="stylesheet">
+    <!-- Custom Bootstrap CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom ELMO CSS -->
+    <link href="css/costumpi.css" rel="stylesheet">
+    <!-- You can change the theme colorsfrom here -->
+    <link href="css/colors/red-dark.css" id="theme" rel="stylesheet">
+
+
 
 #### CSS
 
@@ -957,7 +971,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYzMDQ0MjkxLDEzODczODIyNTYsMTQwND
+eyJoaXN0b3J5IjpbMTM1ODU1OTY3LDEzODczODIyNTYsMTQwND
 Y5Mzk4NiwzNDQzNjE1NzQsLTExNzY4MjkzOSwxNTc1NTM0ODEw
 LC05NTU1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLT
 IxMjYwMzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2
