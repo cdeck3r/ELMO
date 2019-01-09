@@ -871,13 +871,7 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum".
 
 ### HTML
 ### PHP
-
-    <?php  
-    session_start();  
-    require("config.php");  
-    $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
-      
-      
+Wurde ein Anmeldeversuch getätigt, wird die Seite neu geladen und die Daten per POST-Verfahren an PHP übergeben. Dann wird das g
     if(isset($_GET['login'])) {  
       $passwort = $_POST['password'];  
       $login_query= "SELECT id, passwort FROM User";  
@@ -897,6 +891,7 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum".
     ?>
 
 ### SQL
+Es wird die id und das passwort des Accounts ausgelesen. 
 
     SELECT id, passwort FROM User
 
@@ -922,11 +917,11 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum".
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzEzNjUxNzgsMTU3NTUzNDgxMCwtOT
-U1NTgxNTAwLC0xNzgyMTU0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2
-MDMxOTY5LC0xMzY1MDgwODc1LDEzMTA4Mzg5MzMsMTEzNjY4Nz
-kyMSwxMDY5MjEwMzUyLC0xNjI4NzczMjg3LC0xNDM5NzEyMzU5
-LC02NTkwNjY4MjgsLTE3MTM5NTU4NywxNTg0NzA2NTE3LDE4MD
-Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
-LDE2ODA4NDcyMDVdfQ==
+eyJoaXN0b3J5IjpbLTMwODg3NTgwNywxNTc1NTM0ODEwLC05NT
+U1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYw
+MzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OT
+IxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTks
+LTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwND
+gzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUs
+MTY4MDg0NzIwNV19
 -->
