@@ -478,6 +478,7 @@ In der Unterabfrage werden die Messdaten auf Monat und AIN gruppiert und der let
     ORDER BY temp.Jahr, temp.Monat DESC  
     LIMIT 13
 ##### JavaScript
+Die Grundstruktur des JavaScript-Codes kann von den Beispielen übernommen werden. Per php-echo wird der vor-formatierte String an JavaScript übergeben. Außerdem werden Optionen zum Aussehen des Charts getroffen.
 
     <script>  
           Morris.Area({  
@@ -541,6 +542,8 @@ Gleich wie bei dem Monatsverbrauch nur mit Gruppierung auf Tage und nicht auf Mo
     ORDER BY temp.Jahr, temp.Monat, temp.Tag DESC  
     LIMIT 8
 ##### JavaScript
+Die Grundstruktur des JavaScript-Codes kann von den Beispielen übernommen werden. Per php-echo wird der vor-formatierte String an JavaScript übergeben. Außerdem werden Optionen zum Aussehen des Charts getroffen.
+
     <script>  
       Morris.Area({  
       element: 'extra-area-chart2',  
@@ -623,6 +626,8 @@ Der Befehl gruppiert und ordnet die Messdaten nach Minuten. Anschließend wird e
     DAY(Messdatum) DESC, HOUR(Messdatum) DESC,
     MINUTE(Messdatum) DESC LIMIT 20
 ##### JavaScript 
+Die Grundstruktur des JavaScript-Codes kann von den Beispielen übernommen werden. Per php-echo wird der vor-formatierte String an JavaScript übergeben. Außerdem werden Optionen zum Aussehen des Charts getroffen. Anders als bei den anderen Diagrammen erfolgt die Abfrage der Daten hierbei allerdings alle 30 Sekunden über AJAX. Dabei wird die PHP-Datei "flotData.php" aufgerufen, welche die Daten zurückliefert.
+
     <script>  
       var getLatestData = function(){  
       var ctx = document.getElementById('real-time-chart');  
@@ -915,11 +920,11 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum"
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwOTM4NzgzOCwxNTc1NTM0ODEwLC05NT
-U1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYw
-MzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OT
-IxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTks
-LTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwND
-gzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUs
-MTY4MDg0NzIwNV19
+eyJoaXN0b3J5IjpbLTcyNjYyMTUxLDE1NzU1MzQ4MTAsLTk1NT
+U4MTUwMCwtMTc4MjE1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAz
+MTk2OSwtMTM2NTA4MDg3NSwxMzEwODM4OTMzLDExMzY2ODc5Mj
+EsMTA2OTIxMDM1MiwtMTYyODc3MzI4NywtMTQzOTcxMjM1OSwt
+NjU5MDY2ODI4LC0xNzEzOTU1ODcsMTU4NDcwNjUxNywxODA0OD
+M5NDkwLDE2MzUwNjU1NDYsMzI5NzE5MjgsMTUxODQ1NTM4NSwx
+NjgwODQ3MjA1XX0=
 -->
