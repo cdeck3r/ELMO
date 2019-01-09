@@ -27,7 +27,7 @@
 ## Framework
 ### Logo
 #### Logo-Idee
-Das Logo wurde nach aktuellen "Modernem Logodesign" erstellt.
+Das Logo wurde nach aktuellen  "Modernem Logodesign" erstellt.
 
 #### Logo-Umsetzung
 Das Logo wurde in Adobe Photoshop CS3 umgesetzt. Es besteht aus vier Ebenen.
@@ -60,7 +60,7 @@ Die erweiterteten CSS Klassen werden in den einzelnen ELMO Funktionen dargestell
 
 ### HTML
 ### Responsive Design
-![Responisve](Bilder/responsive-elmo.jpg)
+![Rsponisve](Bilder/responsiveo.jpg)
 
 ## Benutzerbereich
 #### HTML
@@ -97,6 +97,7 @@ Benutzt wurden die ak
     <![endif]-->
     
     </head>
+    enter code here
 
 #### CSS
 
@@ -967,11 +968,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUxOTYxMDM1LDE0MDQ2OTM5ODYsMzQ0Mz
-YxNTc0LC0xMTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAw
-LC0xNzgyMTU0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC
-0xMzY1MDgwODc1LDEzMTA4Mzg5MzMsMTEzNjY4NzkyMSwxMDY5
-MjEwMzUyLC0xNjI4NzczMjg3LC0xNDM5NzEyMzU5LC02NTkwNj
-Y4MjgsLTE3MTM5NTU4NywxNTg0NzA2NTE3LDE4MDQ4Mzk0OTAs
-MTYzNTA2NTU0Nl19
+eyJoaXN0b3J5IjpbMTM4NzM4MjI1Niw1NTE5NjEwMzUsMTQwND
+Y5Mzk4NiwzNDQzNjE1NzQsLTExNzY4MjkzOSwxNTc1NTM0ODEw
+LC05NTU1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLT
+IxMjYwMzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2
+Njg3OTIxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MT
+IzNTksLTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcs
+MTgwNDgzOTQ5MF19
 -->
