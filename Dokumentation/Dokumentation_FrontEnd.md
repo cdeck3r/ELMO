@@ -62,7 +62,7 @@ Die erweiterteten CSS Klassen werden in den einzelnen ELMO Funktionen dargestell
 Die HTML/PHP-Datein wurden nach WC3-Standard geschrieben und überprüft (100% valid).
 
 ### Responsive Design
-![Rsponisve](Bilder/responsiveo.jpg)
+![responisve](Bilder/responsive-elmo.jpg)
 
 ## Benutzerbereich
 #### HTML
@@ -996,11 +996,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NzA3MTM5OSwtMjA5MTM4MzczNCwxMz
-g3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0xMTc2ODI5
-MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMTU0NjIyLC
-0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgwODc1LDEz
-MTA4Mzg5MzMsMTEzNjY4NzkyMSwxMDY5MjEwMzUyLC0xNjI4Nz
-czMjg3LC0xNDM5NzEyMzU5LC02NTkwNjY4MjgsLTE3MTM5NTU4
-NywxNTg0NzA2NTE3XX0=
+eyJoaXN0b3J5IjpbNzY4MTIyMjY3LC0yMDkxMzgzNzM0LDEzOD
+czODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQsLTExNzY4Mjkz
+OSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3ODIxNTQ2MjIsLT
+E2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUwODA4NzUsMTMx
+MDgzODkzMywxMTM2Njg3OTIxLDEwNjkyMTAzNTIsLTE2Mjg3Nz
+MyODcsLTE0Mzk3MTIzNTksLTY1OTA2NjgyOCwtMTcxMzk1NTg3
+LDE1ODQ3MDY1MTddfQ==
 -->
