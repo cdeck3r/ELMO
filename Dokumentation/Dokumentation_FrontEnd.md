@@ -748,7 +748,8 @@ Falls der Button "Reinigen" gedrückt wird, wird die Seite neu aufgerufen und di
       }  
     }  
  
-Informationen über seit der letzten Reinigung vergangenen Arbeitszeit werden in die Variable "table_result1" geschrieben     
+Informationen über seit der letzten Reinigung vergangenen Arbeitszeit werden in die Variable "table_result1" geschrieben.
+     
     $table_query1 = "  
     SELECT MAX(Maschinenname) As Name, COUNT(AIN)/60 As AnzahlStunden, MAX(ID) As ID, MAX(LastClean) As LastClean  
     FROM (  
@@ -761,6 +762,7 @@ Informationen über seit der letzten Reinigung vergangenen Arbeitszeit werden in
     ";  
     $table_result1 = mysqli_query($connect, $table_query1);  
       
+Alle vergangenen Reinigungen werden ausgelesen und in die Variable "table_result2" geschrieben.
       
     //Reinigungstabelle  
     $table_query2 = "  
@@ -773,6 +775,7 @@ Informationen über seit der letzten Reinigung vergangenen Arbeitszeit werden in
     ?>
 
 #### Darstellung genutzte Maschinen
+Über die While-Schleife können alle Maschinen dargestellt werden, die Seit der letzten Reinigung aktiv waren. Waren die Maschinen nicht mehr aktiv, werden sie hier nicht dargestellt. Die einzelnen Attribute der SQL-Abfrage können aus der Variable ausgelesen werden. 
 
     <?php  
     while($table_row1 = mysqli_fetch_array($table_result1)) {  
@@ -922,11 +925,11 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum"
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTY2NzU1NDgsMTU3NTUzNDgxMCwtOT
-U1NTgxNTAwLC0xNzgyMTU0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2
-MDMxOTY5LC0xMzY1MDgwODc1LDEzMTA4Mzg5MzMsMTEzNjY4Nz
-kyMSwxMDY5MjEwMzUyLC0xNjI4NzczMjg3LC0xNDM5NzEyMzU5
-LC02NTkwNjY4MjgsLTE3MTM5NTU4NywxNTg0NzA2NTE3LDE4MD
-Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
-LDE2ODA4NDcyMDVdfQ==
+eyJoaXN0b3J5IjpbMTczODc0MDkyNywxNTc1NTM0ODEwLC05NT
+U1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYw
+MzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OT
+IxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTks
+LTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwND
+gzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUs
+MTY4MDg0NzIwNV19
 -->
