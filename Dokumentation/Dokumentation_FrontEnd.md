@@ -66,8 +66,6 @@ Die HTML/PHP-Datein wurden nach WC3-Standard geschrieben und überprüft (100% v
 
 ## Benutzerbereich
 #### HTML
-##### Aufbau
-
 ##### Head
 
 Im Html-Headenutzen wi die Standards wie das Charset UTF-8 als auch die Bestimmung des Internet Explorer Edge renderings für ältere IE Browser (nicht mehr notwendig ab IE11).
@@ -998,11 +996,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1Nzg5Njg0Miw3NjgxMjIyNjcsLTIwOT
-EzODM3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3
-NCwtMTE3NjgyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMT
-c4MjE1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2
-NTA4MDg3NSwxMzEwODM4OTMzLDExMzY2ODc5MjEsMTA2OTIxMD
-M1MiwtMTYyODc3MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4
-LC0xNzEzOTU1ODddfQ==
+eyJoaXN0b3J5IjpbNzY4MTIyMjY3LDc2ODEyMjI2NywtMjA5MT
+M4MzczNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0
+LC0xMTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNz
+gyMTU0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1
+MDgwODc1LDEzMTA4Mzg5MzMsMTEzNjY4NzkyMSwxMDY5MjEwMz
+UyLC0xNjI4NzczMjg3LC0xNDM5NzEyMzU5LC02NTkwNjY4Mjgs
+LTE3MTM5NTU4N119
 -->
