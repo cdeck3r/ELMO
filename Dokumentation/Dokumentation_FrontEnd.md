@@ -800,7 +800,8 @@ Alle vergangenen Reinigungen werden ausgelesen und in die Variable "table_result
     ?>
 
 #### Darstellung vergangene Reinigungen
-Über die While-Schleife werden alle vergangenen Reinigungen und die vor der Reinigung vergangen 
+Über die While-Schleife werden alle vergangenen Reinigungen und die vor der Reinigung vergangen Betriebsstunden abgerufen und in einer Tabelle dargestellt. So bildet sich eine Historie, mit der die Mitarbeiter einen guten Überblick über die Wartungen erhalten.
+
     <?php  
     while($table_row2 = mysqli_fetch_array($table_result2)) {  
       echo "<tr>";  
@@ -829,7 +830,6 @@ Alle vergangenen Reinigungen werden ausgelesen und in die Variable "table_result
     FROM Reinigungen r INNER JOIN Maschinen m ON r.MaschinenID = m.divID  
     ORDER BY MaschinenID 
     
-### JavaScript
 ## Alle Maschinen
 ![Alle Maschinen](Bilder/Funktionenbilder/alle.jpg)
 
@@ -925,7 +925,7 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum"
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MDUwMTg3MiwxNTc1NTM0ODEwLC05NT
+eyJoaXN0b3J5IjpbMTYyODg2NTE1NiwxNTc1NTM0ODEwLC05NT
 U1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYw
 MzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OT
 IxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTks
