@@ -113,7 +113,8 @@ Die Body Klasse wird mit ... definiert:
  - Fix-Sidebar (Fixiert die linke navigation - no-scroll)
  - card-no-border (Klasse card hat kein rand)
 
-<body class="fix-header fix-sidebar card-no-border" onload="parseFunction()">
+
+    <body class="fix-header fix-sidebar card-no-border" onload="parseFunction()">
 
 ##### PreLoader
 Darstellung eines animierten Kreises bevor die HTML/PHP Datei voll geladen hat im Browser um einen Einstiegsflow/Ladebildschirm in die Homepage ELMO dem Nutzer mit schlechterer Latenz zu gewähren.
@@ -994,11 +995,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMTAwMzMxNCwtMjA5MTM4MzczNCwxMz
-g3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0xMTc2ODI5
-MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMTU0NjIyLC
-0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgwODc1LDEz
-MTA4Mzg5MzMsMTEzNjY4NzkyMSwxMDY5MjEwMzUyLC0xNjI4Nz
-czMjg3LC0xNDM5NzEyMzU5LC02NTkwNjY4MjgsLTE3MTM5NTU4
-NywxNTg0NzA2NTE3XX0=
+eyJoaXN0b3J5IjpbLTE1OTgzMjk5ODAsLTIwOTEzODM3MzQsMT
+M4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwtMTE3Njgy
+OTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMTc4MjE1NDYyMi
+wtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4MDg3NSwx
+MzEwODM4OTMzLDExMzY2ODc5MjEsMTA2OTIxMDM1MiwtMTYyOD
+c3MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEzOTU1
+ODcsMTU4NDcwNjUxN119
 -->
