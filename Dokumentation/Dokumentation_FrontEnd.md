@@ -816,7 +816,7 @@ Alle vergangenen Reinigungen werden ausgelesen und in die Variable "table_result
 
 ### SQL
 #### Genutzte Maschinen
-In der Unterabfrage werden die Daten der Maschinen, die seit der letzten Reinigung aufgenommen worden sind,  auf die Minuten gruppiert. Hierbei werden nur Daten beachtet, in denen die Maschine in dieser Minute mindestens 5 Watt verbraucht hat. Pro Minute gibt es nur einen Messpunkt (die Maschinen werden nur einmal pro Minute abgefragt). In der Hau
+In der Unterabfrage werden die Daten der Maschinen, die seit der letzten Reinigung aufgenommen worden sind,  auf die Minuten gruppiert. Hierbei werden nur Daten beachtet, in denen die Maschine in dieser Minute mindestens 5 Watt verbraucht hat. Pro Minute gibt es nur einen Messpunkt (die Maschinen werden nur einmal pro Minute abgefragt). In der Hauptabfrage werden diese Daten dann für die eindeutige AIN gruppiert und dabei die Datenpunkte gezählt. So wissen wir, wieviele Minuten die Maschine seit der letzten Reinigung aktiv war. Anschließend wird die Anzahl der Stunden, der Maschinenname usw. zurückgegeben.
 
     SELECT MAX(Maschinenname) As Name, COUNT(AIN)/60 As AnzahlStunden, MAX(ID) As ID, MAX(LastClean) As LastClean  
     FROM (  
@@ -828,6 +828,7 @@ In der Unterabfrage werden die Daten der Maschinen, die seit der letzten Reinigu
     ORDER BY AnzahlStunden DESC 
     
 #### Vergangene Reinigungen
+
     SELECT Maschinenname, ReinigungDatum, AnzahlBetriebsstunden, m.divID  
     FROM Reinigungen r INNER JOIN Maschinen m ON r.MaschinenID = m.divID  
     ORDER BY MaschinenID 
@@ -927,7 +928,7 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum"
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNzM4MDQ4MywxNTc1NTM0ODEwLC05NT
+eyJoaXN0b3J5IjpbLTM2ODg4NjUxMywxNTc1NTM0ODEwLC05NT
 U1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYw
 MzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OT
 IxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTks
