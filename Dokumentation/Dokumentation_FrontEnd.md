@@ -56,7 +56,7 @@ https://getbootstrap.com/docs/3.4/css/.
  Es gibt jeweils eine "Light Edition" im Hauptbereich sowie eine "Dark Edition" im Adminbereich. Das ganze wurde ebenfalls in scss umgesetzt um Veränderungen zu vereinfachen.
 
 #### ELMO Erweitertes CSS
-
+Die erweiterteten CSS Klassen werden in den einzelnen ELMO Funktionen dargestellt.
 
 ### HTML
 ### Responsive Design
@@ -929,11 +929,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTkxNTczOTgsMTQwNDY5Mzk4NiwzND
-QzNjE1NzQsLTExNzY4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1
-MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5Nj
-ksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OTIxLDEw
-NjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTksLTY1OT
-A2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwNDgzOTQ5
-MCwxNjM1MDY1NTQ2XX0=
+eyJoaXN0b3J5IjpbLTE2ODA2Mzg2NSwxNDA0NjkzOTg2LDM0ND
+M2MTU3NCwtMTE3NjgyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUw
+MCwtMTc4MjE1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OS
+wtMTM2NTA4MDg3NSwxMzEwODM4OTMzLDExMzY2ODc5MjEsMTA2
+OTIxMDM1MiwtMTYyODc3MzI4NywtMTQzOTcxMjM1OSwtNjU5MD
+Y2ODI4LC0xNzEzOTU1ODcsMTU4NDcwNjUxNywxODA0ODM5NDkw
+LDE2MzUwNjU1NDZdfQ==
 -->
