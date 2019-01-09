@@ -9,7 +9,7 @@
 
 Um die Daten auch im realen Umfeld exportieren zu können, benötigen wir ein Gerät, dass in der Umgebung direkt per LAN mit der Fritzbox verbunden ist und die Daten der FritzBox per HTTP-Interface abfragen kann. Dafür wird ein RaspBerry Pi ausgewählt. Dieser soll die Daten der FritzBox auslesen und auf eine externe Datenbank schreiben.
 
-![Demoinfrastruktur mit RaspBerry Pi](Bilder/netzwerk_rasp.png)
+![Demoinfrastruktur mit RaspBerry Pi](Bilder/Netzwerk_RASP.png)
 
 
 ## Evaluierung geeignete Datenerfassung
@@ -397,7 +397,8 @@ Rasberry Pi Software Configuration Tool
 SSH Enable
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEzMDYzMjU0LDI2MjU1NTM5NCwtMjYwNj
-M5ODIsLTU3ODMyNzkyMSwtMTUwMjIwODUzLC0xNDIwMDA0NjQz
-LDY4NTYxNDY2OSwtMTYwODYxMTY5NSwyMDU3NzkyNjEzXX0=
+eyJoaXN0b3J5IjpbLTIxMzE4OTI4NzQsNTEzMDYzMjU0LDI2Mj
+U1NTM5NCwtMjYwNjM5ODIsLTU3ODMyNzkyMSwtMTUwMjIwODUz
+LC0xNDIwMDA0NjQzLDY4NTYxNDY2OSwtMTYwODYxMTY5NSwyMD
+U3NzkyNjEzXX0=
 -->
