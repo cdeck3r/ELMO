@@ -27,7 +27,7 @@
 ## Framework
 ### Logo
 #### Logo-Idee
-Das Logo ist eine Kombination aus *"Modernem Logodesign*" und dem Projektkürzel/Figur *"Elmo".*
+Das Logo wurde nach aktuellen "Modernem Logodesign" erstellt.
 
 #### Logo-Umsetzung
 Das Logo wurde in Adobe Photoshop CS3 umgesetzt. Es besteht aus vier Ebenen.
@@ -918,11 +918,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzY4MjkzOSwxNTc1NTM0ODEwLC05NT
-U1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYw
-MzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OT
-IxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTks
-LTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwND
-gzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUs
-MTY4MDg0NzIwNV19
+eyJoaXN0b3J5IjpbMzQ0MzYxNTc0LC0xMTc2ODI5MzksMTU3NT
+UzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMTU0NjIyLC0xNjYwNjE0
+MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgwODc1LDEzMTA4Mzg5Mz
+MsMTEzNjY4NzkyMSwxMDY5MjEwMzUyLC0xNjI4NzczMjg3LC0x
+NDM5NzEyMzU5LC02NTkwNjY4MjgsLTE3MTM5NTU4NywxNTg0Nz
+A2NTE3LDE4MDQ4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwx
+NTE4NDU1Mzg1XX0=
 -->
