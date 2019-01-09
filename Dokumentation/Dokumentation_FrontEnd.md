@@ -37,7 +37,7 @@ Das Logo wurde in Adobe Photoshop CS3 umgesetzt. Es besteht aus vier Ebenen.
 4. Typo Cloud (Light / Font: Bison)
 
 #### Logo Final 
-![ELMO Logodesign](Bilder/Responsive Design-ELMO.jpg)
+![ELMO Logodesign](Bilder/Elmo-logo_Docu2.jpg)
 
 Light/Dark Edtion
 
@@ -49,7 +49,7 @@ Schriftart und Figur Elmo wird nur für non kommerzielle Zwecke genutzt*
 ### CSS
 ### HTML
 ### Responsive Design
-![ELMO Responsive](Bilder/Elmo_responsive_Docu.jpg)
+![ELMO Responsive](Bilder/Responsive Design-ELMO.jpg)
 
 ## Benutzerbereich
 ## Grundriss | Raumpläne
@@ -918,11 +918,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ3MTE0MTI0LDM0NDM2MTU3NCwtMTE3Nj
-gyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMTc4MjE1NDYy
-MiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4MDg3NS
-wxMzEwODM4OTMzLDExMzY2ODc5MjEsMTA2OTIxMDM1MiwtMTYy
-ODc3MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEzOT
-U1ODcsMTU4NDcwNjUxNywxODA0ODM5NDkwLDE2MzUwNjU1NDYs
-MzI5NzE5MjhdfQ==
+eyJoaXN0b3J5IjpbMTE1MzMxMTA2NywzNDQzNjE1NzQsLTExNz
+Y4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3ODIxNTQ2
+MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUwODA4Nz
+UsMTMxMDgzODkzMywxMTM2Njg3OTIxLDEwNjkyMTAzNTIsLTE2
+Mjg3NzMyODcsLTE0Mzk3MTIzNTksLTY1OTA2NjgyOCwtMTcxMz
+k1NTg3LDE1ODQ3MDY1MTcsMTgwNDgzOTQ5MCwxNjM1MDY1NTQ2
+LDMyOTcxOTI4XX0=
 -->
