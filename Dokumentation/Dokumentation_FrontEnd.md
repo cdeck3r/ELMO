@@ -68,7 +68,7 @@ Die HTML/PHP-Datein wurden nach WC3-Standard geschrieben und überprüft (100% v
 #### HTML
 ##### Head
 
-Im Html-Head benutzen wir die Standards wie das Charset UTF
+Im Html-Head benutzen wir die Standards wie das Charset UTF-8 als auch die Bestimmung des Internet Explore
 
     <!DOCTYPE html>
     <html lang="de">
@@ -946,7 +946,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MjA5ODE2MCwxMzg3MzgyMjU2LDE0MD
+eyJoaXN0b3J5IjpbLTc3Mjk2OTUzMywxMzg3MzgyMjU2LDE0MD
 Q2OTM5ODYsMzQ0MzYxNTc0LC0xMTc2ODI5MzksMTU3NTUzNDgx
 MCwtOTU1NTgxNTAwLC0xNzgyMTU0NjIyLC0xNjYwNjE0MTQ4LC
 0yMTI2MDMxOTY5LC0xMzY1MDgwODc1LDEzMTA4Mzg5MzMsMTEz
