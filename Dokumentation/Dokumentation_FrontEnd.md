@@ -106,7 +106,12 @@ Darstellungsoptimierung von IE8/IE9 bei HTML 5 Elemente
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
+##### PreLoader
+Animierte
+<div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
 
 #### CSS
 
@@ -977,7 +982,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNTAwNDM5LC0yMDkxMzgzNzM0LDEzOD
+eyJoaXN0b3J5IjpbOTAxMDgzMDM4LC0yMDkxMzgzNzM0LDEzOD
 czODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQsLTExNzY4Mjkz
 OSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3ODIxNTQ2MjIsLT
 E2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUwODA4NzUsMTMx
