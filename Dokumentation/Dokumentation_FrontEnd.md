@@ -68,7 +68,7 @@ Die HTML/PHP-Datein wurden nach WC3-Standard geschrieben und überprüft (100% v
 #### HTML
 ##### Head
 
-Im Html-Head benutzen wir die Standards wie das Charset UTF-8 als auch die Bestimmung des Internet Explorer Edge renderings für ältere IE Browser (nicht mehr notwendig ab IE11).
+Im Html-Headenutzen wi die Standards wie das Charset UTF-8 als auch die Bestimmung des Internet Explorer Edge renderings für ältere IE Browser (nicht mehr notwendig ab IE11).
 
     <!DOCTYPE html>
     <html lang="de">
@@ -76,7 +76,7 @@ Im Html-Head benutzen wir die Standards wie das Charset UTF-8 als auch die Besti
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-Wir sagen hier dem Browser das er Responsive mit der Bildschirmbreite sein soll
+Wir sagen hier dem Browser  er Responsive mit der Bildschirmbreite sein soll
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -85,10 +85,9 @@ HTML Standards wie Beschreibung, Autor, Favicon sowie Titel.
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
     <title>ELMO CLOUD | Raum 01-031N</title>
-Definieren der CSS
-
+Definieren der 
     <!-- Bootstrap Core CSS -->
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!--This page css - Morris CSS -->
@@ -971,11 +970,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1ODU1OTY3LDEzODczODIyNTYsMTQwND
-Y5Mzk4NiwzNDQzNjE1NzQsLTExNzY4MjkzOSwxNTc1NTM0ODEw
-LC05NTU1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLT
-IxMjYwMzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2
-Njg3OTIxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MT
-IzNTksLTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcs
-MTgwNDgzOTQ5MF19
+eyJoaXN0b3J5IjpbLTIwOTEzODM3MzQsMTM1ODU1OTY3LDEzOD
+czODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQsLTExNzY4Mjkz
+OSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3ODIxNTQ2MjIsLT
+E2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUwODA4NzUsMTMx
+MDgzODkzMywxMTM2Njg3OTIxLDEwNjkyMTAzNTIsLTE2Mjg3Nz
+MyODcsLTE0Mzk3MTIzNTksLTY1OTA2NjgyOCwtMTcxMzk1NTg3
+LDE1ODQ3MDY1MTddfQ==
 -->
