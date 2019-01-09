@@ -80,7 +80,13 @@ Wir sagen hier dem Browser das er Responsive mit der Bildschirmbreite sein soll
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+HTML Standards wie Beschreibung, Autor, Favicon
 
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>ELMO CLOUD | Raum 01-031N</title>
 
 #### CSS
 
@@ -951,11 +957,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MTQ5Mzc2MywxMzg3MzgyMjU2LDE0MD
-Q2OTM5ODYsMzQ0MzYxNTc0LC0xMTc2ODI5MzksMTU3NTUzNDgx
-MCwtOTU1NTgxNTAwLC0xNzgyMTU0NjIyLC0xNjYwNjE0MTQ4LC
-0yMTI2MDMxOTY5LC0xMzY1MDgwODc1LDEzMTA4Mzg5MzMsMTEz
-NjY4NzkyMSwxMDY5MjEwMzUyLC0xNjI4NzczMjg3LC0xNDM5Nz
-EyMzU5LC02NTkwNjY4MjgsLTE3MTM5NTU4NywxNTg0NzA2NTE3
-LDE4MDQ4Mzk0OTBdfQ==
+eyJoaXN0b3J5IjpbNDYzMDQ0MjkxLDEzODczODIyNTYsMTQwND
+Y5Mzk4NiwzNDQzNjE1NzQsLTExNzY4MjkzOSwxNTc1NTM0ODEw
+LC05NTU1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLT
+IxMjYwMzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2
+Njg3OTIxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MT
+IzNTksLTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcs
+MTgwNDgzOTQ5MF19
 -->
