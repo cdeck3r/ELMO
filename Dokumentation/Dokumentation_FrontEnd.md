@@ -53,7 +53,7 @@ Bei der style.css handelt es sich um ein erweitetes Bootstrap Stylesheet von [Ma
 Bootstrap CSS
 https://getbootstrap.com/docs/3.4/css/.
 
- Das ganze wurde ebenfalls in scss umgesetzt um Veränderungen zu vereinfachen.
+ Es gibt jeweils eine "Light Edition" im Hauptbereich sowie eine "Dark Edition" im Adminbereich. Das ganze wurde ebenfalls in scss umgesetzt um Veränderungen zu vereinfachen.
 
 #### ELMO Erweitertes CSS
 
@@ -929,7 +929,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDc3MjU2NjMsMTQwNDY5Mzk4NiwzND
+eyJoaXN0b3J5IjpbLTEzNTkxNTczOTgsMTQwNDY5Mzk4NiwzND
 QzNjE1NzQsLTExNzY4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1
 MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5Nj
 ksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OTIxLDEw
