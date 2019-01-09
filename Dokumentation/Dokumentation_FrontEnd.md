@@ -63,10 +63,12 @@ Die erweiterteten CSS Klassen werden in den einzelnen ELMO Funktionen dargestell
 ![Responisve](Bilder/responsive-elmo.jpg)
 
 ## Benutzerbereich
+
 ## Grundriss | Raumpläne
 ![Map Vorschau](Bilder/Funktionenbilder/map.jpg)
 
 #### HTML
+#### CSS
 #### PHP
 #### Session
 Im ersten Schritt wird überprüft, ob die Session gesetzt wurde. Ist dies nicht der Fall, wird auf die Loginseite weitergeleitet.
@@ -929,7 +931,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODA2Mzg2NSwxNDA0NjkzOTg2LDM0ND
+eyJoaXN0b3J5IjpbLTQxNzk1MTk2NCwxNDA0NjkzOTg2LDM0ND
 M2MTU3NCwtMTE3NjgyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUw
 MCwtMTc4MjE1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OS
 wtMTM2NTA4MDg3NSwxMzEwODM4OTMzLDExMzY2ODc5MjEsMTA2
