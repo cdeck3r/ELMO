@@ -49,7 +49,7 @@ Schriftart und Figur Elmo wird nur für non kommerzielle Zwecke genutzt*
 ### CSS
 ### HTML
 ### Responsive Design
-![ELMO Responsive](Bilder/Responsive Design-ELMO.jpg)
+![Responsive](Bilder/Responsive%20Design-ELMO.jpg)
 
 ## Benutzerbereich
 ## Grundriss | Raumpläne
@@ -918,7 +918,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MzMxMTA2NywzNDQzNjE1NzQsLTExNz
+eyJoaXN0b3J5IjpbMTU1NTI3NDQ3MywzNDQzNjE1NzQsLTExNz
 Y4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3ODIxNTQ2
 MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUwODA4Nz
 UsMTMxMDgzODkzMywxMTM2Njg3OTIxLDEwNjkyMTAzNTIsLTE2
