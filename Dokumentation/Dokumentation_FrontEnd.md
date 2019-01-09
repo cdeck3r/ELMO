@@ -59,6 +59,7 @@ https://getbootstrap.com/docs/3.4/css/.
 Die erweiterteten CSS Klassen werden in den einzelnen ELMO Funktionen dargestellt.
 
 ### HTML
+Die HTML/PHP-Datein wurden nach WC3-Standard geschrieben und überprüft (100% valid).
 
 ### Responsive Design
 ![Rsponisve](Bilder/responsiveo.jpg)
@@ -98,7 +99,6 @@ In dem Head der html/php Dateien
     <![endif]-->
     
     </head>
-    enter code here
 
 #### CSS
 
@@ -969,7 +969,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQwMjI5MjgxLDEzODczODIyNTYsMTQwND
+eyJoaXN0b3J5IjpbLTQzMzEwODM0LDEzODczODIyNTYsMTQwND
 Y5Mzk4NiwzNDQzNjE1NzQsLTExNzY4MjkzOSwxNTc1NTM0ODEw
 LC05NTU1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLT
 IxMjYwMzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2
