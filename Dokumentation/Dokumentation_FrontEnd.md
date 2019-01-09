@@ -67,38 +67,15 @@ Die HTML/PHP-Datein wurden nach WC3-Standard geschrieben und überprüft (100% v
 ## Benutzerbereich
 #### HTML
 ##### Head
-In dem Head der html/php Dateien
+
+Im Html-Head benutzen wir die Standards wie das Charset UTF
+
     <!DOCTYPE html>
     <html lang="de">
-    
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Tell the browser to be responsive to screen width -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <!-- Favicon icon -->
-        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-        <title>ELMO CLOUD | Raum 01-031N</title>
-        <!-- Bootstrap Core CSS -->
-        <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!--This page css - Morris CSS -->
-        <link href="../assets/plugins/morrisjs/morris.css" rel="stylesheet">
-        <!-- Custom Bootstrap CSS -->
-        <link href="css/style.css" rel="stylesheet">
-        <!-- Custom ELMO CSS -->
-        <link href="css/costumpi.css" rel="stylesheet">
-        <!-- You can change the theme colorsfrom here -->
-        <link href="css/colors/red-dark.css" id="theme" rel="stylesheet">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    </head>
+
 
 #### CSS
 
@@ -969,11 +946,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMzEwODM0LDEzODczODIyNTYsMTQwND
-Y5Mzk4NiwzNDQzNjE1NzQsLTExNzY4MjkzOSwxNTc1NTM0ODEw
-LC05NTU1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLT
-IxMjYwMzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2
-Njg3OTIxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MT
-IzNTksLTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcs
-MTgwNDgzOTQ5MF19
+eyJoaXN0b3J5IjpbLTY1MjA5ODE2MCwxMzg3MzgyMjU2LDE0MD
+Q2OTM5ODYsMzQ0MzYxNTc0LC0xMTc2ODI5MzksMTU3NTUzNDgx
+MCwtOTU1NTgxNTAwLC0xNzgyMTU0NjIyLC0xNjYwNjE0MTQ4LC
+0yMTI2MDMxOTY5LC0xMzY1MDgwODc1LDEzMTA4Mzg5MzMsMTEz
+NjY4NzkyMSwxMDY5MjEwMzUyLC0xNjI4NzczMjg3LC0xNDM5Nz
+EyMzU5LC02NTkwNjY4MjgsLTE3MTM5NTU4NywxNTg0NzA2NTE3
+LDE4MDQ4Mzk0OTBdfQ==
 -->
