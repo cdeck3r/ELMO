@@ -118,7 +118,7 @@ Die Body Klasse wird mit ... definiert:
     <body class="fix-header fix-sidebar card-no-border" onload="parseFunction()">
 
 ##### PreLoader
-Darstellung eines animierten Kreises bevor die HTML/PHP Datei voll geladen hat im Browser um einen Einstiegsflow/Ladebildschirm in die Homepage ELMO dem Nutzer mit schlechterer Latenz zu gewähren.
+Darstellung eines animierten Kreises bevor die HTML/PHP Datei im Browser voll geladen ist, um einen Einstiegsflow/Ladebildschirm in die Homepage ELMO dem Nutzer mit schlechterer Latenz/Verbindung zu gewähren.
 
     <div class="preloader">
             <svg class="circular" viewBox="25 25 50 50">
@@ -996,11 +996,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY4MTIyMjY3LDc2ODEyMjI2NywtMjA5MT
-M4MzczNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0
-LC0xMTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNz
-gyMTU0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1
-MDgwODc1LDEzMTA4Mzg5MzMsMTEzNjY4NzkyMSwxMDY5MjEwMz
-UyLC0xNjI4NzczMjg3LC0xNDM5NzEyMzU5LC02NTkwNjY4Mjgs
-LTE3MTM5NTU4N119
+eyJoaXN0b3J5IjpbMjc1MjM0ODE1LDc2ODEyMjI2Nyw3NjgxMj
+IyNjcsLTIwOTEzODM3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2
+LDM0NDM2MTU3NCwtMTE3NjgyOTM5LDE1NzU1MzQ4MTAsLTk1NT
+U4MTUwMCwtMTc4MjE1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAz
+MTk2OSwtMTM2NTA4MDg3NSwxMzEwODM4OTMzLDExMzY2ODc5Mj
+EsMTA2OTIxMDM1MiwtMTYyODc3MzI4NywtMTQzOTcxMjM1OSwt
+NjU5MDY2ODI4XX0=
 -->
