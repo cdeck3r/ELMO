@@ -82,30 +82,31 @@ Wir sagen hier dem Browser  er Responsive mit der Bildschirmbreite sein soll
 
 HTML Standards wie Beschreibung, Autor, Favicon sowie Titel.
 
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Favicon icon -->
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>ELMO CLOUD | Raum 01-031N</title>
-Definieren der 
-    <!-- Bootstrap Core CSS -->
-    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!--This page css - Morris CSS -->
-    <link href="../assets/plugins/morrisjs/morris.css" rel="stylesheet">
-    <!-- Custom Bootstrap CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Custom ELMO CSS -->
-    <link href="css/costumpi.css" rel="stylesheet">
-    <!-- You can change the theme colorsfrom here -->
-    <link href="css/colors/red-dark.css" id="theme" rel="stylesheet">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+        <title>ELMO CLOUD | Raum 01-031N</title>
+    Definieren der 
+        <!-- Bootstrap Core CSS -->
+        <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!--This page css - Morris CSS -->
+        <link href="../assets/plugins/morrisjs/morris.css" rel="stylesheet">
+        <!-- Custom Bootstrap CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- Custom ELMO CSS -->
+        <link href="css/costumpi.css" rel="stylesheet">
+        <!-- You can change the theme colorsfrom here -->
+        <link href="css/colors/red-dark.css" id="theme" rel="stylesheet">
 
 Darstellungsoptimierung von IE8/IE9 bei HTML 5 Elemente
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
 
 #### CSS
 
@@ -976,11 +977,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTg4MDU3NTQsLTIwOTEzODM3MzQsMT
-M4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwtMTE3Njgy
-OTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMTc4MjE1NDYyMi
-wtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4MDg3NSwx
-MzEwODM4OTMzLDExMzY2ODc5MjEsMTA2OTIxMDM1MiwtMTYyOD
-c3MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEzOTU1
-ODcsMTU4NDcwNjUxN119
+eyJoaXN0b3J5IjpbMTYxNTAwNDM5LC0yMDkxMzgzNzM0LDEzOD
+czODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQsLTExNzY4Mjkz
+OSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3ODIxNTQ2MjIsLT
+E2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUwODA4NzUsMTMx
+MDgzODkzMywxMTM2Njg3OTIxLDEwNjkyMTAzNTIsLTE2Mjg3Nz
+MyODcsLTE0Mzk3MTIzNTksLTY1OTA2NjgyOCwtMTcxMzk1NTg3
+LDE1ODQ3MDY1MTddfQ==
 -->
