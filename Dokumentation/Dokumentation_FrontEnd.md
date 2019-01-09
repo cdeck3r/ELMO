@@ -135,7 +135,7 @@ Durch den Aufruf der Funktion wird eine Verbindung zu den statisch eingetragenen
       
     function colorFunction(value) {  
       
-        var id = "c" + value;  
+      var id = "c" + value;  
       document.getElementById(id).style.backgroundColor = "#ffa6a6";  
       document.getElementById(id).style.borderColor = "#ff4d4f";  
       document.getElementById(id).getElementsByClassName("map-body")[0].innerHTML += '<h5>Belegt!</h5>';  
@@ -350,6 +350,8 @@ Die Messdaten werden auf die AIN gruppiert und davon die Maximalen Werte zurück
     SELECT MAX(Wattstunden) As Wattstunden, MAX(Name) As Name
     FROM Data GROUP BY AIN ORDER BY Wattstunden ASC
 ##### JavaScript
+Die Grundstruktur des JavaScript-Codes kann von den Beispielen übernommen werden. Per php-echo wird der vor-formatierte String an JavaScript übergeben. Außerdem werden Optionen zum Aussehen des Charts getroffen.
+
     <script>  
     new Chart(document.getElementById("bar2"), {  
       type: 'bar',  
@@ -395,6 +397,7 @@ Die Daten werden auf einzelne Tage gruppiert. Von diesen Daten wird dann die dur
     FROM Data GROUP BY YEAR(Messdatum) DESC,
     MONTH(Messdatum) DESC, DAY(Messdatum) DESC LIMIT 20
 ##### JavaScript
+Die Grundstruktur des JavaScript-Codes kann von den Beispielen übernommen werden. Per php-echo wird der vor-formatierte String an JavaScript übergeben. Außerdem werden Optionen zum Aussehen des Charts getroffen.
 
      <script>  
           new Chart(document.getElementById("temperatur"), {  
@@ -912,11 +915,11 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum"
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNz
-gyMTU0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1
-MDgwODc1LDEzMTA4Mzg5MzMsMTEzNjY4NzkyMSwxMDY5MjEwMz
-UyLC0xNjI4NzczMjg3LC0xNDM5NzEyMzU5LC02NTkwNjY4Mjgs
-LTE3MTM5NTU4NywxNTg0NzA2NTE3LDE4MDQ4Mzk0OTAsMTYzNT
-A2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1LDE2ODA4NDcyMDUs
-MTQ2MjIyODI0Ml19
+eyJoaXN0b3J5IjpbLTUwOTM4NzgzOCwxNTc1NTM0ODEwLC05NT
+U1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYw
+MzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OT
+IxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTks
+LTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwND
+gzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUs
+MTY4MDg0NzIwNV19
 -->
