@@ -31,8 +31,8 @@ Das Logo wurde nach aktuellen "Modernem Logodesign" erstellt.
 
 #### Logo-Umsetzung
 Das Logo wurde in Adobe Photoshop CS3 umgesetzt. Es besteht aus vier Ebenen.
-1. Kreishintergrund des Motivs ELMO
-2. Pfad gezeichnete Figur ELMO
+1. Zahnräder Brushes
+2. Pfad gezeichnete Wolke
 3. Typo ELMO (Bold / Font: Bison)
 4. Typo Cloud (Light / Font: Bison)
 
@@ -918,11 +918,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ0MzYxNTc0LC0xMTc2ODI5MzksMTU3NT
-UzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMTU0NjIyLC0xNjYwNjE0
-MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgwODc1LDEzMTA4Mzg5Mz
-MsMTEzNjY4NzkyMSwxMDY5MjEwMzUyLC0xNjI4NzczMjg3LC0x
-NDM5NzEyMzU5LC02NTkwNjY4MjgsLTE3MTM5NTU4NywxNTg0Nz
-A2NTE3LDE4MDQ4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwx
-NTE4NDU1Mzg1XX0=
+eyJoaXN0b3J5IjpbLTE2ODM5NjQyOTksMzQ0MzYxNTc0LC0xMT
+c2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMTU0
+NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgwOD
+c1LDEzMTA4Mzg5MzMsMTEzNjY4NzkyMSwxMDY5MjEwMzUyLC0x
+NjI4NzczMjg3LC0xNDM5NzEyMzU5LC02NTkwNjY4MjgsLTE3MT
+M5NTU4NywxNTg0NzA2NTE3LDE4MDQ4Mzk0OTAsMTYzNTA2NTU0
+NiwzMjk3MTkyOF19
 -->
