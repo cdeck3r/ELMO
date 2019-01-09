@@ -816,11 +816,13 @@ Alle vergangenen Reinigungen werden ausgelesen und in die Variable "table_result
 
 ### SQL
 #### Genutzte Maschinen
+In der Unterabfrage werden die Daten der Maschinen auf die Minuten gruppiert
+
     SELECT MAX(Maschinenname) As Name, COUNT(AIN)/60 As AnzahlStunden, MAX(ID) As ID, MAX(LastClean) As LastClean  
     FROM (  
      SELECT MAX(Maschinen.Maschinenname) As Maschinenname, AIN, MAX(Maschinen.divID) As ID, MAX(LastClean) As LastClean  
      FROM Data   INNER JOIN Maschinen ON Maschinen.divID = Data.Name  
-     GROUP BY AIN, YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), HOUR(Messdatum),            MINUTE(Messdatum)  
+     GROUP BY AIN, YEAR(Messdatum), MONTH(Messdatum), DAY(Messdatum), HOUR(Messdatum), MINUTE(Messdatum)  
      HAVING MIN(Watt) > 5000 AND MIN(Messdatum) > LastClean) As Daten  
     GROUP BY AIN  
     ORDER BY AnzahlStunden DESC 
@@ -925,11 +927,11 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum"
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyODg2NTE1NiwxNTc1NTM0ODEwLC05NT
-U1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYw
-MzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OT
-IxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTks
-LTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwND
-gzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUs
-MTY4MDg0NzIwNV19
+eyJoaXN0b3J5IjpbLTExNjcxNTA4MjIsMTU3NTUzNDgxMCwtOT
+U1NTgxNTAwLC0xNzgyMTU0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2
+MDMxOTY5LC0xMzY1MDgwODc1LDEzMTA4Mzg5MzMsMTEzNjY4Nz
+kyMSwxMDY5MjEwMzUyLC0xNjI4NzczMjg3LC0xNDM5NzEyMzU5
+LC02NTkwNjY4MjgsLTE3MTM5NTU4NywxNTg0NzA2NTE3LDE4MD
+Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
+LDE2ODA4NDcyMDVdfQ==
 -->
