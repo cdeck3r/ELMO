@@ -20,7 +20,6 @@ Das WLAN der FritzBoxen wurde für die produktive Umgebung deaktiviert. Dies ver
 
 Als Firewall wird auf dem RaspBerry Pi \(Rasbian\) UFW genutzt. Da die RaspBerrys nur Daten versenden, enthält die Firewall lediglich eine Freigabe für den gewählten SSH-Port.
 
-### Dienste
 
 ## Verbindung RaspBerry Pi zur FritzBox
 
@@ -42,12 +41,9 @@ Als Firewall wird auf dem vServer \(Ubuntu\) UFW genutzt. Diese enthält Freigab
 #### Letsencrypt
 Auf die Domain soll nur ein HTTPS-Zugriff erlaubt sein. Daher wurde die Seite per Letsencrypt verschlüsselt.
 
-## Verbindung RaspBerry Pi zum vServer
 
-### Verschlüsselung
-Zertifikat?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMTU4NjQ5OSwtMTE1MDQ0MTUxMywxMD
-IzODI4MDY3XX0=
+eyJoaXN0b3J5IjpbLTEwNTkxODY1NzEsLTYzMTU4NjQ5OSwtMT
+E1MDQ0MTUxMywxMDIzODI4MDY3XX0=
 -->
