@@ -847,7 +847,8 @@ Alle Daten der Maschinen werden in die Variable "table_result1" geschrieben.
     $table_result1 = mysqli_query($connect, $table_query1);  
       
     ?>
-###Darstellung
+#### Darstellung
+Per While-Schleife werden alle Maschinen dargestellt. Dadurch erhalten die Nutzer einen Überblick über alle Maschinen. Vor allem wichtig, da in den Diagrammen immer mit den Maschinen IDs gearbeitet wird.
 
     <?php  
     while($table_row1 = mysqli_fetch_array($table_result1)) {  
@@ -861,7 +862,7 @@ Alle Daten der Maschinen werden in die Variable "table_result1" geschrieben.
     ?>
 
 ### SQL
-SELECT-Befehl auf die Tabellen "Maschinen" und "Raum"
+SELECT-Befehl auf die Tabellen "Maschinen" und "Raum".
 
     SELECT m.Maschinenname, m.divID, m.raum, m.LastClean, r.Name As Raumname FROM Maschinen m INNER JOIN Raum r on m.raum = r.ID
 
@@ -921,11 +922,11 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum"
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MDYxMTkzMSwxNTc1NTM0ODEwLC05NT
-U1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYw
-MzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OT
-IxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTks
-LTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwND
-gzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUs
-MTY4MDg0NzIwNV19
+eyJoaXN0b3J5IjpbLTE0MzEzNjUxNzgsMTU3NTUzNDgxMCwtOT
+U1NTgxNTAwLC0xNzgyMTU0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2
+MDMxOTY5LC0xMzY1MDgwODc1LDEzMTA4Mzg5MzMsMTEzNjY4Nz
+kyMSwxMDY5MjEwMzUyLC0xNjI4NzczMjg3LC0xNDM5NzEyMzU5
+LC02NTkwNjY4MjgsLTE3MTM5NTU4NywxNTg0NzA2NTE3LDE4MD
+Q4Mzk0OTAsMTYzNTA2NTU0NiwzMjk3MTkyOCwxNTE4NDU1Mzg1
+LDE2ODA4NDcyMDVdfQ==
 -->
