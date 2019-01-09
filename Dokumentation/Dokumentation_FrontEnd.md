@@ -828,6 +828,7 @@ In der Unterabfrage werden die Daten der Maschinen, die seit der letzten Reinigu
     ORDER BY AnzahlStunden DESC 
     
 #### Vergangene Reinigungen
+SELECT-Befehl auf die Tabellen "Reinigungen" und "Maschinen". Es werden Maschinenname, ReinigungsDatum, AnzahlBetriebsstunden und die ID zurückgegeben.
 
     SELECT Maschinenname, ReinigungDatum, AnzahlBetriebsstunden, m.divID  
     FROM Reinigungen r INNER JOIN Maschinen m ON r.MaschinenID = m.divID  
@@ -838,23 +839,15 @@ In der Unterabfrage werden die Daten der Maschinen, die seit der letzten Reinigu
 
 ### HTML
 ### PHP
+Alle Daten der Maschinen werden in die Variable "table_result1" geschrieben.
 
-    <?php  
-    session_start();  
-    if(!isset($_SESSION['userid'])) {  
-     header('Location: pages-lockscreen.php');  
-    }  
-      
-    require("config.php");  
-    $connect = new mysqli($Host, $User, $Pass, $DB, $Port);  
-      
     $table_query1 = "  
     SELECT m.Maschinenname, m.divID, m.raum, m.LastClean, r.Name As Raumname FROM Maschinen m INNER JOIN Raum r on m.raum = r.ID;  
     ";  
     $table_result1 = mysqli_query($connect, $table_query1);  
       
     ?>
-Darstellung
+###Darstellung
 
     <?php  
     while($table_row1 = mysqli_fetch_array($table_result1)) {  
@@ -928,7 +921,7 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum"
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2ODg4NjUxMywxNTc1NTM0ODEwLC05NT
+eyJoaXN0b3J5IjpbMTA4MDYxMTkzMSwxNTc1NTM0ODEwLC05NT
 U1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYw
 MzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OT
 IxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTks
