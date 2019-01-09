@@ -734,7 +734,7 @@ SELECT-Befehl auf die drei Tabellen "Data", "Maschinen" und "Raum"
 ### HTML
 ### PHP
 #### Datenabfrage 
-      
+Falls der Button "Reinigen" gedrückt wird, wird die Seite neu aufgerufen und die ID der Maschine in der URL gesetzt. Diese ID wird anschließen mit "$_GET['ID']" ausgelesen und die entsprechende Reinigung in die Da
     //Last-Clean & Reinigung  
     if(isset($_GET['ID'])) {  
       $ID = $_GET['ID'];  
@@ -920,11 +920,11 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum"
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNjYyMTUxLDE1NzU1MzQ4MTAsLTk1NT
-U4MTUwMCwtMTc4MjE1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAz
-MTk2OSwtMTM2NTA4MDg3NSwxMzEwODM4OTMzLDExMzY2ODc5Mj
-EsMTA2OTIxMDM1MiwtMTYyODc3MzI4NywtMTQzOTcxMjM1OSwt
-NjU5MDY2ODI4LC0xNzEzOTU1ODcsMTU4NDcwNjUxNywxODA0OD
-M5NDkwLDE2MzUwNjU1NDYsMzI5NzE5MjgsMTUxODQ1NTM4NSwx
-NjgwODQ3MjA1XX0=
+eyJoaXN0b3J5IjpbMTk0Mzc2MjIwMiwxNTc1NTM0ODEwLC05NT
+U1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYw
+MzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OT
+IxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTks
+LTY1OTA2NjgyOCwtMTcxMzk1NTg3LDE1ODQ3MDY1MTcsMTgwND
+gzOTQ5MCwxNjM1MDY1NTQ2LDMyOTcxOTI4LDE1MTg0NTUzODUs
+MTY4MDg0NzIwNV19
 -->
