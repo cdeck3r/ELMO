@@ -106,12 +106,22 @@ Darstellungsoptimierung von IE8/IE9 bei HTML 5 Elemente
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+##### Body
+Die Body Klasse wird mit:
+
+ - Fix-Header 
+
+<body class="fix-header fix-sidebar card-no-border" onload="parseFunction()">
+
 ##### PreLoader
-Darstellung eines animierten Kreises bevor die HTML/PHP Datei voll geladen hat im Browser um einen Einstiegsflow in die Homepage ELMO dem Nutzer mit schlechterer Latenz zu gewähren.
-<div class="preloader">
-        <svg class="circular" viewBox="25 25 50 50">
+Darstellung eines animierten Kreises bevor die HTML/PHP Datei voll geladen hat im Browser um einen Einstiegsflow/Ladebildschirm in die Homepage ELMO dem Nutzer mit schlechterer Latenz zu gewähren.
+
+    <div class="preloader">
+            <svg class="circular" viewBox="25 25 50 50">
             <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
     </div>
+
+
 
 #### CSS
 
@@ -982,11 +992,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDQxNDY3NDUsLTIwOTEzODM3MzQsMT
-M4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwtMTE3Njgy
-OTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMTc4MjE1NDYyMi
-wtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4MDg3NSwx
-MzEwODM4OTMzLDExMzY2ODc5MjEsMTA2OTIxMDM1MiwtMTYyOD
-c3MzI4NywtMTQzOTcxMjM1OSwtNjU5MDY2ODI4LC0xNzEzOTU1
-ODcsMTU4NDcwNjUxN119
+eyJoaXN0b3J5IjpbMTIxODgzOTMyNCwtMjA5MTM4MzczNCwxMz
+g3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0xMTc2ODI5
+MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMTU0NjIyLC
+0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgwODc1LDEz
+MTA4Mzg5MzMsMTEzNjY4NzkyMSwxMDY5MjEwMzUyLC0xNjI4Nz
+czMjg3LC0xNDM5NzEyMzU5LC02NTkwNjY4MjgsLTE3MTM5NTU4
+NywxNTg0NzA2NTE3XX0=
 -->
