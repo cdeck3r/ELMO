@@ -734,7 +734,7 @@ SELECT-Befehl auf die drei Tabellen "Data", "Maschinen" und "Raum"
 ### HTML
 ### PHP
 #### Datenabfrage 
-Falls der Button "Reinigen" gedrückt wird, wird die Seite neu aufgerufen und die ID der Maschine in der URL gesetzt. Diese ID wird anschließen mit "$_GET['ID']" ausgelesen und die entsprechende Reinigung in die Datenbank in die Tabelle "Reinigungen" geschrieben. Außerdem wird in der Tabelle Maschinen das Attribute "lastClean" auf den derzeitigen Zeitpunkt gesetzt.
+Falls der Button "Reinigen" gedrückt wird, wird die Seite neu aufgerufen und die ID der Maschine sowie deren derzeitigen Betriebsstunden (seit der letzten Reinigung) in der URL gesetzt. Diese ID wird anschließen mit "$_GET['ID']" ausgelesen und die entsprechende Reinigung in die Datenbank in die Tabelle "Reinigungen" geschrieben. Außerdem wird in der Tabelle Maschinen das Attribute "lastClean" auf den derzeitigen Zeitpunkt gesetzt.
 
     //Last-Clean & Reinigung  
     if(isset($_GET['ID'])) {  
@@ -800,7 +800,7 @@ Alle vergangenen Reinigungen werden ausgelesen und in die Variable "table_result
     ?>
 
 #### Darstellung vergangene Reinigungen
-
+Über die While-Schleife werden alle vergangenen Reinigungen und die vor der Reinigung vergangen 
     <?php  
     while($table_row2 = mysqli_fetch_array($table_result2)) {  
       echo "<tr>";  
@@ -925,7 +925,7 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum"
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczODc0MDkyNywxNTc1NTM0ODEwLC05NT
+eyJoaXN0b3J5IjpbMTY5MDUwMTg3MiwxNTc1NTM0ODEwLC05NT
 U1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYw
 MzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OT
 IxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTks
