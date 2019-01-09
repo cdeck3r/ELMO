@@ -871,7 +871,8 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum".
 
 ### HTML
 ### PHP
-Wurde ein Anmeldeversuch getätigt, wird die Seite neu geladen und die Daten per POST-Verfahren an PHP übergeben. Dann wird das g
+Wurde ein Anmeldeversuch getätigt, wird die Seite neu geladen und die Daten per POST-Verfahren an PHP übergeben. Dann wird das genutzte Password mit der PHP-Funktion "password_verify" bestätigt und der Nutzer wird an das Admindashboard weitergeleitet. Falls das Passwort nicht korrekt war, erscheint die Meldung "Anmeldung fehlgeschlagen!".
+
     if(isset($_GET['login'])) {  
       $passwort = $_POST['password'];  
       $login_query= "SELECT id, passwort FROM User";  
@@ -917,7 +918,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwODg3NTgwNywxNTc1NTM0ODEwLC05NT
+eyJoaXN0b3J5IjpbLTExNzY4MjkzOSwxNTc1NTM0ODEwLC05NT
 U1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYw
 MzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2Njg3OT
 IxLDEwNjkyMTAzNTIsLTE2Mjg3NzMyODcsLTE0Mzk3MTIzNTks
