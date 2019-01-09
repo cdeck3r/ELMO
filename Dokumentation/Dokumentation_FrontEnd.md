@@ -59,13 +59,14 @@ https://getbootstrap.com/docs/3.4/css/.
 Die erweiterteten CSS Klassen werden in den einzelnen ELMO Funktionen dargestellt.
 
 ### HTML
+
 ### Responsive Design
 ![Rsponisve](Bilder/responsiveo.jpg)
 
 ## Benutzerbereich
 #### HTML
 ##### Head
-Benutzt wurden die ak
+In dem Head der html/php Dateien
     <!DOCTYPE html>
     <html lang="de">
     
@@ -968,7 +969,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NzM4MjI1Niw1NTE5NjEwMzUsMTQwND
+eyJoaXN0b3J5IjpbNTQwMjI5MjgxLDEzODczODIyNTYsMTQwND
 Y5Mzk4NiwzNDQzNjE1NzQsLTExNzY4MjkzOSwxNTc1NTM0ODEw
 LC05NTU1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2NjA2MTQxNDgsLT
 IxMjYwMzE5NjksLTEzNjUwODA4NzUsMTMxMDgzODkzMywxMTM2
