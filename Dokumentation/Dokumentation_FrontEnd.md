@@ -76,7 +76,7 @@ Im Html-Headenutzen wi die Standards wie das Charset UTF-8 als auch die Bestimmu
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-Wir sagen hier dem Browser  er Responsive mit der Bildschirmbreite sein soll
+Wir sagen hier dem Browser  das er Responsive mit der Bildschirmbreite sein soll
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -87,17 +87,19 @@ HTML Standards wie Beschreibung, Autor, Favicon sowie Titel.
         <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
         <title>ELMO CLOUD | Raum 01-031N</title>
-    Definieren der 
-        <!-- Bootstrap Core CSS -->
-        <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!--This page css - Morris CSS -->
-        <link href="../assets/plugins/morrisjs/morris.css" rel="stylesheet">
-        <!-- Custom Bootstrap CSS -->
-        <link href="css/style.css" rel="stylesheet">
-        <!-- Custom ELMO CSS -->
-        <link href="css/costumpi.css" rel="stylesheet">
-        <!-- You can change the theme colorsfrom here -->
-        <link href="css/colors/red-dark.css" id="theme" rel="stylesheet">
+
+Definieren der CSS
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--This page css - Morris CSS -->
+    <link href="../assets/plugins/morrisjs/morris.css" rel="stylesheet">
+    <!-- Custom Bootstrap CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom ELMO CSS -->
+    <link href="css/costumpi.css" rel="stylesheet">
+    <!-- You can change the theme colorsfrom here -->
+    <link href="css/colors/red-dark.css" id="theme" rel="stylesheet">
 
 Darstellungsoptimierung von IE8/IE9 bei HTML 5 Elemente
 
@@ -995,12 +997,13 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
  
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc1MjM0ODE1LDc2ODEyMjI2Nyw3NjgxMj
-IyNjcsLTIwOTEzODM3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2
-LDM0NDM2MTU3NCwtMTE3NjgyOTM5LDE1NzU1MzQ4MTAsLTk1NT
-U4MTUwMCwtMTc4MjE1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAz
-MTk2OSwtMTM2NTA4MDg3NSwxMzEwODM4OTMzLDExMzY2ODc5Mj
-EsMTA2OTIxMDM1MiwtMTYyODc3MzI4NywtMTQzOTcxMjM1OSwt
-NjU5MDY2ODI4XX0=
+eyJoaXN0b3J5IjpbLTY5MzU3NDAxOCwyNzUyMzQ4MTUsNzY4MT
+IyMjY3LDc2ODEyMjI2NywtMjA5MTM4MzczNCwxMzg3MzgyMjU2
+LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0xMTc2ODI5MzksMTU3NT
+UzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMTU0NjIyLC0xNjYwNjE0
+MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgwODc1LDEzMTA4Mzg5Mz
+MsMTEzNjY4NzkyMSwxMDY5MjEwMzUyLC0xNjI4NzczMjg3LC0x
+NDM5NzEyMzU5XX0=
 -->
