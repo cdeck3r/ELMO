@@ -21,6 +21,7 @@ sudo apt-get install php7.0
 
 sudo apt-get install php7.0-mysqli
 sudo apt-get install php7.0-xml
+sudo apt-get install php7.0-mbstring
 
 sudo apt-get update 
 sudo apt-get upgrade
