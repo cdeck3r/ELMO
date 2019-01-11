@@ -60,8 +60,12 @@ Zuerst muss der defekte RaspBerry entfernt werden. Dazu einfach das Netzwerkkabe
 Der neue RaspBerry muss eingerichtet werden. 
 
 > Siehe Dokumentation_Infrastruktur
+> Wichtigste: 
+> - UFW einrichten, 
+> - Scripte ablegen (von funktionierendem RaspBerry kopieren oder aus dem Github laden und die Passwörter anpassen)
+> - Cronjob einrichten 
 
 # HowTo 5: System erweitern / Skalierbarkeit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEzNzk5MDMyLC0zMzE0NzQ4MjNdfQ==
+eyJoaXN0b3J5IjpbLTE4Njg4MTAwMTYsLTMzMTQ3NDgyM119
 -->
