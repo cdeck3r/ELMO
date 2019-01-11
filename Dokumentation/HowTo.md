@@ -69,9 +69,11 @@ Der neue RaspBerry muss eingerichtet werden. Dies funktioniert nicht allein mit 
 ### Troubleshooting
 Bei der Konfiguration des RaspBerrys können viele Fehler auftreten.
 #### WLAN-Verbindung
-#### 
+#### PHP-Funktionen nicht vorhanden
+#### Cronjob
 
 # HowTo 5: System erweitern / Skalierbarkeit
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NTI4NjE1OCwtMzMxNDc0ODIzXX0=
+eyJoaXN0b3J5IjpbODg2NTQwNjM2LC0zMzE0NzQ4MjNdfQ==
 -->
