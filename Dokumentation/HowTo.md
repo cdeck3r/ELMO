@@ -57,15 +57,21 @@ Danach müssen die gespeicherten Stecker im FritzBox Interface mit dem Ergebnis 
 ## Schritt 1
 Zuerst muss der defekte RaspBerry entfernt werden. Dazu einfach das Netzwerkkabel und das Stromkabel entfernen
 ## Schritt 2
-Der neue RaspBerry muss eingerichtet werden. 
+Der neue RaspBerry muss eingerichtet werden. Dies funktioniert nicht allein mit dem Einrichtungsskript. Viele Aktionen müssen manull durchgeführt werden.
 
 > Siehe Dokumentation_Infrastruktur
 > Wichtigste: 
 > - UFW einrichten, 
+> - PHP installieren
 > - Scripte ablegen (von funktionierendem RaspBerry kopieren oder aus dem Github laden und die Passwörter anpassen)
 > - Cronjob einrichten 
 
+### Troubleshooting
+Bei der Konfiguration des RaspBerrys können viele Fehler auftreten.
+#### WLAN-Verbindung
+#### 
+
 # HowTo 5: System erweitern / Skalierbarkeit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njg4MTAwMTYsLTMzMTQ3NDgyM119
+eyJoaXN0b3J5IjpbLTY1NTI4NjE1OCwtMzMxNDc0ODIzXX0=
 -->
