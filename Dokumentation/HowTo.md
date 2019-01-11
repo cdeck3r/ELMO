@@ -98,8 +98,7 @@ Wenn diese vorhanden Sind, muss wieder die Konfiguration durchgeführt werden.
 5. Die neuen Stecker verbinden
 	--> Siehe **HowTo2**
 
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjEwOTcwODAsLTEzNDA1NTQxNjUsLT
-MzMTQ3NDgyM119
+eyJoaXN0b3J5IjpbMTE5MzY0ODg1OCwtMTM0MDU1NDE2NSwtMz
+MxNDc0ODIzXX0=
 -->
