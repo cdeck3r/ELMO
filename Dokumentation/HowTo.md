@@ -36,10 +36,16 @@ Die alte Fritzbox muss entfernt werden. Dazu einfach die 2 Netzwerkkabel abziehe
 ## Schritt 2
 Es muss überprüft werden, welche FritzDect-Stecker die FritzBox verwaltet hat. Ist dies nicht bekannt, ist die einfachte Lösung ein SQL-Befehl auf das [Phpmyadmin-Interface](https://elmo.cloud/phpmyadmin/) (Passwort in KeePass).
 
+    SELECT Name
+    FROM Data
+    WHERE Name NOT IN (SELECT Name FROM DATA WHERE Messdatum > DATE_SUB(NOW(), INTERVAL 30 MINUTE)
+
+Dieser Befehl liest alle Stecker aus, die in den letzten 30 Minuten nichts in die Datenbank geschrieben habe.
 
 ## Schritt 3
+Alle Stecker müssen neue mit der FritzBox verbunden werden. 
 # HowTo 4: Defekten RaspBerry Pi austauschen
 # HowTo 5: System erweitern / Skalierbarkeit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMTQ3NDgyM119
+eyJoaXN0b3J5IjpbLTIwOTYzMjcwOTYsLTMzMTQ3NDgyM119
 -->
