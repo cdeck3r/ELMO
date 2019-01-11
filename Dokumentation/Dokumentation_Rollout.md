@@ -32,7 +32,12 @@ Insgesamt wurden also X Steckdosen, X Router und X Raspberry Pi bis zum Ende des
 
 Eine Erweiterung der Hardware ist jederzeit möglich, da das komplette System skalierbar ist.## Ziel:
 ## R
+### Raum 2
+### Raum 3
+## Installation der Hardware
+## Konfiguration der FritzBoxen
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDk2OTc5NzgsMTA1MDg2MjgwMF19
+eyJoaXN0b3J5IjpbMjA4Nzk0NjU1NCwtMTgwOTY5Nzk3OCwxMD
+UwODYyODAwXX0=
 -->
