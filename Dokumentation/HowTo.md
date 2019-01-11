@@ -4,12 +4,17 @@ Zuerst muss der alte Stecker entfernt werden und der neue Stecker in die Steckdo
 ## Schritt 2
 Anschließend muss man relativ Schnell an der entsprechenden FritzBox die DECT-Taste drücken. Der Stecker sollte sich dann mit der FritzBox verbinden. Die Lichter blinken dann dauerhaft.
 ### Troubleshooting
-#### Nur ein Licht blink
+#### Nur ein Licht blinkt
+Es muss der "On-Schalter" auf dem Stecker betätigt werden.
+#### Beide lichter blinken schnell
+Das ist normal, einfach abwarten. Der Stecker installiert ein Update.
+#### Lichter blinken unregelmäßig
+Erneut ein und ausstecken und die DECT-Taste an der FritzBox betätigen, die Koppelung hat nicht funktioniert.
 
 # HowTo 2: Neuen FritzDect 200 Stecker hinzufügen
 # HowTo 3: Defekte FritzBox austauschen
 # HowTo 4: Defekten RaspBerry Pi austauschen
 # HowTo 5: System erweitern / Skalierbarkeit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU2ODU1NTI5XX0=
+eyJoaXN0b3J5IjpbLTExNTQzNTMwMDFdfQ==
 -->
