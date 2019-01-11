@@ -20,10 +20,12 @@ Im Interface der FritzBox muss der Name des Steckers auf die ID seiner Maschine 
 Das Passwort für die FritzBox ist im KeePass Tresor abgespeichert. Sollte die ID nicht auftauchen, wurde die falsche FritzBox gewählt.
 
 # HowTo 2: Neuen FritzDect 200 Stecker hinzufügen
-## Grun
+## Schritt 1
+Es muss überprüft werden, ob eine FritzBox in Reichweite ist, welche noch Kapazität für einen neuen Stecker hat. Jede FritzBox kann 10 Stecker zuverlässig verwalten.
+Ist dies nicht gegeben, muss eine neue FritzBox eingebaut werden, siehe HowTo 5.
 # HowTo 3: Defekte FritzBox austauschen
 # HowTo 4: Defekten RaspBerry Pi austauschen
 # HowTo 5: System erweitern / Skalierbarkeit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODg4ODM1NDBdfQ==
+eyJoaXN0b3J5IjpbLTQwNDI2NDUwNV19
 -->
