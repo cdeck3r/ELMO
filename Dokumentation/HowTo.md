@@ -17,7 +17,7 @@ Sollten weitere Probleme auftreten, beachten Sie diesen Artikel von AVM:
 Im Interface der FritzBox muss der Name des Steckers auf die ID seiner Maschine abgeändert werden. Die IDs können hier eingesehen werden:
 [elmo.cloud](https://elmo.cloud/main/maschinen.php)
 
-Das Passwort für die FritzBox ist im KeePass Tresor abgespeichert. Sollte die ID nicht auftauchen, wurde die falsche Frit
+Das Passwort für die FritzBox ist im KeePass Tresor abgespeichert. Sollte die ID nicht auftauchen, wurde die falsche FritzBox gewählt.
 
 # HowTo 2: Neuen FritzDect 200 Stecker hinzufügen
 ## Grun
@@ -25,5 +25,5 @@ Das Passwort für die FritzBox ist im KeePass Tresor abgespeichert. Sollte die I
 # HowTo 4: Defekten RaspBerry Pi austauschen
 # HowTo 5: System erweitern / Skalierbarkeit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDczMTA0OTEyXX0=
+eyJoaXN0b3J5IjpbLTE4ODg4ODM1NDBdfQ==
 -->
