@@ -34,10 +34,12 @@ Ist dies nicht gegeben, muss eine neue FritzBox eingebaut werden.
 ## Schritt 1
 Die alte Fritzbox muss entfernt werden. Dazu einfach die 2 Netzwerkkabel abziehen und das Stromkabel abziehen.
 ## Schritt 2
-Es muss überprüft werden, welche FritzDect-Stecker die FritzBox verwaltet hat. Ist dies nicht bekannt, ist die einfachte Lös
+Es muss überprüft werden, welche FritzDect-Stecker die FritzBox verwaltet hat. Ist dies nicht bekannt, ist die einfachte Lösung ein SQL-Befehl auf das [Phpmyadmin-Interface](https://elmo.cloud/phpmyadmin/) (Passwort in KeePass).
+
+
 ## Schritt 3
 # HowTo 4: Defekten RaspBerry Pi austauschen
 # HowTo 5: System erweitern / Skalierbarkeit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg0NTE2MzMzXX0=
+eyJoaXN0b3J5IjpbLTMzMTQ3NDgyM119
 -->
