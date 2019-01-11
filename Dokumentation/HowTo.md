@@ -31,8 +31,12 @@ Ist dies nicht gegeben, muss eine neue FritzBox eingebaut werden.
 > **HowTo 1** durchführen.
 
 # HowTo 3: Defekte FritzBox austauschen
+## Schritt 1
+Die alte Fritzbox muss entfernt werden. Dazu einfach die 2 Netzwerkkabel abziehen und das Stromkabel abziehen.
+## Schritt 2
+## Schritt 3
 # HowTo 4: Defekten RaspBerry Pi austauschen
 # HowTo 5: System erweitern / Skalierbarkeit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MDY4MjE4NV19
+eyJoaXN0b3J5IjpbOTQ0MTI4OTIxXX0=
 -->
