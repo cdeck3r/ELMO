@@ -77,15 +77,17 @@ Bei der Konfiguration des RaspBerrys können viele Fehler auftreten.
 Zuerst muss abgeklärt werden, wie viele neue Stecker installiert werden sollen.
 Danach müssen die 2 Möglichkeiten überprüft werden:
 1. Die vorhandenen FritzBoxen haben noch Ressourcen 
-	--> Siehe HowTo 1
+	--> Siehe HowTo 2
 2. Es sind keine oder nicht genügend Resourcen verfügbar. 
 	--> Siehe Schritt 2
 
 ## Schritt 2
 Für 10 Stecker wird jeweils ein RaspBerry Pi und eine FritzBox benötigt. 
 Wenn diese vorhanden Sind, muss wieder die Konfiguration durchgeführt werden.
+1. FritzBox konfigurieren
+	--> Siehe Dokumentation_Infrastruktur und HowTo
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODUyNTI0ODEsLTMzMTQ3NDgyM119
+eyJoaXN0b3J5IjpbLTEyMTExNDg5NzgsLTMzMTQ3NDgyM119
 -->
