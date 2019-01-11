@@ -43,7 +43,11 @@ Es muss überprüft werden, welche FritzDect-Stecker die FritzBox verwaltet hat.
 Dieser Befehl liest alle Stecker aus, die in den letzten 30 Minuten nichts in die Datenbank geschrieben habe.
 
 ## Schritt 3
-Alle Stecker müssen neue mit der FritzBox verbunden werden. 
+Die neue Fritzbox konfigurieren.
+
+> Siehe Dokumentation_Infrastruktur, Passwort aus KeePass verwenden
+
+Anschließend müssen alle Stecker neu mit der FritzBox verbunden werden. 
 
 > Siehe HowTo 1
 
@@ -53,8 +57,11 @@ Danach müssen die gespeicherten Stecker im FritzBox Interface mit dem Ergebnis 
 ## Schritt 1
 Zuerst muss der defekte RaspBerry entfernt werden. Dazu einfach das Netzwerkkabel und das Stromkabel entfernen
 ## Schritt 2
+Der neue RaspBerry muss eingerichtet werden. 
+
+> Siehe Dokumentation_Infrastruktur
 
 # HowTo 5: System erweitern / Skalierbarkeit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMzU4MjQ0OSwtMzMxNDc0ODIzXX0=
+eyJoaXN0b3J5IjpbMzEzNzk5MDMyLC0zMzE0NzQ4MjNdfQ==
 -->
