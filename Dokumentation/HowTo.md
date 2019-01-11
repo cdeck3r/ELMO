@@ -82,12 +82,15 @@ Danach müssen die 2 Möglichkeiten überprüft werden:
 	--> Siehe Schritt 2
 
 ## Schritt 2
-Für 10 Stecker wird jeweils ein RaspBerry Pi und eine FritzBox benötigt. 
+Für 10 Stecker wird jeweils ein RaspBerry Pi und eine FritzBox benötigt. Außerdem benötigt man 2 LAN-Kabel (Die Länge muss abgeklärt werden).
 Wenn diese vorhanden Sind, muss wieder die Konfiguration durchgeführt werden.
 1. FritzBox konfigurieren
-	--> Siehe Dokumentation_Infrastruktur und HowTo
+	--> Siehe **Dokumentation_Infrastruktur** und **HowTo3**
+2. RaspBerry konfigurieren
+	--> Siehe **Dokumentation_Infrastruktur** und **HowTo4**
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTExNDg5NzgsLTMzMTQ3NDgyM119
+eyJoaXN0b3J5IjpbLTQzODA1NDAzMiwtMzMxNDc0ODIzXX0=
 -->
