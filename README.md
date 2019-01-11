@@ -17,6 +17,9 @@ ELMO ist Energiemonitoring mit COTS Hardware. Erfassungssysteme werden in einem 
 
 **Zeitraum:** Oktober 2018 - Januar 2019
 
+## Inhalte
+
+[ELMO GitBook](https://cdeck3r-docs.gitbook.io/elmo/)
 
 ## Teilnehmer
 
@@ -40,6 +43,6 @@ Dies ist Projekt im [Bachelor Wirtschaftsinformatik \(WIB\)](http://www.inf.reut
 * Github, Trello, ...
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDYxMDk3NSwtMTgxMDM4NTAxLC05OD
-g2OTE3NywtMTg2OTY4MjUxXX0=
+eyJoaXN0b3J5IjpbLTk4ODI2MDEwNywtMTAwNjEwOTc1LC0xOD
+EwMzg1MDEsLTk4ODY5MTc3LC0xODY5NjgyNTFdfQ==
 -->
