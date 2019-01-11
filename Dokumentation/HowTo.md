@@ -50,7 +50,11 @@ Alle Stecker müssen neue mit der FritzBox verbunden werden.
 Danach müssen die gespeicherten Stecker im FritzBox Interface mit dem Ergebnis des SQL-Befehls verglichen werden.
 
 # HowTo 4: Defekten RaspBerry Pi austauschen
+## Schritt 1
+Zuerst muss der defekte RaspBerry entfernt werden. Dazu einfach das Netzwerkkabel und das Stromkabel entfernen
+## Schritt 2
+
 # HowTo 5: System erweitern / Skalierbarkeit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMjcxNjA5NiwtMzMxNDc0ODIzXX0=
+eyJoaXN0b3J5IjpbLTIzMzU4MjQ0OSwtMzMxNDc0ODIzXX0=
 -->
