@@ -78,8 +78,14 @@ Zuerst muss abgeklärt werden, wie viele neue Stecker installiert werden sollen.
 Danach müssen die 2 Möglichkeiten überprüft werden:
 1. Die vorhandenen FritzBoxen haben noch Ressourcen 
 	--> Siehe HowTo 1
-2. Es sind keine oder nicht genügend Resourcen ve
+2. Es sind keine oder nicht genügend Resourcen verfügbar. 
+	--> Siehe Schritt 2
+
+## Schritt 2
+Für 10 Stecker wird jeweils ein RaspBerry Pi und eine FritzBox benötigt. 
+Wenn diese vorhanden Sind, muss wieder die Konfiguration durchgeführt werden.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NzQ4NDg4MCwtMzMxNDc0ODIzXX0=
+eyJoaXN0b3J5IjpbLTExODUyNTI0ODEsLTMzMTQ3NDgyM119
 -->
