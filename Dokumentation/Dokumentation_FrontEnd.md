@@ -997,13 +997,37 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
  
 
-
+# 1. Dokumentation FrontEnd
+## 1.1 Framework
+### 1.1.1. Logo
+### 1.1.2. CSS
+### 1.1.3. HTML
+## 1.2. Benutzerbereich
+## Grundriss | Raumpläne
+#### 1.2.1.  HTML
+#### 1.2.2. PHP
+#### 1.2.3. JavaScript
+## 1.3. Ansprechpartner
+### Verantwortliche Personen
+## 1.4. Adminbereich
+## 1.4.1. Charts
+### PHP
+### SQL
+### JavaScript
+## 1.4.2. Wartungsintervalle
+### HTML
+### PHP
+### SQL
+### JavaScript
+## 1.4.3. Login
+### Sessions
+### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MzU3NDAxOCwyNzUyMzQ4MTUsNzY4MT
-IyMjY3LDc2ODEyMjI2NywtMjA5MTM4MzczNCwxMzg3MzgyMjU2
-LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0xMTc2ODI5MzksMTU3NT
-UzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMTU0NjIyLC0xNjYwNjE0
-MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgwODc1LDEzMTA4Mzg5Mz
-MsMTEzNjY4NzkyMSwxMDY5MjEwMzUyLC0xNjI4NzczMjg3LC0x
-NDM5NzEyMzU5XX0=
+eyJoaXN0b3J5IjpbMjcwNzgzMjQ1LC02OTM1NzQwMTgsMjc1Mj
+M0ODE1LDc2ODEyMjI2Nyw3NjgxMjIyNjcsLTIwOTEzODM3MzQs
+MTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwtMTE3Nj
+gyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMTc4MjE1NDYy
+MiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4MDg3NS
+wxMzEwODM4OTMzLDExMzY2ODc5MjEsMTA2OTIxMDM1MiwtMTYy
+ODc3MzI4N119
 -->
