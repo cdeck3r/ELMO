@@ -13,12 +13,14 @@ Erneut ein und ausstecken und die DECT-Taste an der FritzBox betätigen, die Kop
 
 Sollten weitere Probleme auftreten, beachten Sie diesen Artikel von AVM:
 [AVM-Wissensdatenbank: FritzDect Koppeln](https://avm.de/service/fritzbox/fritzbox-7272/wissensdatenbank/publication/show/1231_FRITZ-DECT-Steckdose-an-FRITZ-Box-anmelden/)
-
+## Schritt 3
+Im Interface der FritzBox muss der Name des Steckers auf die ID seiner Maschine abgeändert werden. Die 
 
 # HowTo 2: Neuen FritzDect 200 Stecker hinzufügen
+## Grun
 # HowTo 3: Defekte FritzBox austauschen
 # HowTo 4: Defekten RaspBerry Pi austauschen
 # HowTo 5: System erweitern / Skalierbarkeit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzY1NDI0MzNdfQ==
+eyJoaXN0b3J5IjpbLTIwNTY5ODkzMjFdfQ==
 -->
