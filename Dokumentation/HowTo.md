@@ -73,7 +73,13 @@ Bei der Konfiguration des RaspBerrys können viele Fehler auftreten.
 #### Cronjob
 
 # HowTo 5: System erweitern / Skalierbarkeit
+## Schritt 1
+Zuerst muss abgeklärt werden, wie viele neue Stecker installiert werden sollen.
+Danach müssen die 2 Möglichkeiten überprüft werden:
+1. Die vorhandenen FritzBoxen haben noch Ressourcen 
+	--> Siehe HowTo 1
+2. Es sind keine oder nicht genügend Resourcen ve
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg2NTQwNjM2LC0zMzE0NzQ4MjNdfQ==
+eyJoaXN0b3J5IjpbLTQ2NzQ4NDg4MCwtMzMxNDc0ODIzXX0=
 -->
