@@ -87,16 +87,19 @@ Für 10 Stecker wird jeweils ein RaspBerry Pi und eine FritzBox benötigt. Auße
 Wenn diese vorhanden Sind, muss wieder die Konfiguration durchgeführt werden.
 
 ### Verkabelung
+1. FritzBox (LAN 1) zu freien LAN-Buchse
+2. RaspBerry Pi zu FritzBox (LAN 2)
 
-- 
-1. FritzBox konfigurieren
+### Konfigurationen
+3. FritzBox konfigurieren
 	--> Siehe **Dokumentation_Infrastruktur** und **HowTo3**
-2. RaspBerry konfigurieren
+4. RaspBerry konfigurieren
 	--> Siehe **Dokumentation_Infrastruktur** und **HowTo4**
-3. Die neuen Stecker verbinden
+5. Die neuen Stecker verbinden
 	--> Siehe **HowTo2**
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDA1NTQxNjUsLTMzMTQ3NDgyM119
+eyJoaXN0b3J5IjpbLTE5MjEwOTcwODAsLTEzNDA1NTQxNjUsLT
+MzMTQ3NDgyM119
 -->
