@@ -12,7 +12,7 @@ Das ist normal, einfach abwarten. Der Stecker installiert ein Update.
 Erneut ein und ausstecken und die DECT-Taste an der FritzBox betätigen, die Koppelung hat nicht funktioniert.
 
 Sollten weitere Probleme auftreten, beachten Sie diesen Artikel von AVM:
-https://avm.de/service/fritzbox/fritzbox-7272/wissensdatenbank/publication/show/1231_FRITZ-DECT-Steckdose-an-FRITZ-Box-anmelden/
+[AVM-Wissensdatenbank: FritzDect Koppeln](https://avm.de/service/fritzbox/fritzbox-7272/wissensdatenbank/publication/show/1231_FRITZ-DECT-Steckdose-an-FRITZ-Box-anmelden/)
 
 
 # HowTo 2: Neuen FritzDect 200 Stecker hinzufügen
@@ -20,5 +20,5 @@ https://avm.de/service/fritzbox/fritzbox-7272/wissensdatenbank/publication/show/
 # HowTo 4: Defekten RaspBerry Pi austauschen
 # HowTo 5: System erweitern / Skalierbarkeit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MjgzNTM3NV19
+eyJoaXN0b3J5IjpbLTEyNzY1NDI0MzNdfQ==
 -->
