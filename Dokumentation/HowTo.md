@@ -22,10 +22,17 @@ Das Passwort für die FritzBox ist im KeePass Tresor abgespeichert. Sollte die I
 # HowTo 2: Neuen FritzDect 200 Stecker hinzufügen
 ## Schritt 1
 Es muss überprüft werden, ob eine FritzBox in Reichweite ist, welche noch Kapazität für einen neuen Stecker hat. Jede FritzBox kann 10 Stecker zuverlässig verwalten.
-Ist dies nicht gegeben, muss eine neue FritzBox eingebaut werden, siehe HowTo 5.
+Ist dies nicht gegeben, muss eine neue FritzBox eingebaut werden.
+
+> Siehe **HowTo 5**
+
+## Schritt 2
+
+> **HowTo 1** durchführen.
+
 # HowTo 3: Defekte FritzBox austauschen
 # HowTo 4: Defekten RaspBerry Pi austauschen
 # HowTo 5: System erweitern / Skalierbarkeit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNDI2NDUwNV19
+eyJoaXN0b3J5IjpbMTg0MDY4MjE4NV19
 -->
