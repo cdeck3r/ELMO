@@ -44,8 +44,13 @@ Dieser Befehl liest alle Stecker aus, die in den letzten 30 Minuten nichts in di
 
 ## Schritt 3
 Alle Stecker müssen neue mit der FritzBox verbunden werden. 
+
+> Siehe HowTo 1
+
+Danach müssen die gespeicherten Stecker im FritzBox Interface mit dem Ergebnis des SQL-Befehls verglichen werden.
+
 # HowTo 4: Defekten RaspBerry Pi austauschen
 # HowTo 5: System erweitern / Skalierbarkeit
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTYzMjcwOTYsLTMzMTQ3NDgyM119
+eyJoaXN0b3J5IjpbMTkyMjcxNjA5NiwtMzMxNDc0ODIzXX0=
 -->
