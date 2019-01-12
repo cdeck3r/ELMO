@@ -237,14 +237,14 @@ Gleich wie in den anderen Files wird zuerst eine Datenbankverbindung aufgebaut. 
     ?>
 Bei der Darstellung gibt es zwei Optionen. "Nicht Verfügbar" oder "Verfügbar". Entschieden wird dies mit einer IF-Abfrage auf "is_null($row1)".
 
-    <?php  
-    if (!is_null($row1)){  
-    echo "<div class=\"row text-center justify-content-md-center m-t-10\"><div><h5 class=\"btn btn-success\"><span class=\"btn-label\"><i class=\"fa fa-check\"></i></span>Verfügbar</h5></div>";  
-    }  
-    else {  
-    echo "<div class=\"btn btn-outline-secondary waves-effect waves-light m-t-10\"><span class=\"btn-label\"><i class=\"fa fa-times\"></i></span>Nicht Verfügbar</div>";  
-    }  
-    ?>
+     <?php
+     if (!is_null($row1)){
+     echo "<div class=\"row text-center justify-content-center m-t-10\"><div><h5 class=\"btn btn-success\"><span class=\"btn-label\"><i class=\"fa fa-check\"></i></span>Verfügbar</h5></div>";
+     }
+     else {
+     echo "<div class=\"row text-center justify-content-center m-t-10\"><div><h5 class=\"btn btn-secondary\"><span class=\"btn-label\"><i class=\"fa fa-times\"></i></span>Nicht Verfügbar</h5></div>";
+     }
+     ?>
 
 ### Verantwortliche Personen
 ## Adminbereich
@@ -1023,11 +1023,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 ### Sessions
 ### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcwNzgzMjQ1LC02OTM1NzQwMTgsMjc1Mj
-M0ODE1LDc2ODEyMjI2Nyw3NjgxMjIyNjcsLTIwOTEzODM3MzQs
-MTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwtMTE3Nj
-gyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMTc4MjE1NDYy
-MiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4MDg3NS
-wxMzEwODM4OTMzLDExMzY2ODc5MjEsMTA2OTIxMDM1MiwtMTYy
-ODc3MzI4N119
+eyJoaXN0b3J5IjpbMTA3OTYxNDk3MSwyNzA3ODMyNDUsLTY5Mz
+U3NDAxOCwyNzUyMzQ4MTUsNzY4MTIyMjY3LDc2ODEyMjI2Nywt
+MjA5MTM4MzczNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0Mz
+YxNTc0LC0xMTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAw
+LC0xNzgyMTU0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC
+0xMzY1MDgwODc1LDEzMTA4Mzg5MzMsMTEzNjY4NzkyMSwxMDY5
+MjEwMzUyXX0=
 -->
