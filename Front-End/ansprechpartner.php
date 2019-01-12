@@ -245,10 +245,10 @@ $row1 = mysqli_fetch_array($result1);
                                             </div>
                                             <?php
                                             if (!is_null($row1)){
-                                            echo "<div class=\"row text-center justify-content-md-center m-t-10\"><div><h5 class=\"btn btn-success\"><span class=\"btn-label\"><i class=\"fa fa-check\"></i></span>Verfügbar</h5></div>";
+                                            echo "<div class=\"row text-center justify-content-center m-t-10\"><div><h5 class=\"btn btn-success\"><span class=\"btn-label\"><i class=\"fa fa-check\"></i></span>Verfügbar</h5></div>";
                                             }
                                             else {
-                                            echo "<div class=\"btn btn-outline-secondary waves-effect waves-light m-t-10\"><span class=\"btn-label\"><i class=\"fa fa-times\"></i></span>Nicht Verfügbar</div>";
+                                            echo "<div class=\"row text-center justify-content-center m-t-10\"><div><h5 class=\"btn btn-secondary\"><span class=\"btn-label\"><i class=\"fa fa-times\"></i></span>Nicht Verfügbar</h5></div>";
                                             }
                                             ?>
                                             </div>
