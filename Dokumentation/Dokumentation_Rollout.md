@@ -21,15 +21,18 @@ Nachdem alles erfolgreich verlaufen ist, wurde die restliche Hardware für Phase
 Als die neue Hardware eintraf, wurde das zweite Teil-Rollout gestartet.
 
 Insgesamt wurden 4 weitere Steckdosen in Raum 01-31L angebracht.
-Raum 01-031M erhielt 8 Steckdosen und Raum 01-031N erhielt auch 8 Stück.
+Raum 01-031M erhielt  Steckdosen und Raum 01-031N erhielt auch 8X Stück.
 
 Zusätzlich wurden 2 Router mit je einem dazugehörigen Raspberry Pi angebracht und mit dem Internet und den Steckdosen verbunden.
 
 ##
 
-Insgesamt sind also 30 Steckdosen, 3 Router und 3 Raspberry Pi bis zum Ende des Projektes in den 3 Räumen angeschlossen.
+Insgesamt sind also 0X Steckdosen, 3 Router und 3 Raspberry Pi bis zum Ende des Projektes in den 3 Räumen angeschlossen.
 
 Eine Erweiterung der Hardware ist jederzeit möglich, da das komplette System skalierbar ist.
 
 ## Installation der Hardware
 ## Konfiguration der FritzBoxen
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTMyNTc1NzgzMV19
+-->
