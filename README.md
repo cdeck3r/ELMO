@@ -38,11 +38,10 @@ Dies ist Projekt im [Bachelor Wirtschaftsinformatik \(WIB\)](http://www.inf.reut
 
 ## Kollaboration
 
-* ...
-* ...
-* Github, Trello, ...
+* Github, Trello
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4ODI2MDEwNywtMTAwNjEwOTc1LC0xOD
-EwMzg1MDEsLTk4ODY5MTc3LC0xODY5NjgyNTFdfQ==
+eyJoaXN0b3J5IjpbNzI1ODIwMTkzLC05ODgyNjAxMDcsLTEwMD
+YxMDk3NSwtMTgxMDM4NTAxLC05ODg2OTE3NywtMTg2OTY4MjUx
+XX0=
 -->
