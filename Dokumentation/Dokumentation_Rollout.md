@@ -21,13 +21,13 @@ Nachdem alles erfolgreich verlaufen ist, wurde die restliche Hardware für Phase
 Als die neue Hardware eintraf, wurde das zweite Teil-Rollout gestartet.
 
 Insgesamt wurden 4 weitere Steckdosen in Raum 01-31L angebracht.
-Raum 01-031M erhielt 8 Steckdosen und Raum 01-031N erhielt auch 8 Stück.
+Raum 01-031M erhielt 9 Steckdosen und Raum 01-031N erhielt 17 Stück.
 
-Zusätzlich wurden 2 Router mit je einem dazugehörigen Raspberry Pi angebracht und mit dem Internet und den Steckdosen verbunden.
+Zusätzlich wurden 3 Router mit je einem dazugehörigen Raspberry Pi angebracht und mit dem Internet und den Steckdosen verbunden.
 
 ##
 
-Insgesamt sind also 30 Steckdosen, 3 Router und 3 Raspberry Pi bis zum Ende des Projektes in den 3 Räumen angeschlossen.
+Insgesamt sind bis zum Ende des Projektes also 40 Steckdosen, 4 Router und 4 Raspberry Pi in den 3 Räumen angeschlossen worden.
 
 Eine Erweiterung der Hardware ist jederzeit möglich, da das komplette System skalierbar ist.
 
