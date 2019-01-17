@@ -1,10 +1,12 @@
 # Table of contents
 
 * [Synopsis](README.md)
-* [Dokumentation Infrastruktur](dokumentation.md)
-* [Sicherheitskonzept](sicherheitskonzept.md)
-* [Dokumentation FrontEnd](dokumentation-produktiv-frontend.md)
-* [Dokumentation BackEnd](dokumentation-produktiv-backend.md)
-* [Basisinformationen](basisinformationen.md)
-* [Wordpress Installation](wordpress-installation.md)
+* [Basisinformationen](Basisinformati.md)
+* [FrontEnd](Dokumentation_Infrastruktur.md)
+* [Infrastruktur](Dokumentation_Infrastruktur.md)
+* [Rollout](Dokumentation_Rollout.md)
+* [Sicherheitskonzept](Dokumentation_Sicherheitskonzept.md)
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjA2MDkwNjk1NF19
+-->
