@@ -1,7 +1,14 @@
 
+# Installationsumfang
 
 
-> Written with [StackEdit](https://stackedit.io/).
+|Gerät|Anzahl installierter Hardware  |
+|--|--|
+|FritzBox 7490  |4  |
+|RaspBerry Pi 3 B+  |4  |
+|FritzBox 7490  |4  |
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbNDMyNzc4MDExXX0=
 -->
