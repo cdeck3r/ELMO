@@ -3,6 +3,8 @@
 * [Rollout](Dokumentation_Rollout.md)
 * [Sicherheitskonzept](Dokumentation_Sicherheitskonzept.md)
 * [HowTo](HowTo.md)
+* [Technical Data Sheet](Technical_Data_Sheet.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI4NzM4NDIsMTk5MTE5NjU3Ml19
+eyJoaXN0b3J5IjpbLTU2NjIyNjAwOCw1Mjg3Mzg0MiwxOTkxMT
+k2NTcyXX0=
 -->
