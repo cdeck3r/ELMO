@@ -21,6 +21,13 @@ ELMO ist Energiemonitoring mit COTS Hardware. Erfassungssysteme werden in einem 
 
 [ELMO Dokumentation](/Dokumentation/README.md)
 
+* [FrontEnd](/Dokumentation/Dokumentation_FrontEnd.md)
+* [Infrastruktur](/Dokumentation/Dokumentation_Infrastruktur.md)
+* [Rollout](/Dokumentation/Dokumentation_Rollout.md)
+* [Sicherheitskonzept](/Dokumentation/Dokumentation_Sicherheitskonzept.md)
+* [HowTo](/Dokumentation/HowTo.md)
+* [Technical Data Sheet](/Dokumentation/Technical_Data_Sheet.md)
+
 ## Teilnehmer
 
 Dies ist Projekt im [Bachelor Wirtschaftsinformatik \(WIB\)](http://www.inf.reutlingen-university.de/studium/bachelor/wirtschaftsinformatik/) an der Hochschule Reutlingen.
@@ -41,7 +48,7 @@ Dies ist Projekt im [Bachelor Wirtschaftsinformatik \(WIB\)](http://www.inf.reut
 * Github, Trello
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMDg5MDcyMywtOTg4MjYwMTA3LC0xMD
-A2MTA5NzUsLTE4MTAzODUwMSwtOTg4NjkxNzcsLTE4Njk2ODI1
-MV19
+eyJoaXN0b3J5IjpbNTM4NDAyMjM5LDEzMDA4OTA3MjMsLTk4OD
+I2MDEwNywtMTAwNjEwOTc1LC0xODEwMzg1MDEsLTk4ODY5MTc3
+LC0xODY5NjgyNTFdfQ==
 -->
