@@ -995,39 +995,12 @@ Es wird die id und das passwort des Accounts ausgelesen.
 - [Sidebar Menu](https://github.com/huang-x-h/sidebar-menu)
 - [Sticky Kit](http://leafo.net/sticky-kit/)
 
- 
-
-# 1. Dokumentation FrontEnd
-## 1.1 Framework
-### 1.1.1. Logo
-### 1.1.2. CSS
-### 1.1.3. HTML
-## 1.2. Benutzerbereich
-## Grundriss | Raumpläne
-#### 1.2.1.  HTML
-#### 1.2.2. PHP
-#### 1.2.3. JavaScript
-## 1.3. Ansprechpartner
-### Verantwortliche Personen
-## 1.4. Adminbereich
-## 1.4.1. Charts
-### PHP
-### SQL
-### JavaScript
-## 1.4.2. Wartungsintervalle
-### HTML
-### PHP
-### SQL
-### JavaScript
-## 1.4.3. Login
-### Sessions
-### PHP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3OTYxNDk3MSwyNzA3ODMyNDUsLTY5Mz
-U3NDAxOCwyNzUyMzQ4MTUsNzY4MTIyMjY3LDc2ODEyMjI2Nywt
-MjA5MTM4MzczNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0Mz
-YxNTc0LC0xMTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAw
-LC0xNzgyMTU0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC
-0xMzY1MDgwODc1LDEzMTA4Mzg5MzMsMTEzNjY4NzkyMSwxMDY5
-MjEwMzUyXX0=
+eyJoaXN0b3J5IjpbLTIxMDg4ODg2ODYsMTA3OTYxNDk3MSwyNz
+A3ODMyNDUsLTY5MzU3NDAxOCwyNzUyMzQ4MTUsNzY4MTIyMjY3
+LDc2ODEyMjI2NywtMjA5MTM4MzczNCwxMzg3MzgyMjU2LDE0MD
+Q2OTM5ODYsMzQ0MzYxNTc0LC0xMTc2ODI5MzksMTU3NTUzNDgx
+MCwtOTU1NTgxNTAwLC0xNzgyMTU0NjIyLC0xNjYwNjE0MTQ4LC
+0yMTI2MDMxOTY5LC0xMzY1MDgwODc1LDEzMTA4Mzg5MzMsMTEz
+NjY4NzkyMV19
 -->
