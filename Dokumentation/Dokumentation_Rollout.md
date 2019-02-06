@@ -31,8 +31,10 @@ Insgesamt sind bis zum Ende des Projektes also 40 Steckdosen, 4 Router und 4 Ras
 
 Eine Erweiterung der Hardware ist jederzeit möglich, da das komplette System skalierbar ist.
 
+![ELMO Logodesign](Bilder/IMG_1830.HEIC)
 ## Installation der Hardware
 ## Konfiguration der FritzBoxen
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzUwNDkwODgsLTMyNTc1NzgzMV19
+eyJoaXN0b3J5IjpbLTQxNjI1Nzc3MywtMTYzNTA0OTA4OCwtMz
+I1NzU3ODMxXX0=
 -->
