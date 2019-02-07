@@ -1103,7 +1103,7 @@ SELECT-Befehl auf die Tabellen "Reinigungen" und "Maschinen". Es werden Maschine
 ![Alle Maschinen](Bilder/Funktionenbilder/alle.jpg)
 
 ### HTML
-
+Aufbau der Tabelle ist im HTML-Standard umgesetzt.
 
 ### PHP
 Alle Daten der Maschinen werden in die Variable "table_result1" geschrieben.
@@ -1137,6 +1137,25 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum".
 ![Login](Bilder/Funktionenbilder/login.jpg)
 
 ### HTML
+Der Lockscreen besteht aus einem dynamischen Hintergrund und einem Formular Container der auf Breite und Länge zentriert wurde. Es gibt Elemente wi
+
+    <div class="login-register" style="background-image:url(../assets/images/background/login-register.jpg);">          
+    <div class="login-box card">  
+     <div class="card-body">  
+     <form class="form-horizontal form-material" id="loginform" action="?login=1" method="post">  
+      
+     <div class="form-group">  
+     <div class="col-xs-12 text-center">  
+     <div class="user-thumb text-center"> <img alt="thumbnail" class="img" width="190" src="../assets/images/lock/lock-logo.png">  
+     <h3>Access Adminbereich</h3>  
+     </div> </div> </div> <div class="form-group ">  
+     <div class="col-xs-12">  
+     <input class="form-control" type="password" required="" name="password" placeholder="Passwort">  
+     </div> </div> <div class="form-group text-center">  
+     <div class="col-xs-12">  
+     <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" type="submit">Login</button>  
+     </div> </div> </form> </div> </div></div>
+
 ### PHP
 Wurde ein Anmeldeversuch getätigt, wird die Seite neu geladen und die Daten per POST-Verfahren an PHP übergeben. Dann wird das genutzte Password mit der PHP-Funktion "password_verify" bestätigt und der Nutzer wird an das Admindashboard weitergeleitet. Falls das Passwort nicht korrekt war, erscheint die Meldung "Anmeldung fehlgeschlagen!".
 
@@ -1184,11 +1203,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTE3MDI1Myw4MjYyNDE1LC0yMTA4OD
-g4Njg2LDEwNzk2MTQ5NzEsMjcwNzgzMjQ1LC02OTM1NzQwMTgs
-Mjc1MjM0ODE1LDc2ODEyMjI2Nyw3NjgxMjIyNjcsLTIwOTEzOD
-M3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwt
-MTE3NjgyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMTc4Mj
-E1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4
-MDg3NV19
+eyJoaXN0b3J5IjpbODg5MTgxMzI2LDgyNjI0MTUsLTIxMDg4OD
+g2ODYsMTA3OTYxNDk3MSwyNzA3ODMyNDUsLTY5MzU3NDAxOCwy
+NzUyMzQ4MTUsNzY4MTIyMjY3LDc2ODEyMjI2NywtMjA5MTM4Mz
+czNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0x
+MTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMT
+U0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgw
+ODc1XX0=
 -->
