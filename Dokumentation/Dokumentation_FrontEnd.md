@@ -981,6 +981,20 @@ SELECT-Befehl auf die drei Tabellen "Data", "Maschinen" und "Raum"
 ![Cleantabelle](Bilder/Funktionenbilder/clean.jpg)
 
 ### HTML
+
+    <div class="table-responsive table-striped">  
+     <table class="table color-table inverse-table">  
+     <thead> <tr> <th>#</th>  
+     <th>Maschinenname</th>  
+     <th>Anzahl Betriebsstunden seit Wartung</th>  
+     <th>Intervall</th>  
+     <th>Letzte Wartung</th>  
+     <th>Aktion</th>  
+     </tr> </thead> <tbody>  
+     // Inhalt der Tabelle Reiningungsfunktion siehe Datenabfrage
+      </tbody>  
+     </table> </div>
+
 ### PHP
 #### Datenabfrage 
 Falls der Button "Reinigen" gedrückt wird, wird die Seite neu aufgerufen und die ID der Maschine sowie deren derzeitigen Betriebsstunden (seit der letzten Reinigung) in der URL gesetzt. Diese ID wird anschließen mit "$_GET['ID']" ausgelesen und die entsprechende Reinigung in die Datenbank in die Tabelle "Reinigungen" geschrieben. Außerdem wird in der Tabelle Maschinen das Attribute "lastClean" auf den derzeitigen Zeitpunkt gesetzt.
@@ -1166,11 +1180,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTgwNzA3MzQsODI2MjQxNSwtMjEwOD
-g4ODY4NiwxMDc5NjE0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4
-LDI3NTIzNDgxNSw3NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMz
-gzNzM0LDEzODczODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQs
-LTExNzY4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3OD
-IxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUw
-ODA4NzVdfQ==
+eyJoaXN0b3J5IjpbMTEzNzY3MTc2Nyw4MjYyNDE1LC0yMTA4OD
+g4Njg2LDEwNzk2MTQ5NzEsMjcwNzgzMjQ1LC02OTM1NzQwMTgs
+Mjc1MjM0ODE1LDc2ODEyMjI2Nyw3NjgxMjIyNjcsLTIwOTEzOD
+M3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwt
+MTE3NjgyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMTc4Mj
+E1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4
+MDg3NV19
 -->
