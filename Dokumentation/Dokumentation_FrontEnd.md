@@ -135,6 +135,19 @@ Darstellung eines animierten Kreises bevor die HTML/PHP Datei im Browser voll ge
 ![Map Vorschau](Bilder/Funktionenbilder/map.jpg)
 
 #### HTML
+##### Legende
+
+    <div class="text-center">  
+ <ul class="list-inline m-t-10 justify-content-lg-start">  
+ <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-grün"></i>Frei</h6> </li>  
+ <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-rot"></i>Besetzt</h6> </li>  
+ <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-braun"></i>Ablage</h6> </li>  
+ <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-grau"></i>Keine Daten (n/A)</h6> </li>  
+ </ul>
+ </div>
+
+
+
 #### CSS
 #### PHP
 #### Session
@@ -996,11 +1009,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 - [Sticky Kit](http://leafo.net/sticky-kit/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI2MjQxNSwtMjEwODg4ODY4NiwxMDc5Nj
-E0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4LDI3NTIzNDgxNSw3
-NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMzgzNzM0LDEzODczOD
-IyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQsLTExNzY4MjkzOSwx
-NTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2Nj
-A2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUwODA4NzUsMTMxMDgz
-ODkzM119
+eyJoaXN0b3J5IjpbNDc2MDgyMTQ5LDgyNjI0MTUsLTIxMDg4OD
+g2ODYsMTA3OTYxNDk3MSwyNzA3ODMyNDUsLTY5MzU3NDAxOCwy
+NzUyMzQ4MTUsNzY4MTIyMjY3LDc2ODEyMjI2NywtMjA5MTM4Mz
+czNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0x
+MTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMT
+U0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgw
+ODc1XX0=
 -->
