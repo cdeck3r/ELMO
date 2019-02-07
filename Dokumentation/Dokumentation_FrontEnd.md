@@ -229,7 +229,7 @@ Durch das Image eingang.png kann am Ende auch in Gridform an vier Positionen der
 #### CSS
 
 #### PHP
-Die Funktion färbt den Msc
+Die Funktion färbt die Maschinenposition rot sobald die Maschine betrieben wird. Die Maschine bleibt 10 min belegt
 
 #### Session
 Im ersten Schritt wird überprüft, ob die Session gesetzt wurde. Ist dies nicht der Fall, wird auf die Loginseite weitergeleitet.
@@ -1091,11 +1091,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNjYzMTk5LDgyNjI0MTUsLTIxMDg4OD
-g2ODYsMTA3OTYxNDk3MSwyNzA3ODMyNDUsLTY5MzU3NDAxOCwy
-NzUyMzQ4MTUsNzY4MTIyMjY3LDc2ODEyMjI2NywtMjA5MTM4Mz
-czNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0x
-MTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMT
-U0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgw
-ODc1XX0=
+eyJoaXN0b3J5IjpbLTEzODgyODE2MDQsODI2MjQxNSwtMjEwOD
+g4ODY4NiwxMDc5NjE0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4
+LDI3NTIzNDgxNSw3NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMz
+gzNzM0LDEzODczODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQs
+LTExNzY4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3OD
+IxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUw
+ODA4NzVdfQ==
 -->
