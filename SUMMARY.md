@@ -5,7 +5,6 @@
 * [Dokumentation Infrastruktur](dokumentation.md)
 * [Sicherheitskonzept](sicherheitskonzept.md)
 * [Dokumentation FrontEnd](Ddokumentation_Infrastruktur.md)
-* [Infrastruktur-produktiv-frontend.md)
 * [Dokumentation BackEnd](Ddokumentation_Infrastruktur.md)
 * [Rollout](Dokumentation_Rollout.md)
 * [Sicherheitskonzept](Dokumentation_Sicherheitskonzept-produktiv-backend.md)
