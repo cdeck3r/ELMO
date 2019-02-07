@@ -784,9 +784,18 @@ Um den Speicherplatz des Servers auslesen zu können wird die PHP-Funktion "disk
      $hdGnu = disk_free_space("/"); $hdUnu = disk_total_space("/");
 
 ##### Verwendung in HTML
-Um die Daten der zwei Funktionen (Rückgabe in Byte) sinnvoll darstellen zu können wird im HTML-Code dann die Funktion "getSymbolByQuantity($bytes)" aufgerufen. Die Funktion gibt dann einen GigaByte Wert zurück.
+Um die Daten der zwei Funktionen (Rückgabe in Byte) sinnvoll darstellen zu können wird im HTML-Code dann die Funktion "getSymbolByQuantity($bytes)" aufgerufen. Die Funktion gibt dann einen GigaByte Wert zurück. Die Postition (auch Responsive) wurde durch sämtliches Margin optimiert. **Wow-animated** generiert eine Progressbar
 
-    <div class="btn btn-rounded btn-danger"><?php echo getSymbolByQuantity($hdGnu). " von " .getSymbolByQuantity($hdUnu). " belegt";?>
+    <div class="col-lg-6 col-6 align-self-center">  
+     <div class="row  justify-content-end">  
+     <div class="m-l-10 m-r-5 m-t-10 align-self-center">  
+     <h5 class="m-b-1">Speicherbelegung</h5>  
+     <div class="progress">  
+     <div class="progress-bar bg-info wow animated progress-animated" role="progressbar" aria-valuenow="<?php echo $hdFree;?>" aria-valuemin="0" aria-valuemax="<?php echo $hdUnu;?>" style="width:<?php echo round(($hdFree/$hdUnu*100), 1)."%";?>; height:12px;"><span class="sr-only">Complete</span></div>  
+     </div> <span class="stextb m-t-0"><?php echo getSymbolByQuantity($hdFree);?>  GB</span>  
+     <span class="stext"> von <?php echo getSymbolByQuantity($hdUnu);?>GB belegt</span>  
+     </div>  
+     </div></div>
 
 #### Liniendiagramm (Area) - Aktueller Stromverbrauch AJAX
 ![Liveticker](Bilder/Funktionenbilder/liveticker.jpg)
@@ -1123,11 +1132,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMDAwNDExNCw4MjYyNDE1LC0yMTA4OD
-g4Njg2LDEwNzk2MTQ5NzEsMjcwNzgzMjQ1LC02OTM1NzQwMTgs
-Mjc1MjM0ODE1LDc2ODEyMjI2Nyw3NjgxMjIyNjcsLTIwOTEzOD
-M3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwt
-MTE3NjgyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMTc4Mj
-E1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4
-MDg3NV19
+eyJoaXN0b3J5IjpbLTE2MDA4MzcxNjgsODI2MjQxNSwtMjEwOD
+g4ODY4NiwxMDc5NjE0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4
+LDI3NTIzNDgxNSw3NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMz
+gzNzM0LDEzODczODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQs
+LTExNzY4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3OD
+IxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUw
+ODA4NzVdfQ==
 -->
