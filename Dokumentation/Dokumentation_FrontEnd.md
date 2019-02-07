@@ -153,10 +153,67 @@ Hauptcontainer der Grundrisses ist der Hauptcontainer card, card-body. Map-respo
     <div class="card">  
      <div class="card-body map-responsive">
 
-Der Raumgrundriss ist in einem 4:n (n-beliebig erweiterbar) aufgebaut. Zuerst wird eine Reihe definiert.
+Der Raumgrundriss ist in einem **4:n** (n-beliebig erweiterbar) aufgebaut. Zuerst wurde eine Reihe definiert die durch **mx-auto** zentriert wurde. 
 
-Hier können nun immer vier Container je nach Raumaufbau nebeneinander angezeigt werden (map-card-toogle map-card), ist dieser Platz mit keiner Maschine bestückt wird die klasse map-empty verwendet. Befindet sich an dieser Position eine Ablage wird diese div mit der Klasse map-card-desk gesetzt. Jede Map-Card kann mit den Überschriften h5 und h6 beschrieben werden. Der HTML Aufbau ist daher wie folgt:
+Hier können nun immer vier Container je nach Raumaufbau nebeneinander angezeigt werden (**map-card-toogle map-card**), ist dieser Platz mit keiner Maschine bestückt wird die Klasse **map-empty** verwendet. Befindet sich an dieser Position eine Ablage wird diese div mit der Klasse **map-card-desk** gesetzt. Jede Map-Card kann mit den Überschriften **h5** und **h6** beschrieben werden. Der HTML Aufbau ist daher wie folgt:
 
+                    <div class="map-row mx-auto">  
+      <!-- Maschine 1.1-->  
+      <div class="map-col">  
+     <div class="map-empty">  
+     <div class="map-body">  
+     </div> </div> </div>  <!-- Maschine 1.2-->  
+      <div class="map-col">  
+     <div class="map-card" id="c36">  
+     <div class="map-body">  
+     <h6>Juki</h6>  
+     <h5>2-Nadel-Überwendlich-Maschine für grobe Maschenware</h5>  
+     <a href="../mpdf/031M/07.pdf" target="_blank" class="btn waves-effect waves-light btn-xs btn-secondary">Details</a>  
+     </div> </div> </div>  <!-- Maschine 1.3-->  
+      <div class="map-col">  
+     <div class="map-card" id="c37">  
+     <div class="map-body">  
+     <h6>Arbeitsplatz Maria</h6>  
+     <h5>Doppelsteppstich-Maschine</h5>  
+    <!--                                <a href="#" class="btn waves-effect waves-light btn-xs btn-secondary">keine Details verfügbar</a>-->  
+      </div>  
+     </div> </div>  <!-- Maschine 1.4-->  
+      <div class="map-col">  
+     <div class="map-card-desk">  
+     <div class="map-body">  
+     <h5>Arbeitsplatz Maria</h5>  
+     </div> </div> </div>                 </div>  
+      <!-- Maschinen Reihe 2 -->  
+      <div class="map-row mx-auto">  
+      <!-- Maschine 2.1-->  
+      <div class="map-col">  
+     <div class="map-card" id="c38">  
+     <div class="map-body">  
+     <h6>KMF</h6>  
+     <h5>Doppel-Kettenstich<h5>  
+    <!--                                        <a href="#" class="btn waves-effect waves-light btn-xs btn-secondary">keine Details verfügbar</a>-->  
+      </div>  
+     </div> </div>  <!-- Maschine 2.2-->  
+      <div class="map-col">  
+     <div class="map-empty">  
+     <div class="map-body">  
+     </div> </div> </div>  <!-- Maschine 2.3-->  
+      <div class="map-col">  
+     <div class="map-card-desk">  
+     <div class="map-body">  
+     <h5>Ablagetisch</h5>  
+     </div> </div> </div>  <!-- Maschine 2.4-->  
+      <div class="map-col">  
+     <div class="map-card" id="c39">  
+     <div class="map-body">  
+     <h6>Augenknopfloch</h6>  
+     <h5>Knopflochautomat</h5>  
+    <!--                                <a href="#" class="btn waves-effect waves-light btn-xs btn-secondary">keine Details verfügbar</a>-->  
+      </div>  
+     </div>  <!-- Column -->  
+      </div>  
+      
+     </div>
 
 
 #### CSS
@@ -1019,12 +1076,13 @@ Es wird die id und das passwort des Accounts ausgelesen.
 - [Sidebar Menu](https://github.com/huang-x-h/sidebar-menu)
 - [Sticky Kit](http://leafo.net/sticky-kit/)
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM1NjM2MjM1LDgyNjI0MTUsLTIxMDg4OD
-g2ODYsMTA3OTYxNDk3MSwyNzA3ODMyNDUsLTY5MzU3NDAxOCwy
-NzUyMzQ4MTUsNzY4MTIyMjY3LDc2ODEyMjI2NywtMjA5MTM4Mz
-czNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0x
-MTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMT
-U0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgw
-ODc1XX0=
+eyJoaXN0b3J5IjpbLTE1ODMwMDg5MDQsODI2MjQxNSwtMjEwOD
+g4ODY4NiwxMDc5NjE0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4
+LDI3NTIzNDgxNSw3NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMz
+gzNzM0LDEzODczODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQs
+LTExNzY4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3OD
+IxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUw
+ODA4NzVdfQ==
 -->
