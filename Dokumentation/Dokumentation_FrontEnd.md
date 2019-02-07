@@ -227,7 +227,10 @@ Durch das Image eingang.png kann am Ende auch in Gridform an vier Positionen der
  
 
 #### CSS
+
 #### PHP
+Die Funktion färbt den Msc
+
 #### Session
 Im ersten Schritt wird überprüft, ob die Session gesetzt wurde. Ist dies nicht der Fall, wird auf die Loginseite weitergeleitet.
 
@@ -1088,7 +1091,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ3OTMyNDU1LDgyNjI0MTUsLTIxMDg4OD
+eyJoaXN0b3J5IjpbLTMxNjYzMTk5LDgyNjI0MTUsLTIxMDg4OD
 g2ODYsMTA3OTYxNDk3MSwyNzA3ODMyNDUsLTY5MzU3NDAxOCwy
 NzUyMzQ4MTUsNzY4MTIyMjY3LDc2ODEyMjI2NywtMjA5MTM4Mz
 czNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0x
