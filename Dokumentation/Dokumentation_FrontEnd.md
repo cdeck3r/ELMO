@@ -328,7 +328,7 @@ Durch den Aufruf der Funktion wird eine Verbindung zu den statisch eingetragenen
 ## Ansprechpartner
 ![Ansprechpartner Vorschau](Bilder/Funktionenbilder/ansprechpartner.jpg)
 ### HTML
-Das Bootstrap-Grid ermöglicht aktiver Gridnutzung eine Gridbreite von 12 Positionen. Durch die exakte Anzahl von vier Ansprechpartner wurde der **row** Container mit vier **col-lg-3** voll gefühlt. Die Ansprechperson Karte besteht aus **card** und **card-body**. Der ca
+Das Bootstrap-Grid ermöglicht aktiver Gridnutzung eine Gridbreite von 12 Positionen. Durch die exakte Anzahl von vier Ansprechpartner wurde der **row** Container mit vier **col-lg-3** voll gefühlt. Die Ansprechperson Karte besteht aus **card** und **card-body**. Der card-body wird gefühlt durch den Zentrierungscontainer text-center, der einen kleinen Abstand von oben hat (m-t-30). Hier befinden sich die Contentelemente wie das Bild des Ansprechpartners ind 
 
     <div class="col-lg-3">  
      <div class="card">  
@@ -1116,11 +1116,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MjUzNjMxMiw4MjYyNDE1LC0yMTA4OD
-g4Njg2LDEwNzk2MTQ5NzEsMjcwNzgzMjQ1LC02OTM1NzQwMTgs
-Mjc1MjM0ODE1LDc2ODEyMjI2Nyw3NjgxMjIyNjcsLTIwOTEzOD
-M3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwt
-MTE3NjgyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMTc4Mj
-E1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4
-MDg3NV19
+eyJoaXN0b3J5IjpbNzg1NjYyMDk4LDgyNjI0MTUsLTIxMDg4OD
+g2ODYsMTA3OTYxNDk3MSwyNzA3ODMyNDUsLTY5MzU3NDAxOCwy
+NzUyMzQ4MTUsNzY4MTIyMjY3LDc2ODEyMjI2NywtMjA5MTM4Mz
+czNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0x
+MTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMT
+U0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgw
+ODc1XX0=
 -->
