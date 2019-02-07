@@ -328,7 +328,7 @@ Durch den Aufruf der Funktion wird eine Verbindung zu den statisch eingetragenen
 ## Ansprechpartner
 ![Ansprechpartner Vorschau](Bilder/Funktionenbilder/ansprechpartner.jpg)
 ### HTML
-Das Bootstrap-Grid ermöglicht aktiver Gridnutzung eine Gridbreite von 12 Positionen. Durch die exakte Anzahl von vier Ansprechpartner wurde der **row** Container mit vier **col-lg-3** voll gefühlt. Die Ansprechperson Karte besteht aus **card** und **card-body**. Der card-body wird gefühlt durch den Zentrierungscontainer text-center, der einen kleinen Abstand von oben hat (m-t-30). Hier befinden sich die Contentelemente wie das Bild des Ansprechpartners ind 
+Das Bootstrap-Grid ermöglicht aktiver Gridnutzung eine Gridbreite von 12 Positionen. Durch die exakte Anzahl von vier Ansprechpartner wurde der **row** Container mit vier **col-lg-3** voll gefühlt. Die Ansprechperson Karte besteht aus **card** und **card-body**. Der card-body wird gefühlt durch den Zentrierungscontainer text-center, der einen kleinen Abstand von oben hat (m-t-30). Hier befinden sich die Contentelemente wie das Bild des Ansprechpartners in der Source **../main/ansprechpartnerbilder/BILD.jpg**. Der Name der Person wird durch h4 und card-title definiert und bekommt ebenfalls ein Abstand nach oben **m-t-10**. Der Name der Person wird durch h4 und card-title definiert und bekommt ebenfalls ein Abstand nach oben **m-t-10**. 
 
     <div class="col-lg-3">  
      <div class="card">  
@@ -1116,11 +1116,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg1NjYyMDk4LDgyNjI0MTUsLTIxMDg4OD
-g2ODYsMTA3OTYxNDk3MSwyNzA3ODMyNDUsLTY5MzU3NDAxOCwy
-NzUyMzQ4MTUsNzY4MTIyMjY3LDc2ODEyMjI2NywtMjA5MTM4Mz
-czNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0x
-MTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMT
-U0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgw
-ODc1XX0=
+eyJoaXN0b3J5IjpbLTEwMzI0MDEzOTIsODI2MjQxNSwtMjEwOD
+g4ODY4NiwxMDc5NjE0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4
+LDI3NTIzNDgxNSw3NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMz
+gzNzM0LDEzODczODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQs
+LTExNzY4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3OD
+IxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUw
+ODA4NzVdfQ==
 -->
