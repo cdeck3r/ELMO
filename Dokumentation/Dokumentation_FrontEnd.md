@@ -228,8 +228,20 @@ Durch das Image eingang.png kann am Ende auch in Gridform an vier Positionen der
 
 #### CSS
 
-#### PHP
-Die Funktion färbt die Maschinenposition rot sobald die Maschine betrieben wird. Die Maschine bleibt 10 min belegt
+#### JavaScript
+Die Funktion färbt die Maschinenposition rot sobald die Maschine betrieben wird. Diese Maschine wird bei nicht nutzen nach 10 min wieder frei gegeben.
+
+    // Map Colorfunktion (Belegt!)  
+    function colorFunction(value) {  
+      
+        var id = "c" + value;  
+      if (document.getElementById(id)) {  
+            document.getElementById(id).style.backgroundColor = "#ffa6a6";  
+      document.getElementById(id).style.borderColor = "#ff4d4f";  
+      document.getElementById(id).getElementsByClassName("map-body")[0].innerHTML += '<h5>Belegt!</h5>';  
+      }  
+    }
+
 
 #### Session
 Im ersten Schritt wird überprüft, ob die Session gesetzt wurde. Ist dies nicht der Fall, wird auf die Loginseite weitergeleitet.
@@ -1091,11 +1103,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODgyODE2MDQsODI2MjQxNSwtMjEwOD
-g4ODY4NiwxMDc5NjE0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4
-LDI3NTIzNDgxNSw3NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMz
-gzNzM0LDEzODczODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQs
-LTExNzY4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3OD
-IxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUw
-ODA4NzVdfQ==
+eyJoaXN0b3J5IjpbMTg3NDIwNzY4NSw4MjYyNDE1LC0yMTA4OD
+g4Njg2LDEwNzk2MTQ5NzEsMjcwNzgzMjQ1LC02OTM1NzQwMTgs
+Mjc1MjM0ODE1LDc2ODEyMjI2Nyw3NjgxMjIyNjcsLTIwOTEzOD
+M3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwt
+MTE3NjgyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMTc4Mj
+E1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4
+MDg3NV19
 -->
