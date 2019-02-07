@@ -334,7 +334,7 @@ Die Ansprechperson Karte besteht aus **card** und **card-body**. Der card-body w
 
 Der Name der Person wird durch **h4** und **card-title** definiert und bekommt ebenfalls ein Abstand nach oben **m-t-10**. Der Titel der Person wird durch **h6** und **card-subtitle** definiert. 
 
-Die Buttons bekommen einen eigenen Container der wieder rum zentriert wird **row text-center justify-content-center**. Es gibt zwei Interaktive Buttons die durch Html-Aufruf die Ansprechperson anrufen oder im auserwählten Mail-Programm die Mail-Adresse der Ansprechperson als Em
+Die Buttons bekommen einen eigenen Container der wieder rum zentriert wird **row text-center justify-content-center**. Es gibt zwei Interaktive Buttons die durch Html-Aufruf die Ansprechperson anrufen oder im auserwählten Mail-Programm die Mail-Adresse der Ansprechperson als Empänger setzt.
 
     <div class="col-lg-3">  
      <div class="card">  
@@ -371,8 +371,9 @@ Bei der Darstellung gibt es zwei Optionen. "Nicht Verfügbar" oder "Verfügbar".
      }
      ?>
 
-### Verantwortliche Personen
+
 ## Adminbereich
+Der Adminbereich hat den gleiche HTML-Struktur als der Benutzerbereich mit dem Unterschied das der Adminbereich in einem Dark
 ## Charts
 ### Grundfunktionen
 
@@ -1122,11 +1123,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjkwOTcyMzAsODI2MjQxNSwtMjEwOD
-g4ODY4NiwxMDc5NjE0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4
-LDI3NTIzNDgxNSw3NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMz
-gzNzM0LDEzODczODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQs
-LTExNzY4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3OD
-IxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUw
-ODA4NzVdfQ==
+eyJoaXN0b3J5IjpbLTM3OTgwMDA4Miw4MjYyNDE1LC0yMTA4OD
+g4Njg2LDEwNzk2MTQ5NzEsMjcwNzgzMjQ1LC02OTM1NzQwMTgs
+Mjc1MjM0ODE1LDc2ODEyMjI2Nyw3NjgxMjIyNjcsLTIwOTEzOD
+M3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwt
+MTE3NjgyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMTc4Mj
+E1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4
+MDg3NV19
 -->
