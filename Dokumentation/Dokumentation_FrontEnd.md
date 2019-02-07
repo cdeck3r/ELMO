@@ -137,7 +137,7 @@ Darstellung eines animierten Kreises bevor die HTML/PHP Datei im Browser voll ge
 #### HTML
 ##### Legende
 
-Die Legende oberhalb der Raumansicht zeigt mögliche
+Oberhalb der Raumansicht befindet sich die Legende, die die möglichen Färbungen der Maschinen zeigt und beschreibt. Umgesetzt durch zent
     <div class="text-center">  
      <ul class="list-inline m-t-10 justify-content-lg-start">  
      <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-grün"></i>Frei</h6> </li>  
@@ -1008,11 +1008,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 - [Sticky Kit](http://leafo.net/sticky-kit/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUyNDEyODc2LDgyNjI0MTUsLTIxMDg4OD
-g2ODYsMTA3OTYxNDk3MSwyNzA3ODMyNDUsLTY5MzU3NDAxOCwy
-NzUyMzQ4MTUsNzY4MTIyMjY3LDc2ODEyMjI2NywtMjA5MTM4Mz
-czNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0x
-MTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMT
-U0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgw
-ODc1XX0=
+eyJoaXN0b3J5IjpbLTE1ODk3Mzc0MjMsODI2MjQxNSwtMjEwOD
+g4ODY4NiwxMDc5NjE0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4
+LDI3NTIzNDgxNSw3NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMz
+gzNzM0LDEzODczODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQs
+LTExNzY4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3OD
+IxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUw
+ODA4NzVdfQ==
 -->
