@@ -129,7 +129,7 @@ Darstellung eines animierten Kreises bevor die HTML/PHP Datei im Browser voll ge
 
 
 
-#### CSS
+
 
 ## Grundriss | Raumpläne
 ![Map Vorschau](Bilder/Funktionenbilder/map.jpg)
@@ -996,11 +996,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 - [Sticky Kit](http://leafo.net/sticky-kit/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDg4ODg2ODYsMTA3OTYxNDk3MSwyNz
-A3ODMyNDUsLTY5MzU3NDAxOCwyNzUyMzQ4MTUsNzY4MTIyMjY3
-LDc2ODEyMjI2NywtMjA5MTM4MzczNCwxMzg3MzgyMjU2LDE0MD
-Q2OTM5ODYsMzQ0MzYxNTc0LC0xMTc2ODI5MzksMTU3NTUzNDgx
-MCwtOTU1NTgxNTAwLC0xNzgyMTU0NjIyLC0xNjYwNjE0MTQ4LC
-0yMTI2MDMxOTY5LC0xMzY1MDgwODc1LDEzMTA4Mzg5MzMsMTEz
-NjY4NzkyMV19
+eyJoaXN0b3J5IjpbODI2MjQxNSwtMjEwODg4ODY4NiwxMDc5Nj
+E0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4LDI3NTIzNDgxNSw3
+NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMzgzNzM0LDEzODczOD
+IyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQsLTExNzY4MjkzOSwx
+NTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3ODIxNTQ2MjIsLTE2Nj
+A2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUwODA4NzUsMTMxMDgz
+ODkzM119
 -->
