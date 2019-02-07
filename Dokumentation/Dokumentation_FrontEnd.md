@@ -893,7 +893,7 @@ Die Grundstruktur des JavaScript-Codes kann von den Beispielen übernommen werde
 ![Csv Export](Bilder/Funktionenbilder/csv.jpg)
 
 ### HTML
-Der CSV-Export wurde durch den Formularbefehl input ind HTML umgesetzt, so das die Abfrage durch die Post Methode Werte weitergibt. 
+Der CSV-Export wurde durch den Formularbefehl input ind HTML umgesetzt, so das die Abfrage durch die Post Methode Werte weitergibt. In unserem Fall die Datumspanne von-bis.  Von sowie bis bekommen jeweils ein eigenes Label  und eine eigene Input-Group verpasst. Die Buttons reset und submit lassen den Nutzer entscheiden 
 
     <div class="row">  
      <div class="col-lg-4">  
@@ -1166,11 +1166,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzI3MTY5MzQsODI2MjQxNSwtMjEwOD
-g4ODY4NiwxMDc5NjE0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4
-LDI3NTIzNDgxNSw3NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMz
-gzNzM0LDEzODczODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQs
-LTExNzY4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3OD
-IxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUw
-ODA4NzVdfQ==
+eyJoaXN0b3J5IjpbMTQyODQ4NDU1NSw4MjYyNDE1LC0yMTA4OD
+g4Njg2LDEwNzk2MTQ5NzEsMjcwNzgzMjQ1LC02OTM1NzQwMTgs
+Mjc1MjM0ODE1LDc2ODEyMjI2Nyw3NjgxMjIyNjcsLTIwOTEzOD
+M3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwt
+MTE3NjgyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMTc4Mj
+E1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4
+MDg3NV19
 -->
