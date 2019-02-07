@@ -224,9 +224,6 @@ Durch das Image eingang.png kann am Ende auch in Gridform an vier Positionen der
      </div> </div>    
     </div>
 
- 
-
-#### CSS
 
 #### JavaScript
 Die Funktion färbt die Maschinenposition rot sobald die Maschine betrieben wird. Diese Maschine wird bei nicht nutzen nach 10 min wieder frei gegeben.
@@ -331,6 +328,21 @@ Durch den Aufruf der Funktion wird eine Verbindung zu den statisch eingetragenen
 ## Ansprechpartner
 ![Ansprechpartner Vorschau](Bilder/Funktionenbilder/ansprechpartner.jpg)
 ### HTML
+
+<div class="col-lg-3">  
+ <div class="card">  
+ <div class="card-body">  
+ <div class="text-center m-t-30"> <img src="../main/ansprechpartnerbilder/Frau Rose.jpg" alt="img" class="img-rounded" width="120">  
+ <h4 class="card-title m-t-10">PROF. DR.-ING. KATERINA ROSE</h4>  
+ <h6 class="card-subtitle">Leiterin Nähwerkstatt</h6>  
+ <div class="row text-center justify-content-center">  
+ <div><a href="tel:+4971212718082" class="btn btn-outline-danger waves-effect waves-light"><span class="btn-label"><i class="fa fa-phone"></i></span>+49 7121 271 8082</a></div>  
+ </div> <div class="row text-center justify-content-center m-t-10">  
+ <div><a href="mailto:Katerina.Rose@reutlingen-university.de" class="btn btn-outline-warning waves-effect waves-light"><span class="btn-label"><i class="fa fa-envelope"></i></span>Mail</a></div>  
+ </div> <div class="row text-center justify-content-center m-t-10">  
+  
+ </div> </div> </div> </div></div>
+
 ### PHP
 Gleich wie in den anderen Files wird zuerst eine Datenbankverbindung aufgebaut. Anschließen wird abgefragt, ob die Lampe der Ansprechperson in den letzten 10 Minuten Aktiv war. Das Ergebnis wird in die Variable "row1" geschrieben.
 
@@ -1103,7 +1115,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NDIwNzY4NSw4MjYyNDE1LC0yMTA4OD
+eyJoaXN0b3J5IjpbLTc0MTEzMzUxNyw4MjYyNDE1LC0yMTA4OD
 g4Njg2LDEwNzk2MTQ5NzEsMjcwNzgzMjQ1LC02OTM1NzQwMTgs
 Mjc1MjM0ODE1LDc2ODEyMjI2Nyw3NjgxMjIyNjcsLTIwOTEzOD
 M3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwt
