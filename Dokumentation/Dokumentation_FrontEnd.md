@@ -137,15 +137,14 @@ Darstellung eines animierten Kreises bevor die HTML/PHP Datei im Browser voll ge
 #### HTML
 ##### Legende
 
+Die Legende oberhalb der Raumansicht zeigt mögliche
     <div class="text-center">  
- <ul class="list-inline m-t-10 justify-content-lg-start">  
- <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-grün"></i>Frei</h6> </li>  
- <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-rot"></i>Besetzt</h6> </li>  
- <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-braun"></i>Ablage</h6> </li>  
- <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-grau"></i>Keine Daten (n/A)</h6> </li>  
- </ul>
- </div>
-
+     <ul class="list-inline m-t-10 justify-content-lg-start">  
+     <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-grün"></i>Frei</h6> </li>  
+     <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-rot"></i>Besetzt</h6> </li>  
+     <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-braun"></i>Ablage</h6> </li>  
+     <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-grau"></i>Keine Daten (n/A)</h6> </li>  
+     </ul></div>
 
 
 #### CSS
@@ -1009,7 +1008,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
 - [Sticky Kit](http://leafo.net/sticky-kit/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc2MDgyMTQ5LDgyNjI0MTUsLTIxMDg4OD
+eyJoaXN0b3J5IjpbNzUyNDEyODc2LDgyNjI0MTUsLTIxMDg4OD
 g2ODYsMTA3OTYxNDk3MSwyNzA3ODMyNDUsLTY5MzU3NDAxOCwy
 NzUyMzQ4MTUsNzY4MTIyMjY3LDc2ODEyMjI2NywtMjA5MTM4Mz
 czNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0x
