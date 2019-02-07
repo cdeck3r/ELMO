@@ -148,7 +148,7 @@ Oberhalb der Raumansicht befindet sich die Legende, die die möglichen Färbunge
      </ul></div>
 
 ##### Map-Grundriss
-
+Hauptcontainer der Grundrisses ist der Hauptcontainer card
 
 #### CSS
 #### PHP
@@ -1011,7 +1011,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
 - [Sticky Kit](http://leafo.net/sticky-kit/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMjA2MzE1Miw4MjYyNDE1LC0yMTA4OD
+eyJoaXN0b3J5IjpbLTg1MjAwNDExMyw4MjYyNDE1LC0yMTA4OD
 g4Njg2LDEwNzk2MTQ5NzEsMjcwNzgzMjQ1LC02OTM1NzQwMTgs
 Mjc1MjM0ODE1LDc2ODEyMjI2Nyw3NjgxMjIyNjcsLTIwOTEzOD
 M3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwt
