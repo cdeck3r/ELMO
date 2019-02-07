@@ -1137,7 +1137,7 @@ SELECT-Befehl auf die Tabellen "Maschinen" und "Raum".
 ![Login](Bilder/Funktionenbilder/login.jpg)
 
 ### HTML
-Der Lockscreen besteht aus einem dynamischen Hintergrund und einem Formular Container der auf Breite und Länge zentriert wurde. Es gibt Elemente wi
+Der Lockscreen besteht aus einem dynamischen Hintergrund und einem Formular Container der auf Breite und Länge zentriert wurde. Es gibt Elemente wie das Logo sowie das Formulareingabefeld mit dem Type **password** als auch der Login Button zum Bestätigen mit dem Type **submit**.
 
     <div class="login-register" style="background-image:url(../assets/images/background/login-register.jpg);">          
     <div class="login-box card">  
@@ -1203,11 +1203,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg5MTgxMzI2LDgyNjI0MTUsLTIxMDg4OD
-g2ODYsMTA3OTYxNDk3MSwyNzA3ODMyNDUsLTY5MzU3NDAxOCwy
-NzUyMzQ4MTUsNzY4MTIyMjY3LDc2ODEyMjI2NywtMjA5MTM4Mz
-czNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0x
-MTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMT
-U0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgw
-ODc1XX0=
+eyJoaXN0b3J5IjpbLTQ3NDkwMTIsODI2MjQxNSwtMjEwODg4OD
+Y4NiwxMDc5NjE0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4LDI3
+NTIzNDgxNSw3NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMzgzNz
+M0LDEzODczODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQsLTEx
+NzY4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3ODIxNT
+Q2MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUwODA4
+NzVdfQ==
 -->
