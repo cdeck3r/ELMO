@@ -982,6 +982,8 @@ SELECT-Befehl auf die drei Tabellen "Data", "Maschinen" und "Raum"
 
 ### HTML
 
+Aufbau der Tabelle ist im HTML-Standard umgesetzt.
+
     <div class="table-responsive table-striped">  
      <table class="table color-table inverse-table">  
      <thead> <tr> <th>#</th>  
@@ -991,7 +993,7 @@ SELECT-Befehl auf die drei Tabellen "Data", "Maschinen" und "Raum"
      <th>Letzte Wartung</th>  
      <th>Aktion</th>  
      </tr> </thead> <tbody>  
-     // Inhalt der Tabelle Reiningungsfunktion siehe Datenabfrage
+     // <td></td>Inhalt der Tabelle Reiningungsfunktion siehe Datenabfrage
       </tbody>  
      </table> </div>
 
@@ -1101,6 +1103,8 @@ SELECT-Befehl auf die Tabellen "Reinigungen" und "Maschinen". Es werden Maschine
 ![Alle Maschinen](Bilder/Funktionenbilder/alle.jpg)
 
 ### HTML
+
+
 ### PHP
 Alle Daten der Maschinen werden in die Variable "table_result1" geschrieben.
 
@@ -1180,7 +1184,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNzY3MTc2Nyw4MjYyNDE1LC0yMTA4OD
+eyJoaXN0b3J5IjpbLTEzNTE3MDI1Myw4MjYyNDE1LC0yMTA4OD
 g4Njg2LDEwNzk2MTQ5NzEsMjcwNzgzMjQ1LC02OTM1NzQwMTgs
 Mjc1MjM0ODE1LDc2ODEyMjI2Nyw3NjgxMjIyNjcsLTIwOTEzOD
 M3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwt
