@@ -373,7 +373,7 @@ Bei der Darstellung gibt es zwei Optionen. "Nicht Verfügbar" oder "Verfügbar".
 
 
 ## Adminbereich
-Der Adminbereich hat den gleiche HTML-Struktur als der Benutzerbereich mit dem Unterschied das der Adminbereich in einem Dark
+Der Adminbereich hat den gleiche HTML-Struktur als der Benutzerbereich (siehe oben) mit dem Unterschied das der Adminbereich in einem Dark-Style (**../dark/sources**) gestaltet wurde.
 ## Charts
 ### Grundfunktionen
 
@@ -1123,7 +1123,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3OTgwMDA4Miw4MjYyNDE1LC0yMTA4OD
+eyJoaXN0b3J5IjpbLTUwMDAwNDExNCw4MjYyNDE1LC0yMTA4OD
 g4Njg2LDEwNzk2MTQ5NzEsMjcwNzgzMjQ1LC02OTM1NzQwMTgs
 Mjc1MjM0ODE1LDc2ODEyMjI2Nyw3NjgxMjIyNjcsLTIwOTEzOD
 M3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwt
