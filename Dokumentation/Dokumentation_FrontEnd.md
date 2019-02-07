@@ -893,8 +893,39 @@ Die Grundstruktur des JavaScript-Codes kann von den Beispielen übernommen werde
 ![Csv Export](Bilder/Funktionenbilder/csv.jpg)
 
 ### HTML
+Der CSV-Export wurde durch den Formularbefehl input ind HTML umgesetzt, so das die Abfrage durch die Post Methode Werte weitergibt. 
 
-
+    <div class="row">  
+     <div class="col-lg-4">  
+     <div class="card">  
+     <div class="card-body">  
+     <form action="csvexport.php" method="post">  
+      <!-- VON -->  
+      <div class="form-group">  
+     <label for="vonn">Von</label>  
+     <div class="input-group">  
+     <div class="input-group-prepend">  
+     <span class="input-group-text" id="basic-addon1">  
+     <i class="ti-calendar"></i>  
+     </span> </div> <input type="date" class="form-control" name="von" id="vonn">  
+     </div> </div>  <!-- BIS -->  
+      <div class="form-group">  
+     <label for="biss">bis</label>  
+     <div class="input-group">  
+     <div class="input-group-prepend">  
+     <span class="input-group-text" id="basic-addon1">  
+     <i class="ti-calendar"></i>  
+     </span> </div> <input type="date" class="form-control" name="bis" id="biss">  
+     </div> </div>  
+     <button type="submit" class="btn waves-effect waves-light btn btn-primary m-t-10 m-r-10">Generieren</button>  
+     <button type="reset" class="btn waves-effect waves-light btn btn-inverse m-t-10">Reset</button>  
+     </form> <br><?php   
+       if(isset($_POST['von'])) {  
+      echo "<button class=\"btn waves-effect waves-light btn-lg btn-danger\" type=\"submit\" onclick=\"window.location.href='" .$csv."'\">Download CSV</button>";  
+      }  
+    ?>  
+      </div>  
+     </div> </div>
 
 ### PHP
 Script von: [CSV-Export](https://github.com/luka-balantic/Export-CSV-from-database-with-PHP-mysqli/blob/master/exportCSV.php)
@@ -1135,7 +1166,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDIxODIwMTYsODI2MjQxNSwtMjEwOD
+eyJoaXN0b3J5IjpbLTE4MzI3MTY5MzQsODI2MjQxNSwtMjEwOD
 g4ODY4NiwxMDc5NjE0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4
 LDI3NTIzNDgxNSw3NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMz
 gzNzM0LDEzODczODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQs
