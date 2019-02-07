@@ -155,7 +155,9 @@ Hauptcontainer der Grundrisses ist der Hauptcontainer card, card-body. Map-respo
 
 Der Raumgrundriss ist in einem 4:n (n-beliebig erweiterbar) aufgebaut. Zuerst wird eine Reihe definiert.
 
-Hier können nun immer vier Container je nach Raumaufbau nebeneinander angezeigt werden, ist dieser Platz mit keiner Maschine bestückt wird die klasse map-empty verwendet.
+Hier können nun immer vier Container je nach Raumaufbau nebeneinander angezeigt werden (map-card-toogle map-card), ist dieser Platz mit keiner Maschine bestückt wird die klasse map-empty verwendet. Befindet sich an dieser Position eine Ablage wird diese div mit der Klasse map-card-desk gesetzt. Der HTML Aufbau ist daher wie folgt:
+
+
 
 #### CSS
 #### PHP
@@ -1018,11 +1020,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 - [Sticky Kit](http://leafo.net/sticky-kit/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNTE3ODM4NSw4MjYyNDE1LC0yMTA4OD
-g4Njg2LDEwNzk2MTQ5NzEsMjcwNzgzMjQ1LC02OTM1NzQwMTgs
-Mjc1MjM0ODE1LDc2ODEyMjI2Nyw3NjgxMjIyNjcsLTIwOTEzOD
-M3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwt
-MTE3NjgyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMTc4Mj
-E1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4
-MDg3NV19
+eyJoaXN0b3J5IjpbOTc0NTc1MzIxLDgyNjI0MTUsLTIxMDg4OD
+g2ODYsMTA3OTYxNDk3MSwyNzA3ODMyNDUsLTY5MzU3NDAxOCwy
+NzUyMzQ4MTUsNzY4MTIyMjY3LDc2ODEyMjI2NywtMjA5MTM4Mz
+czNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0x
+MTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMT
+U0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgw
+ODc1XX0=
 -->
