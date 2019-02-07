@@ -137,7 +137,8 @@ Darstellung eines animierten Kreises bevor die HTML/PHP Datei im Browser voll ge
 #### HTML
 ##### Legende
 
-Oberhalb der Raumansicht befindet sich die Legende, die die möglichen Färbungen der Maschinen zeigt und beschreibt. Umgesetzt durch zent
+Oberhalb der Raumansicht befindet sich die Legende, die die möglichen Färbungen der Maschinen zeigt und beschreibt. Umgesetzt durch zentrieren des div-Containers sowie eine Liste (ul-li).
+
     <div class="text-center">  
      <ul class="list-inline m-t-10 justify-content-lg-start">  
      <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-grün"></i>Frei</h6> </li>  
@@ -145,6 +146,8 @@ Oberhalb der Raumansicht befindet sich die Legende, die die möglichen Färbunge
      <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-braun"></i>Ablage</h6> </li>  
      <li> <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-grau"></i>Keine Daten (n/A)</h6> </li>  
      </ul></div>
+
+##### Map-Grundriss
 
 
 #### CSS
@@ -1008,11 +1011,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 - [Sticky Kit](http://leafo.net/sticky-kit/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODk3Mzc0MjMsODI2MjQxNSwtMjEwOD
-g4ODY4NiwxMDc5NjE0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4
-LDI3NTIzNDgxNSw3NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMz
-gzNzM0LDEzODczODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQs
-LTExNzY4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3OD
-IxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUw
-ODA4NzVdfQ==
+eyJoaXN0b3J5IjpbMjEzMjA2MzE1Miw4MjYyNDE1LC0yMTA4OD
+g4Njg2LDEwNzk2MTQ5NzEsMjcwNzgzMjQ1LC02OTM1NzQwMTgs
+Mjc1MjM0ODE1LDc2ODEyMjI2Nyw3NjgxMjIyNjcsLTIwOTEzOD
+M3MzQsMTM4NzM4MjI1NiwxNDA0NjkzOTg2LDM0NDM2MTU3NCwt
+MTE3NjgyOTM5LDE1NzU1MzQ4MTAsLTk1NTU4MTUwMCwtMTc4Mj
+E1NDYyMiwtMTY2MDYxNDE0OCwtMjEyNjAzMTk2OSwtMTM2NTA4
+MDg3NV19
 -->
