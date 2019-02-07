@@ -784,7 +784,7 @@ Um den Speicherplatz des Servers auslesen zu können wird die PHP-Funktion "disk
      $hdGnu = disk_free_space("/"); $hdUnu = disk_total_space("/");
 
 ##### Verwendung in HTML
-Um die Daten der zwei Funktionen (Rückgabe in Byte) sinnvoll darstellen zu können wird im HTML-Code dann die Funktion "getSymbolByQuantity($bytes)" aufgerufen. Die Funktion gibt dann einen GigaByte Wert zurück. Die Postition (auch Responsive) wurde durch sämtliches Margin optimiert. **Wow-animated** generiert eine Progressbar
+Um die Daten der zwei Funktionen (Rückgabe in Byte) sinnvoll darstellen zu können wird im HTML-Code dann die Funktion "**getSymbolByQuantity($bytes)**" aufgerufen. Die Funktion gibt dann einen GigaByte Wert zurück. Die Postition (auch Responsive) wurde durch sämtliches Margin optimiert. **Wow-animated** generiert eine Progressbar die durch Prozentumrechnung befühlt wird und somit den Inhalt generiert.
 
     <div class="col-lg-6 col-6 align-self-center">  
      <div class="row  justify-content-end">  
@@ -893,6 +893,9 @@ Die Grundstruktur des JavaScript-Codes kann von den Beispielen übernommen werde
 ![Csv Export](Bilder/Funktionenbilder/csv.jpg)
 
 ### HTML
+
+
+
 ### PHP
 Script von: [CSV-Export](https://github.com/luka-balantic/Export-CSV-from-database-with-PHP-mysqli/blob/master/exportCSV.php)
 Es wird eine Datenbankverbindung geöffnet. Anschließend wird ein SQL Befehl ausgeführt, welcher alle Daten in dem gewünschten Zeitraum ausliest. Diese Daten werden in eine CSV-Datei geschrieben und in dem Ordner "csv" abgelegt. Anschließend wird dem Nutzer ein Downloadlink angeboten.
@@ -1132,7 +1135,7 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDA4MzcxNjgsODI2MjQxNSwtMjEwOD
+eyJoaXN0b3J5IjpbLTE5MDIxODIwMTYsODI2MjQxNSwtMjEwOD
 g4ODY4NiwxMDc5NjE0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4
 LDI3NTIzNDgxNSw3NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMz
 gzNzM0LDEzODczODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQs
