@@ -215,6 +215,16 @@ Hier können nun immer vier Container je nach Raumaufbau nebeneinander angezeigt
       
      </div>
 
+Durch das Image eingang.png kann am Ende auch in Gridform an vier Positionen der Eingang gesetzt werden. Der Nutzer sieht nun wo sich der Eingang im Grundriss befindet.
+
+    <div class="map-col">  
+     <div class="map-empty">  
+     <div class="map-body">  
+     <img src="../assets/images/eingang.png">  
+     </div> </div>    
+    </div>
+
+ 
 
 #### CSS
 #### PHP
@@ -1078,11 +1088,11 @@ Es wird die id und das passwort des Accounts ausgelesen.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODMwMDg5MDQsODI2MjQxNSwtMjEwOD
-g4ODY4NiwxMDc5NjE0OTcxLDI3MDc4MzI0NSwtNjkzNTc0MDE4
-LDI3NTIzNDgxNSw3NjgxMjIyNjcsNzY4MTIyMjY3LC0yMDkxMz
-gzNzM0LDEzODczODIyNTYsMTQwNDY5Mzk4NiwzNDQzNjE1NzQs
-LTExNzY4MjkzOSwxNTc1NTM0ODEwLC05NTU1ODE1MDAsLTE3OD
-IxNTQ2MjIsLTE2NjA2MTQxNDgsLTIxMjYwMzE5NjksLTEzNjUw
-ODA4NzVdfQ==
+eyJoaXN0b3J5IjpbMjQ3OTMyNDU1LDgyNjI0MTUsLTIxMDg4OD
+g2ODYsMTA3OTYxNDk3MSwyNzA3ODMyNDUsLTY5MzU3NDAxOCwy
+NzUyMzQ4MTUsNzY4MTIyMjY3LDc2ODEyMjI2NywtMjA5MTM4Mz
+czNCwxMzg3MzgyMjU2LDE0MDQ2OTM5ODYsMzQ0MzYxNTc0LC0x
+MTc2ODI5MzksMTU3NTUzNDgxMCwtOTU1NTgxNTAwLC0xNzgyMT
+U0NjIyLC0xNjYwNjE0MTQ4LC0yMTI2MDMxOTY5LC0xMzY1MDgw
+ODc1XX0=
 -->
