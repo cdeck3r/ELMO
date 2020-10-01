@@ -1,0 +1,289 @@
+.card-bluee {
+    background-color: #26c6da;
+}
+
+.card-fullscreen {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    overflow: auto; }
+
+
+.card-redd {
+    background-color: #fc4b6c;
+}
+
+.card-vioo {
+    background-color: #7460ee;
+}
+
+.card-darkbb {
+    background-color: #1e88e5;
+}
+
+.card-greyy {
+    background-color: #A9A9A9;
+}
+
+.storagetext {
+    color: #99abb4;
+    line-height: 13px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.map-card2 {
+    font-weight: 300;
+    padding: 1rem;
+    margin-bottom: 15px;
+    color: #99abb4;
+    background: #f3f3f3;
+    border-color: #fc4b6c;
+    border-style: solid;
+    border-width: 1px;
+    width: 270px;
+    height: 100%;
+}
+
+
+
+.map-card_besetzt {
+    font-weight: 300;
+    padding: 1rem;
+    color: #99abb4;
+    background: #26c6da;
+    border-color: #26c6da;
+    width: 270px;
+    height: auto;
+    position: fixed
+}
+
+.map-abstand {
+    height: 1px;
+    background: #cbcbcb;
+    margin-bottom: 24px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.map-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 1220px;
+}
+
+.map-body {
+    flex: 1 1 auto;
+    padding: 20px 5px
+}
+
+.map-col {
+
+}
+
+.map-card {
+    background: #b1ffb5;
+    border-color: #32e84c;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    color: #99abb4;
+    text-align: center;
+    height: 145px;
+    width: 290px;
+    margin: 20px 15px 0px 0px;
+
+}
+
+.map-card-desk {
+    background: #cfb28f;
+    border-color: #9c6b3a;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    color: #99abb4;
+    text-align: center;
+    height: 145px;
+    width: 290px;
+    margin: 20px 15px 0px 0px;
+
+}
+
+.map-empty {
+    text-align: center;
+    height: 145px;
+    width: 290px;
+    margin: 20px 15px 0px 0px;
+
+}
+
+.map-card h5 {
+    color: #4d555d;
+    font-weight: 600;
+}
+
+.map-card h6 {
+    color: #6f7a82;
+    margin-bottom: -2px;
+}
+
+.map-card-desk h5 {
+    color: #4d555d;
+    font-weight: 600;
+}
+
+.map-card-desk h6 {
+    color: #6f7a82;
+    margin-bottom: -2px;
+}
+
+
+.map-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.text-grün{
+    color: #32e84c !important; }
+
+.text-braun {
+    color: #9c6b3a !important; }
+
+.text-rot{
+    color: #ff4d4f !important; }
+
+.text-grau{
+    color: #A9A9A9 !important; }
+
+/** Responsive **/
+
+@media (max-width: 1540px) {
+
+    .map-row {
+        width: 1000px;
+    }
+
+    .map-body {
+        padding: 15px 5px;
+    }
+
+
+    .map-card {
+        height: 145px;
+        width: 220px;
+        margin: 10px 10px 0px 0px;
+    }
+
+    .map-card-desk {
+        height: 145px;
+        width: 220px;
+        margin: 10px 10px 0px 0px;
+    }
+
+    .map-empty {
+        height: 145px;
+        width: 220px;
+        margin: 10px 10px 0px 0px;
+    }
+
+
+    .map-card h5 {
+        font-size: 15px;
+    }
+
+    .map-card h6 {
+        font-size: 12px;
+    }
+
+    .map-card-desk h5 {
+        font-size: 15px;
+    }
+
+    .map-card-desk h6 {
+        font-size: 12px;
+    }
+
+
+}
+
+@media (max-width: 1000px) {
+
+    .map-row {
+        width: 860px;
+    }
+
+    .map-body {
+        padding: 15px 5px;
+    }
+
+
+    .map-card {
+        height: 145px;
+        width: 200px;
+        margin: 10px 10px 0px 0px;
+    }
+
+    .map-card-desk {
+        height: 145px;
+        width: 200px;
+        margin: 10px 10px 0px 0px;
+    }
+
+    .map-empty {
+        height: 145px;
+        width: 200px;
+        margin: 10px 10px 0px 0px;
+    }
+
+
+    .map-card h5 {
+        font-size: 13px;
+    }
+
+    .map-card h6 {
+        font-size: 10px;
+    }
+
+    .map-card-desk h5 {
+        font-size: 13px;
+    }
+
+    .map-card-desk h6 {
+        font-size: 10px;
+    }
+
+    .map-abstand {
+        margin-top: 22px;
+    }
+
+    .map-card-mini {
+        height: 72px;
+        width: 110px;
+        margin: 8px 10px 0px 0px;
+    }
+
+    .map-card-desk-mini {
+        height: 72px;
+        width: 110px;
+        margin: 8px 10px 0px 0px;
+    }
+
+    .map-empty-mini {
+        height: 72px;
+        width: 110px;
+        margin: 8px 10px 0px 0px;
+    }
+
+
+}
+
