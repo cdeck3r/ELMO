@@ -1,3 +1,8 @@
+**NOTE:** The ELMO system is not longer operating.
+
+* Mirror of elmo.cloud website: https://cdeck3r.github.io/ELMO
+* Data from the year 2019: https://github.com/cdeck3r/ELMO/tree/master/data
+
 # Synopsis
 ![ELMO Main](Dokumentation/Bilder/Elmo_desc_Docu.jpg)
 
